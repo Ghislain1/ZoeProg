@@ -7,7 +7,7 @@
         xmlns:cmm="https://www.zoeprog.com/2017/common"
          xmlns:prism="http://www.codeplex.com/prism"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="825">
+        Title="MainWindow" Height="500" Width="1145">
   <Window.Resources>
     <Style TargetType="TabItem">
       <Setter Property="Header" Value="{Binding DataContext.Title}" />
@@ -17,7 +17,7 @@
     <Grid.RowDefinitions>
       <RowDefinition />
       <RowDefinition Height="auto" />
-      <RowDefinition />
+      <RowDefinition  Height="auto" />
     </Grid.RowDefinitions>
 
     <TabControl Grid.Row="0" TabStripPlacement="Left" prism:RegionManager.RegionName="{x:Static cmm:RegionNames.TabRegion}">

@@ -6,8 +6,9 @@
              xmlns:local="clr-namespace:ZoeProg.PlugIns.InstalledList.Views"
               xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True">
-  <Grid>
+  <DockPanel>
+    <Button  Content="Load" DockPanel.Dock="Bottom" Margin="5" Command="{Binding LoadCommand}" />
     <DataGrid ItemsSource="{Binding InstalledItems}">
     </DataGrid>
-  </Grid>
+  </DockPanel>
 </UserControl>

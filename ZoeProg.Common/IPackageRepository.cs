@@ -9,6 +9,6 @@
   {
     Task<List<Package>> GetListAvailabePackages(string folderName, CancellationToken token);
 
-    Task<List<Package>> GetListInstalledPackages(CancellationToken token);
+    Task<List<InstalledPackage>> GetListInstalledPackages(CancellationToken token);
   }
 }

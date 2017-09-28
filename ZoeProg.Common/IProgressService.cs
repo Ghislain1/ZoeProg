@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZoeProg
+namespace ZoeProg.Common
 {
-  public interface IShellViewModel
+  public interface IProgressService
   {
-    bool IsBusy { get; }
+    void Close();
+
+    void Show();
+
+    void Update();
   }
 }

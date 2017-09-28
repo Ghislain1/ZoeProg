@@ -24,17 +24,14 @@
       throw new NotImplementedException();
     }
 
-    public async Task<List<Package>> GetListInstalledPackages(CancellationToken token)
+    public async Task<List<InstalledPackage>> GetListInstalledPackages(CancellationToken token)
     {
-      string test = @"\\DESKTOP-0OD702C\root\cimv2:Win32_Product.IdentifyingNumber=" + "{A66F82FB-85EE-48D2-B19C-3A98147D5167}" +
-      ", Name=" + "e5 Secure Download Manager" + ",Version=" + "3.2.249.0";
+      string pattern = @"Name=""(?<name>.+)"",Version=""(?<version>\d.+)""";
+      var regex = new Regex(pattern, RegexOptions.IgnoreCase);
 
-      var regex = new Regex(@"^(?<name>\S+)\s+(?<version>\d+(\.\d+)+(-[a-zA-Z0-9]+)*)$");
-
-      var package = this.CreateInstalledPackage(test);
       IEnumerable<string> psOutput = null;
       string cmd = Cmds.ListInstalledPackCmd;
-      var result = new List<Package>();
+      var result = new List<InstalledPackage>();
       try
       {
         psOutput = await this.powerShellService.RunCommand(token, cmd);
@@ -46,39 +43,29 @@
 
       foreach (var item in psOutput)
       {
-        var match = regex.Match(item);
-        if (match.Success)
+        if (!string.IsNullOrEmpty(item))
         {
-          //var package = this.CreateInstalledPackage();
-          //result.Add(package);
-        }
-        else
-        {
-          throw new Exception("Impossible");
+          var package = this.CreateInstalledPackage(item, regex);
+          result.Add(package);
         }
       }
       return result;
     }
 
-    private InstalledPackage CreateInstalledPackage(string input)
+    private Package CreateInstalledPackage(string input, Regex regex)
     {
-      string[] keys = { "Name=", "Version=", "Win32_Product.IdentifyingNumber=" };
-      InstalledPackage installedPackage = new InstalledPackage();
-      foreach (var key in keys)
-      {
-        string regexString = string.Format(@"{0}+\s*(\w*)", key);
-        var regex = new Regex(regexString);
-        var match = regex.Match(input);
+      Package installedPackage = new Package();
 
-        if (match.Success)
-        {
-          switch (key)
-          {
-            case "Name=": installedPackage.Title = match.Groups[1].Value; break;
-            case "Version=": installedPackage.Version = match.Groups[1].Value; break;
-            default: break;
-          }
-        }
+      var match = regex.Match(input);
+
+      if (match.Success)
+      {
+        installedPackage.Title = match.Groups["name"].Value;
+        installedPackage.Version = match.Groups["version"].Value;
+      }
+      else
+      {
+        throw new Exception("Impossibe");
       }
       return installedPackage;
     }

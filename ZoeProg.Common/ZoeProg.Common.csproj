@@ -48,10 +48,14 @@
     <Compile Include="IPackageService.cs" />
     <Compile Include="IPackageRepository.cs" />
     <Compile Include="IPowerShellService.cs" />
+    <Compile Include="IProgressService.cs" />
     <Compile Include="ITabItem.cs" />
     <Compile Include="Cmds.cs" />
     <Compile Include="RegionNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Events\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

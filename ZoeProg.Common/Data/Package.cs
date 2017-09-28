@@ -6,7 +6,7 @@
   using System.Text;
   using System.Threading.Tasks;
 
-  public class Package
+  public class Package : InstalledPackage
   {
     public string Authors { get; set; }
     public string Copyright { get; set; }

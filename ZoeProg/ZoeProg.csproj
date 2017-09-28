@@ -102,7 +102,11 @@
     <Compile Include="IShellViewModel.cs" />
     <Compile Include="Services\PackageRepository.cs" />
     <Compile Include="Services\PowerShellService.cs" />
+    <Compile Include="Services\ProgressService.cs" />
     <Compile Include="ShellViewModel.cs" />
+    <Compile Include="Views\ProgressView.xaml.cs">
+      <DependentUpon>ProgressView.xaml</DependentUpon>
+    </Compile>
     <Page Include="Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -116,6 +120,10 @@
       <DependentUpon>Shell.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ProgressView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

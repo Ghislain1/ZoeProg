@@ -21,6 +21,7 @@
       this.Container.RegisterType<IPowerShellService, PowerShellService>(new ContainerControlledLifetimeManager());
       this.Container.RegisterType<IPackageService, PackageService>(new ContainerControlledLifetimeManager());
       this.Container.RegisterType<IPackageRepository, PackageRepository>(new ContainerControlledLifetimeManager());
+      this.Container.RegisterType<IProgressService, ProgressService>(new ContainerControlledLifetimeManager());
 
       base.ConfigureServiceLocator();
     }
