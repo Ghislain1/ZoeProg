@@ -4,31 +4,60 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZoeProg"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:cmm="https://www.zoeprog.com/2017/common"
          xmlns:prism="http://www.codeplex.com/prism"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="1145">
   <Window.Resources>
+    <DataTemplate x:Key="HeaderTemplateTabItem">
+      <materialDesign:ColorZone   BorderBrush="AliceBlue" BorderThickness="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+        <UniformGrid Rows="1">
+          <materialDesign:PackIcon Width="20" Kind="{Binding Path=DataContext.DataContext.IconTitle, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" />
+          <TextBlock  FontWeight="Bold"  FontSize="20" Text="{Binding Path=DataContext.DataContext.Title, RelativeSource={RelativeSource AncestorType={x:Type TabItem}}}" />
+        </UniformGrid>
+      </materialDesign:ColorZone>
+    </DataTemplate>
+
     <Style TargetType="TabItem">
-      <Setter Property="Header" Value="{Binding DataContext.Title}" />
+      <Setter Property="DataContext" Value="{Binding DataContext}" />
+      <Setter Property="HeaderTemplate" Value="{StaticResource HeaderTemplateTabItem}" />
     </Style>
   </Window.Resources>
-  <Grid Margin="5">
-    <Grid.RowDefinitions>
-      <RowDefinition />
-      <RowDefinition Height="auto" />
-      <RowDefinition  Height="auto" />
-    </Grid.RowDefinitions>
+  <materialDesign:Card Margin="4 4 0 0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+    <Grid Margin="5">
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="auto" />
+        <RowDefinition  Height="auto" />
+        <RowDefinition  Height="1" />
+      </Grid.RowDefinitions>
 
-    <TabControl Grid.Row="0" TabStripPlacement="Left" prism:RegionManager.RegionName="{x:Static cmm:RegionNames.TabRegion}">
-      <TabItem>Installed progress</TabItem>
-      <TabItem>Uninstalled Programm</TabItem>
-    </TabControl>
+      <TabControl Grid.Row="0" TabStripPlacement="Left" prism:RegionManager.RegionName="{x:Static cmm:RegionNames.TabRegion}" />
 
-    <!--spliiter-->
-    <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" />
+      <!--spliiter-->
+      <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" />
 
-    <!--LogBuch-->
-    <ContentControl  Grid.Row="2" prism:RegionManager.RegionName="{x:Static cmm:RegionNames.LoggerRegion}" />
-  </Grid>
+      <!--LogBuch-->
+      <ContentControl  Grid.Row="2" prism:RegionManager.RegionName="{x:Static cmm:RegionNames.LoggerRegion}" />
+
+      <materialDesign:Card     Grid.Row="3">
+        <UniformGrid>
+          <TextBlock Text=" XXXXXXXXXXXXXXXXX" />
+          <Button Content="Button" />
+          <Label Content="Label" />
+
+          <ListBox>
+            <ListBoxItem>
+              <Expander IsExpanded="True">
+                <ProgressBar IsIndeterminate="True" Height="50" />
+              </Expander>
+            </ListBoxItem>
+            <ListBoxItem>item 1</ListBoxItem>
+            <ListBoxItem>item 1</ListBoxItem>
+          </ListBox>
+        </UniformGrid>
+      </materialDesign:Card>
+    </Grid>
+  </materialDesign:Card>
 </Window>

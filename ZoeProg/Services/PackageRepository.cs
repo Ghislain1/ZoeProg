@@ -26,6 +26,8 @@
 
     public async Task<List<InstalledPackage>> GetListInstalledPackages(CancellationToken token)
     {
+      token.ThrowIfCancellationRequested();
+
       string pattern = @"Name=""(?<name>.+)"",Version=""(?<version>\d.+)""";
       var regex = new Regex(pattern, RegexOptions.IgnoreCase);
 
@@ -43,6 +45,8 @@
 
       foreach (var item in psOutput)
       {
+        token.ThrowIfCancellationRequested();
+
         if (!string.IsNullOrEmpty(item))
         {
           var package = this.CreateInstalledPackage(item, regex);

@@ -9,11 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Common", "ZoeProg.C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlugIns", "PlugIns", "{382BCB3F-EB66-418F-BEEB-DC24D47FB874}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.ProgramListModule", "PlugIns\ZoeProg.PlugIns.ProgramListModule\ZoeProg.PlugIns.ProgramListModule.csproj", "{ADE41827-29A6-441B-82C5-FDD3B0428CC2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoeprog.PlugIns.ProgramSettingModule", "PlugIns\Zoeprog.PlugIns.ProgramSettingModule\Zoeprog.PlugIns.ProgramSettingModule.csproj", "{D8189C92-47D0-40FF-8E3B-02ECB773F7BE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.InstalledList", "PlugIns\ZoeProg.PlugIns.InstalledListModule\ZoeProg.PlugIns.InstalledList.csproj", "{76C0B667-FE0A-4D97-8DFD-8B2EDC144216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Settings", "PlugIns\ZoeProg.PlugIns.Settings\ZoeProg.PlugIns.Settings.csproj", "{38AF3430-08D9-4B13-A96F-D0A58A411251}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,25 +27,20 @@ Global
 		{E838A7B4-9320-4892-8D77-1A0DCA7584BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E838A7B4-9320-4892-8D77-1A0DCA7584BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E838A7B4-9320-4892-8D77-1A0DCA7584BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADE41827-29A6-441B-82C5-FDD3B0428CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADE41827-29A6-441B-82C5-FDD3B0428CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADE41827-29A6-441B-82C5-FDD3B0428CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADE41827-29A6-441B-82C5-FDD3B0428CC2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8189C92-47D0-40FF-8E3B-02ECB773F7BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8189C92-47D0-40FF-8E3B-02ECB773F7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8189C92-47D0-40FF-8E3B-02ECB773F7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8189C92-47D0-40FF-8E3B-02ECB773F7BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76C0B667-FE0A-4D97-8DFD-8B2EDC144216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76C0B667-FE0A-4D97-8DFD-8B2EDC144216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76C0B667-FE0A-4D97-8DFD-8B2EDC144216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76C0B667-FE0A-4D97-8DFD-8B2EDC144216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{ADE41827-29A6-441B-82C5-FDD3B0428CC2} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
-		{D8189C92-47D0-40FF-8E3B-02ECB773F7BE} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{76C0B667-FE0A-4D97-8DFD-8B2EDC144216} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{38AF3430-08D9-4B13-A96F-D0A58A411251} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 	EndGlobalSection
 EndGlobal
