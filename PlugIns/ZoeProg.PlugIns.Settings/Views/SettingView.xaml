@@ -10,58 +10,45 @@
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True">
 
-  <!--<Grid Margin="5">
-    <Grid.RowDefinitions>
-      <RowDefinition />
-      <RowDefinition Height="auto" />
-      <RowDefinition  Height="auto" />
-      <RowDefinition  Height="auto" />
-    </Grid.RowDefinitions>
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="FontWeight" Value="DemiBold" />
+                <Setter Property="Margin" Value="4" />
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
 
-    <Button Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
-                        Margin="0 0 8 0" HorizontalAlignment="Left"
-                        ToolTip="MaterialDesignFloatingActionMiniLightButton">
+        <StackPanel Grid.ColumnSpan="3">
+            <TextBlock Text=" Additional Folder for Searching " />
+            <TextBox Text="{Binding AdditionalFolder}" />
+        </StackPanel>
 
-      <materialDesign:Clock  Height="24" Width="24" />
-    </Button>
-  </Grid>-->
-
-  <Grid>
-    <Grid.Resources>
-      <Style TargetType="TextBlock">
-        <Setter Property="FontSize" Value="14" />
-        <Setter Property="FontWeight" Value="DemiBold" />
-        <Setter Property="Margin" Value="4" />
-      </Style>
-    </Grid.Resources>
-    <Grid.RowDefinitions>
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-      <RowDefinition Height="1*" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition Width="1*" />
-      <ColumnDefinition Width="1*" />
-      <ColumnDefinition Width="1*" />
-    </Grid.ColumnDefinitions>
-    <Border Background="{DynamicResource PrimaryHueMidBrush}" Grid.ColumnSpan="3">
-      <TextBlock Foreground="{DynamicResource PrimaryHueMidForegroundBrush}">Primary - Mid</TextBlock>
-    </Border>
-    <Border Background="{DynamicResource PrimaryHueLightBrush}"
+        <Border Background="{DynamicResource PrimaryHueLightBrush}"
                 Grid.Row="1">
-      <TextBlock FontWeight="Bold" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}">Light</TextBlock>
-    </Border>
-    <Border Background="{DynamicResource PrimaryHueMidBrush}"
+            <TextBlock FontWeight="Bold" Foreground="{DynamicResource PrimaryHueLightForegroundBrush}">Light</TextBlock>
+        </Border>
+        <Border Background="{DynamicResource PrimaryHueMidBrush}"
                 Grid.Row="1" Grid.Column="1">
-      <TextBlock Foreground="{DynamicResource PrimaryHueMidForegroundBrush}">Mid</TextBlock>
-    </Border>
-    <Border Background="{DynamicResource PrimaryHueDarkBrush}"
+            <TextBlock Foreground="{DynamicResource PrimaryHueMidForegroundBrush}">Mid</TextBlock>
+        </Border>
+        <Border Background="{DynamicResource PrimaryHueDarkBrush}"
                 Grid.Row="1" Grid.Column="2">
-      <TextBlock Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}">Dark</TextBlock>
-    </Border>
-    <Border Background="{DynamicResource SecondaryAccentBrush}"
+            <TextBlock Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}">Dark</TextBlock>
+        </Border>
+        <Border Background="{DynamicResource SecondaryAccentBrush}"
                 Grid.Row="2" Grid.ColumnSpan="3">
-      <TextBlock Foreground="{DynamicResource SecondaryAccentForegroundBrush}">Accent</TextBlock>
-    </Border>
-  </Grid>
+            <TextBlock Foreground="{DynamicResource SecondaryAccentForegroundBrush}">Accent</TextBlock>
+        </Border>
+    </Grid>
 </UserControl>

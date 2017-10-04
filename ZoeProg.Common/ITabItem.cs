@@ -1,11 +1,11 @@
 ﻿namespace ZoeProg.Common
 {
-  using MaterialDesignThemes.Wpf;
+    using MaterialDesignThemes.Wpf;
 
-  public interface ITabItem
-  {
-    string BackgroudImage { get; }
-    PackIconKind IconTitle { get; }
-    string Title { get; }
-  }
+    public interface ITabItem
+    {
+        string BackgroudImage { get; }
+        PackIconKind IconTitle { get; }
+        string Title { get; }
+    }
 }

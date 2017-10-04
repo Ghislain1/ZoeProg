@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.InstalledList", "PlugIns\ZoeProg.PlugIns.InstalledListModule\ZoeProg.PlugIns.InstalledList.csproj", "{76C0B667-FE0A-4D97-8DFD-8B2EDC144216}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Settings", "PlugIns\ZoeProg.PlugIns.Settings\ZoeProg.PlugIns.Settings.csproj", "{38AF3430-08D9-4B13-A96F-D0A58A411251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Home", "PlugIns\ZoeProg.PlugIns.Home\ZoeProg.PlugIns.Home.csproj", "{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38AF3430-08D9-4B13-A96F-D0A58A411251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{76C0B667-FE0A-4D97-8DFD-8B2EDC144216} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{38AF3430-08D9-4B13-A96F-D0A58A411251} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42D9B723-A5FD-453D-B056-9B2DFD43B30A}
 	EndGlobalSection
 EndGlobal

@@ -49,15 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\PlugInBase.cs" />
+    <Compile Include="Data\FunctionItem.cs" />
     <Compile Include="Data\InstalledPackage.cs" />
     <Compile Include="Data\Package.cs" />
     <Compile Include="Data\PackageFilter.cs" />
     <Compile Include="Data\PackageVersion.cs" />
     <Compile Include="IPackageService.cs" />
     <Compile Include="IPackageRepository.cs" />
+    <Compile Include="IConfigurationService.cs" />
     <Compile Include="IPowerShellService.cs" />
     <Compile Include="IProgressService.cs" />
     <Compile Include="ISettingService.cs" />
+    <Compile Include="IPlugInService.cs" />
+    <Compile Include="IPlugIn.cs" />
     <Compile Include="ITabItem.cs" />
     <Compile Include="Cmds.cs" />
     <Compile Include="RegionNames.cs" />
@@ -68,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\AppIcon.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
