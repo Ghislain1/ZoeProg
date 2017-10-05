@@ -99,13 +99,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="IShellViewModel.cs" />
+    <Compile Include="ViewModels\IShellViewModel.cs" />
     <Compile Include="Services\PackageRepository.cs" />
     <Compile Include="Services\ConfigurationService.cs" />
     <Compile Include="Services\PowerShellService.cs" />
     <Compile Include="Services\PlugInService.cs" />
+    <Compile Include="Services\ProgressMonitor.cs" />
     <Compile Include="Services\ProgressService.cs" />
-    <Compile Include="ShellViewModel.cs" />
+    <Compile Include="ViewModels\ProgressMonitorWrapper.cs" />
+    <Compile Include="ViewModels\ProgressViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\ProgressView.xaml.cs">
       <DependentUpon>ProgressView.xaml</DependentUpon>
     </Compile>

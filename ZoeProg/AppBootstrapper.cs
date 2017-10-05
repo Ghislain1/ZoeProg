@@ -7,12 +7,16 @@
     using Common;
     using Services;
     using static Services.PackageRepository;
+    using System.Threading;
+    using ZoeProg.ViewModels;
 
     public class AppBootstrapper : UnityBootstrapper
     {
         protected override void ConfigureContainer()
         {
             this.Container.RegisterType<IShellViewModel, ShellViewModel>(new ContainerControlledLifetimeManager());
+            this.Container.RegisterType<IProgressMonitor, ProgressMonitor>(new ContainerControlledLifetimeManager());
+
             base.ConfigureContainer();
         }
 

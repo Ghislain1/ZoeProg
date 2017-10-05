@@ -58,7 +58,9 @@
     <Compile Include="IPackageService.cs" />
     <Compile Include="IPackageRepository.cs" />
     <Compile Include="IConfigurationService.cs" />
+    <Compile Include="IProgressMonitor.cs" />
     <Compile Include="IPowerShellService.cs" />
+    <Compile Include="IProgressViewModel.cs" />
     <Compile Include="IProgressService.cs" />
     <Compile Include="ISettingService.cs" />
     <Compile Include="IPlugInService.cs" />

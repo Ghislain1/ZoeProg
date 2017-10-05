@@ -26,6 +26,7 @@
             this.regionManager = regionManager;
             this.container = container;
             this.NavigatePath = nameof(SettingView);
+            this.Title = "Settings";
         }
 
         public void Initialize()

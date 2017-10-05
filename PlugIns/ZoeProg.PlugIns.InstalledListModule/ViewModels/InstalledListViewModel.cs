@@ -3,6 +3,7 @@
     using Common;
     using Common.Data;
     using MaterialDesignThemes.Wpf;
+    using Microsoft.Practices.Unity;
     using Prism.Commands;
     using Prism.Mvvm;
     using System;
@@ -17,6 +18,7 @@
 
     public class InstalledListViewModel : BindableBase, ITabItem
     {
+        private readonly IUnityContainer container;
         private readonly object lockObj;
         private readonly IPackageRepository packageRepository;
         private readonly IProgressService progressService;
@@ -28,10 +30,11 @@
         private CancellationTokenSource loadCancelToken;
         private string title;
 
-        public InstalledListViewModel(IProgressService progressService, IPackageRepository packageRepository)
+        public InstalledListViewModel(IProgressService progressService, IPackageRepository packageRepository, IUnityContainer container)
         {
             this.progressService = progressService;
             this.packageRepository = packageRepository;
+            this.container = container;
             this.title = "Installed Packages";
             this.iconTitle = PackIconKind.Star;
             this.installedItems = new ObservableCollection<InstalledPackage>();
@@ -114,9 +117,9 @@
 
                 lock (this.lockObj)
                 {
-                    if (cancellationTokenSource != null)
+                    if (this.cancellationTokenSource != null)
                     {
-                        cancellationTokenSource.Cancel();
+                        this.cancellationTokenSource.Cancel();
                     }
 
                     this.cancellationTokenSource = cancellationTokenSource;
@@ -126,7 +129,12 @@
 
                 this.IsBusy = true;
 
-                listInstalledPackages = await this.packageRepository.GetListInstalledPackages(this.cancellationTokenSource.Token);
+                if (cancellationTokenSource.IsCancellationRequested)
+                {
+                    return;
+                }
+
+                listInstalledPackages = await this.packageRepository.GetListInstalledPackages(cancellationTokenSource.Token);
             }
             catch (AggregateException agEx)
             {
@@ -138,9 +146,10 @@
                     throw;
                 }
             }
-            catch (OperationCanceledException)
+            catch (OperationCanceledException ex)
             {
                 // log.Trace("Previous load task was cancelled");
+                throw;
             }
             finally
             {

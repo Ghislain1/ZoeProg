@@ -1,4 +1,4 @@
-﻿namespace ZoeProg
+﻿namespace ZoeProg.ViewModels
 {
     using System;
     using System.Collections.Generic;

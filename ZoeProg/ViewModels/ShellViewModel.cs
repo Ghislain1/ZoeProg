@@ -1,4 +1,4 @@
-﻿namespace ZoeProg
+﻿namespace ZoeProg.ViewModels
 {
     using System;
     using Prism.Mvvm;
