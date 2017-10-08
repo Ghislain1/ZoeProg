@@ -1,38 +1,46 @@
 ﻿namespace ZoeProg.Services
 {
-  using Microsoft.Practices.Unity;
-  using System;
-  using System.Collections.Generic;
-  using System.Linq;
-  using System.Text;
-  using System.Threading.Tasks;
-  using Views;
-  using ZoeProg.Common;
+    using Microsoft.Practices.Unity;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Views;
+    using ZoeProg.Common;
+    using ZoeProg.ViewModels;
 
-  public sealed class ProgressService : IProgressService
-  {
-    private readonly IUnityContainer container;
-    private readonly ProgressView progressView;
-
-    public ProgressService(IUnityContainer container)
+    public sealed class ProgressService : NullProgressMonitor, IProgressService
     {
-      this.container = container;
-      this.progressView = this.container.Resolve<ProgressView>();
-    }
+        private readonly IUnityContainer container;
+        private ProgressView progressView;
 
-    public void Close()
-    {
-      this.progressView.Close();
-    }
+        public ProgressService(IUnityContainer container)
+        {
+            this.container = container;
+            this.progressView = this.container.Resolve<ProgressView>();
+        }
 
-    public void Show()
-    {
-      this.progressView.Show();
-    }
+        public event Action TaskStart;
 
-    public void Update()
-    {
-      throw new NotImplementedException();
+        public void Close()
+        {
+            this.progressView.Close();
+            this.progressView = null;
+        }
+
+        public void Show()
+        {
+            if (this.progressView == null)
+            {
+                this.progressView = this.container.Resolve<ProgressView>();
+            }
+            this.progressView.Show();
+        }
+
+        public void Update()
+        {
+            throw new NotImplementedException();
+        }
     }
-  }
 }

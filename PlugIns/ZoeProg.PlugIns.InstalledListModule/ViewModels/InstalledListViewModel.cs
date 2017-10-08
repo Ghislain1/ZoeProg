@@ -21,7 +21,8 @@
         private readonly IUnityContainer container;
         private readonly object lockObj;
         private readonly IPackageRepository packageRepository;
-        private readonly IProgressService progressService;
+
+        private readonly IProgressMonitor progressMonitor;
         private readonly SemaphoreSlim syncLock;
         private CancellationTokenSource cancellationTokenSource;
         private PackIconKind iconTitle;
@@ -30,10 +31,10 @@
         private CancellationTokenSource loadCancelToken;
         private string title;
 
-        public InstalledListViewModel(IProgressService progressService, IPackageRepository packageRepository, IUnityContainer container)
+        public InstalledListViewModel(IProgressMonitor progressMonitor, IPackageRepository packageRepository, IUnityContainer container)
         {
-            this.progressService = progressService;
             this.packageRepository = packageRepository;
+            this.progressMonitor = progressMonitor;
             this.container = container;
             this.title = "Installed Packages";
             this.iconTitle = PackIconKind.Star;
@@ -86,14 +87,6 @@
             set
             {
                 this.isBusy = value;
-                if (value)
-                {
-                    this.progressService.Show();
-                }
-                else
-                {
-                    this.progressService.Close();
-                }
             }
         }
 
@@ -175,8 +168,6 @@
             {
                 this.InstalledItems.Add(item);
             }
-
-            this.progressService.Close();
         }
     }
 }

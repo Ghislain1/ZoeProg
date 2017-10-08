@@ -95,6 +95,7 @@
                         regionManager.RequestNavigate(RegionNames.MainRegion, navigatePath);
                     }
                 }
+                this.IsLeftDrawerOpen = false;
             }
         }
 

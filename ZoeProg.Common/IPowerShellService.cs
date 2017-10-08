@@ -11,6 +11,8 @@
 
         Task RunCommand(Action<string> onDataReceived, string command);
 
+        Task<IEnumerable<string>> RunCommand(string command);
+
         Task RunCommand(Action<string> onDataReceived, CancellationToken cancelToken, string command);
     }
 }

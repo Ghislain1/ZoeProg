@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZoeProg.Common
 {
-  public interface IProgressService
-  {
-    void Close();
+    public interface IProgressService : IProgressMonitor
+    {
+        event Action TaskStart;
 
-    void Show();
+        void Close();
 
-    void Update();
-  }
+        void Show();
+
+        void Update();
+    }
 }

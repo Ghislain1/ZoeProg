@@ -16,6 +16,8 @@
         {
             this.Container.RegisterType<IShellViewModel, ShellViewModel>(new ContainerControlledLifetimeManager());
             this.Container.RegisterType<IProgressMonitor, ProgressMonitor>(new ContainerControlledLifetimeManager());
+            this.Container.RegisterType<ITaskService, TaskService>(new ContainerControlledLifetimeManager());
+            this.Container.RegisterType<IProgressService, ProgressService>(new ContainerControlledLifetimeManager());
 
             base.ConfigureContainer();
         }
@@ -25,7 +27,7 @@
             this.Container.RegisterType<IPowerShellService, PowerShellService>(new ContainerControlledLifetimeManager());
             this.Container.RegisterType<IPackageService, PackageService>(new ContainerControlledLifetimeManager());
             this.Container.RegisterType<IPackageRepository, PackageRepository>(new ContainerControlledLifetimeManager());
-            this.Container.RegisterType<IProgressService, ProgressService>(new ContainerControlledLifetimeManager());
+
             this.Container.RegisterType<IPlugInService, PlugInService>(new ContainerControlledLifetimeManager());
 
             base.ConfigureServiceLocator();

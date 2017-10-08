@@ -18,7 +18,7 @@
     {
         private readonly object lockObj;
 
-        private readonly IProgressService progressService;
+        private readonly IProgressMonitor progressService;
         private readonly ISettingService settingService;
 
         private readonly SemaphoreSlim syncLock;
@@ -26,12 +26,12 @@
         private string backgroudImage;
         private CancellationTokenSource cancellationTokenSource;
         private PackIconKind iconTitle;
-        private ObservableCollection<InstalledPackage> installedItems;
+        private ObservableCollection<UninstalledPackage> installedItems;
         private bool isBusy;
         private CancellationTokenSource loadCancelToken;
         private string title;
 
-        public SettingViewModel(ISettingService settingService, IProgressService progressService)
+        public SettingViewModel(ISettingService settingService, IProgressMonitor progressService)
         {
             this.progressService = progressService;
             this.title = "Settings";
