@@ -23,12 +23,16 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <TextBlock FontSize="16"   Text="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <Separator Style="{StaticResource MaterialDesignLightSeparator}" Grid.Row="1" Height="2" />
             <ProgressBar IsIndeterminate="True"  Height="15"  Grid.Row="2" Margin="5,5" />
             <Button Content="Cancel" Command="{Binding CancelCommand}" Height="30"  Width="100"   Grid.Row="3" Margin="2,0,0,5" />
+
+            <Button  Style="{StaticResource Te}"  Content="Cancel" Command="{Binding CancelCommand}" Height="30"  Width="100"
+                    Grid.Row="4" Margin="2,0,0,5" />
         </Grid>
     </materialDesign:Card>
 </Window>
