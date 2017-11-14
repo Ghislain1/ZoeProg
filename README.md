@@ -56,5 +56,6 @@ Ref:  https://msdn.microsoft.com/en-us/library/ff921146(v=pandp.40).aspx
   
   ## Notes:
   . http://antidupl.sourceforge.net/english/index.html?page=download.html
+  . http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/
   
   
