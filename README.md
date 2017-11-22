@@ -58,4 +58,9 @@ Ref:  https://msdn.microsoft.com/en-us/library/ff921146(v=pandp.40).aspx
   . http://antidupl.sourceforge.net/english/index.html?page=download.html
   . http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/
   
+  ## Thema for experience
+  * Docker : https://docs.docker.com/engine/reference/commandline/dockerd/#options-per-storage-driver
+           what is that?
+           
+  
   
