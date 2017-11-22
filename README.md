@@ -59,9 +59,12 @@ Ref:  https://msdn.microsoft.com/en-us/library/ff921146(v=pandp.40).aspx
   . http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/
   
   ## Thema for experience
-  * Docker : https://docs.docker.com/engine/reference/commandline/dockerd/#options-per-storage-driver
+  * Docker: https://docs.docker.com/engine/reference/commandline/dockerd/#options-per-storage-driver
            what is that?
-  * Language : https://www.tiobe.com/tiobe-index//  here we can sse the best language for programming.
+  * Language: https://www.tiobe.com/tiobe-index//  here we can sse the best language for programming.
+  * Raspberry Pi:  https://www.raspberrypi.org
+       what can do with Raspberry Pi?( Camero control, Sensor control)
+       Can i use C# with Raspberry Pi? Yes--> https://github.com/ZiCog/HomeSpun
            
   
   
