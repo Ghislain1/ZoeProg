@@ -3,6 +3,8 @@ This is an Interface to install program from your local PC.
 
 Next steps: we want to follow Style guideline of google: https://material.io/guidelines/components/buttons.html#
 
+# Start a Server
+  Go to Backend folder and  from the project level type <b>dotnet run</b>
 
 
 ## Cross Cutting
