@@ -1,0 +1,11 @@
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\bin\Debug\netcoreapp2.0\ZoeProg.WebApi.deps.json
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\bin\Debug\netcoreapp2.0\ZoeProg.WebApi.runtimeconfig.json
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\bin\Debug\netcoreapp2.0\ZoeProg.WebApi.runtimeconfig.dev.json
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\bin\Debug\netcoreapp2.0\ZoeProg.WebApi.dll
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\bin\Debug\netcoreapp2.0\ZoeProg.WebApi.pdb
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\obj\Debug\netcoreapp2.0\ZoeProg.WebApi.csproj.CoreCompileInputs.cache
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\obj\Debug\netcoreapp2.0\ZoeProg.WebApi.AssemblyInfoInputs.cache
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\obj\Debug\netcoreapp2.0\ZoeProg.WebApi.AssemblyInfo.cs
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\obj\Debug\netcoreapp2.0\ZoeProg.WebApi.dll
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\obj\Debug\netcoreapp2.0\ZoeProg.WebApi.pdb
+D:\Workspace\_WPF\ZoeProg\Backends\ZoeProg.WebApi\obj\Debug\netcoreapp2.0\ZoeProg.WebApi.csprojResolveAssemblyReference.cache

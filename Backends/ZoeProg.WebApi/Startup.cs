@@ -17,6 +17,8 @@ using ZoeProg.WebApi.Services;
 namespace ZoeProg.WebApi
 {
     using Microsoft.Extensions.Options;
+    using ZoeProg.WebApi.Directory;
+    using ZoeProg.WebApi.Directory.Services;
 
     public class Startup
     {
@@ -57,6 +59,10 @@ namespace ZoeProg.WebApi
 
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddTransient<ISerializeService, SerializeService>();
+
+            services.AddTransient<IDirectoryService, DirectoryService>();
+
+            
         }
     }
 }

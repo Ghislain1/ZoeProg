@@ -1,0 +1,5 @@
+D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.UI\bin\Debug\Zoe.UI.dll
+D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.UI\bin\Debug\Zoe.UI.pdb
+D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.UI\obj\Debug\Zoe.UI.csproj.CoreCompileInputs.cache
+D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.UI\obj\Debug\Zoe.UI.dll
+D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.UI\obj\Debug\Zoe.UI.pdb

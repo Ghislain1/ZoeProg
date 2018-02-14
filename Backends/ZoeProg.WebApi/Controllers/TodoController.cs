@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ZoeProg.WebApi.Models;
+﻿
 
 namespace ZoeProg.WebApi.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    using ZoeProg.WebApi.Models;
+
     [Route("api/[controller]")]
     public class TodoController : Controller
     {
