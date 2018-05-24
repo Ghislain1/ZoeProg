@@ -18,7 +18,7 @@
 - .Net Framework: 4.7+
 
 # Dependencies
-- Prism [repositories](https://github.com/PrismLibrary/Prism) , [doc](http://prismlibrary.github.io/docs/)
+- Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
 - [Mui](https://github.com/firstfloorsoftware/mui/wiki)
 - Powershell
 

@@ -15,6 +15,7 @@
     using ZoeProg.Common;
 
     using System.Linq;
+    using Unity;
 
     public class ShellViewModel : BindableBase, IShellViewModel
     {

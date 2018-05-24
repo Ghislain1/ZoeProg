@@ -1,14 +1,3 @@
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\ZoeProg.Common.dll
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\ZoeProg.Common.pdb
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\MaterialDesignColors.dll
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\MaterialDesignThemes.Wpf.dll
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\MaterialDesignColors.pdb
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\MaterialDesignThemes.Wpf.pdb
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\bin\Debug\MaterialDesignThemes.Wpf.xml
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\obj\Debug\ZoeProg.Common.g.resources
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\obj\Debug\ZoeProg.Common.csproj.CoreCompileInputs.cache
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\obj\Debug\ZoeProg.Common.dll
-D:\Workspace\_WPF\ZoeProg\ZoeProg.Common\obj\Debug\ZoeProg.Common.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg.Common\bin\Debug\ZoeProg.Common.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg.Common\bin\Debug\ZoeProg.Common.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg.Common\obj\Debug\ZoeProg.Common.g.resources

@@ -265,6 +265,26 @@
             <param name="canExecuteExpression">The property expression. Example: ObservesCanExecute(() => PropertyName).</param>
             <returns>The current instance of DelegateCommand</returns>
         </member>
+        <member name="T:Prism.Commands.PropertyObserver">
+            <summary>
+            Provide a way to observe property changes of INotifyPropertyChanged objects and invokes a 
+            custom action when the PropertyChanged event is fired.
+            </summary>
+        </member>
+        <member name="M:Prism.Commands.PropertyObserver.Observes``1(System.Linq.Expressions.Expression{System.Func{``0}},System.Action)">
+            <summary>
+            Observes a property that implements INotifyPropertyChanged, and automatically calls a custom action on 
+            property changed notifications. The given expression must be in this form: "() => Prop.NestedProp.PropToObserve".
+            </summary>
+            <param name="propertyExpression">Expression representing property to be observed. Ex.: "() => Prop.NestedProp.PropToObserve".</param>
+            <param name="action">Action to be invoked when PropertyChanged event occours.</param>
+        </member>
+        <member name="T:Prism.Commands.PropertyObserverNode">
+            <summary>
+            Represents each node of nested properties expression and takes care of 
+            subscribing/unsubscribing INotifyPropertyChanged.PropertyChanged listeners on it.
+            </summary>
+        </member>
         <member name="T:Prism.Events.BackgroundEventSubscription">
             <summary>
             Extends <see cref="T:Prism.Events.EventSubscription"/> to invoke the <see cref="P:Prism.Events.EventSubscription.Action"/> delegate in a background thread.
@@ -846,6 +866,30 @@
             Notifies that the value for <see cref="P:Prism.IActiveAware.IsActive"/> property has changed.
             </summary>
         </member>
+        <member name="P:Prism.Ioc.IContainerExtension`1.Instance">
+            <summary>
+            The instance of the wrapped container
+            </summary>
+        </member>
+        <member name="P:Prism.Ioc.IContainerExtension.SupportsModules">
+            <summary>
+            Determines if the container can be used with modules.
+            </summary>
+            <remarks>Only containers that are mutable can support modules.</remarks>
+        </member>
+        <member name="M:Prism.Ioc.IContainerExtension.FinalizeExtension">
+            <summary>
+            Used to perform any final steps for configuring the extension that may be required by the container.
+            </summary>
+        </member>
+        <member name="M:Prism.Ioc.IContainerExtension.ResolveViewModelForView(System.Object,System.Type)">
+            <summary>
+            Used as the ViewModel resolver for ViewModelLocationProvider.SetDefaultViewModelFactory
+            </summary>
+            <param name="view">The view instance</param>
+            <param name="viewModelType">The ViewModel type to create</param>
+            <returns></returns>
+        </member>
         <member name="T:Prism.Logging.Category">
             <summary>
             Defines values for the categories used by <see cref="T:Prism.Logging.ILoggerFacade"/>.
@@ -1029,6 +1073,11 @@
             </summary>
             <param name="propertyName">The name of the property.</param>
             <returns>The validation errors of type <typeparamref name="T"/> for the property.</returns>
+        </member>
+        <member name="M:Prism.Mvvm.ErrorsContainer`1.ClearErrors">
+            <summary>
+            Clears all errors.
+            </summary>
         </member>
         <member name="M:Prism.Mvvm.ErrorsContainer`1.ClearErrors``1(System.Linq.Expressions.Expression{System.Func{``0}})">
             <summary>

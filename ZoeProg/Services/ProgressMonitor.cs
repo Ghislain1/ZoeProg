@@ -9,6 +9,7 @@ namespace ZoeProg.Services
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Unity;
     using ZoeProg.Common;
     using ZoeProg.ViewModels;
 

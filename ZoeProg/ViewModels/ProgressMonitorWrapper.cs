@@ -6,6 +6,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Unity;
     using ZoeProg.Common;
 
     public abstract class ProgressMonitorWrapper : IProgressMonitor

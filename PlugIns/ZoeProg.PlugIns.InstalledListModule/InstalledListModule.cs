@@ -11,6 +11,7 @@
     using Prism.Regions;
     using Prism.Unity;
     using Services;
+    using Unity;
     using ZoeProg.Common.Data;
 
     public class InstalledListModule : PlugInBase, IModule, IPlugIn
@@ -34,9 +35,7 @@
 
         public void Initialize()
         {
-            this.container.RegisterType<IInstalledProgramService, InstalledProgramService>(new ContainerControlledLifetimeManager());
-            //this.regionManager.RegisterViewWithRegion(RegionNames.MainRegion, typeof(InstalledListView));
-            this.container.RegisterTypeForNavigation<InstalledListView>();
+            
 
             this.IsSelected = true;
         }

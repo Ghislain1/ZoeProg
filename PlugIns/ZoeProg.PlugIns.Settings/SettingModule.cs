@@ -10,6 +10,7 @@
     using Prism.Regions;
     using Prism.Unity;
     using Services;
+    using Unity;
     using Views;
     using ZoeProg.Common.Data;
 

@@ -6,6 +6,7 @@
     using Prism.Unity;
     using Services;
     using System.Windows;
+    using Unity.Lifetime;
     using ZoeProg.ViewModels;
     using static Services.PackageRepository;
 

@@ -8,6 +8,8 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using Unity;
+    using Unity.Lifetime;
     using ZoeProg.Common;
     using ZoeProg.Common.Data;
     using ZoeProg.PlugIns.UninstalledPackage.Services;
@@ -36,7 +38,7 @@
         {
             this.container.RegisterType<IUninstalledPackageProvider, UninstalledPackageProvider>(new ContainerControlledLifetimeManager());
 
-            this.container.RegisterTypeForNavigation<UninstalledPackageListView>();
+          //  this.container.RegisterTypeForNavigation<UninstalledPackageListView>();
 
             this.IsSelected = true;
         }
