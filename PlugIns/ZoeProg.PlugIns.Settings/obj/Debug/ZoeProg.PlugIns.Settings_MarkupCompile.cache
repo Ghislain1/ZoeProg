@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Workspace\_WPF\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\obj\Debug\
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\obj\Debug\
 ZoeProg.PlugIns.Settings
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 1-1419648172
 
 5-84936893
-751504548977
+75556871489
 Views\SettingView.xaml;
 
 False

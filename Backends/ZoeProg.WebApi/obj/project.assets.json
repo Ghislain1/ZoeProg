@@ -13127,15 +13127,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\_WPF\\ZoeProg\\Backends\\ZoeProg.WebApi\\ZoeProg.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\GhislainZeleu\\Desktop\\Web-Topol\\ZoeProg\\Backends\\ZoeProg.WebApi\\ZoeProg.WebApi.csproj",
       "projectName": "ZoeProg.WebApi",
-      "projectPath": "D:\\Workspace\\_WPF\\ZoeProg\\Backends\\ZoeProg.WebApi\\ZoeProg.WebApi.csproj",
+      "projectPath": "C:\\Users\\GhislainZeleu\\Desktop\\Web-Topol\\ZoeProg\\Backends\\ZoeProg.WebApi\\ZoeProg.WebApi.csproj",
       "packagesPath": "C:\\Users\\GhislainZeleu\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\_WPF\\ZoeProg\\Backends\\ZoeProg.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\GhislainZeleu\\Desktop\\Web-Topol\\ZoeProg\\Backends\\ZoeProg.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

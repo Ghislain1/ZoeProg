@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Workspace\_WPF\ZoeProg\PlugIns\ZoeProg.PlugIns.InstalledListModule\obj\Debug\
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.InstalledListModule\obj\Debug\
 ZoeProg.PlugIns.InstalledList
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 1296581521
 
 6239460297
-761140957882
+76-1751756641
 Views\InstalledListView.xaml;
 
 False
