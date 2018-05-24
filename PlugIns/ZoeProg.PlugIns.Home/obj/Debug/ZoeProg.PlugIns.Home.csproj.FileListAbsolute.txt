@@ -33,8 +33,6 @@ D:\Workspace\_WPF\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\ZoeProg.PlugIns.Home.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\ZoeProg.PlugIns.Home.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\CommonServiceLocator.dll
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\MaterialDesignColors.dll
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Microsoft.Practices.Unity.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
@@ -44,9 +42,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bi
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\ZoeProg.Common.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\ZoeProg.Common.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\MaterialDesignColors.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
@@ -54,10 +49,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bi
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Prism.Unity.Wpf.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\bin\Debug\Prism.Wpf.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns.Home.csprojAssemblyReference.cache
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\Views\HomeView.g.cs
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns.Home_MarkupCompile.cache
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns.Home_MarkupCompile.lref
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\Views\HomeView.baml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns.Home.g.resources
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns.Home.csproj.CoreCompileInputs.cache
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Home\obj\Debug\ZoeProg.PlugIns.Home.csproj.CopyComplete

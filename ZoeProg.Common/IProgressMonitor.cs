@@ -4,9 +4,6 @@
 
 namespace ZoeProg.Common
 {
-    using MaterialDesignThemes.Wpf;
-    using System.ComponentModel;
-
     public interface IProgressMonitor
     {
         /// <summary>

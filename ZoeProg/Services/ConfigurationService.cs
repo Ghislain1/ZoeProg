@@ -5,11 +5,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
-    using Views;
     using ZoeProg.Common;
-    using ZoeProg.Common.Data;
-    using System.Configuration;
 
     public sealed class ConfigurationService : IConfigurationService
     {

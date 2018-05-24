@@ -5,10 +5,7 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
     using ZoeProg.Common;
-    using ZoeProg.Services;
-    using ZoeProg.Views;
 
     public class NullProgressMonitor : IProgressMonitor
     {

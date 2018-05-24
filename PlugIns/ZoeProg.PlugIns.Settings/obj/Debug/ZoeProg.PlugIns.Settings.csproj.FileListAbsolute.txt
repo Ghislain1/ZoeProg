@@ -34,7 +34,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Setting
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\ZoeProg.PlugIns.Settings.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\CommonServiceLocator.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\MaterialDesignColors.dll
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\Microsoft.Practices.Unity.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
@@ -45,8 +44,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Setting
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\ZoeProg.Common.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\ZoeProg.Common.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\MaterialDesignColors.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Settings\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml

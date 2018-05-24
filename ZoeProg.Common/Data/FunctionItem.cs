@@ -7,7 +7,6 @@
     using System.Linq.Expressions;
     using System.Reflection;
     using System.Text;
-    using System.Threading.Tasks;
 
     public class FunctionItem : IPlugIn, INotifyPropertyChanged
     {

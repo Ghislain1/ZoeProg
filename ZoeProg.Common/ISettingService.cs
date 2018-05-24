@@ -1,6 +1,6 @@
 ﻿namespace ZoeProg.Common
 {
-  public interface ISettingService
-  {
-  }
+    public interface ISettingService
+    {
+    }
 }

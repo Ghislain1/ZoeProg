@@ -15,6 +15,4 @@
     <Window.Background>
         <SolidColorBrush Opacity="0.2" Color="White" />
     </Window.Background>
-
-    
 </Window>

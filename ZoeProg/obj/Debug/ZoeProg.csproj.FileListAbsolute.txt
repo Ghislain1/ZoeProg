@@ -44,7 +44,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.exe.c
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.exe
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\MaterialDesignColors.dll
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\MaterialDesignThemes.Wpf.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.Unity.dll
@@ -57,8 +56,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\System.Window
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.Common.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.Common.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\MaterialDesignColors.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.Unity.xml

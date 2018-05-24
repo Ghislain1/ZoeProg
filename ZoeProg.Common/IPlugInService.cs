@@ -1,6 +1,5 @@
 ﻿namespace ZoeProg.Common
 {
-    using MaterialDesignThemes.Wpf;
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;

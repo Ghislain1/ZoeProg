@@ -1,15 +1,19 @@
 ﻿namespace ZoeProg.ViewModels
 {
     using System;
-    using Prism.Mvvm;
     using Microsoft.Practices.Unity;
-    using System.Windows.Input;
     using Prism.Commands;
-    using System.Collections.ObjectModel;
     using Prism.Modularity;
-    using ZoeProg.Common;
-    using ZoeProg.Common.Data;
+    using Prism.Mvvm;
     using Prism.Regions;
+
+    using System;
+
+    using System.Collections.ObjectModel;
+    using System.Linq;
+    using System.Windows.Input;
+    using ZoeProg.Common;
+
     using System.Linq;
 
     public class ShellViewModel : BindableBase, IShellViewModel

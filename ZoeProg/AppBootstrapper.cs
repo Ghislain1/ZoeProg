@@ -1,14 +1,13 @@
 ﻿namespace ZoeProg
 {
-    using System.Windows;
+    using Common;
+    using Microsoft.Practices.Unity;
     using Prism.Modularity;
     using Prism.Unity;
-    using Microsoft.Practices.Unity;
-    using Common;
     using Services;
-    using static Services.PackageRepository;
-    using System.Threading;
+    using System.Windows;
     using ZoeProg.ViewModels;
+    using static Services.PackageRepository;
 
     public class AppBootstrapper : UnityBootstrapper
     {

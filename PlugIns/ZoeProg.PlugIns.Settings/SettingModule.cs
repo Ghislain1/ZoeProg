@@ -4,16 +4,14 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
-
-    using Microsoft.Practices.Unity;
-    using Prism.Regions;
-    using Prism.Modularity;
-    using Services;
     using Common;
+    using Microsoft.Practices.Unity;
+    using Prism.Modularity;
+    using Prism.Regions;
+    using Prism.Unity;
+    using Services;
     using Views;
     using ZoeProg.Common.Data;
-    using Prism.Unity;
 
     public class SettingModule : PlugInBase, IModule, IPlugIn
     {
@@ -23,19 +21,19 @@
 
         public SettingModule(IRegionManager regionManager, IUnityContainer container)
         {
-            this.regionManager = regionManager;
-            this.container = container;
-            this.NavigatePath = nameof(SettingView);
-            this.Title = "Settings";
+            //this.regionManager = regionManager;
+            //this.container = container;
+            //this.NavigatePath = nameof(SettingView);
+            //this.Title = "Settings";
         }
 
         public void Initialize()
         {
-            this.container.RegisterType<ISettingService, SettingService>(new ContainerControlledLifetimeManager());
+            //this.container.RegisterType<ISettingService, SettingService>(new ContainerControlledLifetimeManager());
 
-            this.regionManager.RegisterViewWithRegion(RegionNames.TabRegion, typeof(SettingView));
+            //this.regionManager.RegisterViewWithRegion(RegionNames.TabRegion, typeof(SettingView));
 
-            this.container.RegisterTypeForNavigation<SettingView>();
+            //this.container.RegisterTypeForNavigation<SettingView>();
         }
     }
 }

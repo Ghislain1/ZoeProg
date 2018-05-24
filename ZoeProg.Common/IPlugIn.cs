@@ -1,8 +1,5 @@
 ﻿namespace ZoeProg.Common
 {
-    using MaterialDesignThemes.Wpf;
-    using System.ComponentModel;
-
     public interface IPlugIn
     {
         string Code { get; set; }

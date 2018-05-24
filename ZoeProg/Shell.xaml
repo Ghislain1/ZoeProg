@@ -7,11 +7,8 @@
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:cmm="https://www.zoeprog.com/2017/common"
          xmlns:prism="http://www.codeplex.com/prism"
-        
+
         Icon="/ZoeProg.Common;component/Resources/AppIcon.jpg"
         mc:Ignorable="d"
         Title="ZoeProg" Height="800" Width="1100">
-    
-
-    
 </Window>

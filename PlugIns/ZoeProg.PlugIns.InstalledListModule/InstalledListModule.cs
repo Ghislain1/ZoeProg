@@ -4,16 +4,14 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
     using Common;
     using InstalledList.Views;
     using Microsoft.Practices.Unity;
-    using Prism.Regions;
     using Prism.Modularity;
-    using Services;
-    using System.ComponentModel;
-    using ZoeProg.Common.Data;
+    using Prism.Regions;
     using Prism.Unity;
+    using Services;
+    using ZoeProg.Common.Data;
 
     public class InstalledListModule : PlugInBase, IModule, IPlugIn
     {
