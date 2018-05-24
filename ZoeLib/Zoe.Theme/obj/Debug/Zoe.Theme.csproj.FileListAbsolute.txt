@@ -1,9 +1,0 @@
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\bin\Debug\Zoe.Theme.dll
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\bin\Debug\Zoe.Theme.pdb
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\bin\Debug\Zoe.UI.dll
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\bin\Debug\Zoe.UI.pdb
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\obj\Debug\Zoe.Theme.csprojResolveAssemblyReference.cache
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\obj\Debug\Zoe.Theme.g.resources
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\obj\Debug\Zoe.Theme.csproj.CoreCompileInputs.cache
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\obj\Debug\Zoe.Theme.dll
-D:\Workspace\_WPF\ZoeProg\ZoeLib\Zoe.Theme\obj\Debug\Zoe.Theme.pdb

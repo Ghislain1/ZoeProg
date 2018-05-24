@@ -1,15 +1,19 @@
 
 <h1 align="center" style="background:green;">
-ZoePro
+  ZoeProg
 </h1>
 
 
 # Intro
-This is an Interface to install program from your local PC.
+
 - [parent](https://github.com/Zeeex/XTR-Toolbox/edit/master/README.md)
+- Motivation
+- Grund
+- Ziel: This is an Interface to install program from your local PC.
 
 
-# Requirements:
+
+# Requirements
 - Windows 7, 8.1, 10 (32, 64 bits)
 - .Net Framework: 4.7+
 
@@ -18,9 +22,13 @@ This is an Interface to install program from your local PC.
 - Mui
 - Powershell
 
+# Next Steps
+- Installer like Visual studio Installer
+- Computer Cleaner
 
 
-  ## Thema for experience
+
+  # Thema for experience
   * Docker: https://docs.docker.com/engine/reference/commandline/dockerd/#options-per-storage-driver
            what is that?
   * Language: https://www.tiobe.com/tiobe-index//  here we can sse the best language for programming.
