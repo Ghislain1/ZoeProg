@@ -4,19 +4,18 @@
 
 namespace ZoeProg.Services
 {
-    using Microsoft.Practices.Unity;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using Unity;
-    using ZoeProg.Common;
-    using ZoeProg.ViewModels;
+    //using System;
+    //using System.Collections.Generic;
+    //using System.Linq;
+    //using System.Text;
+    //using Unity;
+    //using ZoeProg.Common;
+    //using ZoeProg.ViewModels;
 
-    public sealed class ProgressMonitor : ProgressMonitorWrapper, IProgressMonitor
-    {
-        public ProgressMonitor(IUnityContainer container) : base(container.Resolve<IProgressService>(), container)
-        {
-        }
-    }
+    //public sealed class ProgressMonitor : ProgressMonitorWrapper, IProgressMonitor
+    //{
+    //    public ProgressMonitor(IUnityContainer container) : base(container.Resolve<IProgressService>(), container)
+    //    {
+    //    }
+    //}
 }

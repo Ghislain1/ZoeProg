@@ -1,52 +1,42 @@
 ﻿namespace ZoeProg
 {
-    using Common;
-    using Microsoft.Practices.Unity;
-    using Prism.Modularity;
-    using Prism.Unity;
-    using Services;
-    using System.Windows;
-    using Unity.Lifetime;
-    using ZoeProg.ViewModels;
-    using static Services.PackageRepository;
-
-    public class AppBootstrapper : UnityBootstrapper
+    public class AppBootstrapper //: UnityBootstrapper
     {
-        protected override void ConfigureContainer()
-        {
-            this.Container.RegisterType<IShellViewModel, ShellViewModel>(new ContainerControlledLifetimeManager());
-            this.Container.RegisterType<IProgressMonitor, ProgressMonitor>(new ContainerControlledLifetimeManager());
-            this.Container.RegisterType<ITaskService, TaskService>(new ContainerControlledLifetimeManager());
-            this.Container.RegisterType<IProgressService, ProgressService>(new ContainerControlledLifetimeManager());
+        //protected override void ConfigureContainer()
+        //{
+        //    //this.Container.RegisterType<IShellViewModel, ShellViewModel>(new ContainerControlledLifetimeManager());
+        //    //this.Container.RegisterType<IProgressMonitor, ProgressMonitor>(new ContainerControlledLifetimeManager());
+        //    //this.Container.RegisterType<ITaskService, TaskService>(new ContainerControlledLifetimeManager());
+        //    //this.Container.RegisterType<IProgressService, ProgressService>(new ContainerControlledLifetimeManager());
 
-            base.ConfigureContainer();
-        }
+        //    base.ConfigureContainer();
+        //}
 
-        protected override void ConfigureServiceLocator()
-        {
-            this.Container.RegisterType<IPowerShellService, PowerShellService>(new ContainerControlledLifetimeManager());
-            this.Container.RegisterType<IPackageService, PackageService>(new ContainerControlledLifetimeManager());
-            this.Container.RegisterType<IPackageRepository, PackageRepository>(new ContainerControlledLifetimeManager());
+        //protected override void ConfigureServiceLocator()
+        //{
+        //    //this.Container.RegisterType<IPowerShellService, PowerShellService>(new ContainerControlledLifetimeManager());
+        //    //this.Container.RegisterType<IPackageService, PackageService>(new ContainerControlledLifetimeManager());
+        //    //this.Container.RegisterType<IPackageRepository, PackageRepository>(new ContainerControlledLifetimeManager());
 
-            this.Container.RegisterType<IPlugInService, PlugInService>(new ContainerControlledLifetimeManager());
+        //    //this.Container.RegisterType<IPlugInService, PlugInService>(new ContainerControlledLifetimeManager());
 
-            base.ConfigureServiceLocator();
-        }
+        //    base.ConfigureServiceLocator();
+        //}
 
-        protected override IModuleCatalog CreateModuleCatalog()
-        {
-            return new ConfigurationModuleCatalog();
-        }
+        //protected override IModuleCatalog CreateModuleCatalog()
+        //{
+        //    return new ConfigurationModuleCatalog();
+        //}
 
-        protected override DependencyObject CreateShell()
-        {
-            return Container.Resolve<Shell>();
-        }
+        //protected override DependencyObject CreateShell()
+        //{
+        //    return Container.Resolve<Shell>();
+        //}
 
-        protected override void InitializeModules()
-        {
-            base.InitializeModules();
-        }
+        //protected override void InitializeModules()
+        //{
+        //    base.InitializeModules();
+        //}
 
         //protected override Prism.Regions.IRegionBehaviorFactory ConfigureDefaultRegionBehaviors()
         //{
@@ -59,11 +49,11 @@
         //  base.ConfigureModuleCatalog();
         //}
 
-        protected override void InitializeShell()
-        {
-            base.InitializeShell();
+        //protected override void InitializeShell()
+        //{
+        //    base.InitializeShell();
 
-            App.Current.MainWindow.Show();
-        }
+        //    App.Current.MainWindow.Show();
+        //}
     }
 }

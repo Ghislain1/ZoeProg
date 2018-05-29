@@ -8,7 +8,7 @@
         AllowsTransparency="True"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:ZoeProg.Views"
-        prism:ViewModelLocator.AutoWireViewModel="True"
+
         mc:Ignorable="d"
         Title="ProgressView" Height="300" Width="300">
 

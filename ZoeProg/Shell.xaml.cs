@@ -1,21 +1,19 @@
 ﻿namespace ZoeProg
 {
+    using FirstFloor.ModernUI.Windows.Controls;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Windows;
-    using ZoeProg.ViewModels;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Shell : Window
+    public partial class Shell : ModernWindow
     {
-        public Shell(IShellViewModel shellViewModel)
+        public Shell()
         {
             InitializeComponent();
-            this.DataContext = shellViewModel;
         }
     }
 }

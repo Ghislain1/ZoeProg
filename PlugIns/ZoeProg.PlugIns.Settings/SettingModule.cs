@@ -5,13 +5,9 @@
     using System.Linq;
     using System.Text;
     using Common;
-    using Microsoft.Practices.Unity;
     using Prism.Modularity;
     using Prism.Regions;
-    using Prism.Unity;
-    using Services;
     using Unity;
-    using Views;
     using ZoeProg.Common.Data;
 
     public class SettingModule : PlugInBase, IModule, IPlugIn
