@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows;
-
-namespace ZoeProg
+﻿namespace ZoeProg
 {
+    using System;
+    using System.Windows;
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
@@ -13,9 +11,9 @@ namespace ZoeProg
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            AppBootstrapper bootstrapper = new AppBootstrapper();
-             bootstrapper.Run();
-            //this.ShutdownMode = ShutdownMode.OnMainWindowClose;
+
+            var bootstrapper = new AppBootstrapper();
+            bootstrapper.Run();
         }
     }
 }

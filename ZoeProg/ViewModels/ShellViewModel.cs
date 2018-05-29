@@ -2,130 +2,72 @@
 {
     using System;
 
+    using System.Linq;
+
+    using System.Linq;
     using System;
 
+    using Prism.Commands;
+    using Prism.Mvvm;
+    using Prism.Regions;
     using System.Collections.ObjectModel;
-    using System.Linq;
-    using System.Windows.Input;
-    using ZoeProg.Common;
+    using System.Collections.Specialized;
 
-    using System.Linq;
-
-    public class ShellViewModel : IShellViewModel
+    public class ShellViewModel : BindableBase, IShellViewModel
     {
-        //private readonly IUnityContainer container;
-        //private readonly IModuleManager moduleManager;
-        //private readonly IPlugInService plugInService;
-        private bool isBusy;
+        private readonly IRegionManager _regionManager;
 
-        private bool isItemSeleted;
+        private string _title = "Prism Unity Application";
 
-        private bool isLeftDrawerOpen;
-
-        private IPlugIn selectedPlugIn;
-        private string selectedTab;
-
-        //public ShellViewModel(IPlugInService plugInService, IModuleManager moduleManager, IUnityContainer container)
-        //{
-        //    this.container = container;
-        //    this.moduleManager = moduleManager;
-        //    this.plugInService = plugInService;
-
-        //    this.DialogHostIdentifier = Guid.NewGuid();
-        //    this.DialogHostIdentifier = Guid.NewGuid();
-        //    this.StartupCommand = new DelegateCommand(RunStartup);
-        //    this.ShutDownCommand = new DelegateCommand(RunShutdown);
-        //    this.OpenManagementCommand = new DelegateCommand(OpenManagement);
-        //    this.PlugInCollection = new ObservableCollection<IPlugIn>();
-
-        //    this.moduleManager.LoadModuleCompleted += (s, e) =>
-        //      {
-        //          var type = Type.GetType(e.ModuleInfo.ModuleType);
-        //          if (!this.plugInService.ImplementedIPlugIn(type))
-        //          {
-        //              throw new Exception(e.ModuleInfo.ModuleName + "Must implements IPlugIn");
-        //          }
-        //          var instance = Activator.CreateInstance(type, this.container.Resolve<IRegionManager>(), this.container);
-        //          this.PlugInCollection.Add(instance as IPlugIn);
-        //          if (this.SelectedPlugIn == null)
-        //          {
-        //              this.SelectedPlugIn = this.PlugInCollection.FirstOrDefault();
-        //          }
-        //      };
-        //}
-
-        public Guid DialogHostIdentifier { get; }
-
-        public bool IsBusy
+        public string Title
         {
-            get
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
+
+        private ObservableCollection<object> _views = new ObservableCollection<object>();
+
+        public ObservableCollection<object> Views
+        {
+            get { return _views; }
+            set { SetProperty(ref _views, value); }
+        }
+
+        public DelegateCommand<string> NavigateCommand { get; private set; }
+
+        public ShellViewModel(IRegionManager regionManager)
+        {
+            _regionManager = regionManager;
+            _regionManager.Regions.CollectionChanged += Regions_CollectionChanged;
+
+            NavigateCommand = new DelegateCommand<string>(Navigate);
+        }
+
+        private void Navigate(string navigatePath)
+        {
+            if (navigatePath != null)
+                _regionManager.RequestNavigate("ContentRegion", navigatePath);
+        }
+
+        private void Regions_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == NotifyCollectionChangedAction.Add)
             {
-                return this.isBusy;
-            }
-            private set
-            {
+                var region = (IRegion)e.NewItems[0];
+                region.Views.CollectionChanged += Views_CollectionChanged;
             }
         }
 
-        //public bool IsLeftDrawerOpen
-        //{
-        //    //get { return this.isLeftDrawerOpen; }
-        //    //set
-        //    //{
-        //    //    if (this.SetProperty<bool>(ref this.isLeftDrawerOpen, value))
-        //    //    {
-        //    //    }
-        //    //}
-        //}
-
-        public ICommand OpenManagementCommand { get; }
-        public ObservableCollection<IPlugIn> PlugInCollection { get; }
-
-        //public IPlugIn SelectedPlugIn
-        //{
-        //    get => this.selectedPlugIn;
-        //    set
-        //    {
-        //        if (this.SetProperty<IPlugIn>(ref this.selectedPlugIn, value))
-        //        {
-        //            var navigatePath = this.selectedPlugIn.NavigatePath;
-        //            if (navigatePath != null)
-        //            {
-        //                var regionManager = container.Resolve<IRegionManager>();
-        //                regionManager.RequestNavigate(RegionNames.MainRegion, navigatePath);
-        //            }
-        //        }
-        //        this.IsLeftDrawerOpen = false;
-        //    }
-        //}
-
-        public ICommand ShutDownCommand { get; }
-
-        public ICommand StartupCommand { get; }
-
-        //private async void InitializeComponent()
-        //{
-        //    var list = await plugInService.GetFunctionItemListAsynchronly();
-
-        //    foreach (var item in list)
-        //    {
-        //        this.PlugInCollection.Add(item);
-        //    }
-        //}
-
-        private void OpenManagement()
+        private void Views_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
-        }
-
-        private void RunShutdown()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void RunStartup()
-        {
-            throw new NotImplementedException();
+            if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                Views.Add(e.NewItems[0].GetType().Name);
+            }
+            else if (e.Action == NotifyCollectionChangedAction.Remove)
+            {
+                Views.Remove(e.OldItems[0].GetType().Name);
+            }
         }
     }
 }

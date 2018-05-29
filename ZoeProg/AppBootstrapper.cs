@@ -1,18 +1,30 @@
-﻿using Prism.Unity;
-using System.Windows;
-
-namespace ZoeProg
+﻿namespace ZoeProg
 {
+    using Microsoft.Practices.Unity;
+
+    using Prism.Modularity;
+    using Prism.Unity;
+
+    using System.Windows;
+    using ZoeProg.PlugIns.Cleanup;
+    using ZoeProg.Views;
+
     public class AppBootstrapper : UnityBootstrapper
     {
         protected override DependencyObject CreateShell()
         {
-            return Container.TryResolve<Shell>();
+            return Container.Resolve<Shell>();
         }
 
         protected override void InitializeShell()
         {
             Application.Current.MainWindow.Show();
+        }
+
+        protected override void ConfigureModuleCatalog()
+        {
+            var catalog = (ModuleCatalog)ModuleCatalog;
+            catalog.AddModule(typeof(CleanupModule));
         }
 
         //protected override void ConfigureContainer()
