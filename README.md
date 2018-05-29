@@ -17,6 +17,20 @@
 - Windows 7, 8.1, 10 (32, 64 bits)
 - .Net Framework: 4.7+
 
+# Modules or PlugIns
+- <b>Cleanup Plugin</b> can clean:
+  + User and Windows Temporary Directories
+  + Windows Installer Cache
+  + Windows Update Cache
+  + Windows Logs Directory
+  + Prefetch Cache
+  + Crash Dump Directory
+  + Google Chrome Cache
+  + Steam Redistributable Packages
+  + Temp Directory
+  + Local Directory
+  
+  
 # Dependencies
 - Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
 - [Mui](https://github.com/firstfloorsoftware/mui/wiki)
