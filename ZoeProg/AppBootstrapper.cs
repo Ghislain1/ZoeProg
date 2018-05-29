@@ -1,7 +1,20 @@
-﻿namespace ZoeProg
+﻿using Prism.Unity;
+using System.Windows;
+
+namespace ZoeProg
 {
-    public class AppBootstrapper //: UnityBootstrapper
+    public class AppBootstrapper : UnityBootstrapper
     {
+        protected override DependencyObject CreateShell()
+        {
+            return Container.TryResolve<Shell>();
+        }
+
+        protected override void InitializeShell()
+        {
+            Application.Current.MainWindow.Show();
+        }
+
         //protected override void ConfigureContainer()
         //{
         //    //this.Container.RegisterType<IShellViewModel, ShellViewModel>(new ContainerControlledLifetimeManager());

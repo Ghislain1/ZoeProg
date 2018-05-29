@@ -13,8 +13,8 @@ namespace ZoeProg
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            //AppBootstrapper bootstrapper = new AppBootstrapper();
-            //// bootstrapper.Run();
+            AppBootstrapper bootstrapper = new AppBootstrapper();
+             bootstrapper.Run();
             //this.ShutdownMode = ShutdownMode.OnMainWindowClose;
         }
     }
