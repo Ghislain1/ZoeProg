@@ -1,11 +1,15 @@
 ﻿namespace ZoeProg
 {
+    using FirstFloor.ModernUI.Presentation;
     using Microsoft.Practices.Unity;
 
     using Prism.Modularity;
     using Prism.Unity;
-
+    using System;
+    using System.Linq;
+    using System.Reflection;
     using System.Windows;
+    using ZoeProg.Common;
     using ZoeProg.PlugIns.Cleanup;
     using ZoeProg.Views;
 
@@ -20,11 +24,45 @@
         {
             Application.Current.MainWindow.Show();
         }
-
+            bool MyInterfaceFilter(Type typeObj, Object criteriaObj)
+        {
+            if (typeObj.ToString() == criteriaObj.ToString())
+                return true;
+            else
+                return false;
+        }
         protected override void ConfigureModuleCatalog()
         {
             var catalog = (ModuleCatalog)ModuleCatalog;
             catalog.AddModule(typeof(CleanupModule));
+
+             var linkGroupCollection = new LinkGroupCollection();
+            var typeFilter = new TypeFilter(MyInterfaceFilter);
+
+            foreach (var module in catalog.Items)
+            {
+                return;
+                var mi = (ModuleInfo)module;
+
+                   mi.Ref = "ZoeProg.PlugIns.Cleanup.dll";
+                var asm = Assembly.LoadFrom(mi.Ref);
+
+                foreach (Type t in asm.GetTypes())
+                {
+                    var myInterfaces = t.FindInterfaces(typeFilter, typeof(ILinkGroup).ToString());
+
+                    if( myInterfaces.Any())
+                    {
+                        // We found the type that implements the ILinkGroupService interface
+                        var linkGroupService = (ILinkGroup)asm.CreateInstance(t.FullName);
+                        // var linkGroup = linkGroupService.GetLinkGroup();
+                      //  linkGroupCollection.Add(linkGroup);
+                    }
+                }
+            }
+
+            
+
         }
 
         //protected override void ConfigureContainer()

@@ -1,5 +1,6 @@
 ﻿namespace ZoeProg.PlugIns.Cleanup
 {
+    using FirstFloor.ModernUI.Presentation;
     using Microsoft.Practices.Unity;
     using Prism.Modularity;
     using Prism.Regions;
@@ -8,9 +9,10 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using ZoeProg.Common;
     using ZoeProg.PlugIns.Cleanup.Views;
 
-    public class CleanupModule : IModule
+    public class CleanupModule : LinkGroup, IModule, ILinkGroup
     {
         private IRegionManager _regionManager;
         private IUnityContainer _container;

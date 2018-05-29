@@ -26,3 +26,7 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\ZoeProg.PlugIns.Cleanup.dll
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\ZoeProg.PlugIns.Cleanup.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\ZoeProg.PlugIns.Cleanup.csprojAssemblyReference.cache
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\bin\Debug\FirstFloor.ModernUI.dll
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\bin\Debug\FirstFloor.ModernUI.xml
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\bin\Debug\ZoeProg.Common.dll
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\bin\Debug\ZoeProg.Common.pdb

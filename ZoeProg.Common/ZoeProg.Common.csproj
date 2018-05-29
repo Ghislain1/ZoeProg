@@ -49,6 +49,7 @@
     <Compile Include="Data\Package.cs" />
     <Compile Include="Data\PackageFilter.cs" />
     <Compile Include="Data\PackageVersion.cs" />
+    <Compile Include="ILinkGroup.cs" />
     <Compile Include="IPackageService.cs" />
     <Compile Include="IPackageRepository.cs" />
     <Compile Include="IConfigurationService.cs" />
