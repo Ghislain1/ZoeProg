@@ -11,6 +11,7 @@ namespace ZoeProg
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
+    using ZoeProg.Common;
 
     public class PrismContentLoader :DefaultContentLoader
     {
@@ -33,16 +34,29 @@ namespace ZoeProg
         }
     }
 
-    public interface IContentMetadata
-    {
-        string ContentUri { get; }
-          
-    }
+ 
 
     public interface IContentService
     {
         Dictionary<IContent, IContentMetadata> Contents { get; }
+
+        void Add( IContent conten, IContentMetadata meta);
     }
 
-    
+    public class ContentService : IContentService
+    {
+        Dictionary<IContent, IContentMetadata> ontents ;
+        public Dictionary<IContent, IContentMetadata> Contents => this.ontents;
+        public ContentService()
+        {
+            this.ontents = new Dictionary<IContent, IContentMetadata>();
+        }
+        public void Add(IContent conten, IContentMetadata meta)
+        {
+            this.Contents.Add(conten, meta);
+        }
+    }
+
+
+
 }

@@ -15,6 +15,12 @@
 
     public class AppBootstrapper : UnityBootstrapper
     {
+        protected override void ConfigureContainer()
+        {
+            base.ConfigureContainer();
+
+            this.Container.RegisterType<IContentService, ContentService>(new ContainerControlledLifetimeManager());
+        }
         protected override DependencyObject CreateShell()       {
              
            
@@ -42,8 +48,8 @@
         }
         protected override void ConfigureModuleCatalog()
         {
-         
 
+           
 
             var catalog = (ModuleCatalog)ModuleCatalog;
             catalog.AddModule(typeof(CleanupModule));
@@ -53,7 +59,7 @@
 
             foreach (var module in catalog.Items)
             {
-                return;
+               
                 var mi = (ModuleInfo)module;
 
                    mi.Ref = "ZoeProg.PlugIns.Cleanup.dll";
@@ -61,12 +67,14 @@
 
                 foreach (Type t in asm.GetTypes())
                 {
-                    var myInterfaces = t.FindInterfaces(typeFilter, typeof(ILinkGroup).ToString());
+                    var myInterfaces = t.FindInterfaces(typeFilter, typeof(IContentMetadata).ToString());
 
                     if( myInterfaces.Any())
                     {
                         // We found the type that implements the ILinkGroupService interface
-                        var linkGroupService = (ILinkGroup)asm.CreateInstance(t.FullName);
+                        var linkGroupService = (IContentMetadata)asm.CreateInstance(t.FullName);
+
+                      
                         // var linkGroup = linkGroupService.GetLinkGroup();
                       //  linkGroupCollection.Add(linkGroup);
                     }

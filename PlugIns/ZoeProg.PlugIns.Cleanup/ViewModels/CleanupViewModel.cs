@@ -6,8 +6,9 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
+    using ZoeProg.Common;
 
-    public class CleanupViewModel : BindableBase, INavigationAware, IRegionMemberLifetime
+    public class CleanupViewModel : BindableBase, INavigationAware, IRegionMemberLifetime, IContentMetadata
     {
         public CleanupViewModel()
         {
@@ -20,6 +21,9 @@
                 return false;
             }
         }
+
+        public string Name { get; set; } = "GHislaib CleanUP";
+        public string Source { get; set; } = "/Views/CleanupView.xaml";
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {

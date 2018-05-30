@@ -11,7 +11,7 @@ namespace ZoeProg.PlugIns.Cleanup.Views
     /// <summary>
     /// Interaction logic for CleanupView.xaml
     /// </summary>
-    public partial class CleanupView : UserControl, IContent
+    public partial class CleanupView : UserControl, IContent 
     {
         public CleanupView()
         {
