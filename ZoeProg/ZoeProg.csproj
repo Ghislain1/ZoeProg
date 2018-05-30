@@ -90,8 +90,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PrismContentLoader.cs" />
     <Compile Include="Services\ProgressService.cs" />
     <Compile Include="Services\TaskService.cs" />
+    <Compile Include="TestView.xaml.cs">
+      <DependentUpon>TestView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\IShellViewModel.cs" />
     <Compile Include="Services\PackageRepository.cs" />
     <Compile Include="Services\ConfigurationService.cs" />
@@ -105,6 +109,10 @@
     <Compile Include="Views\ProgressView.xaml.cs">
       <DependentUpon>ProgressView.xaml</DependentUpon>
     </Compile>
+    <Page Include="TestView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

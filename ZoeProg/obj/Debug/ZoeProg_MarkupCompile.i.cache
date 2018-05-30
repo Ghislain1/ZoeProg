@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\App.xaml
-2782222910
+3-595077841
 
-23846240858
+25-1031624062
 771358307754
-Views\Shell.xaml;Views\ProgressView.xaml;
+TestView.xaml;Views\Shell.xaml;Views\ProgressView.xaml;
 
-True
+False
 

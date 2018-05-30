@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-         
+         xmlns:local="clr-namespace:ZoeProg"
+                  
         xmlns:mui="http://firstfloorsoftware.com/ModernUI"
                   xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
@@ -15,7 +16,15 @@
     </mui:ModernWindow.TitleLinks>
 
 
-    <mui:ModernWindow.MenuLinkGroups>
+    <mui:ModernFrame  Source="/TestView.xaml" ContentLoader="{DynamicResource PrismContentLoader}" >
+
+                
+    </mui:ModernFrame>
+
+
+</mui:ModernWindow>
+   <!--  
+<mui:ModernWindow.MenuLinkGroups>
         <mui:LinkGroup DisplayName="home">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
@@ -62,20 +71,4 @@
         
     </mui:ModernWindow.MenuLinkGroups>
 
-    <DockPanel LastChildFill="True">
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="5">
-            <Button Command="{Binding NavigateCommand}" CommandParameter="ViewA" Margin="5">Navigate to View A</Button>
-            <Button Command="{Binding NavigateCommand}" CommandParameter="ViewB" Margin="5">Navigate to View B</Button>
-        </StackPanel>
-        <ItemsControl ItemsSource="{Binding Views}" Margin="5">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Border Background="LightBlue" Height="50" Width="50" Margin="2">
-                        <TextBlock Text="{Binding}" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </Border>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
-        <ContentControl prism:RegionManager.RegionName="ContentRegion" Margin="5" />
-    </DockPanel>
-</mui:ModernWindow>
+    -->

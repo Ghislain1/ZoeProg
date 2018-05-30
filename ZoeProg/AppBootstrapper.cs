@@ -15,9 +15,18 @@
 
     public class AppBootstrapper : UnityBootstrapper
     {
-        protected override DependencyObject CreateShell()
-        {
-            return Container.Resolve<Shell>();
+        protected override DependencyObject CreateShell()       {
+             
+           
+
+             var prismContentLoader = this.Container.Resolve<PrismContentLoader>();
+
+            Application.Current.Resources.Add("PrismContentLoader", prismContentLoader);
+
+            var shell= Container.Resolve<Shell>();
+           // shell.ContentLoader = prismContentLoader;
+
+            return shell;
         }
 
         protected override void InitializeShell()
@@ -33,6 +42,9 @@
         }
         protected override void ConfigureModuleCatalog()
         {
+         
+
+
             var catalog = (ModuleCatalog)ModuleCatalog;
             catalog.AddModule(typeof(CleanupModule));
 

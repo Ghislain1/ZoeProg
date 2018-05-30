@@ -40,3 +40,6 @@ C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.PlugI
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\bin\Debug\ZoeProg.PlugIns.Cleanup.pdb
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\obj\Debug\Views\Shell.baml
 C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\obj\Debug\Views\Shell.g.cs
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\obj\Debug\TestView.g.cs
+C:\Users\GhislainZeleu\Desktop\Web-Topol\ZoeProg\ZoeProg\obj\Debug\TestView.baml
