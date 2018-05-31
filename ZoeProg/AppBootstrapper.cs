@@ -10,7 +10,7 @@
     using System.Reflection;
     using System.Windows;
     using ZoeProg.Common;
-
+    using ZoeProg.Services;
     using ZoeProg.Views;
 
     public class AppBootstrapper : UnityBootstrapper
@@ -23,6 +23,8 @@
             base.ConfigureContainer();
 
             ///
+            this.Container.RegisterType<IPowerShellService, PowerShellService>(new ContainerControlledLifetimeManager());
+
             this.Container.RegisterType<ILinkMetadataService, LinkMetadataService>(new ContainerControlledLifetimeManager());
         }
 

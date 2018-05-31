@@ -4,11 +4,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:prism="http://prismlibrary.com/"
+                     xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+
              xmlns:local="clr-namespace:ZoeProg.PlugIns.Cleanup.Views"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid>
-        <TextBlock Text="Clean upa view " FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" />
-    </Grid>
+    <DockPanel>
+        <Label Content="{Binding}" DockPanel.Dock="Bottom" />
+        <Button Content="{Binding Counter}" DockPanel.Dock="Bottom" />
+
+        <Label Content="{Binding Counter}" DockPanel.Dock="Bottom" />
+
+        <DataGrid Name="DG1" ItemsSource="{Binding JunkCollection}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <mui:DataGridTextColumn Header="First Name"  Binding="{Binding FirstName}" />
+                <mui:DataGridTextColumn Header="Last Name" Binding="{Binding FullPath}" />
+                <mui:DataGridTextColumn Header="Email" Binding="{Binding FullPath}" />
+                <mui:DataGridCheckBoxColumn Header="Member" Binding="{Binding IsMember}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
 </UserControl>

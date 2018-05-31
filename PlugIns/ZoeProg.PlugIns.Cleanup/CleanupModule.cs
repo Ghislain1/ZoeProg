@@ -10,6 +10,7 @@
     using System.Linq;
     using System.Text;
     using ZoeProg.Common;
+    using ZoeProg.PlugIns.Cleanup.Services;
     using ZoeProg.PlugIns.Cleanup.Views;
 
     public class CleanupModule : IModule
@@ -22,6 +23,7 @@
         {
             this.container = container;
             this.moduleMetadataService = moduleMetadataService;
+            this.container.RegisterType<ICleanupService, CleanupService>(new ContainerControlledLifetimeManager());
         }
 
         public List<ILinkMetadata> SourceLinks { get; set; }

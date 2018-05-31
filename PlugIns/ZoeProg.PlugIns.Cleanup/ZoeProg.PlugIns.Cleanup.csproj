@@ -73,7 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CleanupModule.cs" />
+    <Compile Include="Models\JunkFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CleanupService.cs" />
+    <Compile Include="Services\ICleanupService.cs" />
     <Compile Include="ViewModels\CleanupViewModel.cs" />
     <Compile Include="Views\CleanupView.xaml.cs">
       <DependentUpon>CleanupView.xaml</DependentUpon>

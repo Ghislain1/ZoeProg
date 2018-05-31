@@ -12,13 +12,6 @@
 
     public class PowerShellService : IPowerShellService
     {
-        private readonly ITaskService taskService;
-
-        public PowerShellService(ITaskService taskService)
-        {
-            this.taskService = taskService;
-        }
-
         public Task RunCommand(Action<string> onDataReceived, string command)
         {
             return RunCommand(onDataReceived, CancellationToken.None, command);
