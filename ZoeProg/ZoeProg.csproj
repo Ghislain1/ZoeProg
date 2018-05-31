@@ -162,10 +162,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PlugIns\ZoeProg.PlugIns.Cleanup\ZoeProg.PlugIns.Cleanup.csproj">
-      <Project>{4a19b760-207b-4f22-8a37-4b66213d8eb3}</Project>
-      <Name>ZoeProg.PlugIns.Cleanup</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ZoeProg.Common\ZoeProg.Common.csproj">
       <Project>{e838a7b4-9320-4892-8d77-1a0dca7584bc}</Project>
       <Name>ZoeProg.Common</Name>

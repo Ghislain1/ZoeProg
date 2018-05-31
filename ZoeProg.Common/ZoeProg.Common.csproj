@@ -50,7 +50,8 @@
     <Compile Include="Data\PackageFilter.cs" />
     <Compile Include="Data\PackageVersion.cs" />
     <Compile Include="IContentMetadata.cs" />
-    <Compile Include="ILinkGroup.cs" />
+    <Compile Include="ILinkMetadataService.cs" />
+    <Compile Include="ILinkMetaData.cs" />
     <Compile Include="IPackageService.cs" />
     <Compile Include="IPackageRepository.cs" />
     <Compile Include="IConfigurationService.cs" />

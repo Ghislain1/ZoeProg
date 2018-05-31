@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZoeProg.Common
+namespace ZoeProg.PlugIns.Home.ViewModels
 {
-  public  interface ILinkGroup
+    class HomeViewModel
     {
     }
 }

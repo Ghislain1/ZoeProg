@@ -8,7 +8,7 @@
     using System.Text;
     using ZoeProg.Common;
 
-    public class CleanupViewModel : BindableBase, INavigationAware, IRegionMemberLifetime, IContentMetadata
+    public class CleanupViewModel : BindableBase, INavigationAware, IRegionMemberLifetime
     {
         public CleanupViewModel()
         {

@@ -1,36 +1,41 @@
 ﻿namespace ZoeProg.PlugIns.Home
 {
+    using Microsoft.Practices.Unity;
     using Prism.Modularity;
     using Prism.Regions;
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using Unity;
+
     using ZoeProg.Common;
     using ZoeProg.Common.Data;
+    using ZoeProg.PlugIns.Home.Views;
 
-    public class HomeModule : PlugInBase, IModule, IPlugIn
+    public class HomeModule : IModule
     {
         private readonly IUnityContainer container;
-        private readonly IPlugInService plugInService;
-        private readonly IRegionManager regionManager;
+        private readonly ILinkMetadataService linkMetadataService;
 
-        public HomeModule(IRegionManager regionManager, IUnityContainer container)
+        public HomeModule(ILinkMetadataService linkMetadataService, IUnityContainer container)
         {
-            this.regionManager = regionManager;
+            this.linkMetadataService = linkMetadataService;
             this.container = container;
-            this.Id = Guid.NewGuid().ToString();
-            //   base.NavigatePath = nameof(HomeView);
-
-            base.Title = "Overview";
         }
 
         public void Initialize()
         {
-            // this.container.RegisterType<IInstalledProgramService, InstalledProgramService>(new ContainerControlledLifetimeManager());
+            ILinkMetadata linkMetaData = new LinkMetaData();
+            linkMetaData.DisplayName = "Home";
+            linkMetaData.ParentName = "ZoeProg Center";
+            linkMetaData.Source = $"/ZoeProg.PlugIns.Home;component/Views/{nameof(HomeView)}.xaml";
 
-            //this.container.RegisterTypeForNavigation<HomeView>();
+            this.linkMetadataService.Registry(linkMetaData);
         }
+    }
+
+    internal class LinkMetaData : ILinkMetadata
+    {
+        public string DisplayName { get; set; }
+        public string ParentName { get; set; }
+        public string Source { get; set; }
     }
 }

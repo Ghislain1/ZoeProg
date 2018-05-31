@@ -12,8 +12,6 @@ C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\Prism.Wpf.dll
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\System.Management.Automation.dll
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\ZoeProg.Common.dll
-C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\ZoeProg.PlugIns.Cleanup.dll
-C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\ZoeProg.PlugIns.Cleanup.pdb
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\ZoeProg.Common.pdb
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\FirstFloor.ModernUI.xml
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\bin\Debug\Microsoft.Practices.ServiceLocation.pdb

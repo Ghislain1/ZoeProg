@@ -4,33 +4,25 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
          xmlns:local="clr-namespace:ZoeProg"
-                  
+
         xmlns:mui="http://firstfloorsoftware.com/ModernUI"
                   xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="550" Width="1525">
-    
+        Title="{Binding Title}" Height="550" Width="1125">
+
     <mui:ModernWindow.TitleLinks>
         <mui:Link DisplayName="Settings" Source="/Pages/Settings.xaml" />
         <mui:Link DisplayName="Help" Source="https://github.com/firstfloorsoftware/mui/wiki" />
     </mui:ModernWindow.TitleLinks>
-
-
-    <mui:ModernFrame  Source="/TestView.xaml" ContentLoader="{DynamicResource PrismContentLoader}" >
-
-                
-    </mui:ModernFrame>
-
-
 </mui:ModernWindow>
-   <!--  
+<!--
 <mui:ModernWindow.MenuLinkGroups>
         <mui:LinkGroup DisplayName="home">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
-        
+
         <mui:LinkGroup DisplayName="Software">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
@@ -48,15 +40,13 @@
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
-        
 
         <mui:LinkGroup DisplayName="feature">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
-        
-        
+
         <mui:LinkGroup DisplayName="Startup-App">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
@@ -68,7 +58,6 @@
                 <mui:Link DisplayName="Introduction" Source="/Pages/Introduction.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
-        
     </mui:ModernWindow.MenuLinkGroups>
 
     -->

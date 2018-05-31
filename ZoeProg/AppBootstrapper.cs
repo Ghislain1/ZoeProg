@@ -10,79 +10,64 @@
     using System.Reflection;
     using System.Windows;
     using ZoeProg.Common;
-    using ZoeProg.PlugIns.Cleanup;
+
     using ZoeProg.Views;
 
     public class AppBootstrapper : UnityBootstrapper
     {
+        private IModuleMetadata moduleMetadata;
+        private Shell shell;
+
         protected override void ConfigureContainer()
         {
             base.ConfigureContainer();
 
-            this.Container.RegisterType<IContentService, ContentService>(new ContainerControlledLifetimeManager());
+            ///
+            this.Container.RegisterType<ILinkMetadataService, LinkMetadataService>(new ContainerControlledLifetimeManager());
         }
-        protected override DependencyObject CreateShell()       {
-             
-           
 
-             var prismContentLoader = this.Container.Resolve<PrismContentLoader>();
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return new ConfigurationModuleCatalog();
+        }
 
-            Application.Current.Resources.Add("PrismContentLoader", prismContentLoader);
-
-            var shell= Container.Resolve<Shell>();
-           // shell.ContentLoader = prismContentLoader;
-
+        protected override DependencyObject CreateShell()
+        {
+            shell = Container.Resolve<Shell>();
             return shell;
+        }
+
+        protected override void InitializeModules()
+        {
+            base.InitializeModules();
+
+            var moduleMetadataService = this.Container.Resolve<ILinkMetadataService>();
+            var collection = moduleMetadataService.LinkMetaDataList;
+            foreach (var item in collection)
+            {
+                //Update shell with each link!!
+                this.UpdateShell(item);
+            }
+
+            //Add now a resource for the all app.
+            var prismContentLoader = this.Container.Resolve<PrismContentLoader>();
+            Application.Current.Resources.Add("PrismContentLoader", prismContentLoader);
         }
 
         protected override void InitializeShell()
         {
             Application.Current.MainWindow.Show();
         }
-            bool MyInterfaceFilter(Type typeObj, Object criteriaObj)
+
+        private void UpdateShell(ILinkMetadata item)
         {
-            if (typeObj.ToString() == criteriaObj.ToString())
-                return true;
-            else
-                return false;
-        }
-        protected override void ConfigureModuleCatalog()
-        {
+            var linkGroup = new LinkGroup();
+            linkGroup.DisplayName = item.ParentName;
 
-           
+            var link = new Link() { DisplayName = item.DisplayName, Source = new Uri(item.Source, UriKind.RelativeOrAbsolute) };
+            linkGroup.Links.Add(link);
 
-            var catalog = (ModuleCatalog)ModuleCatalog;
-            catalog.AddModule(typeof(CleanupModule));
-
-             var linkGroupCollection = new LinkGroupCollection();
-            var typeFilter = new TypeFilter(MyInterfaceFilter);
-
-            foreach (var module in catalog.Items)
-            {
-               
-                var mi = (ModuleInfo)module;
-
-                   mi.Ref = "ZoeProg.PlugIns.Cleanup.dll";
-                var asm = Assembly.LoadFrom(mi.Ref);
-
-                foreach (Type t in asm.GetTypes())
-                {
-                    var myInterfaces = t.FindInterfaces(typeFilter, typeof(IContentMetadata).ToString());
-
-                    if( myInterfaces.Any())
-                    {
-                        // We found the type that implements the ILinkGroupService interface
-                        var linkGroupService = (IContentMetadata)asm.CreateInstance(t.FullName);
-
-                      
-                        // var linkGroup = linkGroupService.GetLinkGroup();
-                      //  linkGroupCollection.Add(linkGroup);
-                    }
-                }
-            }
-
-            
-
+            shell.MenuLinkGroups.Add(linkGroup);
         }
 
         //protected override void ConfigureContainer()
@@ -101,7 +86,7 @@
         //    //this.Container.RegisterType<IPackageService, PackageService>(new ContainerControlledLifetimeManager());
         //    //this.Container.RegisterType<IPackageRepository, PackageRepository>(new ContainerControlledLifetimeManager());
 
-        //    //this.Container.RegisterType<IPlugInService, PlugInService>(new ContainerControlledLifetimeManager());
+        // //this.Container.RegisterType<IPlugInService, PlugInService>(new ContainerControlledLifetimeManager());
 
         //    base.ConfigureServiceLocator();
         //}

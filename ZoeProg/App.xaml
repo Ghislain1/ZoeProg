@@ -7,24 +7,20 @@
     <Application.Resources>
         <ResourceDictionary>
 
-        
-           
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.xaml" />
                 <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Dark.xaml" />
-               
             </ResourceDictionary.MergedDictionaries>
 
+            <Style TargetType="mui:ModernFrame">
+                <Setter Property="ContentLoader" Value="{DynamicResource PrismContentLoader}" />
+            </Style>
+            <Style TargetType="mui:ModernTab">
+                <Setter Property="ContentLoader" Value="{DynamicResource PrismContentLoader}" />
+            </Style>
             <Style TargetType="local:Shell">
                 <Setter Property="ContentLoader" Value="{DynamicResource PrismContentLoader}" />
-                <Setter Property="Width" Value="10"/>
             </Style>
-
-            <Style x:Key="O" TargetType="mui:ModernWindow">
-                <Setter Property="ContentLoader" Value="{DynamicResource PrismContentLoader}" />
-                <Setter Property="Width" Value="10"/>
-            </Style>
-
         </ResourceDictionary>
     </Application.Resources>
 </Application>
