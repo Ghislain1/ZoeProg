@@ -9,7 +9,7 @@
 
 ## Add by autor Ghislain Zeus
 # Packages folder
-/packages
+
 
 
 # User-specific files
