@@ -81,6 +81,9 @@
     <Compile Include="Views\CleanupView.xaml.cs">
       <DependentUpon>CleanupView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CookieView.xaml.cs">
+      <DependentUpon>CookieView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\ZoeProg.Common\ZoeProg.Common.csproj">
@@ -93,6 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\CleanupView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CookieView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -11,11 +11,25 @@
 
     public class CleanupService : ICleanupService
     {
+        private IEnumerable<string> JunkFileList;
         private IPowerShellService powerShellService;
 
         public CleanupService(IPowerShellService powerShellService)
         {
             this.powerShellService = powerShellService;
+        }
+
+        public async Task<bool> DeleteJunkFiles()
+        {
+            await Task.Delay(122);
+            var format = @"Remove-Item -Path {0} -Force";
+            foreach (var item in this.JunkFileList)
+            {
+                var cmd = string.Format(format, item);
+                await this.powerShellService.RunCommand(cmd);
+            }
+
+            return true;
         }
 
         public Task<List<object>> GetListJunkFile(CancellationToken token)
@@ -25,16 +39,15 @@
 
         public async Task<List<JunkFile>> GetListJunkFile()
         {
-            await Task.Delay(2300);
+            await Task.Delay(100);
 
-            var cmd = "ls";
-            await this.powerShellService.RunCommand(cmd);
+            var cmd = @"get-childitem c:\ -include *.tmp -recurse";
+            this.JunkFileList = await this.powerShellService.RunCommand(cmd);
             var res = new List<JunkFile>();
-            for (int i = 1; i < 20; i++)
+            foreach (var item in this.JunkFileList)
             {
-                res.Add(new JunkFile() { Name = "LoloNr. " + i });
+                res.Add(new JunkFile() { Name = item });
             }
-
             return res;
         }
     }

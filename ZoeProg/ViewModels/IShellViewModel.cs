@@ -7,6 +7,7 @@
 
     public interface IShellViewModel
     {
+        string Title { get; set; }
         //Guid DialogHostIdentifier { get; }
         //bool IsBusy { get; }
         //bool IsLeftDrawerOpen { get; set; }

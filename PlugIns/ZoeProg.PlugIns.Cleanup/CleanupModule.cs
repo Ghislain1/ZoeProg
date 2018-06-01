@@ -37,6 +37,14 @@
 
             linkMetaData.Source = $"/ZoeProg.PlugIns.Cleanup;component/Views/{nameof(CleanupView)}.xaml";
             this.moduleMetadataService.Registry(linkMetaData);
+
+            //Cookies
+            ILinkMetadata cookieLinkMetaData = new LinkMetaData();
+            cookieLinkMetaData.DisplayName = "Cookies";
+            cookieLinkMetaData.ParentName = "Clean explorer";
+
+            cookieLinkMetaData.Source = $"/ZoeProg.PlugIns.Cleanup;component/Views/{nameof(CookieView)}.xaml";
+            this.moduleMetadataService.Registry(cookieLinkMetaData);
         }
     }
 

@@ -17,23 +17,9 @@
     {
         private readonly IRegionManager _regionManager;
 
-        private string _title = "Prism Unity Application";
-
-        public string Title
-        {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
-        }
+        private string _title = "ZoeProg !!!";
 
         private ObservableCollection<object> _views = new ObservableCollection<object>();
-
-        public ObservableCollection<object> Views
-        {
-            get { return _views; }
-            set { SetProperty(ref _views, value); }
-        }
-
-        public DelegateCommand<string> NavigateCommand { get; private set; }
 
         public ShellViewModel(IRegionManager regionManager)
         {
@@ -41,6 +27,20 @@
             _regionManager.Regions.CollectionChanged += Regions_CollectionChanged;
 
             NavigateCommand = new DelegateCommand<string>(Navigate);
+        }
+
+        public DelegateCommand<string> NavigateCommand { get; private set; }
+
+        public string Title
+        {
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
+
+        public ObservableCollection<object> Views
+        {
+            get { return _views; }
+            set { SetProperty(ref _views, value); }
         }
 
         private void Navigate(string navigatePath)

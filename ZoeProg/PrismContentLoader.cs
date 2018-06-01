@@ -57,6 +57,15 @@
 
         protected override object LoadContent(Uri uri)
         {
+            if (uri == null)
+            {
+                throw new ArgumentException("Invalid uri: " + uri);
+            }
+            //TODO: case of setting
+            if (uri.OriginalString.Contains("Setting") || uri.OriginalString.Contains("About"))
+            {
+                return base.LoadContent(uri);
+            }
             // lookup the content based on the content uri in the content metadata
             var content = contents.FirstOrDefault(r => r.Source.ToString() == uri.OriginalString);
 

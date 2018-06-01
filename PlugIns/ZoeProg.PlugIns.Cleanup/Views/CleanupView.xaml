@@ -4,25 +4,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:prism="http://prismlibrary.com/"
-                     xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
              xmlns:local="clr-namespace:ZoeProg.PlugIns.Cleanup.Views"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800"
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <DockPanel>
-        <Label Content="{Binding}" DockPanel.Dock="Bottom" />
-        <Button Content="{Binding Counter}" DockPanel.Dock="Bottom" />
+    <UserControl.Resources>
+        <mui:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </UserControl.Resources>
+    <Grid>
 
-        <Label Content="{Binding Counter}" DockPanel.Dock="Bottom" />
+        <DockPanel>
+            <UniformGrid DockPanel.Dock="Top">
+                <Button Content="Scan" Margin="0,0,10,0"  Command="{Binding ScanCommand}" />
+                <Button Content="Delete" Margin="10,0,00,0"   Command="{Binding DeleteCommand}" />
+            </UniformGrid>
 
-        <DataGrid Name="DG1" ItemsSource="{Binding JunkCollection}" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <mui:DataGridTextColumn Header="First Name"  Binding="{Binding FirstName}" />
-                <mui:DataGridTextColumn Header="Last Name" Binding="{Binding FullPath}" />
-                <mui:DataGridTextColumn Header="Email" Binding="{Binding FullPath}" />
-                <mui:DataGridCheckBoxColumn Header="Member" Binding="{Binding IsMember}" />
-            </DataGrid.Columns>
-        </DataGrid>
-    </DockPanel>
+            <Label Content="{Binding Counter}" DockPanel.Dock="Bottom" />
+
+            <DataGrid Name="DG1" ItemsSource="{Binding JunkCollection}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <mui:DataGridTextColumn Header="Name"  Binding="{Binding FullPath}" />
+                    <!--   <mui:DataGridTextColumn Header=" Name" Binding="{Binding FullPath}" />
+               <mui:DataGridTextColumn Header="Email" Binding="{Binding FullPath}" />
+                <mui:DataGridCheckBoxColumn Header="Member" Binding="{Binding IsMember}" />-->
+                </DataGrid.Columns>
+            </DataGrid>
+        </DockPanel>
+        <Grid Background="Beige" Opacity="0.2" Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <ProgressBar Minimum="0" Maximum="1" Height="146" IsIndeterminate="True" Margin="0,0,0,16" />
+        </Grid>
+    </Grid>
 </UserControl>

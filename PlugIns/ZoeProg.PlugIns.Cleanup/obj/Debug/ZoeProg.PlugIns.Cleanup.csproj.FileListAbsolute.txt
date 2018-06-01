@@ -29,3 +29,5 @@ C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\De
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\ZoeProg.PlugIns.Cleanup.csproj.CoreCompileInputs.cache
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\ZoeProg.PlugIns.Cleanup.dll
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\ZoeProg.PlugIns.Cleanup.pdb
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\Views\CookieView.g.cs
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\PlugIns\ZoeProg.PlugIns.Cleanup\obj\Debug\Views\CookieView.baml

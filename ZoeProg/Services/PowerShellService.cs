@@ -67,6 +67,9 @@
                 using (var ps = PowerShell.Create())
                 {
                     var collection = ps.AddScript(command).Invoke<string>();
+                    tcs.TrySetResult(collection);
+                    return;
+                    //Todo: This is how to take more Info.
                     var itemPropertyCollection = new List<string>();
                     foreach (var fullNameFile in collection)
                     {

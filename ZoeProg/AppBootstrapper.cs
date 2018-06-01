@@ -63,13 +63,16 @@
 
         private void UpdateShell(ILinkMetadata item)
         {
-            var linkGroup = new LinkGroup();
-            linkGroup.DisplayName = item.ParentName;
+            var linkGroup = shell.MenuLinkGroups.FirstOrDefault(i => i.DisplayName == item.ParentName);
+            if (linkGroup == null)
+            {
+                linkGroup = new LinkGroup();
+                linkGroup.DisplayName = item.ParentName;
+                shell.MenuLinkGroups.Add(linkGroup);
+            }
 
             var link = new Link() { DisplayName = item.DisplayName, Source = new Uri(item.Source, UriKind.RelativeOrAbsolute) };
             linkGroup.Links.Add(link);
-
-            shell.MenuLinkGroups.Add(linkGroup);
         }
 
         //protected override void ConfigureContainer()

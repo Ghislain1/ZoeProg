@@ -10,6 +10,8 @@ namespace ZoeProg.PlugIns.Cleanup.Services
 {
     public interface ICleanupService
     {
+        Task<bool> DeleteJunkFiles();
+
         Task<List<object>> GetListJunkFile(CancellationToken token);
 
         Task<List<JunkFile>> GetListJunkFile();

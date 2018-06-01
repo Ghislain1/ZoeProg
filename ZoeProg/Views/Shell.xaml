@@ -8,11 +8,11 @@
         xmlns:mui="http://firstfloorsoftware.com/ModernUI"
                   xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="550" Width="1125">
+        Title="{Binding}" Height="550" Width="1225">
 
     <mui:ModernWindow.TitleLinks>
-        <mui:Link DisplayName="Settings" Source="/Pages/Settings.xaml" />
-        <mui:Link DisplayName="Help" Source="https://github.com/firstfloorsoftware/mui/wiki" />
+        <mui:Link DisplayName="Settings" Source="Views/Settings.xaml" />
+        <mui:Link DisplayName="Help" Source="https://github.com/Ghislain1" />
     </mui:ModernWindow.TitleLinks>
 </mui:ModernWindow>
 <!--

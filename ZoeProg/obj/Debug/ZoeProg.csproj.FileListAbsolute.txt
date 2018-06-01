@@ -40,3 +40,10 @@ C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\ZoeProg.csproj.Gener
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\ZoeProg.csproj.CoreCompileInputs.cache
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\ZoeProg.exe
 C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\ZoeProg.pdb
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Views\SettingsAppearance.g.cs
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Views\Settings.g.cs
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Views\Settings.baml
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Views\SettingsAppearance.baml
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Views\About.g.cs
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Views\About.baml
+C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\ZoeProg\obj\Debug\Assets\GhislainOne.baml
