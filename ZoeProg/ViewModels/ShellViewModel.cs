@@ -1,12 +1,5 @@
 ﻿namespace ZoeProg.ViewModels
 {
-    using System;
-
-    using System.Linq;
-
-    using System.Linq;
-    using System;
-
     using Prism.Commands;
     using Prism.Mvvm;
     using Prism.Regions;

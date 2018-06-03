@@ -2,12 +2,8 @@
 {
     using Microsoft.Practices.Unity;
     using Prism.Modularity;
-    using Prism.Regions;
-    using System;
-    using System.Collections.Generic;
 
     using ZoeProg.Common;
-    using ZoeProg.Common.Data;
     using ZoeProg.PlugIns.Home.Views;
 
     public class HomeModule : IModule

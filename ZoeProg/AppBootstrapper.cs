@@ -7,7 +7,6 @@
     using Prism.Unity;
     using System;
     using System.Linq;
-    using System.Reflection;
     using System.Windows;
     using ZoeProg.Common;
     using ZoeProg.Services;

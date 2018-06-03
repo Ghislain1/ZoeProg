@@ -31,8 +31,9 @@
                 </DataGrid.Columns>
             </DataGrid>
         </DockPanel>
-        <Grid Background="Beige" Opacity="0.2" Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}">
-            <ProgressBar Minimum="0" Maximum="1" Height="146" IsIndeterminate="True" Margin="0,0,0,16" />
+        <Grid  Opacity="0.2" Visibility="{Binding IsBusy, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <!--  <ProgressBar Minimum="0" Maximum="1" Height="146" IsIndeterminate="True" Margin="0,0,0,16" /> -->
+            <mui:ModernProgressRing IsActive="True" Width="100" Height="100" Style="{DynamicResource CircleProgressRingStyle}" />
         </Grid>
     </Grid>
 </UserControl>

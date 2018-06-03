@@ -2,13 +2,8 @@
 {
     using Prism.Commands;
     using Prism.Mvvm;
-    using Prism.Regions;
-    using System;
-    using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
-    using System.Text;
-    using ZoeProg.Common;
     using ZoeProg.PlugIns.Cleanup.Services;
 
     public class CleanupViewModel : BindableBase
@@ -29,8 +24,8 @@
             this.cleanupService = cleanupService;
             this.JunkCollection = new ObservableCollection<JunkItemViewModel>();
 
-            this.ScanCommand = new DelegateCommand(this.ExecuteScan, this.CanScan);
-            this.DeleteCommand = new DelegateCommand(this.ExecuteDelete, this.CanDelete);
+            this.ScanCommand = new DelegateCommand(this.ExecuteScan, this.CanScan).ObservesProperty(() => this.IsBusy);
+            this.DeleteCommand = new DelegateCommand(this.ExecuteDelete, this.CanDelete).ObservesProperty(() => this.IsBusy);
         }
 
         public int Counter
@@ -57,18 +52,29 @@
 
         private bool CanDelete()
         {
+            if (this.JunkCollection == null)
+            {
+                return false;
+            }
             return this.JunkCollection.Any();
         }
 
         private bool CanScan()
         {
-            return true;
+            return !this.IsBusy;
         }
 
         private async void ExecuteDelete()
         {
             this.IsBusy = true;
-            await this.cleanupService.DeleteJunkFiles();
+            var result = await this.cleanupService.DeleteJunkFiles();
+
+            if (result)
+            {
+                //Check again
+                this.JunkCollection = null;
+            }
+
             this.IsBusy = false;
         }
 
@@ -81,8 +87,13 @@
         {
             this.IsBusy = true;
             var junks = await this.cleanupService.GetListJunkFile();
+            if (junks == null)
+            {
+                this.IsBusy = false;
+                return;
+            }
             this.JunkCollection = new ObservableCollection<JunkItemViewModel>(junks.Select(it => new JunkItemViewModel() { FullPath = it.Name }));
-            this.counter = this.junkCollection.Count;
+            this.Counter = this.junkCollection.Count;
             this.IsBusy = false;
         }
     }

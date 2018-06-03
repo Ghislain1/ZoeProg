@@ -1,11 +1,5 @@
-﻿using FirstFloor.ModernUI.Windows;
-using FirstFloor.ModernUI.Windows.Navigation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using FirstFloor.ModernUI.Windows.Navigation;
 using System.Windows.Controls;
-using ZoeProg.Common;
 
 namespace ZoeProg.PlugIns.Cleanup.Views
 {

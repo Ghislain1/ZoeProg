@@ -1,10 +1,5 @@
 ﻿namespace ZoeProg.Common.Data
 {
-    using System.Text;
-    using System.Linq;
-    using System.Collections.Generic;
-    using System;
-
     public class Package : InstalledPackage
     {
         public string Authors { get; set; }

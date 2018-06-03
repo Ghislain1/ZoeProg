@@ -2,8 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
     using ZoeProg.Common;
@@ -28,7 +26,8 @@
                 var cmd = string.Format(format, item);
                 await this.powerShellService.RunCommand(cmd);
             }
-
+            //clear the list
+            this.JunkFileList = null;
             return true;
         }
 

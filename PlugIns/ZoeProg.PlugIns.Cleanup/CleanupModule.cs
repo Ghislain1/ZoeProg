@@ -1,14 +1,8 @@
 ﻿namespace ZoeProg.PlugIns.Cleanup
 {
-    using FirstFloor.ModernUI.Presentation;
     using Microsoft.Practices.Unity;
     using Prism.Modularity;
-    using Prism.Regions;
-    using Prism.Unity;
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using ZoeProg.Common;
     using ZoeProg.PlugIns.Cleanup.Services;
     using ZoeProg.PlugIns.Cleanup.Views;

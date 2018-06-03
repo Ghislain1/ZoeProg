@@ -1,10 +1,5 @@
 ﻿namespace ZoeProg.ViewModels
 {
-    using System.Text;
-    using System.Linq;
-    using System.Collections.Generic;
-    using System;
-
     public interface IShellViewModel
     {
         string Title { get; set; }

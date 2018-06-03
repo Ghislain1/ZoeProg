@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A19B760-207B-4F22-8A37-4B66213D8EB3} = {4A19B760-207B-4F22-8A37-4B66213D8EB3}
+		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Common", "ZoeProg.Common\ZoeProg.Common.csproj", "{E838A7B4-9320-4892-8D77-1A0DCA7584BC}"
 EndProject

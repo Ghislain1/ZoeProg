@@ -1,7 +1,5 @@
 ﻿namespace ZoeProg.Common
 {
-    using System.Collections.Generic;
-
     public interface IConfigurationService
     {
         string GetAppSetting(string key);

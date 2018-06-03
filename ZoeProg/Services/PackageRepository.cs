@@ -1,14 +1,8 @@
 ﻿namespace ZoeProg.Services
 {
-    using System.Text;
-    using System.Linq;
-    using System.Collections.Generic;
-    using System;
     using Common.Data;
-
     using System;
     using System.Collections.Generic;
-
     using System.Text.RegularExpressions;
     using System.Threading;
     using System.Threading.Tasks;
