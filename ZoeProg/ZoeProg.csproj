@@ -111,6 +111,12 @@
     <Compile Include="PrismContentLoader.cs" />
     <Compile Include="Services\ProgressService.cs" />
     <Compile Include="Services\TaskService.cs" />
+    <Compile Include="Views\GeneralSettings.xaml.cs">
+      <DependentUpon>GeneralSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\SettingsViewModel.cs" />
+    <Compile Include="Settings\SettingService.cs" />
+    <Compile Include="ViewModels\GeneralSettingsViewModel.cs" />
     <Compile Include="TestView.xaml.cs">
       <DependentUpon>TestView.xaml</DependentUpon>
     </Compile>
@@ -132,6 +138,10 @@
       <DependentUpon>ProgressView.xaml</DependentUpon>
     </Compile>
     <Page Include="Assets\GhislainOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GeneralSettings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

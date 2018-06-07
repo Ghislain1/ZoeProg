@@ -64,6 +64,7 @@
     <Compile Include="IPlugInService.cs" />
     <Compile Include="IPlugIn.cs" />
     <Compile Include="Cmds.cs" />
+    <Compile Include="Models\Drive.cs" />
     <Compile Include="RegionNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -5,6 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ZoeProg.Views"
              mc:Ignorable="d"
+                  xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
 
              xmlns:mui="http://firstfloorsoftware.com/ModernUI"
 
@@ -14,6 +16,7 @@
             <mui:ModernTab.Links>
                 <mui:Link DisplayName="Appearance" Source="Views/SettingsAppearance.xaml" />
                 <mui:Link DisplayName="About" Source="Views/About.xaml" />
+                <mui:Link DisplayName="General settings" Source="Views/GeneralSettings.xaml" />
             </mui:ModernTab.Links>
         </mui:ModernTab>
     </Grid>

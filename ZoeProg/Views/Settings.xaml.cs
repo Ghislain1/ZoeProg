@@ -10,7 +10,7 @@ namespace ZoeProg.Views
         public Settings()
         {
             InitializeComponent();
-            // this.DataContext = new ShellViewModel();
+            var dd = this.DataContext;
         }
     }
 }
