@@ -6,11 +6,8 @@
 
 # Intro
 
-- [parent](https://github.com/Zeeex/XTR-Toolbox/edit/master/README.md)
 - Motivation
-- Grund
-- Ziel: This is an Interface to install program from your local PC.
-- [example scrum](https://github.com/bbougot/Popcorn/projects/1)
+- Goal: This is an Interface to install program from your local PC.
 
 
 
@@ -36,11 +33,21 @@
 - Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
 - [Mui](https://github.com/firstfloorsoftware/mui/wiki)
 - Powershell
+- [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
 
 # Next Steps
 - Installer like Visual studio Installer
 - Computer Cleaner
 
+# Contributions
+- Dev:
+     + Install Git
+     + Clone the project ()
+     + Build the project from VS2017
+     + Start Coding!!
+ - Donation
+     + Paypal(soon)
+     + Amazon eGift Cards
 
 
   # Thema for experience
@@ -50,6 +57,8 @@
   * Raspberry Pi:  https://www.raspberrypi.org
        what can do with Raspberry Pi?( Camero control, Sensor control)
        Can i use C# with Raspberry Pi? Yes--> https://github.com/ZiCog/HomeSpun
+  * [example scrum](https://github.com/bbougot/Popcorn/projects/1)
+  * [parent](https://github.com/Zeeex/XTR-Toolbox/edit/master/README.md)
            
   
   
