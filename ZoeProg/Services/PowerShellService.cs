@@ -53,32 +53,21 @@
             return tcs.Task;
         }
 
-        public Task<IEnumerable<string>> RunCommand(string command)
+        /// <summary>
+        /// TODO: Find a best away to Manipulate PSObject
+        /// </summary>
+        /// <param name="command"></param>
+        /// <returns></returns>
+        public Task<IEnumerable<PSObject>> RunCommand(string command)
         {
-            ///Get - ItemPropertyValue - Path C: \Users\Test\Documents\ModuleToAssembly - Name LastWriteTime,CreationTime,Root
-            ///
-            var format = @"Get-ItemPropertyValue -Path {0} -Name LastWriteTime,CreationTime";
-            var tcs = new TaskCompletionSource<IEnumerable<string>>();
+            var tcs = new TaskCompletionSource<IEnumerable<PSObject>>();
 
             Task.Factory.StartNew(() =>
             {
                 using (var ps = PowerShell.Create())
                 {
                     var collection = ps.AddScript(command).Invoke();
-                    tcs.TrySetResult(null);
-                    return;
-                    //Todo: This is how to take more Info.
-                    var itemPropertyCollection = new List<string>();
-                    foreach (var fullNameFile in collection)
-                    {
-                        string internalCMD = string.Format(format, fullNameFile);
-                        var itemProperty = ps.AddScript(internalCMD).Invoke<string>();
-
-                        //TODO: now just a name
-                        //var fileName = Path.GetFileNameWithoutExtension(fullNameFile);
-                        //itemPropertyCollection.Add(fileName);
-                    }
-                    tcs.TrySetResult(itemPropertyCollection);
+                    tcs.TrySetResult(collection);
                 }
             }
            );

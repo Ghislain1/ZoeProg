@@ -24,8 +24,21 @@ namespace ZoeProg.Settings
             var cmd = "Get-PSDrive -Scope Global -PSProvider  " + providerType;
             try
             {
-                var res = await this.powerShellService.RunCommand(cmd);
-                result = res.Select(i => new Drive() { Name = i }).ToList();
+                var collectionPSObject = await this.powerShellService.RunCommand(cmd);
+                // Used Free CurrentLocation Name Provider Root Description MaximumSize Credential DisplayRoot
+                foreach (var item in collectionPSObject)
+                {
+                    var name = item.Members["Name"];
+                    var provider = item.Members["Provider"];
+                    var root = item.Members["Root"];
+
+                    var drive = new Drive()
+                    {
+                        Name = name.Value.ToString(),
+                        Root = root.Value.ToString()
+                    };
+                    result.Add(drive);
+                }
             }
             catch (Exception)
             {

@@ -9,8 +9,19 @@
 
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <ListView ItemsSource="{Binding DriverItems}">
+    <StackPanel>
+
+        <TextBlock Text="Available Drivers" Style="{StaticResource Heading2}" Margin="0,0,0,8" />
+
+        <ListView Margin="0,0,0,16" ItemsSource="{Binding DriverItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <UniformGrid Columns="2">
+                        <TextBlock Text="{Binding Root}" />
+                        <CheckBox  IsChecked="{Binding IsChecked}" />
+                    </UniformGrid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
-    </Grid>
+    </StackPanel>
 </UserControl>

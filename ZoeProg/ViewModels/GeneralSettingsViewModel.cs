@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZoeProg.Common;
+using ZoeProg.Common.Models;
 
 namespace ZoeProg.ViewModels
 {
@@ -13,7 +14,7 @@ namespace ZoeProg.ViewModels
     {
         private readonly ISettingService settingService;
 
-        private ObservableCollection<object> driverItems;
+        private ObservableCollection<DriveViewModel> driverItems;
 
         public GeneralSettingsViewModel(ISettingService settingService)
         {
@@ -21,7 +22,7 @@ namespace ZoeProg.ViewModels
             this.LoadDrivers();
         }
 
-        public ObservableCollection<object> DriverItems
+        public ObservableCollection<DriveViewModel> DriverItems
         {
             get { return driverItems; }
             set { SetProperty(ref driverItems, value); }
@@ -30,7 +31,9 @@ namespace ZoeProg.ViewModels
         private async void LoadDrivers()
         {
             var res = await this.settingService.GetDriverList();
-            this.DriverItems = new ObservableCollection<object>(res);
+
+            var list = res.Select(i => new DriveViewModel() { Name = i.Name, Provider = i.Provider, Root = i.Root, FreeGB = i.FreeGB });
+            this.DriverItems = new ObservableCollection<DriveViewModel>(list);
         }
     }
 }

@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Management.Automation;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -11,7 +12,7 @@
 
         Task RunCommand(Action<string> onDataReceived, string command);
 
-        Task<IEnumerable<string>> RunCommand(string command);
+        Task<IEnumerable<PSObject>> RunCommand(string command);
 
         Task RunCommand(Action<string> onDataReceived, CancellationToken cancelToken, string command);
     }

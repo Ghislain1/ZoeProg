@@ -24,7 +24,7 @@
             foreach (var item in this.JunkFileList)
             {
                 var cmd = string.Format(format, item);
-                await this.powerShellService.RunCommand(cmd);
+                await this.powerShellService.RunCommand(CancellationToken.None, cmd);
             }
             //clear the list
             this.JunkFileList = null;
@@ -41,7 +41,7 @@
             await Task.Delay(100);
 
             var cmd = @"get-childitem c:\ -include *.tmp -recurse";
-            this.JunkFileList = await this.powerShellService.RunCommand(cmd);
+            this.JunkFileList = await this.powerShellService.RunCommand(CancellationToken.None, cmd);
             var res = new List<JunkFile>();
             foreach (var item in this.JunkFileList)
             {
