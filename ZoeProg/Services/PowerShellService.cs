@@ -64,8 +64,8 @@
             {
                 using (var ps = PowerShell.Create())
                 {
-                    var collection = ps.AddScript(command).Invoke<string>();
-                    tcs.TrySetResult(collection);
+                    var collection = ps.AddScript(command).Invoke();
+                    tcs.TrySetResult(null);
                     return;
                     //Todo: This is how to take more Info.
                     var itemPropertyCollection = new List<string>();
@@ -75,8 +75,8 @@
                         var itemProperty = ps.AddScript(internalCMD).Invoke<string>();
 
                         //TODO: now just a name
-                        var fileName = Path.GetFileNameWithoutExtension(fullNameFile);
-                        itemPropertyCollection.Add(fileName);
+                        //var fileName = Path.GetFileNameWithoutExtension(fullNameFile);
+                        //itemPropertyCollection.Add(fileName);
                     }
                     tcs.TrySetResult(itemPropertyCollection);
                 }

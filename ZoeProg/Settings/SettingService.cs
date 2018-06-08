@@ -20,7 +20,8 @@ namespace ZoeProg.Settings
         public async Task<List<Drive>> GetDriverList(ProviderType providerType = ProviderType.FileSystem)
         {
             List<Drive> result = new List<Drive>();
-            var cmd = "Get-PSDrive -Scope Global -PSProvider " + providerType;
+            // var cmd = "Get-PSDrive -Scope Global -PSProvider " + providerType + " | Format-List";
+            var cmd = "Get-PSDrive -Scope Global -PSProvider  " + providerType;
             try
             {
                 var res = await this.powerShellService.RunCommand(cmd);
