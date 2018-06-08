@@ -36,11 +36,21 @@
 - Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
 - [Mui](https://github.com/firstfloorsoftware/mui/wiki)
 - Powershell
+- [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
 
 # Next Steps
 - Installer like Visual studio Installer
 - Computer Cleaner
 
+# Contributions
+- Dev:
+     + Install Git
+     + Clone the project ()
+     + Build the project from VS2017
+     + Start Coding!!
+ - Donation
+     + Paypal(soon)
+     + Amazon eGift Cards
 
 
   # Thema for experience
