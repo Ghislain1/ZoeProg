@@ -6,11 +6,10 @@
 
 # Intro
 
-- [parent](https://github.com/Zeeex/XTR-Toolbox/edit/master/README.md)
+
 - Motivation
 - Grund
 - Ziel: This is an Interface to install program from your local PC.
-- [example scrum](https://github.com/bbougot/Popcorn/projects/1)
 
 
 
@@ -60,6 +59,8 @@
   * Raspberry Pi:  https://www.raspberrypi.org
        what can do with Raspberry Pi?( Camero control, Sensor control)
        Can i use C# with Raspberry Pi? Yes--> https://github.com/ZiCog/HomeSpun
+  * [example scrum](https://github.com/bbougot/Popcorn/projects/1)
+  * [parent](https://github.com/Zeeex/XTR-Toolbox/edit/master/README.md)
            
   
   
