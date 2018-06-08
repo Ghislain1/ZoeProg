@@ -6,10 +6,8 @@
 
 # Intro
 
-
 - Motivation
-- Grund
-- Ziel: This is an Interface to install program from your local PC.
+- Goal: This is an Interface to install program from your local PC.
 
 
 
