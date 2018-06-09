@@ -11,13 +11,16 @@
              xmlns:mui="http://firstfloorsoftware.com/ModernUI"
 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Style="{StaticResource ContentRoot}">
-        <mui:ModernTab SelectedSource="Views/SettingsAppearance.xaml" Layout="List">
-            <mui:ModernTab.Links>
-                <mui:Link DisplayName="Appearance" Source="Views/SettingsAppearance.xaml" />
-                <mui:Link DisplayName="About" Source="Views/About.xaml" />
-                <mui:Link DisplayName="General settings" Source="Views/GeneralSettings.xaml" />
-            </mui:ModernTab.Links>
-        </mui:ModernTab>
-    </Grid>
+    <DockPanel>
+        <Button DockPanel.Dock="Bottom" Content="Save" Command="{Binding SaveCommand}" />
+        <Grid Style="{StaticResource ContentRoot}">
+            <mui:ModernTab SelectedSource="Views/SettingsAppearance.xaml" Layout="List">
+                <mui:ModernTab.Links>
+                    <mui:Link DisplayName="Appearance" Source="Views/SettingsAppearance.xaml" />
+                    <mui:Link DisplayName="About" Source="Views/About.xaml" />
+                    <mui:Link DisplayName="General settings" Source="Views/GeneralSettings.xaml" />
+                </mui:ModernTab.Links>
+            </mui:ModernTab>
+        </Grid>
+    </DockPanel>
 </UserControl>

@@ -5,7 +5,7 @@
     using System.Threading.Tasks;
     using ZoeProg.Common;
 
-    public class TaskService : ITaskService
+    public class TaskService
     {
         public TaskService()
         {

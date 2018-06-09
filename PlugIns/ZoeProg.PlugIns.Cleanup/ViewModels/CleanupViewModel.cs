@@ -2,12 +2,15 @@
 {
     using Prism.Commands;
     using Prism.Mvvm;
+    using System;
     using System.Collections.ObjectModel;
     using System.Linq;
+    using ZoeProg.Common;
     using ZoeProg.PlugIns.Cleanup.Services;
 
     public class CleanupViewModel : BindableBase
     {
+        private IApplicationCommands applicationCommands;
         private ICleanupService cleanupService;
 
         private int counter;
@@ -19,11 +22,14 @@
         /// </summary>
         private ObservableCollection<JunkItemViewModel> junkCollection;
 
-        public CleanupViewModel(ICleanupService cleanupService)
+        public CleanupViewModel(IApplicationCommands applicationCommands, ICleanupService cleanupService)
         {
+            this.applicationCommands = applicationCommands;
             this.cleanupService = cleanupService;
             this.JunkCollection = new ObservableCollection<JunkItemViewModel>();
 
+            this.SaveCommand = new DelegateCommand(this.Save);
+            this.applicationCommands.SaveCommand.RegisterCommand(this.SaveCommand);
             this.ScanCommand = new DelegateCommand(this.ExecuteScan, this.CanScan).ObservesProperty(() => this.IsBusy);
             this.DeleteCommand = new DelegateCommand(this.ExecuteDelete, this.CanDelete).ObservesProperty(() => this.IsBusy);
         }
@@ -48,6 +54,7 @@
             set { SetProperty(ref junkCollection, value); }
         }
 
+        public DelegateCommand SaveCommand { get; private set; }
         public DelegateCommand ScanCommand { get; private set; }
 
         private bool CanDelete()
@@ -95,6 +102,11 @@
             this.JunkCollection = new ObservableCollection<JunkItemViewModel>(junks.Select(it => new JunkItemViewModel() { FullPath = it.Name }));
             this.Counter = this.junkCollection.Count;
             this.IsBusy = false;
+        }
+
+        private void Save()
+        {
+            throw new NotImplementedException();
         }
     }
 

@@ -24,6 +24,7 @@
 
             ///
             this.Container.RegisterType<ISettingService, SettingService>(new ContainerControlledLifetimeManager());
+            this.Container.RegisterType<IApplicationCommands, ApplicationCommands>(new ContainerControlledLifetimeManager());
 
             this.Container.RegisterType<IPowerShellService, PowerShellService>(new ContainerControlledLifetimeManager());
 

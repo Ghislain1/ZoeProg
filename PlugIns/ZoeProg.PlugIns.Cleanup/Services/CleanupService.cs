@@ -40,12 +40,17 @@
         {
             await Task.Delay(100);
 
-            var cmd = @"get-childitem c:\ -include *.tmp -recurse";
-            this.JunkFileList = await this.powerShellService.RunCommand(CancellationToken.None, cmd);
+            var cmd = @"get-childitem  -Path C:\ -include *.tmp -recurse";
+
+            var collection = await this.powerShellService.RunCommand(cmd);
+
             var res = new List<JunkFile>();
-            foreach (var item in this.JunkFileList)
+            foreach (var item in collection)
             {
-                res.Add(new JunkFile() { Name = item });
+                foreach (var item2 in item.Members)
+                {
+                    Console.WriteLine(item2);
+                }
             }
             return res;
         }

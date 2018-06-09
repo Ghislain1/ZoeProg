@@ -4,20 +4,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ZoeProg.Common;
 using ZoeProg.Common.Models;
 
 namespace ZoeProg.ViewModels
 {
     public class DriveViewModel : BindableBase
     {
+        private readonly IApplicationCommands applicationCommands;
         private double freeGB;
-
         private bool isChecked;
+
         private string name;
 
         private ProviderType provider;
 
         private string root;
+        private ISettingService settingService;
+
+        public DriveViewModel(ISettingService settingService, IApplicationCommands applicationCommands)
+        {
+            this.applicationCommands = applicationCommands;
+            this.settingService = settingService;
+        }
 
         public double FreeGB
         {
@@ -31,6 +40,11 @@ namespace ZoeProg.ViewModels
             set
             {
                 SetProperty(ref isChecked, value);
+                if (value)
+                {
+                    var driver = new Drive() { Name = name };
+                    // this.settingService.UpdateDrivers( )
+                }
             }
         }
 
@@ -53,5 +67,12 @@ namespace ZoeProg.ViewModels
         }
 
         public double UsedGB { get; set; }
+
+        public void Init(Drive i)
+        {
+            this.Name = i.Name;
+            this.Provider = i.Provider; this.Root = i.Root;
+            this.FreeGB = i.FreeGB;
+        }
     }
 }
