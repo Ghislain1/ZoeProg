@@ -10,11 +10,13 @@
 
     public class CleanupService : ICleanupService
     {
+        private readonly ISettingService settingService;
         private IEnumerable<PSObject> JunkFileList;
         private IPowerShellService powerShellService;
 
-        public CleanupService(IPowerShellService powerShellService)
+        public CleanupService(ISettingService settingService, IPowerShellService powerShellService)
         {
+            this.settingService = settingService;
             this.powerShellService = powerShellService;
         }
 
@@ -46,19 +48,25 @@
         {
             //TODO: Must be removed!! just test Delay()Method
             await Task.Delay(100);
-            var path = @"C:\Users\Zoe\AppData\Local\Temp";
-            var cmd = $"get-childitem  -Path {path}  -include *.tmp -recurse";
 
-            this.JunkFileList = await this.powerShellService.RunCommand(cmd);
-
-            //TODO: Send More File JUnk information next time
-            //Only the  fullFileName has been senden!!
+            var drivers = await this.settingService.GetDriverList();
             var res = new List<JunkFile>();
-            foreach (var item in this.JunkFileList)
+
+            //Job for each Driver
+            foreach (var item in drivers)
             {
-                var junkFile = new JunkFile() { FullPath = item.ToString() };
-                res.Add(junkFile);
+                var cmd = $"get-childitem  -Path {item.Root}  -include *.tmp -recurse";
+                this.JunkFileList = await this.powerShellService.RunCommand(cmd);
+
+                //TODO: Send More File JUnk information next time
+                //Only the  fullFileName has been senden!!
+                foreach (var junk in this.JunkFileList)
+                {
+                    var junkFile = new JunkFile() { FullPath = junk.ToString() };
+                    res.Add(junkFile);
+                }
             }
+
             return res;
         }
     }
