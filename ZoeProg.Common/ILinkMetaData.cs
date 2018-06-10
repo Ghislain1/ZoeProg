@@ -14,4 +14,11 @@ namespace ZoeProg.Common
         List<ILinkMetadata> SourceLinks { get; set; }
         string Title { get; set; }
     }
+
+    public class LinkMetadata : ILinkMetadata
+    {
+        public string DisplayName { get; set; }
+        public string ParentName { get; set; }
+        public string Source { get; set; }
+    }
 }

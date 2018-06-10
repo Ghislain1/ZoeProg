@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg", "ZoeProg\ZoeProg.
 	ProjectSection(ProjectDependencies) = postProject
 		{4A19B760-207B-4F22-8A37-4B66213D8EB3} = {4A19B760-207B-4F22-8A37-4B66213D8EB3}
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}
+		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E} = {16ED5AF7-1520-472B-BBEE-CACCFBA9550E}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Common", "ZoeProg.Common\ZoeProg.Common.csproj", "{E838A7B4-9320-4892-8D77-1A0DCA7584BC}"
@@ -22,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.UninstalledPackage", "PlugIns\ZoeProg.PlugIns.UninstalledPackage\ZoeProg.PlugIns.UninstalledPackage.csproj", "{4A047E62-1FCC-4337-AD79-4855D6400B9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Cleanup", "PlugIns\ZoeProg.PlugIns.Cleanup\ZoeProg.PlugIns.Cleanup.csproj", "{4A19B760-207B-4F22-8A37-4B66213D8EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.TaskManager", "PlugIns\ZoeProg.PlugIns.TaskManager\ZoeProg.PlugIns.TaskManager.csproj", "{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +60,10 @@ Global
 		{4A19B760-207B-4F22-8A37-4B66213D8EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A19B760-207B-4F22-8A37-4B66213D8EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A19B760-207B-4F22-8A37-4B66213D8EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +74,7 @@ Global
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{4A047E62-1FCC-4337-AD79-4855D6400B9C} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{4A19B760-207B-4F22-8A37-4B66213D8EB3} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42D9B723-A5FD-453D-B056-9B2DFD43B30A}

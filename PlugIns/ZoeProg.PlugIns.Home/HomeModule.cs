@@ -19,19 +19,12 @@
 
         public void Initialize()
         {
-            ILinkMetadata linkMetaData = new LinkMetaData();
+            ILinkMetadata linkMetaData = new LinkMetadata();
             linkMetaData.DisplayName = "Home";
             linkMetaData.ParentName = "ZoeProg Center";
             linkMetaData.Source = $"/ZoeProg.PlugIns.Home;component/Views/{nameof(HomeView)}.xaml";
 
             this.linkMetadataService.Registry(linkMetaData);
         }
-    }
-
-    internal class LinkMetaData : ILinkMetadata
-    {
-        public string DisplayName { get; set; }
-        public string ParentName { get; set; }
-        public string Source { get; set; }
     }
 }

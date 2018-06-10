@@ -25,7 +25,7 @@
 
         public void Initialize()
         {
-            ILinkMetadata linkMetaData = new LinkMetaData();
+            ILinkMetadata linkMetaData = new LinkMetadata();
             linkMetaData.DisplayName = "Junks";
             linkMetaData.ParentName = "Clean explorer";
 
@@ -33,19 +33,12 @@
             this.moduleMetadataService.Registry(linkMetaData);
 
             //Cookies
-            ILinkMetadata cookieLinkMetaData = new LinkMetaData();
+            ILinkMetadata cookieLinkMetaData = new LinkMetadata();
             cookieLinkMetaData.DisplayName = "Cookies";
             cookieLinkMetaData.ParentName = "Clean explorer";
 
             cookieLinkMetaData.Source = $"/ZoeProg.PlugIns.Cleanup;component/Views/{nameof(CookieView)}.xaml";
             this.moduleMetadataService.Registry(cookieLinkMetaData);
         }
-    }
-
-    internal class LinkMetaData : ILinkMetadata
-    {
-        public string DisplayName { get; set; }
-        public string ParentName { get; set; }
-        public string Source { get; set; }
     }
 }
