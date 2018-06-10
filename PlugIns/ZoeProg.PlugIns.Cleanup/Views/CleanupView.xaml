@@ -24,7 +24,7 @@
 
             <DataGrid Name="DG1" ItemsSource="{Binding JunkCollection}" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <mui:DataGridTextColumn Header="Name"  Binding="{Binding FullPath}" />
+                    <mui:DataGridTextColumn Header="FullPath"  Binding="{Binding FullPath}" />
                     <!--   <mui:DataGridTextColumn Header=" Name" Binding="{Binding FullPath}" />
                <mui:DataGridTextColumn Header="Email" Binding="{Binding FullPath}" />
                 <mui:DataGridCheckBoxColumn Header="Member" Binding="{Binding IsMember}" />-->

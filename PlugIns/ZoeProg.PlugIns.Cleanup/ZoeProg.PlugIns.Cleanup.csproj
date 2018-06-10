@@ -12,6 +12,8 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -79,6 +81,7 @@
     <Compile Include="Services\CleanupService.cs" />
     <Compile Include="Services\ICleanupService.cs" />
     <Compile Include="ViewModels\CleanupViewModel.cs" />
+    <Compile Include="ViewModels\JunkItemViewModel.cs" />
     <Compile Include="Views\CleanupView.xaml.cs">
       <DependentUpon>CleanupView.xaml</DependentUpon>
     </Compile>

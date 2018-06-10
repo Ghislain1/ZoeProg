@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Management.Automation;
     using System.Threading;
     using System.Threading.Tasks;
     using ZoeProg.Common;
@@ -9,7 +10,7 @@
 
     public class CleanupService : ICleanupService
     {
-        private IEnumerable<string> JunkFileList;
+        private IEnumerable<PSObject> JunkFileList;
         private IPowerShellService powerShellService;
 
         public CleanupService(IPowerShellService powerShellService)
@@ -20,11 +21,12 @@
         public async Task<bool> DeleteJunkFiles()
         {
             await Task.Delay(122);
-            var format = @"Remove-Item -Path {0} -Force";
+            var path = "";
+
             foreach (var item in this.JunkFileList)
             {
-                var cmd = string.Format(format, item);
-                await this.powerShellService.RunCommand(CancellationToken.None, cmd);
+                var cmd = $"Remove-Item -Path {item} -Force";
+                await this.powerShellService.RunCommand(cmd);
             }
             //clear the list
             this.JunkFileList = null;
@@ -36,21 +38,26 @@
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// List of Junkfile
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<JunkFile>> GetListJunkFile()
         {
+            //TODO: Must be removed!! just test Delay()Method
             await Task.Delay(100);
+            var path = @"C:\Users\Zoe\AppData\Local\Temp";
+            var cmd = $"get-childitem  -Path {path}  -include *.tmp -recurse";
 
-            var cmd = @"get-childitem  -Path C:\ -include *.tmp -recurse";
+            this.JunkFileList = await this.powerShellService.RunCommand(cmd);
 
-            var collection = await this.powerShellService.RunCommand(cmd);
-
+            //TODO: Send More File JUnk information next time
+            //Only the  fullFileName has been senden!!
             var res = new List<JunkFile>();
-            foreach (var item in collection)
+            foreach (var item in this.JunkFileList)
             {
-                foreach (var item2 in item.Members)
-                {
-                    Console.WriteLine(item2);
-                }
+                var junkFile = new JunkFile() { FullPath = item.ToString() };
+                res.Add(junkFile);
             }
             return res;
         }

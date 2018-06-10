@@ -1,15 +1,18 @@
 ﻿namespace ZoeProg.PlugIns.Cleanup.ViewModels
 {
+    using Microsoft.Practices.Unity;
     using Prism.Commands;
     using Prism.Mvvm;
     using System;
     using System.Collections.ObjectModel;
     using System.Linq;
     using ZoeProg.Common;
+    using ZoeProg.PlugIns.Cleanup.Models;
     using ZoeProg.PlugIns.Cleanup.Services;
 
     public class CleanupViewModel : BindableBase
     {
+        private readonly IUnityContainer unityContainer;
         private IApplicationCommands applicationCommands;
         private ICleanupService cleanupService;
 
@@ -22,9 +25,10 @@
         /// </summary>
         private ObservableCollection<JunkItemViewModel> junkCollection;
 
-        public CleanupViewModel(IApplicationCommands applicationCommands, ICleanupService cleanupService)
+        public CleanupViewModel(IUnityContainer unityContainer, IApplicationCommands applicationCommands, ICleanupService cleanupService)
         {
             this.applicationCommands = applicationCommands;
+            this.unityContainer = unityContainer;
             this.cleanupService = cleanupService;
             this.JunkCollection = new ObservableCollection<JunkItemViewModel>();
 
@@ -48,11 +52,7 @@
             set { SetProperty(ref this.isBusy, value); }
         }
 
-        public ObservableCollection<JunkItemViewModel> JunkCollection
-        {
-            get { return junkCollection; }
-            set { SetProperty(ref junkCollection, value); }
-        }
+        public ObservableCollection<JunkItemViewModel> JunkCollection { get => this.junkCollection; set => this.SetProperty(ref this.junkCollection, value); }
 
         public DelegateCommand SaveCommand { get; private set; }
         public DelegateCommand ScanCommand { get; private set; }
@@ -94,33 +94,29 @@
         {
             this.IsBusy = true;
             var junks = await this.cleanupService.GetListJunkFile();
+
             if (junks == null)
             {
                 this.IsBusy = false;
                 return;
             }
-            this.JunkCollection = new ObservableCollection<JunkItemViewModel>(junks.Select(it => new JunkItemViewModel() { FullPath = it.Name }));
-            this.Counter = this.junkCollection.Count;
+
+            var items = junks.Select(it =>
+            {
+                var vm = this.unityContainer.Resolve<JunkItemViewModel>();
+                //TODO: Find better away to create a VM with parameter using PRISM.
+                vm.Init(it);
+                return vm;
+            });
+
+            this.JunkCollection = new ObservableCollection<JunkItemViewModel>(items);
+            this.Counter = this.JunkCollection.Count;
             this.IsBusy = false;
         }
 
         private void Save()
         {
             throw new NotImplementedException();
-        }
-    }
-
-    public class JunkItemViewModel : BindableBase
-    {
-        /// <summary>
-        /// The full path to the item
-        /// </summary>
-        private string fullPath;
-
-        public string FullPath
-        {
-            get { return fullPath; }
-            set { SetProperty(ref fullPath, value); }
         }
     }
 }
