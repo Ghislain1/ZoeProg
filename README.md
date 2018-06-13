@@ -15,6 +15,7 @@
 
 # Look & Feel
 
+![alt text](https://github.com/Ghislain1/ZoeProg/tree/master/ZoeProg.Common/Resources/AppIcon.jpg)
 
 # Requirements
 - Windows 7, 8.1, 10 (32, 64 bits)
