@@ -19,7 +19,7 @@
 ZoeProg is scanning all junks File from your local PC
 ![alt text](/ZoeProg/docs/setting.PNG)
 Setting Page
-![alt text](/blob/master/docs/tm.PNG)
+![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/tm.PNG)
 Task Manager Page
 
 # Requirements
