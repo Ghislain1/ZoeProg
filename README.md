@@ -4,11 +4,6 @@
 </h1>
 
 
-# [Intro](https://github.com/Ghislain1/ZoeProg/wiki)
-
-- Motivation
-- Goal: This is an Interface to install program from your local PC.
-
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Features](https://github.com/Ghislain1/ZoeProg/wiki)
@@ -17,6 +12,8 @@
   - [Road map](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Issues](https://github.com/Ghislain1/ZoeProg/issues)
   - [Scrum Board](https://github.com/Ghislain1/ZoeProg/projects/1)
+
+# Look & Feel
 
 
 # Requirements
