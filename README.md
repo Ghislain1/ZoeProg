@@ -15,7 +15,7 @@
   - [Requirements](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Version History](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Road map](https://github.com/Ghislain1/ZoeProg/wiki)
-  - [Issues](https://github.com/Ghislain1/ZoeProg/wiki)
+  - [Issues](https://github.com/Ghislain1/ZoeProg/issues)
   - [Scrum Board](https://github.com/Ghislain1/ZoeProg/wiki)
 
 
