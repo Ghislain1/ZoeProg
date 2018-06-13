@@ -15,7 +15,7 @@
 
 # Look & Feel
 
-![alt text](/ZoeProg/docs/ce.PNG)
+![alt text](/ZoeProg//tree/master/docs/docs/ce.PNG)
 ZoeProg is scanning all junks File from your local PC
 ![alt text](/ZoeProg/docs/setting.PNG)
 Setting Page
