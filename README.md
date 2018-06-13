@@ -15,7 +15,12 @@
 
 # Look & Feel
 
-![alt text](/ZoeProg.Common/Resources/AppIcon.jpg)
+![alt text](ZoeProg/docs/ce.PNG)
+ZoeProg is scanning all junks File from your local PC
+![alt text](ZoeProg/docs/setting.PNG)
+Setting Page
+![alt text](ZoeProg/docs/tm.PNG)
+Task Manager Page
 
 # Requirements
 - Windows 7, 8.1, 10 (32, 64 bits)
