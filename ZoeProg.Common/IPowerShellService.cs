@@ -14,6 +14,8 @@
 
         Task<IEnumerable<PSObject>> RunCommand(string command);
 
+
+   
         Task RunCommand(Action<string> onDataReceived, CancellationToken cancelToken, string command);
     }
 }

@@ -8,6 +8,7 @@
     using System.Text;
     using System.Threading.Tasks;
     using ZoeProg.Common;
+    using ZoeProg.PlugIns.TaskManager.ViewModels;
     using ZoeProg.PlugIns.TaskManager.Views;
 
     public class TaskManagerModule : IModule
@@ -19,6 +20,9 @@
         {
             this.linkMetadataService = linkMetadataService;
             this.container = container;
+            
+
+         this.container.RegisterType<ITaskManagerService, TaskManagerService>(new ContainerControlledLifetimeManager());
         }
 
         public void Initialize()

@@ -96,5 +96,22 @@
             //};
             //return this.taskService.StartNew<Task<IEnumerable<string>>>(func).Result;
         }
+
+        public Task<IEnumerable<T>> RunCommand<T>(string command)
+        {
+            var tcs = new TaskCompletionSource<IEnumerable<T>>();
+
+            Task.Factory.StartNew(() =>
+            {
+                using (var ps = PowerShell.Create())
+                {
+                    var collection = ps.AddScript(command).Invoke<T>();
+                    tcs.TrySetResult(collection);
+                }
+            }
+           );
+
+            return tcs.Task;
+        }
     }
 }
