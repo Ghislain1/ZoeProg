@@ -1,0 +1,6 @@
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Ghis.Controls\bin\Debug\Ghis.Controls.dll
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Ghis.Controls\bin\Debug\Ghis.Controls.pdb
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Ghis.Controls\obj\Debug\Ghis.Controls.csproj.CoreCompileInputs.cache
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Ghis.Controls\obj\Debug\Ghis.Controls.dll
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Ghis.Controls\obj\Debug\Ghis.Controls.pdb
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Ghis.Controls\obj\Debug\Ghis.Controls.csprojAssemblyReference.cache

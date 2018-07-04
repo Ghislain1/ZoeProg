@@ -1,0 +1,6 @@
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Themes\Ghis.Theme.Dark\bin\Debug\Ghis.Theme.Dark.dll
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Themes\Ghis.Theme.Dark\bin\Debug\Ghis.Theme.Dark.pdb
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Themes\Ghis.Theme.Dark\obj\Debug\Ghis.Theme.Dark.csproj.CoreCompileInputs.cache
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Themes\Ghis.Theme.Dark\obj\Debug\Ghis.Theme.Dark.dll
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Themes\Ghis.Theme.Dark\obj\Debug\Ghis.Theme.Dark.pdb
+C:\Users\GhislainZeleu\Desktop\Workspace\G_SVN\ZoeProg\src_GhisC\Ghis_UI_For_WPF\Themes\Ghis.Theme.Dark\obj\Debug\Ghis.Theme.Dark.g.resources
