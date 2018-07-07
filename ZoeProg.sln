@@ -26,6 +26,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Cleanup", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.TaskManager", "PlugIns\ZoeProg.PlugIns.TaskManager\ZoeProg.PlugIns.TaskManager.csproj", "{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Externes", "Externes", "{8356DD47-E829-497D-B6B8-A1883ED78FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghis.CorporateIdentity.Dark", "Externes\Ghis.CorporateIdentity.Dark\Ghis.CorporateIdentity.Dark.csproj", "{DFCC1D22-229A-4DFD-A7D3-8D6B6C328573}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppTest", "Externes\WpfAppTest\WpfAppTest.csproj", "{6BEAA182-D6EA-4933-BC92-74C151FE0661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghis.CorporateIdentity.Styles", "Externes\Ghis.CorporateIdentity.Styles\Ghis.CorporateIdentity.Styles.csproj", "{54F2B2F3-D3F3-44A3-8141-726DE21AAEAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +72,18 @@ Global
 		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCC1D22-229A-4DFD-A7D3-8D6B6C328573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCC1D22-229A-4DFD-A7D3-8D6B6C328573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCC1D22-229A-4DFD-A7D3-8D6B6C328573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCC1D22-229A-4DFD-A7D3-8D6B6C328573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEAA182-D6EA-4933-BC92-74C151FE0661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEAA182-D6EA-4933-BC92-74C151FE0661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEAA182-D6EA-4933-BC92-74C151FE0661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEAA182-D6EA-4933-BC92-74C151FE0661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54F2B2F3-D3F3-44A3-8141-726DE21AAEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54F2B2F3-D3F3-44A3-8141-726DE21AAEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54F2B2F3-D3F3-44A3-8141-726DE21AAEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54F2B2F3-D3F3-44A3-8141-726DE21AAEAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +95,9 @@ Global
 		{4A047E62-1FCC-4337-AD79-4855D6400B9C} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{4A19B760-207B-4F22-8A37-4B66213D8EB3} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{16ED5AF7-1520-472B-BBEE-CACCFBA9550E} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{DFCC1D22-229A-4DFD-A7D3-8D6B6C328573} = {8356DD47-E829-497D-B6B8-A1883ED78FA9}
+		{6BEAA182-D6EA-4933-BC92-74C151FE0661} = {8356DD47-E829-497D-B6B8-A1883ED78FA9}
+		{54F2B2F3-D3F3-44A3-8141-726DE21AAEAA} = {8356DD47-E829-497D-B6B8-A1883ED78FA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42D9B723-A5FD-453D-B056-9B2DFD43B30A}
