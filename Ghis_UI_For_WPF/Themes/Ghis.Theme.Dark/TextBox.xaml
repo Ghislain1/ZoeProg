@@ -1,0 +1,102 @@
+﻿<ResourceDictionary      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+  <Style x:Key="TextBoxStyle" TargetType="TextBox">
+    <Setter Property="Background" Value="#FFFFFFFF"/>
+    <Setter Property="BorderBrush" Value="#FFFFFFFF"/>
+    <Setter Property="Foreground" Value="#FFFFFFFF"/>
+
+    <Setter Property="MinHeight" Value="26"/>
+    <Setter Property="Padding" Value="6 2"/>
+
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="TextBox">
+          <Grid x:Name="RootElement" UseLayoutRounding="True" SnapsToDevicePixels="True">
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal"/>
+                <VisualState x:Name="MouseOver">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" Storyboard.TargetName="hover" Storyboard.TargetProperty="Opacity" To="1"/>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Disabled">
+                  <Storyboard>
+                    <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="DisabledVisualElement"/>
+                    <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetName="PART_ContentHost" Storyboard.TargetProperty="Opacity"/>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="ReadOnly">
+                  <Storyboard>
+                    <ObjectAnimationUsingKeyFrames Duration="0:0:0" Storyboard.TargetName="Border" Storyboard.TargetProperty="BorderBrush">
+                      <DiscreteObjectKeyFrame KeyTime="0">
+                        <DiscreteObjectKeyFrame.Value>
+                          <SolidColorBrush Color="Transparent"/>
+                        </DiscreteObjectKeyFrame.Value>
+                      </DiscreteObjectKeyFrame>
+                    </ObjectAnimationUsingKeyFrames>
+                    <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ReadOnlyVisualElement"/>
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+              <VisualStateGroup x:Name="FocusStates">
+                <VisualState x:Name="Focused">
+                  <Storyboard>
+                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="FocusedVisual" Storyboard.TargetProperty="Visibility">
+                      <DiscreteObjectKeyFrame KeyTime="0:0:0.1">
+                        <DiscreteObjectKeyFrame.Value>
+                          <Visibility>Visible</Visibility>
+                        </DiscreteObjectKeyFrame.Value>
+                      </DiscreteObjectKeyFrame>
+                    </ObjectAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Unfocused"/>
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <Border x:Name="Border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+              <Grid>
+                <Border x:Name="ReadOnlyVisualElement" BorderThickness="1" BorderBrush="Transparent" Background="Transparent" Opacity="0"/>
+                <ScrollViewer x:Name="PART_ContentHost"
+                                        Padding="{TemplateBinding Padding}"
+                                        BorderThickness="0"
+                                        Background="Transparent"
+                                        VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                        HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+              </Grid>
+            </Border>
+            <Border x:Name="DisabledVisualElement"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Background="Transparent"
+                                BorderBrush="Red"
+                                IsHitTestVisible="False"
+                                Opacity="0"/>
+            <Border x:Name="hover"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Background="Transparent"
+                                BorderBrush="Yellow"
+                                Opacity="0"
+                                IsHitTestVisible="False"/>
+            <Border x:Name="FocusedVisual"
+                                Visibility="Collapsed"
+                                BorderBrush="Yellow"
+                                IsHitTestVisible="False"
+                                Background="Transparent"
+                                BorderThickness="{TemplateBinding BorderThickness}"/>
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+
+
+</ResourceDictionary>
