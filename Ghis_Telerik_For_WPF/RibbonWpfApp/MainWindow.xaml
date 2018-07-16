@@ -1,0 +1,63 @@
+﻿<Window x:Class="RibbonWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:local="clr-namespace:RibbonWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="825">
+    <Grid>
+        <telerik:RadRibbonView ApplicationName="ApplicationName" Title=" Title">
+            <telerik:RadRibbonView.Items>
+                <telerik:RadRibbonTab Header="Home">
+                    <telerik:RadRibbonGroup Header="Clipboard">
+                        <telerik:RadRibbonButton Text="Copy" />
+                        <telerik:RadRibbonSplitButton Text="Paste">
+                            <telerik:RadRibbonSplitButton.DropDownContent>
+                                <telerik:RadMenu>
+                                    <telerik:RadMenuItem Header="Paste" />
+                                    <telerik:RadMenuItem Header="Paste from" />
+                                </telerik:RadMenu>
+                            </telerik:RadRibbonSplitButton.DropDownContent>
+                        </telerik:RadRibbonSplitButton>
+                    </telerik:RadRibbonGroup>
+                    <telerik:RadRibbonGroup Header="Font">
+                    </telerik:RadRibbonGroup>
+                </telerik:RadRibbonTab>
+                <telerik:RadRibbonTab Header="View" />
+                <telerik:RadRibbonTab Header="Insert" />
+                <telerik:RadRibbonTab Header="References" />
+            </telerik:RadRibbonView.Items>
+            <!--Backstage -->
+            <telerik:RadRibbonView.Backstage>
+
+                <telerik:RadRibbonBackstage>
+                    <telerik:RadRibbonBackstageItem Header="Save" IsSelectable="False" />
+                    <telerik:RadRibbonBackstageItem Header="Open" IsSelectable="False" />
+                    <telerik:RadRibbonBackstageItem Header="Recent">
+                        <StackPanel Margin="10">
+                            <TextBlock Text="Recent files: " Margin="0 0 0 5" />
+                            <telerik:RadListBox>
+                                <telerik:RadListBoxItem Content="Document 1" Background="Yellow" />
+                                <telerik:RadListBoxItem Content="Document 2" />
+                                <telerik:RadListBoxItem Content="Document 3" />
+                                <telerik:RadListBoxItem Content="Document 4" />
+                            </telerik:RadListBox>
+                        </StackPanel>
+                    </telerik:RadRibbonBackstageItem>
+                </telerik:RadRibbonBackstage>
+            </telerik:RadRibbonView.Backstage>
+
+            <!--QuickAccessToolBar -->
+
+            <telerik:RadRibbonView.QuickAccessToolBar>
+                <telerik:QuickAccessToolBar>
+                    <telerik:RadRibbonButton SmallImage="images/save.png" telerik:RadToolTipService.ToolTipContent="Save" />
+                    <telerik:RadRibbonButton SmallImage="images/undo.png" telerik:RadToolTipService.ToolTipContent="Undo" />
+                    <telerik:RadRibbonButton SmallImage="images/print.png" telerik:RadToolTipService.ToolTipContent="Print" />
+                </telerik:QuickAccessToolBar>
+            </telerik:RadRibbonView.QuickAccessToolBar>
+        </telerik:RadRibbonView>
+    </Grid>
+</Window>

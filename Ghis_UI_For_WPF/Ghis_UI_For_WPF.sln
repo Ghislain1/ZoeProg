@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghis.Controls", "Ghis.Controls\Ghis.Controls.csproj", "{77B52E27-8C38-4CA0-8508-51534C406C64}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Themes", "Themes", "{435613DF-DD85-45C8-87E3-A8B06AEF5D11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghis.Theme.Dark", "Themes\Ghis.Theme.Dark\Ghis.Theme.Dark.csproj", "{37F33FA4-36EE-4785-AFE1-954B02B525E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTemplateHacker", "Themes\WpfTemplateHacker\WpfTemplateHacker.csproj", "{34BE953D-443A-4FED-8CA4-E0FCD7835751}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{37F33FA4-36EE-4785-AFE1-954B02B525E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37F33FA4-36EE-4785-AFE1-954B02B525E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37F33FA4-36EE-4785-AFE1-954B02B525E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
