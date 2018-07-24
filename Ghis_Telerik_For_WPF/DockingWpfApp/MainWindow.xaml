@@ -1,0 +1,46 @@
+﻿<Window x:Class="DockingWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        xmlns:local="clr-namespace:DockingWpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="750" Width="1400">
+    <Grid>
+        <telerik:RadDocking VisualCueStyle="{StaticResource VisualCueStyle1}">
+            <telerik:RadDocking.DocumentHost>
+                <telerik:RadSplitContainer>
+                    <telerik:RadPaneGroup>
+                        <telerik:RadPane Header="Description">
+                            <TextBlock TextWrapping="Wrap" Text="On the Documents tab above press Ctrl + Mouse Left button to display the Popup Menu. You can use the same combination on every tab." />
+                        </telerik:RadPane>
+                        <telerik:RadPane Header="NonDraggable" CanFloat="False">
+                            <TextBlock TextWrapping="Wrap" Text="This pane cannot be dragged, because it has its property CanFloat set 'False'." />
+                        </telerik:RadPane>
+                    </telerik:RadPaneGroup>
+                </telerik:RadSplitContainer>
+            </telerik:RadDocking.DocumentHost>
+
+            <telerik:RadSplitContainer InitialPosition="DockedLeft">
+                <telerik:RadPaneGroup>
+                    <!--<telerik:RadPane Header="Toolbox" />-->
+                    <telerik:RadPane Header="Server Explorer" />
+                </telerik:RadPaneGroup>
+            </telerik:RadSplitContainer>
+
+            <telerik:RadSplitContainer InitialPosition="DockedRight">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="Properties" />
+                    <!--<telerik:RadPane Header="Solution Explorer" />-->
+                </telerik:RadPaneGroup>
+            </telerik:RadSplitContainer>
+
+            <telerik:RadSplitContainer InitialPosition="DockedBottom">
+                <telerik:RadPaneGroup>
+                    <telerik:RadPane Header="Output" />
+                </telerik:RadPaneGroup>
+            </telerik:RadSplitContainer>
+        </telerik:RadDocking>
+    </Grid>
+</Window>

@@ -8,7 +8,12 @@ namespace WpfTemplateHacker
 {
     public class Theme
     {
-        public string DisplayString { get; set; }
+        public string DisplayString
+        {
+            get;
+            set;
+        }
+
         public string PackURI { get; set; }
 
         public static IEnumerable<Theme> GetThemes()
