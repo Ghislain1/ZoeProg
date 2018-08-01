@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockingWpfApp", "DockingWpf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadGridViewWpfApp", "RadGridViewWpfApp\RadGridViewWpfApp.csproj", "{C4FF9328-AE04-43F0-94E5-FAC75577D402}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonsWpfApp", "ButtonsWpfApp\ButtonsWpfApp.csproj", "{FE3668B2-AD6C-4EA2-B545-1E4A79EAA9B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C4FF9328-AE04-43F0-94E5-FAC75577D402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4FF9328-AE04-43F0-94E5-FAC75577D402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4FF9328-AE04-43F0-94E5-FAC75577D402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE3668B2-AD6C-4EA2-B545-1E4A79EAA9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE3668B2-AD6C-4EA2-B545-1E4A79EAA9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE3668B2-AD6C-4EA2-B545-1E4A79EAA9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE3668B2-AD6C-4EA2-B545-1E4A79EAA9B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
