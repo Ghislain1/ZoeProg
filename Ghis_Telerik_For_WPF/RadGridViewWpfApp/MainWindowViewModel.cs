@@ -105,12 +105,19 @@ namespace RadGridViewWpfApp
       Club club;
 
       club = new Club("Liverpool", new DateTime(1892, 1, 1), 45362);
+      club.Index = "2";
       clubs.Add(club);
 
       club = new Club("Manchester Utd.", new DateTime(1878, 1, 1), 76212);
+      club.Index = "1";
+      clubs.Add(club);
+
+      club = new Club("Manchester20.", new DateTime(1878, 10, 1), 1212);
+      club.Index = "20";
       clubs.Add(club);
 
       club = new Club("Chelsea", new DateTime(1905, 1, 1), 42055);
+      club.Index = "3";
       clubs.Add(club);
 
       this.Total = clubs.Count;

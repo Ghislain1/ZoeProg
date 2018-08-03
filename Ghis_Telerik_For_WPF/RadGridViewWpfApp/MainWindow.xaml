@@ -28,6 +28,15 @@
             </telerik:RadWatermarkTextBox>
         </StackPanel>
 
-        <telerik:RadGridView x:Name="RadGridView1" ItemsSource="{Binding Clubs}" />
+        <telerik:RadGridView x:Name="RadGridView1" ItemsSource="{Binding Clubs}" AutoGenerateColumns="False">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding Name}" Header="Name" UniqueName="Name" />
+                <telerik:GridViewDataColumn IsSortable="True" SortMemberPath="SortIndex"  DataMemberBinding="{Binding Index}" Header="Index" UniqueName="Index" />
+            </telerik:RadGridView.Columns>
+
+            <telerik:RadGridView.SortDescriptors>
+                <telerik:SortDescriptor Member="SortIndex"                        SortDirection="Ascending" />
+            </telerik:RadGridView.SortDescriptors>
+        </telerik:RadGridView>
     </DockPanel>
 </Window>

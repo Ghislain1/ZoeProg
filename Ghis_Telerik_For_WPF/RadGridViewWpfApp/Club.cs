@@ -9,7 +9,10 @@ namespace RadGridViewWpfApp
   public class Club : BindableBase
   {
     private DateTime established;
+    private string index;
     private string name;
+
+    private int sortIndex;
     private int stadiumCapacity;
 
     public Club(string name, DateTime established, int stadiumCapacity)
@@ -32,6 +35,19 @@ namespace RadGridViewWpfApp
       }
     }
 
+    public string Index
+    {
+      get { return this.index; }
+      set
+      {
+        if (value != this.index)
+        {
+          this.index = value;
+          this.OnPropertyChanged("Index");
+        }
+      }
+    }
+
     public string Name
     {
       get { return this.name; }
@@ -42,6 +58,18 @@ namespace RadGridViewWpfApp
           this.name = value;
           this.OnPropertyChanged("Name");
         }
+      }
+    }
+
+    public int SortIndex
+    {
+      get
+      {
+        if (this.index != null)
+        {
+          this.sortIndex = int.Parse(this.index);
+        }
+        return this.sortIndex;
       }
     }
 
