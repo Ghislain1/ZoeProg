@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghis.Theme.Dark", "Themes\G
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTemplateHacker", "Themes\WpfTemplateHacker\WpfTemplateHacker.csproj", "{34BE953D-443A-4FED-8CA4-E0FCD7835751}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTestMyWindow", "WpfTestMyWindow\WpfTestMyWindow.csproj", "{8C7BF185-A1B1-425B-9557-4733FC86FE44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34BE953D-443A-4FED-8CA4-E0FCD7835751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7BF185-A1B1-425B-9557-4733FC86FE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7BF185-A1B1-425B-9557-4733FC86FE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7BF185-A1B1-425B-9557-4733FC86FE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7BF185-A1B1-425B-9557-4733FC86FE44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{42471745-0536-4382-B4E3-49E460F86926} = {FCDACD94-A102-4B46-9BA7-BEE2F1BCA895}
 		{37F33FA4-36EE-4785-AFE1-954B02B525E3} = {435613DF-DD85-45C8-87E3-A8B06AEF5D11}
+		{8C7BF185-A1B1-425B-9557-4733FC86FE44} = {FCDACD94-A102-4B46-9BA7-BEE2F1BCA895}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {69F1B4D1-11D8-4EA1-896F-DFA9E5C37458}
