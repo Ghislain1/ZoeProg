@@ -1,8 +1,10 @@
 ﻿namespace ZoeProg.PlugIns.Cleanup
 {
-    using Microsoft.Practices.Unity;
+    using Prism.Ioc;
     using Prism.Modularity;
     using System.Collections.Generic;
+    using Unity;
+    using Unity.Lifetime;
     using ZoeProg.Common;
     using ZoeProg.PlugIns.Cleanup.Services;
     using ZoeProg.PlugIns.Cleanup.Views;
@@ -39,6 +41,16 @@
 
             cookieLinkMetaData.Source = $"/ZoeProg.PlugIns.Cleanup;component/Views/{nameof(CookieView)}.xaml";
             this.moduleMetadataService.Registry(cookieLinkMetaData);
+        }
+
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

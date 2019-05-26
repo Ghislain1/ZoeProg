@@ -1,19 +1,21 @@
 ﻿namespace ZoeProg
 {
-    using System.Windows;
+    using Prism.Ioc;
+    using Prism.Modularity;
+    using Prism.Unity;
 
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
-        protected override void OnStartup(StartupEventArgs e)
+        protected override IModuleCatalog CreateModuleCatalog()
         {
-            base.OnStartup(e);
+            return new ConfigurationModuleCatalog();
+        }
 
-            var bootstrapper = new AppBootstrapper();
-
-            bootstrapper.Run();
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
         }
     }
 }

@@ -1,8 +1,6 @@
 ﻿namespace ZoeProg.ViewModels
 {
-    using FirstFloor.ModernUI.Presentation;
     using Prism.Mvvm;
-    using System;
     using System.ComponentModel;
     using System.Linq;
     using System.Windows.Media;
@@ -37,9 +35,7 @@
 
         private string selectedPalette = PaletteWP;
 
-        private Link selectedTheme;
-
-        private LinkCollection themes = new LinkCollection();
+        private string selectedTheme;
 
         // 20 accent colors from Windows Phone 8
         private Color[] wpAccentColors = new Color[]{
@@ -67,17 +63,7 @@
 
         public SettingsAppearanceViewModel()
         {
-            // add the default themes
-            this.themes.Add(new Link { DisplayName = "dark", Source = AppearanceManager.DarkThemeSource });
-            this.themes.Add(new Link { DisplayName = "light", Source = AppearanceManager.LightThemeSource });
-
             // add additional themes
-
-            this.themes.Add(new Link { DisplayName = "GhislainOne ", Source = new Uri("/ZoeProg;component/Assets/GhislainOne.xaml", UriKind.Relative) });
-
-            SyncThemeAndColor();
-
-            AppearanceManager.Current.PropertyChanged += OnAppearanceManagerPropertyChanged;
         }
 
         public Color[] AccentColors
@@ -104,8 +90,6 @@
                 {
                     this.selectedAccentColor = value;
                     OnPropertyChanged("SelectedAccentColor");
-
-                    AppearanceManager.Current.AccentColor = value;
                 }
             }
         }
@@ -119,8 +103,6 @@
                 {
                     this.selectedFontSize = value;
                     OnPropertyChanged("SelectedFontSize");
-
-                    AppearanceManager.Current.FontSize = value == FontLarge ? FontSize.Large : FontSize.Small;
                 }
             }
         }
@@ -140,7 +122,7 @@
             }
         }
 
-        public Link SelectedTheme
+        public string SelectedTheme
         {
             get { return this.selectedTheme; }
             set
@@ -149,16 +131,8 @@
                 {
                     this.selectedTheme = value;
                     RaisePropertyChanged("SelectedTheme");
-
-                    // and update the actual theme
-                    AppearanceManager.Current.ThemeSource = value.Source;
                 }
             }
-        }
-
-        public LinkCollection Themes
-        {
-            get { return this.themes; }
         }
 
         private void OnAppearanceManagerPropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -172,10 +146,6 @@
         private void SyncThemeAndColor()
         {
             // synchronizes the selected viewmodel theme with the actual theme used by the appearance manager.
-            this.SelectedTheme = this.themes.FirstOrDefault(l => l.Source.Equals(AppearanceManager.Current.ThemeSource));
-
-            // and make sure accent color is up-to-date
-            this.SelectedAccentColor = AppearanceManager.Current.AccentColor;
         }
     }
 }

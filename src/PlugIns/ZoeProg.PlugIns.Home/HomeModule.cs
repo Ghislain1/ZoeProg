@@ -1,8 +1,8 @@
 ﻿namespace ZoeProg.PlugIns.Home
 {
-    using Microsoft.Practices.Unity;
+    using Prism.Ioc;
     using Prism.Modularity;
-
+    using Unity;
     using ZoeProg.Common;
     using ZoeProg.PlugIns.Home.Views;
 
@@ -25,6 +25,16 @@
             linkMetaData.Source = $"/ZoeProg.PlugIns.Home;component/Views/{nameof(HomeView)}.xaml";
 
             this.linkMetadataService.Registry(linkMetaData);
+        }
+
+        public void OnInitialized(IContainerProvider containerProvider)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

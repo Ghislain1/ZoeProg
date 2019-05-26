@@ -1,12 +1,12 @@
 ﻿namespace ZoeProg.PlugIns.TaskManager.ViewModels
 {
-    using Microsoft.Practices.Unity;
     using Prism.Mvvm;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Unity;
     using ZoeProg.Common;
 
     public class ProcessViewModel : BindableBase

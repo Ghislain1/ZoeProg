@@ -1,13 +1,12 @@
 ﻿namespace ZoeProg.PlugIns.Cleanup.ViewModels
 {
-    using Microsoft.Practices.Unity;
     using Prism.Commands;
     using Prism.Mvvm;
     using System;
     using System.Collections.ObjectModel;
     using System.Linq;
+    using Unity;
     using ZoeProg.Common;
-    using ZoeProg.PlugIns.Cleanup.Models;
     using ZoeProg.PlugIns.Cleanup.Services;
 
     public class CleanupViewModel : BindableBase

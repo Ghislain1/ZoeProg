@@ -2,8 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
     using ZoeProg.Common;
@@ -38,7 +36,7 @@
             List<UninstalledPackage> listToReturn = new List<UninstalledPackage>();
             foreach (var item in resultCommand)
             {
-                listToReturn.Add(new UninstalledPackage() { Title = item, Version = "hh" });
+                listToReturn.Add(new UninstalledPackage() { Version = "hh" });
             }
             return listToReturn;
         }

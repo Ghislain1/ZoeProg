@@ -1,6 +1,7 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:ZoeProg.Assets">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:ZoeProg.Assets">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/FirstFloor.ModernUI;component/Assets/ModernUI.Light.xaml" />
@@ -8,9 +9,17 @@
 
     <Color x:Key="AccentColor">#f472d0</Color>
 
-    <Rectangle x:Key="WindowBackgroundContent" x:Shared="false" Margin="32">
+    <Rectangle
+        x:Key="WindowBackgroundContent"
+        Margin="32"
+        x:Shared="false">
         <Rectangle.Fill>
-            <ImageBrush Opacity=".1" ImageSource="/Assets/GhislainOne.jpg" Stretch="None"  AlignmentX="Right" AlignmentY="Bottom" />
+            <ImageBrush
+                AlignmentX="Right"
+                AlignmentY="Bottom"
+                ImageSource="/Assets/GhislainOne.jpg"
+                Opacity=".1"
+                Stretch="None" />
         </Rectangle.Fill>
     </Rectangle>
 </ResourceDictionary>
