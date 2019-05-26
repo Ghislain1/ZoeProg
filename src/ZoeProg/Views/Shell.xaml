@@ -9,4 +9,7 @@
     Title="{Binding}"
     Width="1225"
     Height="550"
-    prism:ViewModelLocator.AutoWireViewModel="True" />
+    prism:ViewModelLocator.AutoWireViewModel="True">
+
+    <ContentControl prism:RegionManager.RegionName="ContentRegion" />
+</Window>

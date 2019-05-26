@@ -1,5 +1,4 @@
-﻿using FirstFloor.ModernUI.Windows.Navigation;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
 namespace ZoeProg.PlugIns.Cleanup.Views
 {
@@ -17,21 +16,5 @@ namespace ZoeProg.PlugIns.Cleanup.Views
 
         public string DisplayName { get; set; }
         public string Source { get; set; }
-
-        public void OnFragmentNavigation(FragmentNavigationEventArgs e)
-        {
-        }
-
-        public void OnNavigatedFrom(NavigationEventArgs e)
-        {
-        }
-
-        public void OnNavigatedTo(NavigationEventArgs e)
-        {
-        }
-
-        public void OnNavigatingFrom(NavigatingCancelEventArgs e)
-        {
-        }
     }
 }

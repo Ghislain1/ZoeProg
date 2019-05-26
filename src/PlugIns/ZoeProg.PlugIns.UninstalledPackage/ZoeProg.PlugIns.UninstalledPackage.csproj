@@ -91,11 +91,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <PackageReference Include="Prism.Unity">
+      <Version>7.1.0.431</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

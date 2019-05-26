@@ -1,12 +1,9 @@
 ﻿namespace ZoeProg.PlugIns.TaskManager.ViewModels
 {
-    using Newtonsoft.Json;
     using Prism.Mvvm;
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
-    using System.Linq;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
     using Unity;
@@ -42,9 +39,6 @@
 
             foreach (var item in prs)
             {
-                var serialized = JsonConvert.SerializeObject(item.Properties.ToDictionary(k => k.Name, v => v.Value));
-                var deseialized = JsonConvert.DeserializeObject<ProcessModel>(serialized);
-                result.Add(deseialized);
             }
 
             return result;
