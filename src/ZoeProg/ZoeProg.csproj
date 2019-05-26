@@ -88,9 +88,6 @@
     <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="Settings\SettingService.cs" />
     <Compile Include="ViewModels\GeneralSettingsViewModel.cs" />
-    <Compile Include="TestView.xaml.cs">
-      <DependentUpon>TestView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\IShellViewModel.cs" />
     <Compile Include="Services\PackageRepository.cs" />
     <Compile Include="Services\ConfigurationService.cs" />
@@ -113,10 +110,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\GeneralSettings.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="TestView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -201,6 +194,12 @@
     <Resource Include="Assets\GhislainOne.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MahApps.Metro">
+      <Version>1.6.5</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes">
+      <Version>2.5.1</Version>
+    </PackageReference>
     <PackageReference Include="Prism.Unity">
       <Version>7.1.0.431</Version>
     </PackageReference>

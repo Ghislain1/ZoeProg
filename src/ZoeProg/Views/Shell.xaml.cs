@@ -1,9 +1,11 @@
-﻿namespace ZoeProg.Views
+﻿using MahApps.Metro.Controls;
+
+namespace ZoeProg.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Shell
+    public partial class Shell : MetroWindow
     {
         public Shell()
         {
