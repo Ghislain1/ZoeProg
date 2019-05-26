@@ -3,6 +3,8 @@
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Unity;
+    using System.Windows;
+    using ZoeProg.Views;
 
     /// <summary>
     /// Interaction logic for App.xaml
@@ -12,6 +14,11 @@
         protected override IModuleCatalog CreateModuleCatalog()
         {
             return new ConfigurationModuleCatalog();
+        }
+
+        protected override Window CreateShell()
+        {
+            return Container.Resolve<Shell>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
