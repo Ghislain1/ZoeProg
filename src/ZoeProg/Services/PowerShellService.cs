@@ -14,15 +14,15 @@
             return RunCommand(onDataReceived, CancellationToken.None, command);
         }
 
-        public Task<IEnumerable<string>> RunCommand(CancellationToken cancelToken, string command)
+        public Task<IEnumerable<object>> RunCommand(CancellationToken cancelToken, string command)
         {
-            var tcs = new TaskCompletionSource<IEnumerable<string>>();
+            var tcs = new TaskCompletionSource<IEnumerable<object>>();
 
             Task.Factory.StartNew(() =>
             {
                 using (var ps = PowerShell.Create())
                 {
-                    var collection = ps.AddScript(command).Invoke<string>();
+                    var collection = ps.AddScript(command).Invoke<object>();
 
                     tcs.TrySetResult(collection);
                 }

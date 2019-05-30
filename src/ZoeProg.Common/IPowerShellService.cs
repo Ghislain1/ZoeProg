@@ -8,7 +8,7 @@
 
     public interface IPowerShellService
     {
-        Task<IEnumerable<string>> RunCommand(CancellationToken cancelToken, string command);
+        Task<IEnumerable<object>> RunCommand(CancellationToken cancelToken, string command);
 
         Task RunCommand(Action<string> onDataReceived, string command);
 

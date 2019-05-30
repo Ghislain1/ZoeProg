@@ -29,7 +29,7 @@
             string pattern = @"Name=""(?<name>.+)"",Version=""(?<version>\d.+)""";
             var regex = new Regex(pattern, RegexOptions.IgnoreCase);
 
-            IEnumerable<string> psOutput = null;
+            IEnumerable<object> psOutput = null;
             string cmd = Cmds.ListInstalledPackCmd;
             var result = new List<InstalledPackage>();
             try
@@ -45,9 +45,9 @@
             {
                 token.ThrowIfCancellationRequested();
 
-                if (!string.IsNullOrEmpty(item))
+                if (!string.IsNullOrEmpty(item.ToString()))
                 {
-                    var package = this.CreateInstalledPackage(item, regex);
+                    var package = this.CreateInstalledPackage(item.ToString(), regex);
                     result.Add(package);
                 }
             }

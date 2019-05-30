@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ZoeProg.PlugIns.TaskManager")]
+[assembly: AssemblyTitle("ZoeProg.PlugIns.Uninstall")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("ZoeProg.PlugIns.TaskManager")]
-[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2018")]
+[assembly: AssemblyProduct("ZoeProg.PlugIns.Uninstall")]
+[assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("16ed5af7-1520-472b-bbee-caccfba9550e")]
+[assembly: Guid("aaeed95f-5513-42f6-948e-6d938835f382")]
 
 // Version information for an assembly consists of the following four values:
 //

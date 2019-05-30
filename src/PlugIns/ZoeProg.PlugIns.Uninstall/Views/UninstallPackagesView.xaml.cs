@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ZoeProg.PlugIns.TaskManager.Views
+namespace ZoeProg.PlugIns.Uninstall.Views
 {
     /// <summary>
-    /// Interaction logic for ProcessView.xaml
+    /// Interaction logic for UninstallPackagesView.xaml
     /// </summary>
-    public partial class TaskManagerView : UserControl
+    public partial class UninstallPackagesView : UserControl
     {
-        public TaskManagerView()
+        public UninstallPackagesView()
         {
             InitializeComponent();
         }

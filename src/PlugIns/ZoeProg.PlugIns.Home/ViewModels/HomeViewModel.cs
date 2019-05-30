@@ -20,7 +20,7 @@ namespace ZoeProg.PlugIns.Home.ViewModels
         public HomeViewModel(IPowerShellService powerShellService)
         {
          this. powerShellService =   powerShellService;
-            this.Test();
+            this.Test().GetAwaiter();
          }
 
         private async Task  Test()
@@ -28,8 +28,8 @@ namespace ZoeProg.PlugIns.Home.ViewModels
            await  Task.Delay(1000);
          var sd= await   this.ListInstalledPackages(false, CancellationToken.None);
         }
-        ObservableCollection<string> _views;
-        public ObservableCollection<string> Views
+        ObservableCollection<object> _views;
+        public ObservableCollection<object> Views
         {
             get { return _views; }
             set { SetProperty(ref _views, value); }
@@ -44,7 +44,7 @@ namespace ZoeProg.PlugIns.Home.ViewModels
 
                 var regex = new Regex(@"^(?<name>\S+)\s+(?<version>\d+(\.\d+)+(-[a-zA-Z0-9]+)*)$");
 
-                IEnumerable<string> psOutput = null;
+                IEnumerable<object> psOutput = null;
                 try
                 {
                     string command = "chocolatey list -localonly";
@@ -55,7 +55,7 @@ namespace ZoeProg.PlugIns.Home.ViewModels
                 }
                 catch (TaskCanceledException) { }
 
-            this.Views = new ObservableCollection<string>(psOutput);
+            this.Views = new ObservableCollection<object>(psOutput);
             var packages = new List<string>();
 
                 return packages;
