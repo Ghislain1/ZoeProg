@@ -4,6 +4,8 @@
     using Prism.Modularity;
     using Prism.Unity;
     using System.Windows;
+    using ZoeProg.Common;
+    using ZoeProg.Services;
     using ZoeProg.Views;
 
     /// <summary>
@@ -23,6 +25,7 @@
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterSingleton<IPowerShellService, PowerShellService>();
         }
     }
 }

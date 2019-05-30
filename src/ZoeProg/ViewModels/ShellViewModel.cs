@@ -10,7 +10,7 @@
     {
         private readonly IRegionManager _regionManager;
 
-        private string _title = "ZoeProg -  Tool";
+        private string _title = "ZoeProg   -  Tool";
 
         private ObservableCollection<object> _views = new ObservableCollection<object>();
 

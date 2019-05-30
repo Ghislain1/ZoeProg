@@ -34,6 +34,13 @@
             <Style  TargetType="local:Shell"  BasedOn="{StaticResource {x:Type controlLib:ZoeProgShell}}" >
                 
             </Style>
+
+            <!-- accent -->
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#5C5B5E"/>
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="#FFFFFF"/>
+            <Style TargetType="TabItem">
+                <Setter Property="Header" Value="{Binding DataContext.Header}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

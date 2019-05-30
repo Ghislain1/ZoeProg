@@ -88,7 +88,7 @@
                                         <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Top" WindowChrome.IsHitTestVisibleInChrome="True">
                                             <Button Command="{Binding Source={x:Static SystemCommands.MinimizeWindowCommand}}" 
                                                     Style="{DynamicResource MaterialDesignFlatButton}"
-                                                    ToolTip="modernui:Resources.Minimize">
+                                                    ToolTip="Minimize">
                                                 <Button.Content>
                                                     <Grid Width="13" Height="12" RenderTransform="1,0,0,1,0,1">
                                                         <Path Data="M0,6 L8,6 Z" Width="8" Height="7" VerticalAlignment="Center" HorizontalAlignment="Center"
