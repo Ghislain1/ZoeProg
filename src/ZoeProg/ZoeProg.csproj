@@ -194,9 +194,6 @@
     <Resource Include="Assets\GhislainOne.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MahApps.Metro">
-      <Version>1.6.5</Version>
-    </PackageReference>
     <PackageReference Include="MaterialDesignThemes">
       <Version>2.5.1</Version>
     </PackageReference>
@@ -209,7 +206,12 @@
       <Project>{e838a7b4-9320-4892-8d77-1a0dca7584bc}</Project>
       <Name>ZoeProg.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ZoeProg.CustomControlLib\ZoeProg.CustomControlLib.csproj">
+      <Project>{1a608348-cf66-4130-8287-9db3a4368dde}</Project>
+      <Name>ZoeProg.CustomControlLib</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

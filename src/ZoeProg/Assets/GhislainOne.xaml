@@ -9,17 +9,5 @@
 
     <Color x:Key="AccentColor">#f472d0</Color>
 
-    <Rectangle
-        x:Key="WindowBackgroundContent"
-        Margin="32"
-        x:Shared="false">
-        <Rectangle.Fill>
-            <ImageBrush
-                AlignmentX="Right"
-                AlignmentY="Bottom"
-                ImageSource="/Assets/GhislainOne.jpg"
-                Opacity=".1"
-                Stretch="None" />
-        </Rectangle.Fill>
-    </Rectangle>
+
 </ResourceDictionary>
