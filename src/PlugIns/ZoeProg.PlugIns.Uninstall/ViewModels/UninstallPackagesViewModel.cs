@@ -29,7 +29,7 @@ namespace ZoeProg.PlugIns.Uninstall.ViewModels
             this.Items = new ObservableCollection<InstalledPackage>();
             foreach (var item in collection)
             {
-                var pkg = new InstalledPackage() { Title = item.ToString() };
+                var pkg = new InstalledPackage() { Title = item.ToString()};
                 this.items.Add(pkg);
             }
         }
