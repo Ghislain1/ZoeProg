@@ -15,11 +15,11 @@
 
 # Look & Feel
 
-![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/ce.PNG)
+![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/1.PNG)
 ZoeProg is scanning all junks File from your local PC
-![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/setting.PNG)
+![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/2.PNG)
 Setting Page
-![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/tm.PNG)
+![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/3.PNG)
 Task Manager Page
 
 # Requirements
