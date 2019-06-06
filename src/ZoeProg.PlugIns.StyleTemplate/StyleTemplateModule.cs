@@ -10,6 +10,7 @@ namespace ZoeProg.PlugIns.StyleTemplate
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using ZoeProg.PlugIns.StyleTemplate.Services;
     using ZoeProg.PlugIns.StyleTemplate.Views;
 
     public class StyleTemplateModule : IModule
@@ -22,6 +23,10 @@ namespace ZoeProg.PlugIns.StyleTemplate
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.Register<IWpfControlProvider, WpfControlProvider>();
+             
+            containerRegistry.Register<IXamlWriteService, WpfControlProvider>();
+
         }
     }
 }
