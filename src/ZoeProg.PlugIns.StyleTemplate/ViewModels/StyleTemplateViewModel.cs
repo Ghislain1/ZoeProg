@@ -54,16 +54,16 @@ namespace ZoeProg.PlugIns.StyleTemplate.ViewModels
                     try
                     {
                         var control = Activator.CreateInstance(value) as Control;
+                        
                         if (control == null)
                         {
                             return;
                         }
-                        var butt = new Button();
-                        control = butt as Control;
-                        control.UpdateLayout();
+                         
+                        control.UpdateDefaultStyle();
                         if (control.Template == null)
                         {
-                           // return;
+                            return;
                         }
                         this.Template = this.xamlWriteService.GetXamlString(control.Template);
                     }
