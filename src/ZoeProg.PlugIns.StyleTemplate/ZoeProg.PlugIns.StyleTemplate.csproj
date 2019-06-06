@@ -69,7 +69,12 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\ZoeProg.Common\ZoeProg.Common.csproj">
+      <Project>{E838A7B4-9320-4892-8D77-1A0DCA7584BC}</Project>
+      <Name>ZoeProg.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(SolutionDir)\$(SolutionName)\$(OutDir)" /Y</PostBuildEvent>

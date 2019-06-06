@@ -10,6 +10,7 @@
     <ResourceDictionary.MergedDictionaries>
 
         <!--<ResourceDictionary Source="/ZoeProg.CustomControlLib;component/Themes/ZoeProgShell.xaml" />-->
+        <ResourceDictionary Source="pack://application:,,,/ZoeProg.CustomControlLib;component/Themes/Converters.xaml" />
         <ResourceDictionary Source="pack://application:,,,/ZoeProg.CustomControlLib;component/Themes/ZoeProgShell.xaml" />
 
     </ResourceDictionary.MergedDictionaries>

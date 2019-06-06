@@ -11,9 +11,10 @@ namespace ZoeProg.PlugIns.StyleTemplate.ViewModels
     using System.Threading.Tasks;
     using System.Windows;
     using System.Windows.Controls;
+    using ZoeProg.Common;
     using ZoeProg.PlugIns.StyleTemplate.Services;
 
-    public class StyleTemplateViewModel : BindableBase
+    public class StyleTemplateViewModel : BindableBase, IPluginHeader
     {
         private readonly IWpfControlProvider wpfControlProvider;
         private readonly IXamlWriteService xamlWriteService;

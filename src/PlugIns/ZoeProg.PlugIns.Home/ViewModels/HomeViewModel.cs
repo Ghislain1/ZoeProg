@@ -1,22 +1,19 @@
-﻿using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Threading.Tasks;
-using ZoeProg.Common;
+﻿
 
 namespace ZoeProg.PlugIns.Home.ViewModels
 {
-    public class HomeViewModel: BindableBase
+    using Prism.Mvvm;
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Text.RegularExpressions;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using ZoeProg.Common;
+    public class HomeViewModel: BindableBase, IPluginHeader
     {
         private readonly IPowerShellService powerShellService;
-        //public string Header
-        //{
-        //    get { return _title; }= "Home"
-        //    set { SetProperty(ref _title, value); }
-        //}
+        
         public HomeViewModel(IPowerShellService powerShellService)
         {
          this. powerShellService =   powerShellService;
@@ -35,10 +32,9 @@ namespace ZoeProg.PlugIns.Home.ViewModels
             set { SetProperty(ref _views, value); }
         }
         public string Header { get; } = " Home";
+        
 
-
-     
-            public async Task<IEnumerable<string>> ListInstalledPackages(bool allVersions, CancellationToken token)
+        public async Task<IEnumerable<string>> ListInstalledPackages(bool allVersions, CancellationToken token)
             {
                 token.ThrowIfCancellationRequested();
 

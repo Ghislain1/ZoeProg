@@ -11,18 +11,22 @@ using ZoeProg.PlugIns.Uninstall.Models;
 
 namespace ZoeProg.PlugIns.Uninstall.ViewModels
 {
-    public class UninstallPackagesViewModel : BindableBase
+    public class UninstallPackagesViewModel : BindableBase, IPluginHeader
     {
         private readonly IPowerShellService powerShellService;
+        ObservableCollection<InstalledPackage> items;
+        bool isBusy;
 
         public UninstallPackagesViewModel(IPowerShellService powerShellService)
         {
             this.powerShellService = powerShellService;
+         
             this.LoadAsync().GetAwaiter();
         }
 
         private async Task LoadAsync()
         {
+            this.IsBusy = true;
             var token = CancellationToken.None;
             var command = "Get-WmiObject -Query 'Select * from win32_product'";
             var collection = await this.powerShellService.RunCommand(token, command);
@@ -32,13 +36,23 @@ namespace ZoeProg.PlugIns.Uninstall.ViewModels
                 var pkg = new InstalledPackage() { Title = item.ToString()};
                 this.items.Add(pkg);
             }
+            this.IsBusy = false;
         }
-        ObservableCollection<InstalledPackage> items;
+    
         public ObservableCollection<InstalledPackage> Items
         {
             get { return items; }
             set { SetProperty(ref items, value); }
         }
+
+        public  bool IsBusy
+        {
+            get { return isBusy; }
+            set { SetProperty(ref isBusy, value); }
+        }
+
+
+        
         public string Header { get; } = " Uninstall Programs";
 
 
