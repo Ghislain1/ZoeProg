@@ -19,8 +19,15 @@
     TextElement.Foreground="White"
     TextOptions.TextFormattingMode="Ideal"
     TextOptions.TextRenderingMode="Auto">
+    <controlLib:ZoeProgShell.Resources>
+        <Style TargetType="{x:Type TabControl}">
+            <Style.Setters>
+                <Setter Property="TabStripPlacement" Value="Left"/>
+            </Style.Setters>
+        </Style>
+    </controlLib:ZoeProgShell.Resources>
 
- 
+
     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
         <TabControl prism:RegionManager.RegionName="{x:Static common:RegionNames.TabRegion}"/>
         
