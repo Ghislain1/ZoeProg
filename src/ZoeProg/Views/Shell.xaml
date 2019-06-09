@@ -27,7 +27,7 @@
                 <Grid x:Name="GridCursorew" Margin="0 100 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
 
-            <TabControl  prism:RegionManager.RegionName="{x:Static common:RegionNames.ListLeftRegion}">
+        <TabControl  prism:RegionManager.RegionName="{x:Static common:RegionNames.TabRegion}">
           
                 
             <TabControl.Style>
@@ -49,7 +49,7 @@
                                             <ControlTemplate.Triggers>
                                                 <Trigger Property="IsSelected" Value="True">
                                                     <Setter Property="Panel.ZIndex" Value="100" />
-                                                    <Setter TargetName="Border" Property="Background" Value="Red" />
+                                                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource PrimaryHueDarkBrush}" />
                                                     <Setter TargetName="Border" Property="BorderThickness" Value="1,1,1,0" />
                                                 </Trigger>
                                                 <Trigger Property="IsEnabled" Value="False">

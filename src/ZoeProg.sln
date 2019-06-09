@@ -15,12 +15,17 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlugIns", "PlugIns", "{382BCB3F-EB66-418F-BEEB-DC24D47FB874}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Home", "PlugIns\ZoeProg.PlugIns.Home\ZoeProg.PlugIns.Home.csproj", "{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779} = {45D2A833-A2DD-4EDB-80D1-BA024D6A0779}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.CustomControlLib", "ZoeProg.CustomControlLib\ZoeProg.CustomControlLib.csproj", "{1A608348-CF66-4130-8287-9DB3A4368DDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Uninstall", "PlugIns\ZoeProg.PlugIns.Uninstall\ZoeProg.PlugIns.Uninstall.csproj", "{AAEED95F-5513-42F6-948E-6D938835F382}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.StyleTemplate", "ZoeProg.PlugIns.StyleTemplate\ZoeProg.PlugIns.StyleTemplate.csproj", "{319457D0-B35C-486D-9992-B9B245388A22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Audit", "ZoeProg.PlugIns.Audit\ZoeProg.PlugIns.Audit.csproj", "{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +57,10 @@ Global
 		{319457D0-B35C-486D-9992-B9B245388A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{319457D0-B35C-486D-9992-B9B245388A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{319457D0-B35C-486D-9992-B9B245388A22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +69,7 @@ Global
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{AAEED95F-5513-42F6-948E-6D938835F382} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{319457D0-B35C-486D-9992-B9B245388A22} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42D9B723-A5FD-453D-B056-9B2DFD43B30A}

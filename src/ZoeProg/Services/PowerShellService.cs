@@ -52,58 +52,24 @@
             return tcs.Task;
         }
 
+
         /// <summary>
-        /// TODO: Find a best away to Manipulate PSObject
+        /// Talk about this Mathod again ?? 
         /// </summary>
+        /// <typeparam name="T"></typeparam>
         /// <param name="command"></param>
+        /// <param name="format"></param>
         /// <returns></returns>
-        public Task<IEnumerable<PSObject>> RunCommand(string command)
+
+        public Task<IList<T>> RunCommand<T>(string command, string format)
         {
-            var tcs = new TaskCompletionSource<IEnumerable<PSObject>>();
+            var tcs = new TaskCompletionSource<IList<T>>();
 
             Task.Factory.StartNew(() =>
             {
                 using (var ps = PowerShell.Create())
                 {
-                    var collection = ps.AddScript(command).Invoke();
-                    tcs.TrySetResult(collection);
-                }
-            }
-           );
-
-            return tcs.Task;
-
-            //var tcs = new TaskCompletionSource<IEnumerable<string>>();
-            //Func<Task<IEnumerable<string>>> func = () =>
-            //{
-            //    using (var ps = PowerShell.Create())
-            //    {
-            //        var collection = ps.AddScript(command).Invoke<string>();
-            //        var itemPropertyCollection = new List<string>();
-            //        foreach (var fullNameFile in collection)
-            //        {
-            //            string internalCMD = string.Format(format, fullNameFile);
-            //            var itemProperty = ps.AddScript(internalCMD).Invoke<string>();
-
-            //            //TODO: now just a name
-            //            var fileName = Path.GetFileNameWithoutExtension(fullNameFile);
-            //            itemPropertyCollection.Add(fileName);
-            //        }
-            //        tcs.TrySetResult(itemPropertyCollection);
-            //    }
-            //    return tcs.Task;
-            //};
-            //return this.taskService.StartNew<Task<IEnumerable<string>>>(func).Result;
-        }
-
-        public Task<IEnumerable<T>> RunCommand<T>(string command)
-        {
-            var tcs = new TaskCompletionSource<IEnumerable<T>>();
-
-            Task.Factory.StartNew(() =>
-            {
-                using (var ps = PowerShell.Create())
-                {
+                    var customCommand = command + " | " +   format;
                     var collection = ps.AddScript(command).Invoke<T>();
                     tcs.TrySetResult(collection);
                 }
@@ -112,5 +78,7 @@
 
             return tcs.Task;
         }
+
+   
     }
 }

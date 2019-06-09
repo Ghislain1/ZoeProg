@@ -10,8 +10,8 @@
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("ListLeftRegion", typeof(HomeView));
-            regionManager.RegisterViewWithRegion("MainRegion", typeof(HomeChildView));
+            regionManager.RegisterViewWithRegion("TabRegion", typeof(HomeView));
+           
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

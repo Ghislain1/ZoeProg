@@ -60,7 +60,7 @@ namespace ZoeProg.PlugIns.Uninstall.ViewModels
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public bool IsSelected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string NavigatePath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Title { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Title { get; set; } = "Packages";
         public string Kind { get ; set  ; } = "Hops";
     }
 

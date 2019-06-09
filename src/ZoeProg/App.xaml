@@ -16,7 +16,7 @@
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.BlueGrey.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Yellow.xaml" />
 
-                    <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml"/>
+                    
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.listbox.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.textblock.xaml" />
                     
@@ -25,14 +25,13 @@
                 
             </ResourceDictionary.MergedDictionaries>
 
-            <Style TargetType="{x:Type dragablz:TabablzControl}" BasedOn="{StaticResource MaterialDesignAlternateTabablzControlStyle}">
-                <Setter Property="FixedHeaderCount" Value="{Binding RelativeSource={RelativeSource Self}, Path=Items.Count, Mode=OneWay}" />
-            </Style>      
+               
             
-            
+            <!--Style for Shell Window-->
             <Style  TargetType="local:Shell"  BasedOn="{StaticResource {x:Type controlLib:ZoeProgShell}}" >
                 
             </Style>
+            
             <Rectangle x:Key="WindowBackgroundContent" Fill="{DynamicResource PrimaryHueDarkBrush}"/>
 
             <!-- accent -->
@@ -40,10 +39,7 @@
             <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="Gray"/>
             <SolidColorBrush x:Key="MyTransparent" Color="Transparent"/>
 
-            <!--For all TabItem in App: any whrere, inside any parent element-->
-            <!--<Style TargetType="TabItem" >
-                <Setter Property="Header" Value="{Binding DataContext.Header}" />
-            </Style>-->
+            
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

@@ -1,9 +1,11 @@
-﻿using Prism.Mvvm;
-using ZoeProg.Common;
-using ZoeProg.Common.Models;
+﻿
 
 namespace ZoeProg.ViewModels
 {
+    using Prism.Mvvm;
+    using ZoeProg.Common;
+    using ZoeProg.Common.Models;
+
     public class DriveViewModel : BindableBase
     {
         private readonly IApplicationCommands applicationCommands;

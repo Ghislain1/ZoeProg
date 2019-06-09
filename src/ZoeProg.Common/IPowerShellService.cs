@@ -12,10 +12,12 @@
 
         Task RunCommand(Action<string> onDataReceived, string command);
 
-        Task<IEnumerable<PSObject>> RunCommand(string command);
+       
 
 
-   
+        Task<IList<T>> RunCommand<T>(string command, string format);
+
+
         Task RunCommand(Action<string> onDataReceived, CancellationToken cancelToken, string command);
     }
 }

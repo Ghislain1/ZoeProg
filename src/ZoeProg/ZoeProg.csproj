@@ -80,7 +80,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Extensions\ListViewRegionAdapter.cs" />
-    <Compile Include="Extensions\TabablzControlRegionAdapter.cs" />
     <Compile Include="Extensions\TabControlRegionAdapter.cs" />
     <Compile Include="Services\ProgressService.cs" />
     <Compile Include="Services\TaskService.cs" />
@@ -197,9 +196,6 @@
     <Resource Include="Assets\GhislainOne.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Dragablz">
-      <Version>0.0.3.203</Version>
-    </PackageReference>
     <PackageReference Include="MaterialDesignThemes">
       <Version>2.5.1</Version>
     </PackageReference>
