@@ -10,6 +10,7 @@ namespace ZoeProg.PlugIns.StyleTemplate
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using ZoeProg.Common;
     using ZoeProg.PlugIns.StyleTemplate.Services;
     using ZoeProg.PlugIns.StyleTemplate.Views;
 
@@ -18,7 +19,10 @@ namespace ZoeProg.PlugIns.StyleTemplate
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("TabRegion", typeof(StyleTemplateView));
+            regionManager.RegisterViewWithRegion(RegionNames.ListLeftRegion, typeof(StyleTemplateView));
+            regionManager.RegisterViewWithRegion(RegionNames.MainRegion, typeof(StyleTemplateChildView));
+
+            
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

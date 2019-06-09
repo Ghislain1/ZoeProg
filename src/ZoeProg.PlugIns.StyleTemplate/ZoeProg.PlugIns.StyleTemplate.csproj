@@ -51,6 +51,9 @@
     <Compile Include="StyleTemplateModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\StyleTemplateViewModel.cs" />
+    <Compile Include="Views\StyleTemplateChildView.xaml.cs">
+      <DependentUpon>StyleTemplateChildView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\StyleTemplateView.xaml.cs">
       <DependentUpon>StyleTemplateView.xaml</DependentUpon>
     </Compile>
@@ -64,6 +67,10 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\StyleTemplateChildView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\StyleTemplateView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

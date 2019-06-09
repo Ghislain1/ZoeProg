@@ -14,7 +14,7 @@ namespace ZoeProg.PlugIns.StyleTemplate.ViewModels
     using ZoeProg.Common;
     using ZoeProg.PlugIns.StyleTemplate.Services;
 
-    public class StyleTemplateViewModel : BindableBase, IPluginHeader
+    public class StyleTemplateViewModel : BindableBase, IPlugin
     {
         private readonly IWpfControlProvider wpfControlProvider;
         private readonly IXamlWriteService xamlWriteService;
@@ -78,8 +78,12 @@ namespace ZoeProg.PlugIns.StyleTemplate.ViewModels
             }
         }
 
-
-
-
+        public string Code { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool IsSelected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string NavigatePath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Title { get; set; } = "Style & Template";
+        public string Kind { get; set; } = "InBox";
     }
 }

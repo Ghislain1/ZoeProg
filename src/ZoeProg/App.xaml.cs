@@ -7,6 +7,7 @@
     using Prism.Regions;
     using Prism.Unity;
     using System.Windows;
+    using System.Windows.Controls;
     using ZoeProg.Common;
     using ZoeProg.Extensions;
     using ZoeProg.Services;
@@ -35,10 +36,15 @@
 
         protected override  void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
         {
+            base.ConfigureRegionAdapterMappings(regionAdapterMappings);
+
             RegionAdapterMappings mappings = regionAdapterMappings;
             var regionBehaviorFactory = Container.Resolve<IRegionBehaviorFactory>();
-            mappings.RegisterMapping(typeof(TabablzControl), new TabablzControlRegionAdapter(regionBehaviorFactory));
-         
+            // mappings.RegisterMapping(typeof(TabablzControl), new TabablzControlRegionAdapter(regionBehaviorFactory));
+          //  mappings.RegisterMapping(typeof(ListView), new ListViewRegionAdapter(regionBehaviorFactory));
+            mappings.RegisterMapping(typeof(TabControl), new TabControlRegionAdapter(regionBehaviorFactory));
+            
+
         }
     }
 }

@@ -48,8 +48,6 @@
   <ItemGroup>
     <Compile Include="ApplicationCommands.cs" />
     <Compile Include="Data\UninstalledPackage.cs" />
-    <Compile Include="Data\PlugInBase.cs" />
-    <Compile Include="Data\FunctionItem.cs" />
     <Compile Include="Data\InstalledPackage.cs" />
     <Compile Include="Data\Package.cs" />
     <Compile Include="Data\PackageFilter.cs" />
@@ -67,8 +65,7 @@
     <Compile Include="IProgressViewModel.cs" />
     <Compile Include="IProgressService.cs" />
     <Compile Include="ISettingService.cs" />
-    <Compile Include="IPlugInService.cs" />
-    <Compile Include="IPlugIn.cs" />
+    <Compile Include="IPlugin.cs" />
     <Compile Include="Cmds.cs" />
     <Compile Include="Models\Drive.cs" />
     <Compile Include="RegionNames.cs" />

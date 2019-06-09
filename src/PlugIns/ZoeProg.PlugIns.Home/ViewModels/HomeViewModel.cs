@@ -10,7 +10,7 @@ namespace ZoeProg.PlugIns.Home.ViewModels
     using System.Threading;
     using System.Threading.Tasks;
     using ZoeProg.Common;
-    public class HomeViewModel: BindableBase, IPluginHeader
+    public class HomeViewModel : BindableBase, IPlugin
     {
         private readonly IPowerShellService powerShellService;
         
@@ -32,7 +32,13 @@ namespace ZoeProg.PlugIns.Home.ViewModels
             set { SetProperty(ref _views, value); }
         }
         public string Header { get; } = " Home";
-        
+        public string Code { get   ; set  ; }
+        public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Id { get; set; } = Guid.NewGuid().ToString();
+        public bool IsSelected { get; set; } = true;
+        public string NavigatePath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Title { get; set; } = "Home";
+        public string Kind { get; set; } = "Home";
 
         public async Task<IEnumerable<string>> ListInstalledPackages(bool allVersions, CancellationToken token)
             {

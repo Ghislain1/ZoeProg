@@ -47,6 +47,19 @@
             get { return title; }
             set { SetProperty(ref title, value); }
         }
+        string selectedUser;
+        public string SelectedUser
+        {
+            get { return selectedUser; }
+            set
+            {
+
+                if (SetProperty(ref selectedUser, value))
+                {
+                }
+            }
+        }
+        
 
         public ObservableCollection<object> Views
         {

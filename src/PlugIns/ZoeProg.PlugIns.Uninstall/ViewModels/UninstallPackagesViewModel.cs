@@ -11,7 +11,7 @@ using ZoeProg.PlugIns.Uninstall.Models;
 
 namespace ZoeProg.PlugIns.Uninstall.ViewModels
 {
-    public class UninstallPackagesViewModel : BindableBase, IPluginHeader
+    public class UninstallPackagesViewModel : BindableBase, IPlugin
     {
         private readonly IPowerShellService powerShellService;
         ObservableCollection<InstalledPackage> items;
@@ -28,7 +28,8 @@ namespace ZoeProg.PlugIns.Uninstall.ViewModels
         {
             this.IsBusy = true;
             var token = CancellationToken.None;
-            var command = "Get-WmiObject -Query 'Select * from win32_product'";
+            //var command = "Get-WmiObject -Query 'Select * from win32_product'";
+            var command = @"Get-ChildItem -Path HKLM:\Software\Microsoft\Windows\CurrentVersion\";
             var collection = await this.powerShellService.RunCommand(token, command);
             this.Items = new ObservableCollection<InstalledPackage>();
             foreach (var item in collection)
@@ -54,9 +55,13 @@ namespace ZoeProg.PlugIns.Uninstall.ViewModels
 
         
         public string Header { get; } = " Uninstall Programs";
-
-
-
+        public string Code { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool IsSelected { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string NavigatePath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Title { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Kind { get ; set  ; } = "Hops";
     }
 
     
