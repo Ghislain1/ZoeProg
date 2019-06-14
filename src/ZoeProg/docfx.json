@@ -4,7 +4,7 @@
       "files": [
         "**.csproj"
       ],
-      "src": "C:\\Users\\Zoe\\Desktop\\___Z_Todelte\\ZoeProg\\src\\ZoeProg"
+      "src": "C:\\Users\\Zoe\\Desktop\\___Z_Todelte\\ZoeProg\\src"
     }],
     "dest": "api",
     "disableGitFeatures": false,

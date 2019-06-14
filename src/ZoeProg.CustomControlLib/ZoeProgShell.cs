@@ -48,10 +48,7 @@ namespace ZoeProg.CustomControlLib
     public class ZoeProgShell : Window
     {
         private Storyboard backgroundAnimation;
-        //static ZoeProgShell()
-        //{
-        //    DefaultStyleKeyProperty.OverrideMetadata(typeof(ZoeProgShell), new FrameworkPropertyMetadata(typeof(ZoeProgShell)));
-        //}
+      
         public ZoeProgShell()
         {
             this.DefaultStyleKey = typeof(ZoeProgShell);
