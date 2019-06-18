@@ -11,7 +11,7 @@ Coming soon ( see Issues) !!
 
 TeamCity | Appveyor
 ----------- | -------
-Coming soon | [Appveyor](https://ci.appveyor.com/project/Ghislain1/zoeprog)
+Coming soon | [!Appveyor Build status](https://ci.appveyor.com/project/Ghislain1/zoeprog)
 
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
