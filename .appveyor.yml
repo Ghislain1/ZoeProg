@@ -1,1 +1,22 @@
+#---------------------------------#
+#  Build Script                   #
+#---------------------------------#
 
+build_script:
+  - ps: .\build.ps1 --bootstrap
+  - ps: .\build.ps1 -Target AppVeyor
+  
+#-----------------------------------------------------------------------------------------------#
+#        Branches to build (e.g.  master, develop, release, hotfix) hier only master branch     #
+#-----------------------------------------------------------------------------------------------#
+
+branches:
+  only:
+    - master
+    
+#---------------------------------#
+#  Build Cache                    #
+#---------------------------------#
+
+cache:
+- src\packages -> src\**\packages.config
