@@ -83,13 +83,10 @@
     <Compile Include="Extensions\TabControlRegionAdapter.cs" />
     <Compile Include="Services\ProgressService.cs" />
     <Compile Include="Services\TaskService.cs" />
-    <Compile Include="ViewModels\DriveViewModel.cs" />
     <Compile Include="Views\GeneralSettings.xaml.cs">
       <DependentUpon>GeneralSettings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="Settings\SettingService.cs" />
-    <Compile Include="ViewModels\GeneralSettingsViewModel.cs" />
     <Compile Include="ViewModels\IShellViewModel.cs" />
     <Compile Include="Services\PackageRepository.cs" />
     <Compile Include="Services\ConfigurationService.cs" />

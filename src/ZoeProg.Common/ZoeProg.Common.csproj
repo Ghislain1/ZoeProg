@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationCommands.cs" />
     <Compile Include="Data\UninstalledPackage.cs" />
     <Compile Include="Data\InstalledPackage.cs" />
     <Compile Include="Data\Package.cs" />
@@ -58,7 +57,6 @@
     <Compile Include="IPackageService.cs" />
     <Compile Include="IPackageRepository.cs" />
     <Compile Include="IConfigurationService.cs" />
-    <Compile Include="IApplicationCommands.cs" />
     <Compile Include="IPluginHeader.cs" />
     <Compile Include="IProgressMonitor.cs" />
     <Compile Include="IPowerShellService.cs" />
