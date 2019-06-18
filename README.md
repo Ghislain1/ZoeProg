@@ -2,7 +2,15 @@
 <h1 align="center" style="background:green;">
   ZoeProg
 </h1>
+## Installation
 
+Coming soon ( see Issues) !!
+
+## Build Status
+
+TeamCity | Appveyor
+----------- | -------
+Coming soon | [Appveyor](https://ci.appveyor.com/project/Ghislain1/zoeprog)
 
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
