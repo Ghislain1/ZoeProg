@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.StyleTempla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.PlugIns.Audit", "ZoeProg.PlugIns.Audit\ZoeProg.PlugIns.Audit.csproj", "{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Documentation", "ZoeProg.Documentation\ZoeProg.Documentation.csproj", "{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
