@@ -254,10 +254,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="apidoc\" />
-    <Folder Include="images\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="log.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\background.love.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

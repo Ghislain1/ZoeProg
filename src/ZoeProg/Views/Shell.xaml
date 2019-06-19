@@ -6,10 +6,10 @@
     xmlns:common="clr-namespace:ZoeProg.Common;assembly=ZoeProg.Common"   
     xmlns:prism="http://prismlibrary.com/"
     Title="{Binding Title}"
-    xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
-    BackgroundContent="{DynamicResource WindowBackgroundContent}"
+    
+  
     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-    Background="{DynamicResource MaterialDesignPaper}"    
+       
     Width="1225"
     Height="550"
     IsTitleVisible="False"
@@ -20,9 +20,12 @@
     FontFamily="{DynamicResource MaterialDesignFont}" 
     TextElement.FontSize="13"
     TextElement.FontWeight="Regular"
-    TextOptions.TextRenderingMode="Auto">     
+    TextOptions.TextRenderingMode="Auto">
+    <controlLib:ZoeProgShell.BackgroundContent>
+        <Image VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Source="/images/background.love.jpg"/>
+    </controlLib:ZoeProgShell.BackgroundContent>
 
-        <Grid  Background="#FF222222">
+    <Grid  Background="Transparent">
             <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlidetode" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
                 <Grid x:Name="GridCursorew" Margin="0 100 0 0" Background="#FF0069C0" Width="10" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
@@ -33,11 +36,13 @@
             <TabControl.Style>
                     <Style TargetType="TabControl">
                         <Setter Property="TabStripPlacement" Value="Left"/>
-                  
-                        <Setter Property="ItemContainerStyle">
+                    <Setter Property="Background"  Value="Transparent"/>
+
+                    <Setter Property="ItemContainerStyle">
                             <Setter.Value>
                                 <Style TargetType="TabItem">
                                 <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Background" Value="Transparent"/>
                                 <Setter Property="Template">
                                     <Setter.Value>
                                         <ControlTemplate TargetType="TabItem">
