@@ -29,6 +29,14 @@
           "toc.yml",
           "*.md"
         ]
+      },
+      {
+        "files": [
+          "home/**.md",
+          "home/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
       }
     ],
     "resource": [
