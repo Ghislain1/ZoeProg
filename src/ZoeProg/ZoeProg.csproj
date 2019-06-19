@@ -165,49 +165,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="api\.gitignore" />
-    <None Include="api\.manifest" />
-    <None Include="api\index.md" />
-    <None Include="api\toc.yml" />
-    <None Include="api\ZoeProg.App.yml" />
-    <None Include="api\ZoeProg.Extensions.ListViewRegionAdapter.yml" />
-    <None Include="api\ZoeProg.Extensions.TabControlRegionAdapter.yml" />
-    <None Include="api\ZoeProg.Extensions.yml" />
-    <None Include="api\ZoeProg.Services.PackageRepository.PackageService.yml" />
-    <None Include="api\ZoeProg.Services.PackageRepository.yml" />
-    <None Include="api\ZoeProg.Services.PowerShellService.yml" />
-    <None Include="api\ZoeProg.Services.TaskService.yml" />
-    <None Include="api\ZoeProg.Services.yml" />
-    <None Include="api\ZoeProg.Settings.SettingService.yml" />
-    <None Include="api\ZoeProg.Settings.yml" />
-    <None Include="api\ZoeProg.ViewModels.DriveViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.GeneralSettingsViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.IShellViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.NullProgressMonitor.yml" />
-    <None Include="api\ZoeProg.ViewModels.ProgressViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.SettingsAppearanceViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.SettingsViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.ShellViewModel.yml" />
-    <None Include="api\ZoeProg.ViewModels.yml" />
-    <None Include="api\ZoeProg.Views.About.yml" />
-    <None Include="api\ZoeProg.Views.GeneralSettings.yml" />
-    <None Include="api\ZoeProg.Views.ProgressView.yml" />
-    <None Include="api\ZoeProg.Views.Settings.yml" />
-    <None Include="api\ZoeProg.Views.SettingsAppearance.yml" />
-    <None Include="api\ZoeProg.Views.Shell.yml" />
-    <None Include="api\ZoeProg.Views.yml" />
-    <None Include="api\ZoeProg.yml" />
     <None Include="app.manifest" />
-    <None Include="articles\intro.md" />
-    <None Include="articles\toc.yml" />
-    <None Include="docfx.json" />
-    <None Include="index.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="toc.yml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -230,11 +193,6 @@
     <Resource Include="Assets\GhislainOne.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="docfx.console">
-      <Version>2.43.1</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
     <PackageReference Include="MaterialDesignThemes">
       <Version>2.5.1</Version>
     </PackageReference>
@@ -252,18 +210,13 @@
       <Name>ZoeProg.CustomControlLib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="apidoc\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="log.txt" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="images\background.love.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(ProjectDir)\_site\."     "C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\docs\" /Y   /S
+    <PostBuildEvent>REM xcopy "$(ProjectDir)\_site\."     "C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\docs\" /Y   /S
 echo "Ghislain"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

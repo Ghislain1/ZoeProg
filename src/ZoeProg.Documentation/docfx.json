@@ -49,7 +49,7 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "..\\ZoeProg\\docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
