@@ -2,8 +2,9 @@ Clear-Host
 
 # Variables
 
-$SolutionDir = "./src";
-$ScriptsDir = "./scripts";
+$SolutionDir = "./src"
+$ScriptsDir = "./scripts"
+$NugetExePath = ".\./tooling/.nuget/NuGet.exe"
 
 
  
@@ -14,16 +15,28 @@ Get-ChildItem $ScriptsDir | Where-Object { $_.Name -like "*.ps1" } | ForEach-Obj
     . .\scripts\$_
 }
 
-# Change to most recent location
-Pop-Location 
+# Set this location as recent location
+Push-Location 
 
 # Set to location where solution.sln is located
-Write-StageInformation -Text 'Current location Solution folder'
 Set-Location $SolutionDir
 
+# restore package using dotnet restore commands 
 Write-StageInformation -Text 'Package Restoring...'
-dotnet restore
+$projects = Get-ChildItem *.csproj -Recurse -Force
+ForEach ( $pro in $projects) {
+    dotnet restore $pro
+}
 
 Write-StageInformation -Text 'Solution building...'
-dotnet build
+$BuildExpression = "dotnet msbuild   /p:Configuration=Debug /p:Platform='Any CPU'"
+Invoke-Expression  $BuildExpression
+
+# Dotnet restore 
+# TODO: RestoreAllPackages    -SolutionDir "./"  -NUGETLOCATION "$NugetExePath"
+
+# Change to most recent location
+Pop-Location
+
+
 
