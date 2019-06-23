@@ -1,7 +1,7 @@
 ﻿namespace ZoeProg
 {
     
-    using MaterialDesignThemes.Wpf.Transitions;
+   
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;

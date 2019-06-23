@@ -11,14 +11,14 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                    <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.BlueGrey.xaml" />
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Yellow.xaml" />
 
                     
                     <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.listbox.xaml" />
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.textblock.xaml" />
+                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.textblock.xaml" />-->
                     
                     <!--Custom style bound to the whole app -->
                 <ResourceDictionary Source="pack://application:,,,/ZoeProg.CustomControlLib;component/Themes/Generic.xaml" />
@@ -28,12 +28,11 @@
                
             
             <!--Style for Shell Window-->
-            <Style  TargetType="local:Shell"  BasedOn="{StaticResource {x:Type controlLib:ZoeProgShell}}" >
+            <!--<Style  TargetType="local:Shell"  BasedOn="{StaticResource {x:Type controlLib:ZoeProgShell}}" >
                 
-            </Style>
+            </Style>-->
             
-            <Rectangle x:Key="WindowBackgroundContent" Fill="{DynamicResource PrimaryHueDarkBrush}"/>
-
+            
             <!-- accent -->
             <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#5C5B5E"/>
             <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="Gray"/>

@@ -1,6 +1,6 @@
 ﻿namespace ZoeProg.ViewModels
 {
-    using MaterialDesignThemes.Wpf;
+    
     using Prism.Commands;
     using Prism.Mvvm;
     using Prism.Regions;
@@ -17,7 +17,7 @@
 
         private ObservableCollection<object> _views = new ObservableCollection<object>();
 
-        public SnackbarMessageQueue BoundMessageQueue { get; } = new SnackbarMessageQueue(TimeSpan.FromMinutes(0.2));
+       
 
         public ShellViewModel(IRegionManager regionManager)
         {
@@ -35,7 +35,7 @@
             while (snackBarCount < 10)
             {
                 await Task.Delay(1000 * 10);
-                BoundMessageQueue.Enqueue("ZoeProg -  Tool for clean your Pc as a Profi");
+                
                 snackBarCount++;
             }
         }

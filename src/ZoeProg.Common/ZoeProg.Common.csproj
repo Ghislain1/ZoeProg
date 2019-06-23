@@ -76,9 +76,6 @@
     <Resource Include="Resources\AppIcon.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="docfx.json" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Prism.Unity">
       <Version>7.1.0.431</Version>
     </PackageReference>
