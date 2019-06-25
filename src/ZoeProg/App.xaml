@@ -2,43 +2,24 @@
     x:Class="ZoeProg.App"
     xmlns:local="clr-namespace:ZoeProg.Views"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:controlLib="clr-namespace:ZoeProg.CustomControlLib;assembly=ZoeProg.CustomControlLib"
+
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
+
     xmlns:prism="http://prismlibrary.com/">
 
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                
-                    <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.BlueGrey.xaml" />
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Yellow.xaml" />
-
-                    
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.listbox.xaml" />
-                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/materialdesigntheme.textblock.xaml" />-->
-                    
-                    <!--Custom style bound to the whole app -->
-                <ResourceDictionary Source="pack://application:,,,/ZoeProg.CustomControlLib;component/Themes/Generic.xaml" />
-                
             </ResourceDictionary.MergedDictionaries>
 
-               
-            
             <!--Style for Shell Window-->
-            <!--<Style  TargetType="local:Shell"  BasedOn="{StaticResource {x:Type controlLib:ZoeProgShell}}" >
-                
+            <!--<Style  TargetType="local:Shell"  BasedOn="{StaticResource {x:Type controlLib:ZoeProgShell}}">
             </Style>-->
-            
-            
-            <!-- accent -->
-            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#5C5B5E"/>
-            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="Gray"/>
-            <SolidColorBrush x:Key="MyTransparent" Color="Transparent"/>
 
-            
+            <!-- accent -->
+            <SolidColorBrush x:Key="SecondaryAccentBrush" Color="#5C5B5E" />
+            <SolidColorBrush x:Key="SecondaryAccentForegroundBrush" Color="Gray" />
+            <SolidColorBrush x:Key="MyTransparent" Color="Transparent" />
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>
