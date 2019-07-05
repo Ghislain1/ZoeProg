@@ -4,15 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "/R7HyYImtO6ud+JuJH/DUQ=="
+          "hash": "BcaaO5f0x8DN+Q8khltqnA=="
         }
       },
       "is_incremental": false,
@@ -132,17 +129,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 4,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
           "skipped_file_count": 0
         }
       }
