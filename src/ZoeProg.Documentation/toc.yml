@@ -1,9 +1,13 @@
 - name: Articles
   href: articles/
+
 - name: Api Documentation
   href: api/
+
 - name: Specs
   href: specs/
+
 - name: Intro
   href: home/intro.md
+
   homepage: home/intro.md
