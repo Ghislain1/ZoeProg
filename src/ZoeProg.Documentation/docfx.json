@@ -20,7 +20,7 @@
         "files": [
           "api/**.yml",
           "api/index.md"
-        ],
+        ]
       },
       {
         "files": [
@@ -40,10 +40,16 @@
       },
       {
         "files": [
+          "specs/**.md",
+          "specs/**/toc.yml"
+
+        ]
+      },
+      {
+        "files": [
           "**/toc.yml"
 
-        ],
-        "src": ".\\ZoeProg.Documentation\\"
+        ]
       }
     ],
     "resource": [
