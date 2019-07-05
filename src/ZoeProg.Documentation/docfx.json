@@ -29,6 +29,22 @@
           "toc.yml",
           "*.md"
         ]
+      },
+      {
+        "files": [
+          "specs/**.md",
+          "specs/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "files": [
+          "home/**.md",
+          "home/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
       }
     ],
     "resource": [
@@ -49,7 +65,7 @@
         ]
       }
     ],
-    "dest": "_site",
+    "dest": "..//..//docs",
     "globalMetadataFiles": [
 
     ],
