@@ -17,6 +17,9 @@
     TextElement.FontSize="13"
     TextElement.FontWeight="Regular"
     TextOptions.TextRenderingMode="Auto">
+    <Window.Background>
+        <ImageBrush ImageSource="/images/background.love.jpg" />
+    </Window.Background>
 
     <Grid  Background="Transparent">
 
