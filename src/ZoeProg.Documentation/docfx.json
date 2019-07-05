@@ -70,7 +70,7 @@
 
     ],
     "fileMetadataFiles": [],
-    "template": [ "default", "template/darkfx" ],
+    "template": [ "default" ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
