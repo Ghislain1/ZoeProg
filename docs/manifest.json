@@ -9,19 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "zi/VNBqE4tlCvl457FrrIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "axFe4QRX7EYbzq4WmeX/RQ=="
+          "hash": "AgjWwP1O7/IT56VMTdW0IA=="
         }
       },
       "is_incremental": false,
@@ -46,30 +34,6 @@
         ".html": {
           "relative_path": "articles/toc.html",
           "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "home/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "home/intro.html",
-          "hash": "4+PgvVRXk0YmFyk3xa4ZOA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "home/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "home/toc.html",
-          "hash": "5pdIaTCvkvLQmRf6npkEhA=="
         }
       },
       "is_incremental": false,
@@ -123,12 +87,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "cPMyBmKAuxlbLNRBd5VQVA=="
+          "hash": "3l4rmk6kvwz8nvzctytKxQ=="
         }
       },
       "is_incremental": false,
@@ -146,13 +113,6 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -163,7 +123,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

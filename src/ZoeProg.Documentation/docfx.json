@@ -30,27 +30,14 @@
           "*.md"
         ]
       },
-      {
-        "files": [
-          "home/**.md",
-          "home/**/toc.yml",
-          "toc.yml",
-          "*.md"
-        ]
-      },
+
       {
         "files": [
           "specs/**.md",
           "specs/**/toc.yml"
-
-        ]
-      },
-      {
-        "files": [
-          "**/toc.yml"
-
         ]
       }
+
     ],
     "resource": [
       {
@@ -66,22 +53,20 @@
         ],
         "exclude": [
           "obj/**",
-          "_site/**",
-          "_wwwroot/**"
+          "_site/**"
+
         ]
       }
     ],
     "dest": "_site",
-    "globalMetadataFiles": [
-
-    ],
+    "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [ "default" ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
-    "cleanupCacheHistory": true,
+    "cleanupCacheHistory": false,
     "disableGitFeatures": false
   }
 }

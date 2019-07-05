@@ -24,5 +24,20 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Message Importance="high" Text="> ######################### Ghislain your the best ##########------------------------------------" />
+    <Message Importance="high"  Text="> Profiel=$(TargetFramework)">
+    </Message>
   </Target>
+
+  <Target Name="GhislainTarget1">
+    <Message Importance="high" Text=">ööööööööööööööööööööööööööööööööööööööööööööööööööööööööö##########################" />
+  </Target>
+
+  <Target Name="Construct" BeforeTargets="PreBuildEvent">
+         <Exec Command="dir "/>
+    <Delete Files="_site" />
+  
+    <Exec Command="cls "/>
+        <Exec Command="dir "/>
+ </Target>
 </Project>
