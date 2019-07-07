@@ -15,3 +15,10 @@ Inspired from Peter Kriger  Powershell:
 * Prism  for WPF should used
 * Only Material Design for Xaml Lib should be used
 * Read how to use one Itensource (e.g. TabControl in action)
+
+## Migration to .NET Core 3.0 Preview
+1. SDK .NÉT Core 3.0 Preview has been installed?
+2. IDE Visual Studio can uses Feature Preview? -- Tools/Options/Feature Preview
+3. [Ref](https://docs.microsoft.com/de-de/dotnet/core/whats-new/dotnet-core-3-0#com-callable-components---windows-desktop)
+4. 
+
