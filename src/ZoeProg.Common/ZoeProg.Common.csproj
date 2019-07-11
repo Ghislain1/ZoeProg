@@ -1,16 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <Description>Contains classes using by each plugin.</Description> 
-    <AssemblyName>ZoeProg.Common</AssemblyName> 
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Contains classes using by each plugin.</Description>
+    <AssemblyName>ZoeProg.Common</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-  
-    <PackageReference Include="System.ComponentModel.Composition" Version="4.5.0" />
-  
-    <PackageReference Include="System.Management.Automation" Version="7.0.0-preview.1" />
   </ItemGroup>
-  
 </Project>

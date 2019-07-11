@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.PowerShell.SDK" Version="6.2.1" />
     <PackageReference Include="Prism.Unity" Version="7.2.0.1347-pre" />
   </ItemGroup>
 
