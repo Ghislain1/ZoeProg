@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ZoeProg.Common
+﻿namespace ZoeProg.Common
 {
-   public interface IPluginHeader
-    {
-        string Header { get;  }
-    }
+  using System;
+  using System.Collections.Generic;
+  using System.Linq;
+  using System.Text;
+  using System.Threading.Tasks;
 
-   
+  public interface IPluginHeader
+  {
+    string Header { get; }
+  }
 }

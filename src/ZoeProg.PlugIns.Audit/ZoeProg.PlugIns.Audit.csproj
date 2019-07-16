@@ -1,4 +1,29 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+ <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Description>Audit library which is responsible for loading Audit features </Description>
+    <Title>Audit function for ZoeProg</Title>
+   <UseWPF>true</UseWPF>
+ </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.0.0-preview.1" />
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1347-pre" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZoeProg.Common\ZoeProg.Common.csproj" />
+  </ItemGroup>
+
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;$(SolutionDir)\$(SolutionName)\$(OutDir)&quot; /Y" />
+  </Target>
+ 
+</Project>
+
+<!--<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -85,4 +110,4 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetDir)*.*"     "$(SolutionDir)\$(SolutionName)\$(OutDir)" /Y</PostBuildEvent>
   </PropertyGroup>
-</Project>
+</Project>-->

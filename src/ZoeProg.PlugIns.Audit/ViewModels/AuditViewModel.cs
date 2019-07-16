@@ -1,17 +1,18 @@
-﻿using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ZoeProg.Common;
-using ZoeProg.PlugIns.Audit.Models;
-using ZoeProg.PlugIns.Audit.Services;
+﻿
 
 namespace ZoeProg.PlugIns.Audit.ViewModels
 {
+    using Prism.Mvvm;
+    using System;
+    using System.Collections.Generic;
+    using System.Collections.ObjectModel;
+    using System.Diagnostics;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using ZoeProg.Common;
+    using ZoeProg.PlugIns.Audit.Models;
+    using ZoeProg.PlugIns.Audit.Services;
     public class AuditViewModel : BindableBase, IPlugin
     {
         private readonly IProcessProvider processProvider;

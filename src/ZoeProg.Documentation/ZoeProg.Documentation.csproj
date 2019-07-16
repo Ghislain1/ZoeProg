@@ -1,18 +1,43 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <!-- Das Strinh hier ist call TargetFrameworkMoniker!! e.g. netcoreapp2.2-->
+    <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="images\background.love.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Using PackageReference format !!-->
     <PackageReference Include="docfx.console" Version="2.43.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <!--Using packagereference format for supporting JSON object-->
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\background.love.jpg" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-     
+    <Message Importance="high" Text="> ######################### Ghislain your the best ##########------------------------------------" />
+    <Message Importance="high"  Text="> Profiel=$(TargetFramework)">
+    </Message>
   </Target>
 
+  <Target Name="GhislainTarget1">
+    <Message Importance="high" Text=">ööööööööööööööööööööööööööööööööööööööööööööööööööööööööö##########################" />
+  </Target>
+
+  <Target Name="Construct" BeforeTargets="PreBuildEvent">
+         <Exec Command="dir "/>
+    <Delete Files="_site" />
+  
+    <Exec Command="cls "/>
+        <Exec Command="dir "/>
+ </Target>
 </Project>

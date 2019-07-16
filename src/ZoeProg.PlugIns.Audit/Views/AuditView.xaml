@@ -13,19 +13,7 @@
     <Grid>
         
         <TextBlock Text="{Binding ProcessCount}"      FontSize="55"/>
-        <!--<ListView ItemsSource="{Binding Processes}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-            <ListView.ItemContainerStyle>
-                <Style TargetType="ListBoxItem">
-                    <Setter Property="Background" Value="Red"/>
-                </Style>
-            </ListView.ItemContainerStyle>
-        </ListView>-->
-          
+           
               </Grid>
     
     

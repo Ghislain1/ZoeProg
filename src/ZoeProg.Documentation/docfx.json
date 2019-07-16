@@ -1,17 +1,22 @@
 {
-  "metadata": [{
-    "src": [{
-      "files": [
-        "**.csproj"
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "**.csproj"
+          ],
+          "src": "../"
+        }
       ],
-      "src": "..\\ZoeProg\\src"
-    }],
-    "dest": "api",
-    "disableGitFeatures": false,
-    "disableDefaultFilter": false
-  }],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
   "build": {
-    "content": [{
+    "content": [
+      {
         "files": [
           "api/**.yml",
           "api/index.md"
@@ -27,6 +32,14 @@
       },
       {
         "files": [
+          "specs/**.md",
+          "specs/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      },
+      {
+        "files": [
           "home/**.md",
           "home/**/toc.yml",
           "toc.yml",
@@ -34,27 +47,37 @@
         ]
       }
     ],
-    "resource": [{
-      "files": [
-        "images/**"
-      ]
-    }],
-    "overwrite": [{
-      "files": [
-        "apidoc/**.md"
-      ],
-      "exclude": [
-        "obj/**",
-        "_site/**"
-      ]
-    }],
-    "dest": "_site",
-    "globalMetadataFiles": [],
-    "fileMetadataFiles": [],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "..//..//docs",
+    "globalMetadataFiles": [
+
+    ],
+    "fileMetadataFiles": [
+
+    ],
     "template": [
       "default"
     ],
-    "postProcessors": [],
+    "postProcessors": [
+
+    ],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
     "keepFileLink": false,
