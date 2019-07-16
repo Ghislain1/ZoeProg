@@ -15,9 +15,12 @@ Clear-Host
 
 $SolutionDir = "./src"
 $ScriptsDir = "./scripts"
+$SiteDir = "./src\ZoeProg.Documentation\_site"
+# Where the site is.
+$DocsDir = "./docs"
 # Combining two Paths using Powershell Commands
 # $CleanSolPath = Join-Path $SolutionDir "CleanSol.cmd"
-$NugetExePath = ".\./tooling/.nuget/NuGet.exe"
+
 
 
  
@@ -63,6 +66,10 @@ Invoke-Expression  $BuildExpression
 
 # Change to most recent location
 Pop-Location
+Write-StageInformation -Text 'Website for docs copying...'
+$SiteItems = Get-ChildItem $SiteDir  
+$SiteItems | Copy-Item -Destination $DocsDir -Force   -Verbose 
+Write-StageInformation -Text 'Solution Reading...'
 
 
 
