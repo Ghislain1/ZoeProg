@@ -30,16 +30,14 @@ Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/sta
 
 # Look & Feel
 
-![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/1.PNG)
-ZoeProg is scanning all junks File from your local PC
-![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/2.PNG)
-Setting Page
-![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docs/3.PNG)
-Task Manager Page
+![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docDev/imgs/1.JPG)
+
+![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docDev/imgs/2.JPG)
+ 
 
 # Requirements
-- Windows 7, 8.1, 10 (32, 64 bits)
-- .Net Framework: 4.7+
+- Windows  10 (32, 64 bits)
+- .Net Core 3
 
 # Modules or PlugIns
 - <b>Cleanup Plugin</b> can clean:
