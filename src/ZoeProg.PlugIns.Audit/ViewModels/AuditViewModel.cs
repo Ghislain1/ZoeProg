@@ -10,6 +10,7 @@ namespace ZoeProg.PlugIns.Audit.ViewModels
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using System.Windows.Input;
     using ZoeProg.Common;
     using ZoeProg.PlugIns.Audit.Models;
     using ZoeProg.PlugIns.Audit.Services;
@@ -54,5 +55,19 @@ namespace ZoeProg.PlugIns.Audit.ViewModels
             get { return processCount; }
             set { SetProperty(ref processCount, value); }
         }
+        // Glyph="&#xE932;" Label="Invoice" Tag="OpenInvoiceMaker"
+
+        public string Glyph
+        {
+            get {
+                return glyph;
+            }
+            set { SetProperty(ref glyph, value); }
+        }
+
+        string glyph = "\uE932";// @" &#xE932;";
+        public string Label { get; set; } = "Audit";
+        public string Tag { get; set; } = "OpenAuditMaker";
+        public ICommand Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

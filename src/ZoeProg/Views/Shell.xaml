@@ -23,20 +23,21 @@
     </Window.Background>
 
     <Grid>
-        <metro:HamburgerMenu x:Name="HamburgerMenuControl"
+        <metro:HamburgerMenu x:Name="HamburgerMenuControl"                      
                         Foreground="White"
                         PaneBackground="#FF444444"
-                        IsPaneOpen="False"
+                        IsPaneOpen="True"
+                        SelectedIndex="1"
                         DisplayMode="CompactInline">
-            <metro:HamburgerMenu.ItemTemplate>
+            <metro:HamburgerMenu.OptionsItemTemplate>
                 <DataTemplate  DataType="{x:Type metro:HamburgerMenuGlyphItem}">
                     <Grid Height="48">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="48" />
+                            <ColumnDefinition Width="48"/>
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0"
-                               FontSize="16"
+                               FontSize="16"                               
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                FontFamily="Segoe MDL2 Assets"
@@ -49,7 +50,88 @@
                                Text="{Binding Label}" />
                     </Grid>
                 </DataTemplate>
+            </metro:HamburgerMenu.OptionsItemTemplate>
+           
+            <metro:HamburgerMenu.ItemTemplate>
+                <DataTemplate  DataType="{x:Type metro:HamburgerMenuGlyphItem}">
+                    <Grid Height="48">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="48" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                               FontSize="16"
+                               Visibility="Visible"
+                               HorizontalAlignment="Center"
+                               VerticalAlignment="Center"
+                               FontFamily="Segoe MDL2 Assets"
+                               Foreground="White"
+                               Text="{Binding Glyph}" />
+                        
+                        <TextBlock Grid.Column="1"
+                               VerticalAlignment="Center"
+                               FontSize="16"
+                               Foreground="White"
+                               Text="{Binding Label}" />
+                    </Grid>
+                </DataTemplate>
             </metro:HamburgerMenu.ItemTemplate>
+
+            <!--  Content  -->
+            <metro:HamburgerMenu.ContentTemplate>
+                <DataTemplate DataType="{x:Type metro:HamburgerMenuItem}">
+                    <Grid x:Name="TheContentGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="48" />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0"
+                    Background="#FF444444">
+                            <TextBlock x:Name="Header"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="24"
+                            Foreground="White"
+                            Text="{Binding Label}" />
+                        </Border>
+                        <ContentControl x:Name="TheContent"
+                            Grid.Row="1"
+                            Focusable="False"
+                            Foreground="OrangeRed"
+                            Content="{Binding Tag}" />
+                    </Grid>
+                </DataTemplate>
+            </metro:HamburgerMenu.ContentTemplate>
+
+            <!--Ghis:This is the first property of HamburgerMenu Say something -->
+            <metro:HamburgerMenu.ItemsSource>
+                <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static common:RegionNames.HamburgerMenuItemCollectionRegion}">               
+                <!--<metro:HamburgerMenuGlyphItem Glyph="&#xE80F;" Label="Main Menu" Tag="ShowMainMenu"/>
+                <metro:HamburgerMenuGlyphItem Glyph="&#xE932;" Label="Invoice" Tag="OpenInvoiceMaker"/>
+                <metro:HamburgerMenuGlyphItem Glyph="&#xE9D9;" Label="Reports" Tag="ShowReportsMenu"/>
+                <metro:HamburgerMenuGlyphItem Glyph="&#xE777;" Label="Reset" Tag="Reset"/>
+                <metro:HamburgerMenuGlyphItem Glyph="&#xE80F;" Label="Ghislan" />-->
+                </metro:HamburgerMenuItemCollection>
+            </metro:HamburgerMenu.ItemsSource>
+
+            <!--Ghislain: HamburgerMenu OptionsItemsSource Poerty to store all OptionsItems-->
+            <metro:HamburgerMenu.OptionsItemsSource>
+                <metro:HamburgerMenuItemCollection>
+                    <metro:HamburgerMenuGlyphItem Glyph="&#xE946;" Label="About" Tag="About"/>
+                </metro:HamburgerMenuItemCollection>
+            </metro:HamburgerMenu.OptionsItemsSource>
+            
+            <!--<metro:HamburgerMenu.Content>
+                <DockPanel>
+                    <Border Background="#FF444444" DockPanel.Dock="Top" MinHeight="30">
+                        <TextBlock x:Name="Header" HorizontalAlignment="Center"
+                                   VerticalAlignment="Center" FontSize="15" Foreground="Red" 
+                                   Text="{Binding ActiveItem.DisplayName}" />
+                    </Border>
+                    <metro:TransitioningContentControl Transition="LeftReplace" x:Name="ActiveItem" Content="{Binding ActiveItem}"/>
+                </DockPanel>
+            </metro:HamburgerMenu.Content>-->
+
         </metro:HamburgerMenu>
 
         <Grid  Visibility="Hidden" Background="Transparent">

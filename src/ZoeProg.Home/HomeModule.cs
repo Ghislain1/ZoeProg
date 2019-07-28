@@ -6,6 +6,7 @@ namespace ZoeProg.Home
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
+    using ZoeProg.Common;
     using ZoeProg.Home.Views;
 
     /// <summary>
@@ -21,7 +22,7 @@ namespace ZoeProg.Home
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
-            regionManager.RegisterViewWithRegion("TabRegion", typeof(HomeView));
+            regionManager.RegisterViewWithRegion(RegionNames.HamburgerMenuItemCollectionRegion, typeof(HomeView));
 
         }
 

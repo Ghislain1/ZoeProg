@@ -10,7 +10,7 @@ namespace ZoeProg.Extensions
     using System.Threading.Tasks;
     using System.Windows.Controls;
     using ZoeProg.Common;
-
+   
     public sealed class TabControlRegionAdapter : RegionAdapterBase<TabControl>
     {
         public TabControlRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory) : base(regionBehaviorFactory)

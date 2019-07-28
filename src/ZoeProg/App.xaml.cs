@@ -1,7 +1,6 @@
 ﻿namespace ZoeProg
 {
-    
-   
+    using MahApps.Metro.Controls;
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
@@ -43,7 +42,10 @@
             // mappings.RegisterMapping(typeof(TabablzControl), new TabablzControlRegionAdapter(regionBehaviorFactory));
           //  mappings.RegisterMapping(typeof(ListView), new ListViewRegionAdapter(regionBehaviorFactory));
             mappings.RegisterMapping(typeof(TabControl), new TabControlRegionAdapter(regionBehaviorFactory));
-            
+
+            mappings.RegisterMapping(typeof(HamburgerMenuItemCollection), this.Container.Resolve<HamburgerMenuItemCollectionRegionAdapter>());        
+
+
 
         }
     }

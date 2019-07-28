@@ -25,7 +25,11 @@
       _regionManager.Regions.CollectionChanged += Regions_CollectionChanged;
 
       NavigateCommand = new DelegateCommand<string>(Navigate);
-
+            Hitems = new ObservableCollection<string>();
+            for (int i = 1; i < 10; i++)
+            {
+                Hitems.Add("Han Nr " + i);
+            }
       _ = TestBoundMessageQueue();
     }
 
@@ -60,8 +64,14 @@
         }
       }
     }
+        ObservableCollection<string> hitems;
+        public ObservableCollection<string> Hitems
+        {
+            get { return hitems; }
+            set { SetProperty(ref hitems, value); }
+        }
 
-    public ObservableCollection<object> Views
+        public ObservableCollection<object> Views
     {
       get { return _views; }
       set { SetProperty(ref _views, value); }

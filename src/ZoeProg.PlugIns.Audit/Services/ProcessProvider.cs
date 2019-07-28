@@ -14,7 +14,7 @@ namespace ZoeProg.PlugIns.Audit.Services
     public class ProcessProvider : IProcessProvider
     {
         private readonly IPowerShellService powerShellService;
-        public ProcessProvider(  IPowerShellService powerShellService)
+        public ProcessProvider(IPowerShellService powerShellService)
         {
             this.powerShellService = powerShellService ?? throw new ArgumentNullException(nameof(powerShellService));
         }

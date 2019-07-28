@@ -790,6 +790,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Common.IPlugin.Code
   nameWithType: IPlugin.Code
+- uid: ZoeProg.Common.IPlugin.Command
+  name: Command
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Command
+  commentId: P:ZoeProg.Common.IPlugin.Command
+  fullName: ZoeProg.Common.IPlugin.Command
+  nameWithType: IPlugin.Command
+- uid: ZoeProg.Common.IPlugin.Command*
+  name: Command
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Command_
+  commentId: Overload:ZoeProg.Common.IPlugin.Command
+  isSpec: "True"
+  fullName: ZoeProg.Common.IPlugin.Command
+  nameWithType: IPlugin.Command
 - uid: ZoeProg.Common.IPlugin.Description
   name: Description
   href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Description
@@ -803,6 +816,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Common.IPlugin.Description
   nameWithType: IPlugin.Description
+- uid: ZoeProg.Common.IPlugin.Glyph
+  name: Glyph
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Glyph
+  commentId: P:ZoeProg.Common.IPlugin.Glyph
+  fullName: ZoeProg.Common.IPlugin.Glyph
+  nameWithType: IPlugin.Glyph
+- uid: ZoeProg.Common.IPlugin.Glyph*
+  name: Glyph
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Glyph_
+  commentId: Overload:ZoeProg.Common.IPlugin.Glyph
+  isSpec: "True"
+  fullName: ZoeProg.Common.IPlugin.Glyph
+  nameWithType: IPlugin.Glyph
 - uid: ZoeProg.Common.IPlugin.Id
   name: Id
   href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Id
@@ -842,6 +868,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Common.IPlugin.Kind
   nameWithType: IPlugin.Kind
+- uid: ZoeProg.Common.IPlugin.Label
+  name: Label
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Label
+  commentId: P:ZoeProg.Common.IPlugin.Label
+  fullName: ZoeProg.Common.IPlugin.Label
+  nameWithType: IPlugin.Label
+- uid: ZoeProg.Common.IPlugin.Label*
+  name: Label
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Label_
+  commentId: Overload:ZoeProg.Common.IPlugin.Label
+  isSpec: "True"
+  fullName: ZoeProg.Common.IPlugin.Label
+  nameWithType: IPlugin.Label
 - uid: ZoeProg.Common.IPlugin.NavigatePath
   name: NavigatePath
   href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_NavigatePath
@@ -855,6 +894,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Common.IPlugin.NavigatePath
   nameWithType: IPlugin.NavigatePath
+- uid: ZoeProg.Common.IPlugin.Tag
+  name: Tag
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Tag
+  commentId: P:ZoeProg.Common.IPlugin.Tag
+  fullName: ZoeProg.Common.IPlugin.Tag
+  nameWithType: IPlugin.Tag
+- uid: ZoeProg.Common.IPlugin.Tag*
+  name: Tag
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Tag_
+  commentId: Overload:ZoeProg.Common.IPlugin.Tag
+  isSpec: "True"
+  fullName: ZoeProg.Common.IPlugin.Tag
+  nameWithType: IPlugin.Tag
 - uid: ZoeProg.Common.IPlugin.Title
   name: Title
   href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Title
@@ -1340,6 +1392,18 @@ references:
   commentId: T:ZoeProg.Common.RegionNames
   fullName: ZoeProg.Common.RegionNames
   nameWithType: RegionNames
+- uid: ZoeProg.Common.RegionNames.HamburgerMenuItemCollectionRegion
+  name: HamburgerMenuItemCollectionRegion
+  href: api/ZoeProg.Common.RegionNames.html#ZoeProg_Common_RegionNames_HamburgerMenuItemCollectionRegion
+  commentId: F:ZoeProg.Common.RegionNames.HamburgerMenuItemCollectionRegion
+  fullName: ZoeProg.Common.RegionNames.HamburgerMenuItemCollectionRegion
+  nameWithType: RegionNames.HamburgerMenuItemCollectionRegion
+- uid: ZoeProg.Common.RegionNames.HamburgerMenuRegion
+  name: HamburgerMenuRegion
+  href: api/ZoeProg.Common.RegionNames.html#ZoeProg_Common_RegionNames_HamburgerMenuRegion
+  commentId: F:ZoeProg.Common.RegionNames.HamburgerMenuRegion
+  fullName: ZoeProg.Common.RegionNames.HamburgerMenuRegion
+  nameWithType: RegionNames.HamburgerMenuRegion
 - uid: ZoeProg.Common.RegionNames.ListLeftRegion
   name: ListLeftRegion
   href: api/ZoeProg.Common.RegionNames.html#ZoeProg_Common_RegionNames_ListLeftRegion
@@ -1364,78 +1428,3 @@ references:
   commentId: F:ZoeProg.Common.RegionNames.TabRegion
   fullName: ZoeProg.Common.RegionNames.TabRegion
   nameWithType: RegionNames.TabRegion
-- uid: ZoeProg.Home
-  name: ZoeProg.Home
-  href: api/ZoeProg.Home.html
-  commentId: N:ZoeProg.Home
-  fullName: ZoeProg.Home
-  nameWithType: ZoeProg.Home
-- uid: ZoeProg.Home.HomeModule
-  name: HomeModule
-  href: api/ZoeProg.Home.HomeModule.html
-  commentId: T:ZoeProg.Home.HomeModule
-  fullName: ZoeProg.Home.HomeModule
-  nameWithType: HomeModule
-- uid: ZoeProg.Home.HomeModule.OnInitialized(Prism.Ioc.IContainerProvider)
-  name: OnInitialized(IContainerProvider)
-  href: api/ZoeProg.Home.HomeModule.html#ZoeProg_Home_HomeModule_OnInitialized_Prism_Ioc_IContainerProvider_
-  commentId: M:ZoeProg.Home.HomeModule.OnInitialized(Prism.Ioc.IContainerProvider)
-  fullName: ZoeProg.Home.HomeModule.OnInitialized(Prism.Ioc.IContainerProvider)
-  nameWithType: HomeModule.OnInitialized(IContainerProvider)
-- uid: ZoeProg.Home.HomeModule.OnInitialized*
-  name: OnInitialized
-  href: api/ZoeProg.Home.HomeModule.html#ZoeProg_Home_HomeModule_OnInitialized_
-  commentId: Overload:ZoeProg.Home.HomeModule.OnInitialized
-  isSpec: "True"
-  fullName: ZoeProg.Home.HomeModule.OnInitialized
-  nameWithType: HomeModule.OnInitialized
-- uid: ZoeProg.Home.HomeModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
-  name: RegisterTypes(IContainerRegistry)
-  href: api/ZoeProg.Home.HomeModule.html#ZoeProg_Home_HomeModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
-  commentId: M:ZoeProg.Home.HomeModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
-  fullName: ZoeProg.Home.HomeModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
-  nameWithType: HomeModule.RegisterTypes(IContainerRegistry)
-- uid: ZoeProg.Home.HomeModule.RegisterTypes*
-  name: RegisterTypes
-  href: api/ZoeProg.Home.HomeModule.html#ZoeProg_Home_HomeModule_RegisterTypes_
-  commentId: Overload:ZoeProg.Home.HomeModule.RegisterTypes
-  isSpec: "True"
-  fullName: ZoeProg.Home.HomeModule.RegisterTypes
-  nameWithType: HomeModule.RegisterTypes
-- uid: ZoeProg.Home.ViewModels
-  name: ZoeProg.Home.ViewModels
-  href: api/ZoeProg.Home.ViewModels.html
-  commentId: N:ZoeProg.Home.ViewModels
-  fullName: ZoeProg.Home.ViewModels
-  nameWithType: ZoeProg.Home.ViewModels
-- uid: ZoeProg.Home.ViewModels.HomeViewModel
-  name: HomeViewModel
-  href: api/ZoeProg.Home.ViewModels.HomeViewModel.html
-  commentId: T:ZoeProg.Home.ViewModels.HomeViewModel
-  fullName: ZoeProg.Home.ViewModels.HomeViewModel
-  nameWithType: HomeViewModel
-- uid: ZoeProg.Home.Views
-  name: ZoeProg.Home.Views
-  href: api/ZoeProg.Home.Views.html
-  commentId: N:ZoeProg.Home.Views
-  fullName: ZoeProg.Home.Views
-  nameWithType: ZoeProg.Home.Views
-- uid: ZoeProg.Home.Views.HomeView
-  name: HomeView
-  href: api/ZoeProg.Home.Views.HomeView.html
-  commentId: T:ZoeProg.Home.Views.HomeView
-  fullName: ZoeProg.Home.Views.HomeView
-  nameWithType: HomeView
-- uid: ZoeProg.Home.Views.HomeView.#ctor
-  name: HomeView()
-  href: api/ZoeProg.Home.Views.HomeView.html#ZoeProg_Home_Views_HomeView__ctor
-  commentId: M:ZoeProg.Home.Views.HomeView.#ctor
-  fullName: ZoeProg.Home.Views.HomeView.HomeView()
-  nameWithType: HomeView.HomeView()
-- uid: ZoeProg.Home.Views.HomeView.#ctor*
-  name: HomeView
-  href: api/ZoeProg.Home.Views.HomeView.html#ZoeProg_Home_Views_HomeView__ctor_
-  commentId: Overload:ZoeProg.Home.Views.HomeView.#ctor
-  isSpec: "True"
-  fullName: ZoeProg.Home.Views.HomeView.HomeView
-  nameWithType: HomeView.HomeView

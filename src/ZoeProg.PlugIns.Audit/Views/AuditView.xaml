@@ -11,10 +11,10 @@
     
     
     <Grid>
-        
-        <TextBlock Text="{Binding ProcessCount}"      FontSize="55"/>
+        <DataGrid ItemsSource="{Binding Processes}"/>
+    
            
-              </Grid>
+    </Grid>
     
     
     
