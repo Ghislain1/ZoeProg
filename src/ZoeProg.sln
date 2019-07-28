@@ -6,7 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}
-		{319457D0-B35C-486D-9992-B9B245388A22} = {319457D0-B35C-486D-9992-B9B245388A22}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Common", "ZoeProg.Common\ZoeProg.Common.csproj", "{E838A7B4-9320-4892-8D77-1A0DCA7584BC}"
@@ -17,10 +16,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.Home", "Plu
 	ProjectSection(ProjectDependencies) = postProject
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779} = {45D2A833-A2DD-4EDB-80D1-BA024D6A0779}
 	EndProjectSection
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.CustomControlLib", "ZoeProg.CustomControlLib\ZoeProg.CustomControlLib.csproj", "{1A608348-CF66-4130-8287-9DB3A4368DDE}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.StyleTemplate", "ZoeProg.PlugIns.StyleTemplate\ZoeProg.PlugIns.StyleTemplate.csproj", "{319457D0-B35C-486D-9992-B9B245388A22}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.Audit", "ZoeProg.PlugIns.Audit\ZoeProg.PlugIns.Audit.csproj", "{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}"
 EndProject
@@ -44,13 +39,6 @@ Global
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1A608348-CF66-4130-8287-9DB3A4368DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A608348-CF66-4130-8287-9DB3A4368DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A608348-CF66-4130-8287-9DB3A4368DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{319457D0-B35C-486D-9992-B9B245388A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{319457D0-B35C-486D-9992-B9B245388A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{319457D0-B35C-486D-9992-B9B245388A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{319457D0-B35C-486D-9992-B9B245388A22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,7 +53,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5C64DE90-9D21-4FD8-ABFB-543FCA820CD8} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
-		{319457D0-B35C-486D-9992-B9B245388A22} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
