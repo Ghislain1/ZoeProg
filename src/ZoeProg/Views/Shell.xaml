@@ -27,7 +27,7 @@
                         Foreground="White"
                         PaneBackground="#FF444444"
                         IsPaneOpen="True"
-                        SelectedIndex="1"
+                        SelectedIndex="2"
                         DisplayMode="CompactInline">
             <metro:HamburgerMenu.OptionsItemTemplate>
                 <DataTemplate  DataType="{x:Type metro:HamburgerMenuGlyphItem}">

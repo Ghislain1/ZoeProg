@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779} = {45D2A833-A2DD-4EDB-80D1-BA024D6A0779}
+		{30E1DB41-8328-45B6-AD71-AC8F03F52BAD} = {30E1DB41-8328-45B6-AD71-AC8F03F52BAD}
 		{F93767DE-4C10-4261-AA56-552057FFBF8C} = {F93767DE-4C10-4261-AA56-552057FFBF8C}
 	EndProjectSection
 EndProject
@@ -18,6 +19,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Documentation", "ZoeProg.Documentation\ZoeProg.Documentation.csproj", "{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Home", "ZoeProg.Home\ZoeProg.Home.csproj", "{F93767DE-4C10-4261-AA56-552057FFBF8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Cleanup", "ZoeProg.Cleanup\ZoeProg.Cleanup.csproj", "{30E1DB41-8328-45B6-AD71-AC8F03F52BAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +48,10 @@ Global
 		{F93767DE-4C10-4261-AA56-552057FFBF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F93767DE-4C10-4261-AA56-552057FFBF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F93767DE-4C10-4261-AA56-552057FFBF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E1DB41-8328-45B6-AD71-AC8F03F52BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E1DB41-8328-45B6-AD71-AC8F03F52BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E1DB41-8328-45B6-AD71-AC8F03F52BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E1DB41-8328-45B6-AD71-AC8F03F52BAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +59,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{45D2A833-A2DD-4EDB-80D1-BA024D6A0779} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{F93767DE-4C10-4261-AA56-552057FFBF8C} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{30E1DB41-8328-45B6-AD71-AC8F03F52BAD} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42D9B723-A5FD-453D-B056-9B2DFD43B30A}

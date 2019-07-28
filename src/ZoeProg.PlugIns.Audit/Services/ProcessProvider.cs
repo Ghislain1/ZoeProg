@@ -40,6 +40,7 @@ namespace ZoeProg.PlugIns.Audit.Services
                     
                     var process = new ProcessItem();
                     process.Name = item.Members["ProcessName"].Value.ToString();
+                    process.Name = item.Members["ProcessName"].Value.ToString();
                     list.Add(process);
                 }
                 catch (Exception ex )

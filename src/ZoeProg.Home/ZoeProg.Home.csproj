@@ -5,10 +5,7 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Views\HomeView.xaml" />
-  </ItemGroup>
-
+ 
 
 
   <ItemGroup>

@@ -101,66 +101,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.IContentMetadata.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.IContentMetadata.html",
-          "hash": "vE4MRPCHmBeGMkTrHsQOcQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.IContentMetadataProvider.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.IContentMetadataProvider.html",
-          "hash": "SpGGgy1+mwi29GgFTG7FCg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.ILinkMetadata.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.ILinkMetadata.html",
-          "hash": "BsayFc2zbJxDj7Gkp5JTNQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.ILinkMetadataService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.ILinkMetadataService.html",
-          "hash": "aChVs4JCaRVJS3w4c7K6PA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.IModuleMetadata.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.IModuleMetadata.html",
-          "hash": "aVnAJVOwqB6EQFVs0LtQsg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/ZoeProg.Common.IPackageRepository.yml",
       "output": {
         ".html": {
@@ -269,30 +209,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.LinkMetadata.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.LinkMetadata.html",
-          "hash": "X1UMO/v360bSey7siIyI+g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Common.LinkMetadataService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Common.LinkMetadataService.html",
-          "hash": "aO9cDtTtGR2WI/g9MQq+3Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/ZoeProg.Common.Models.Drive.yml",
       "output": {
         ".html": {
@@ -345,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.html",
-          "hash": "1BeiKZDOtKMoPOIc0XvZxw=="
+          "hash": "FOV/EeeBIWHCAgAMrLdKpA=="
         }
       },
       "is_incremental": false,
@@ -369,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TjOWZttmZ+Gm88BpnzGqyw=="
+          "hash": "66sTFwc4ydy0FMPwV/0X8w=="
         }
       },
       "is_incremental": false,
@@ -494,23 +410,23 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 29,
+          "total_file_count": 22,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 5,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

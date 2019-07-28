@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ZoeProg.Cleanup.Views.CleanupView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ZoeProg.Cleanup.Views"
+             
+           xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <ListView ItemsSource="{Binding Todos}" HorizontalAlignment="Stretch">
+            <ListView.ItemTemplate>
+                <DataTemplate  DataType="{x:Type ListViewItem}">
+                    <Grid>
+                        <Expander   Header="{Binding}" HorizontalAlignment="Stretch" >
+                            <TextBlock TextWrapping="Wrap"
+                                   FontSize="14"
+                                   FontWeight="Light"
+                                   Foreground="White">  
+                         This is an Expander control. Within this control, all contents will be wrapped.  
+                              At run-time, you may expand or collapse this control. Type more text here to be typed.  
+                                   Jump around and hype.
+                            </TextBlock>
+                        </Expander>
+                    </Grid>
+      
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+    </Grid>
+</UserControl>
