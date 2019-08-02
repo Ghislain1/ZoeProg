@@ -11,7 +11,7 @@
         private object activatedItem;
         private bool isPaneOpen;
 
-        private string title = "ZoeProg - Tool";
+        private string title = "ZoeProg - Tool - ";
 
         public ShellViewModel()
         {
