@@ -1,6 +1,5 @@
 ﻿namespace ZoeProg.Views
 {
-  using System.Windows;
     using MahApps.Metro.Controls;
 
     /// <summary>
@@ -8,9 +7,16 @@
     /// </summary>
     public partial class Shell : MetroWindow
     {
-    public Shell()
-    {
-      InitializeComponent();
+        public Shell()
+        {
+            InitializeComponent();
+        }
+
+        private void HamburgerMenuControl_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            // this.HamburgerMenuControl.Content = (e.ClickedItem as HamburgerMenuGlyphItem).Tag;
+            // this.HamburgerMenuControl.IsPaneOpen = false;
+            var ds = this.HamburgerMenuControl.SelectedItem;
+        }
     }
-  }
 }

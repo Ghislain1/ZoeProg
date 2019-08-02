@@ -1,107 +1,46 @@
 ﻿namespace ZoeProg.ViewModels
 {
-  using Prism.Commands;
-  using Prism.Mvvm;
-  using Prism.Regions;
-  using System;
-  using System.Collections.ObjectModel;
-  using System.Collections.Specialized;
-  using System.Threading.Tasks;
+    using Prism.Commands;
+    using Prism.Mvvm;
 
-  /// <summary>
-  /// Note: we call this triple-slash-comments
-  /// </summary>
-  public class ShellViewModel : BindableBase, IShellViewModel
-  {
-    private readonly IRegionManager _regionManager;
-
-    private string title = "ZoeProg   -  Tool";
-
-    private ObservableCollection<object> _views = new ObservableCollection<object>();
-
-    public ShellViewModel(IRegionManager regionManager)
+    /// <summary>
+    /// Note: we call this triple-slash-comments
+    /// </summary>
+    public class ShellViewModel : BindableBase, IShellViewModel
     {
-      _regionManager = regionManager;
-      _regionManager.Regions.CollectionChanged += Regions_CollectionChanged;
+        private object activatedItem;
+        private bool isPaneOpen;
 
-      NavigateCommand = new DelegateCommand<string>(Navigate);
-            Hitems = new ObservableCollection<string>();
-            for (int i = 1; i < 10; i++)
+        private string title = "ZoeProg - Tool";
+
+        public ShellViewModel()
+        {
+        }
+
+        public object ActivatedItem
+        {
+            get { return this.activatedItem; }
+            set
             {
-                Hitems.Add("Han Nr " + i);
+                this.SetProperty(ref activatedItem, value);
             }
-      _ = TestBoundMessageQueue();
-    }
-
-    private async Task TestBoundMessageQueue()
-    {
-      int snackBarCount = 0;
-      while (snackBarCount < 10)
-      {
-        await Task.Delay(1000 * 10);
-
-        snackBarCount++;
-      }
-    }
-
-    public DelegateCommand<string> NavigateCommand { get; private set; }
-
-    public string Title
-    {
-      get { return title; }
-      set { SetProperty(ref title, value); }
-    }
-
-    private string selectedUser;
-
-    public string SelectedUser
-    {
-      get { return selectedUser; }
-      set
-      {
-        if (SetProperty(ref selectedUser, value))
-        {
-        }
-      }
-    }
-        ObservableCollection<string> hitems;
-        public ObservableCollection<string> Hitems
-        {
-            get { return hitems; }
-            set { SetProperty(ref hitems, value); }
         }
 
-        public ObservableCollection<object> Views
-    {
-      get { return _views; }
-      set { SetProperty(ref _views, value); }
-    }
+        public bool IsPaneOpen
+        {
+            get { return this.isPaneOpen; }
+            set
+            {
+                this.SetProperty(ref this.isPaneOpen, value);
+            }
+        }
 
-    private void Navigate(string navigatePath)
-    {
-      if (navigatePath != null)
-        _regionManager.RequestNavigate("ContentRegion", navigatePath);
-    }
+        public DelegateCommand<object> NavigateCommand { get; private set; }
 
-    private void Regions_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-    {
-      if (e.Action == NotifyCollectionChangedAction.Add)
-      {
-        var region = (IRegion)e.NewItems[0];
-        region.Views.CollectionChanged += Views_CollectionChanged;
-      }
+        public string Title
+        {
+            get { return title; }
+            set { SetProperty(ref title, value); }
+        }
     }
-
-    private void Views_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-    {
-      if (e.Action == NotifyCollectionChangedAction.Add)
-      {
-        Views.Add(e.NewItems[0].GetType().Name);
-      }
-      else if (e.Action == NotifyCollectionChangedAction.Remove)
-      {
-        Views.Remove(e.OldItems[0].GetType().Name);
-      }
-    }
-  }
 }
