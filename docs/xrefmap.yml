@@ -630,6 +630,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Common.IPlugin.Command
   nameWithType: IPlugin.Command
+- uid: ZoeProg.Common.IPlugin.CommandParameter
+  name: CommandParameter
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_CommandParameter
+  commentId: P:ZoeProg.Common.IPlugin.CommandParameter
+  fullName: ZoeProg.Common.IPlugin.CommandParameter
+  nameWithType: IPlugin.CommandParameter
+- uid: ZoeProg.Common.IPlugin.CommandParameter*
+  name: CommandParameter
+  href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_CommandParameter_
+  commentId: Overload:ZoeProg.Common.IPlugin.CommandParameter
+  isSpec: "True"
+  fullName: ZoeProg.Common.IPlugin.CommandParameter
+  nameWithType: IPlugin.CommandParameter
 - uid: ZoeProg.Common.IPlugin.Description
   name: Description
   href: api/ZoeProg.Common.IPlugin.html#ZoeProg_Common_IPlugin_Description
@@ -803,6 +816,15 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Common.IPowerShellService.RunCommand
   nameWithType: IPowerShellService.RunCommand
+- uid: ZoeProg.Common.IPowerShellService.RunCommand``1(``0)
+  name: RunCommand<T>(T)
+  href: api/ZoeProg.Common.IPowerShellService.html#ZoeProg_Common_IPowerShellService_RunCommand__1___0_
+  commentId: M:ZoeProg.Common.IPowerShellService.RunCommand``1(``0)
+  name.vb: RunCommand(Of T)(T)
+  fullName: ZoeProg.Common.IPowerShellService.RunCommand<T>(T)
+  fullName.vb: ZoeProg.Common.IPowerShellService.RunCommand(Of T)(T)
+  nameWithType: IPowerShellService.RunCommand<T>(T)
+  nameWithType.vb: IPowerShellService.RunCommand(Of T)(T)
 - uid: ZoeProg.Common.IPowerShellService.RunCommand``1(System.String,System.String)
   name: RunCommand<T>(String, String)
   href: api/ZoeProg.Common.IPowerShellService.html#ZoeProg_Common_IPowerShellService_RunCommand__1_System_String_System_String_

@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/Zoe/Desktop/___Z_Todelte/ZoeProg/src/ZoeProg.Documentation",
+  "source_base_path": "C:/_DEMO/ZoeProg/src/ZoeProg.Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.IPlugin.html",
-          "hash": "VMoeZsLXz1fFHakY5KP2uA=="
+          "hash": "kBRxuNChWJU9IMGEPVT4lw=="
         }
       },
       "is_incremental": false,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.IPowerShellService.html",
-          "hash": "+Qk/Lz7euIU8snbX8hnvZg=="
+          "hash": "s7+IcUiJAXt+kHvnfTxfSA=="
         }
       },
       "is_incremental": false,
@@ -410,10 +410,11 @@
         "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
@@ -422,11 +423,10 @@
           "total_file_count": 22,
           "skipped_file_count": 0
         },
-        "ResourceDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
