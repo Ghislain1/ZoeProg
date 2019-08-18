@@ -13,7 +13,8 @@ namespace ZoeProg.Cleanup.ViewModels
     public class CleanupViewModel : BindableBase, IPlugin
     {
         private readonly ICleanupService cleanupService;
-        private ICommand deleteCommand;
+        private bool canDelete;
+        private DelegateCommand deleteCommand;
         private string deleteCommandDisplayName = "Delete";
         private bool isSelected = false;
         private ObservableCollection<string> todos;
@@ -24,10 +25,15 @@ namespace ZoeProg.Cleanup.ViewModels
 
             LoadForDemo().GetAwaiter();
 
-            this.deleteCommand = new DelegateCommand(async () =>
+            this.deleteCommand = new DelegateCommand(
+                async () =>
              {
-                 await this.cleanupService.CleanTempFilesAsync();
-             });
+                 this.IsBusy = true;
+                 await this.cleanupService.CleanTempFilesAsync(() =>
+                 {
+                     this.IsBusy = false;
+                 });
+             }, () => !this.IsBusy);
 
             this.CommandParameter = this.GetType();
 
@@ -46,7 +52,7 @@ namespace ZoeProg.Cleanup.ViewModels
 
         public Type CommandParameter { get; set; }
 
-        public ICommand DeleteCommand
+        public DelegateCommand DeleteCommand
         {
             get { return this.deleteCommand; }
         }
@@ -70,6 +76,19 @@ namespace ZoeProg.Cleanup.ViewModels
         public string Header => throw new NotImplementedException();
 
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public bool IsBusy
+
+        {
+            get
+            {
+                return this.canDelete;
+            }
+            set
+            {
+                this.SetProperty<bool>(ref this.canDelete, value);
+            }
+        }
 
         public bool IsSelected
         {
@@ -110,6 +129,8 @@ namespace ZoeProg.Cleanup.ViewModels
             var collection = await this.cleanupService.GetTempFilesAsync();
             this.Todos = new ObservableCollection<string>(collection);
             this.DeleteCommandDisplayName = $" Delete({ this.Todos.Count})";
+            this.IsBusy = false;
+            this.DeleteCommand.RaiseCanExecuteChanged();
         }
     }
 }

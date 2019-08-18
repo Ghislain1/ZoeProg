@@ -4,48 +4,53 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:ZoeProg.Cleanup.Views"
+             xmlns:self="clr-namespace:ZoeProg.Cleanup.Services"
 
            xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
 
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </UserControl.Resources>
+    <Grid>
 
-    <DockPanel>
-        <UniformGrid DockPanel.Dock="Top" Columns="3">
-            <Button Content="{Binding DeleteCommandDisplayName}" Command="{Binding DeleteCommand}" />
-        </UniformGrid>
+        <DockPanel>
+            <UniformGrid DockPanel.Dock="Top" Columns="3">
+                <Button Content="{Binding DeleteCommandDisplayName}" Command="{Binding DeleteCommand}" />
+            </UniformGrid>
 
-        <Grid>
+            <Grid>
 
-            <ItemsControl  ItemsSource="{Binding Todos}"
+                <ItemsControl  ItemsSource="{Binding Todos}"
                       Grid.IsSharedSizeScope="True"
                       Margin="12 0 12 0">
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border x:Name="Border" Padding="8">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition SharedSizeGroup="Checkerz" />
-                                    <ColumnDefinition />
-                                </Grid.ColumnDefinitions>
-                                <CheckBox VerticalAlignment="Center" IsChecked="{Binding IsSelected}" />
-                                <StackPanel Margin="8 0 0 0" Grid.Column="1">
-                                    <TextBlock FontWeight="Bold" Text="{Binding}" />
-                                    <TextBlock Text="{Binding}" />
-                                </StackPanel>
-                            </Grid>
-                        </Border>
-                        <DataTemplate.Triggers>
-                            <DataTrigger Binding="{Binding IsSelected}" Value="True">
-                                <Setter TargetName="Border" Property="Background" Value="{DynamicResource MaterialDesignSelection}" />
-                            </DataTrigger>
-                        </DataTemplate.Triggers>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border x:Name="Border" Padding="8">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition SharedSizeGroup="Checkerz" />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <CheckBox VerticalAlignment="Center" IsChecked="{Binding IsSelected}" />
+                                    <StackPanel Margin="8 0 0 0" Grid.Column="1">
+                                        <TextBlock FontWeight="Bold" Text="{Binding}" />
+                                        <TextBlock Text="{Binding}" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding IsSelected}" Value="True">
+                                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource MaterialDesignSelection}" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
 
-            <!--<ListView ItemsSource="{Binding Todos}" HorizontalAlignment="Stretch">
+                <!--<ListView ItemsSource="{Binding Todos}" HorizontalAlignment="Stretch">
                 <ListView.ItemTemplate>
                     <DataTemplate  DataType="{x:Type ListViewItem}">
                         <Grid>
@@ -63,6 +68,14 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>-->
-        </Grid>
-    </DockPanel>
+            </Grid>
+        </DockPanel>
+
+        <Rectangle Visibility="{Binding Path=IsBusy, Converter={StaticResource BoolToVis}}"
+                   HorizontalAlignment="Stretch">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Green" Opacity=".4" />
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
 </UserControl>

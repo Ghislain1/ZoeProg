@@ -1,11 +1,11 @@
 ﻿namespace ZoeProg.Services
 {
-    using Common;
     using System;
     using System.Collections.Generic;
     using System.Management.Automation;
     using System.Threading;
     using System.Threading.Tasks;
+    using Common;
 
     public class PowerShellService : IPowerShellService
     {
@@ -52,9 +52,8 @@
             return tcs.Task;
         }
 
-
         /// <summary>
-        /// Talk about this Mathod again ?? 
+        /// Talk about this Mathod again ??
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="command"></param>
@@ -69,7 +68,7 @@
             {
                 using (var ps = PowerShell.Create())
                 {
-                    var customCommand = command + " | " +   format;
+                    var customCommand = command + " | " + format;
                     var collection = ps.AddScript(command).Invoke<T>();
                     tcs.TrySetResult(collection);
                 }
@@ -79,6 +78,33 @@
             return tcs.Task;
         }
 
-   
+        /// <summary>
+        /// TODO: Understand what happen here -- Best way for  e.g. Clean process Runs the command.
+        /// </summary>
+        /// <param name="onCompleted">The on completed.</param>
+        /// <param name="command">The command.</param>
+        /// <returns></returns>
+        public Task RunCommand(Action onCompleted, string command)
+        {
+            var tcs = new TaskCompletionSource<object>();
+
+            Task.Run(() =>
+            {
+                using (var ps = PowerShell.Create())
+                {
+                    var collection = ps.AddScript(command).Invoke<string>();
+                    ps.InvocationStateChanged += (se, es) =>
+                      {
+                          if (es.InvocationStateInfo.State == PSInvocationState.Completed)
+                          {
+                              onCompleted();
+                          }
+                      };
+                    tcs.TrySetResult(null);
+                }
+            });
+
+            return tcs.Task;
+        }
     }
 }

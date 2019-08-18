@@ -1,19 +1,21 @@
 ﻿namespace ZoeProg.Common
 {
-  using System;
-  using System.Collections.Generic;
+    using System;
+    using System.Collections.Generic;
 
-  using System.Threading;
-  using System.Threading.Tasks;
+    using System.Threading;
+    using System.Threading.Tasks;
 
-  public interface IPowerShellService
-  {
-    Task<IEnumerable<object>> RunCommand(CancellationToken cancelToken, string command);
+    public interface IPowerShellService
+    {
+        Task<IEnumerable<object>> RunCommand(CancellationToken cancelToken, string command);
 
-    Task RunCommand(Action<string> onDataReceived, string command);
+        Task RunCommand(Action<string> onData, string command);
 
-    Task<IList<T>> RunCommand<T>(string command, string format);
+        Task<IList<T>> RunCommand<T>(string command, string format);
 
-    Task RunCommand(Action<string> onDataReceived, CancellationToken cancelToken, string command);
-  }
+        Task RunCommand(Action<string> onDataReceived, CancellationToken cancelToken, string command);
+
+        Task RunCommand(Action onCompleted, string command);
+    }
 }

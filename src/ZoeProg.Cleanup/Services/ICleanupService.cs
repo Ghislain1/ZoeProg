@@ -10,13 +10,15 @@ namespace ZoeProg.Cleanup.Services
     {
         Task CleanTempFilesAsync();
 
+        Task CleanTempFilesAsync(Action onCompleted);
+
         Task DeleteFileForDemoAsync();
 
         List<string> GetAll();
 
-        Task<List<string>> GetFilesJustForDemo();
-
         Task<IList<string>> GetTempFilesAsync();
+
+        Task LoadTempFilesAsync(Action<string> onDataReceived);
     }
 
     public class CleanupService : ICleanupService
@@ -43,6 +45,13 @@ namespace ZoeProg.Cleanup.Services
             await this.powerShellService.RunCommand<string>(cmd, "List");
         }
 
+        public async Task CleanTempFilesAsync(Action onCompleted)
+        {
+            var path = "$env:TEMP";
+            var cmd = $"Remove-Item -Path {path} -Force -Recurse ";
+            await this.powerShellService.RunCommand(onCompleted, cmd);
+        }
+
         public async Task DeleteFileForDemoAsync()
         {
             var path = @"C:\Users\Zoe\Desktop\___Z_Todelte\AutoCADwpfDeno";
@@ -59,22 +68,18 @@ namespace ZoeProg.Cleanup.Services
             return this.tempFiles;
         }
 
-        public async Task<List<string>> GetFilesJustForDemo()
-        {
-            var list = new List<string>();
-            var path = @"C:\Users\Zoe\Desktop\___Z_Todelte\AutoCADwpfDeno";
-            var cmd = $"Get-ChildItem -Path {path}  -Recurse";
-            var sx = await this.powerShellService.RunCommand<string>(cmd, "List");
-            list.AddRange(sx);
-
-            return list;
-        }
-
         public async Task<IList<string>> GetTempFilesAsync()
         {
             var cmd = "Get-ChildItem $env:TEMP -Recurse";
             var rList = await this.powerShellService.RunCommand<string>(cmd, "List");
             return rList;
+        }
+
+        public async Task LoadTempFilesAsync(Action<string> onData)
+        {
+            var path = "$env:TEMP";
+            var cmd = $"Remove-Item -Path {path} -Force -Recurse";
+            await this.powerShellService.RunCommand(onData, cmd);
         }
 
         private async Task DoAsync()
