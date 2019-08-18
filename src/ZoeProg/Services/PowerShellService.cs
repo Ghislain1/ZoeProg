@@ -92,14 +92,29 @@
             {
                 using (var ps = PowerShell.Create())
                 {
-                    var collection = ps.AddScript(command).Invoke<string>();
-                    ps.InvocationStateChanged += (se, es) =>
+                    ps.Streams.Progress.DataAdded += (s, t) =>
                       {
-                          if (es.InvocationStateInfo.State == PSInvocationState.Completed)
-                          {
-                              onCompleted();
-                          }
+                          s.ToString();
                       };
+
+                    ps.Streams.Error.DataAdded += (s, t) =>
+                    {
+                        onCompleted();
+                    };
+                    ps.Streams.Information.DataAdded += (s, t) =>
+                    {
+                        s.ToString();
+                    };
+
+                    ps.InvocationStateChanged += (se, es) =>
+                    {
+                        if (es.InvocationStateInfo.State == PSInvocationState.Completed)
+                        {
+                            // onCompleted();
+                        }
+                    };
+                    var collection = ps.AddScript(command).Invoke<string>();
+
                     tcs.TrySetResult(null);
                 }
             });
