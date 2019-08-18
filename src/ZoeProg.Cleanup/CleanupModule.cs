@@ -1,6 +1,7 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
+using ZoeProg.Cleanup.Services;
 using ZoeProg.Cleanup.Views;
 using ZoeProg.Common;
 
@@ -27,6 +28,7 @@ namespace ZoeProg.Cleanup
         /// <param name="containerRegistry">container registry</param>
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            containerRegistry.RegisterSingleton<ICleanupService, CleanupService>();
         }
     }
 }
