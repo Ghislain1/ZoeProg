@@ -14,6 +14,7 @@ namespace ZoeProg.Cleanup.ViewModels
     {
         private readonly ICleanupService cleanupService;
         private ICommand deleteCommand;
+        private string deleteCommandDisplayName = "Delete";
         private bool isSelected = false;
         private ObservableCollection<string> todos;
 
@@ -48,6 +49,18 @@ namespace ZoeProg.Cleanup.ViewModels
         public ICommand DeleteCommand
         {
             get { return this.deleteCommand; }
+        }
+
+        public string DeleteCommandDisplayName
+        {
+            get
+            {
+                return this.deleteCommandDisplayName;
+            }
+            set
+            {
+                this.SetProperty<string>(ref this.deleteCommandDisplayName, value);
+            }
         }
 
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -96,6 +109,7 @@ namespace ZoeProg.Cleanup.ViewModels
         {
             var collection = await this.cleanupService.GetTempFilesAsync();
             this.Todos = new ObservableCollection<string>(collection);
+            this.DeleteCommandDisplayName = $" Delete({ this.Todos.Count})";
         }
     }
 }
