@@ -34,18 +34,13 @@
                                         <ColumnDefinition SharedSizeGroup="Checkerz" />
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
-                                    <CheckBox VerticalAlignment="Center" IsChecked="{Binding IsSelected}" />
+
                                     <StackPanel Margin="8 0 0 0" Grid.Column="1">
                                         <TextBlock FontWeight="Bold" Text="{Binding}" />
                                         <TextBlock Text="{Binding}" />
                                     </StackPanel>
                                 </Grid>
                             </Border>
-                            <DataTemplate.Triggers>
-                                <DataTrigger Binding="{Binding IsSelected}" Value="True">
-                                    <Setter TargetName="Border" Property="Background" Value="{DynamicResource MaterialDesignSelection}" />
-                                </DataTrigger>
-                            </DataTemplate.Triggers>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
