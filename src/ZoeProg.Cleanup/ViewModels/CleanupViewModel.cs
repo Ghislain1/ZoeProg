@@ -23,7 +23,7 @@ namespace ZoeProg.Cleanup.ViewModels
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
 
-            LoadForDemo().GetAwaiter();
+            this.LoadForDemo().GetAwaiter();
 
             this.deleteCommand = new DelegateCommand(
                 async () =>
