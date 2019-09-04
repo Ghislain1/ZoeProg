@@ -48,31 +48,14 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <!--<ListView ItemsSource="{Binding Todos}" HorizontalAlignment="Stretch">
-                <ListView.ItemTemplate>
-                    <DataTemplate  DataType="{x:Type ListViewItem}">
-                        <Grid>
-                            <Expander   Header="{Binding}" HorizontalAlignment="Stretch">
-                                <TextBlock TextWrapping="Wrap"
-                                   FontSize="14"
-                                   FontWeight="Light"
-                                   Foreground="White">
-                         This is an Expander control. Within this control, all contents will be wrapped.
-                              At run-time, you may expand or collapse this control. Type more text here to be typed.
-                                   Jump around and hype.
-                                </TextBlock>
-                            </Expander>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>-->
+
             </Grid>
         </DockPanel>
 
         <Rectangle Visibility="{Binding Path=IsBusy, Converter={StaticResource BoolToVis}}"
                    HorizontalAlignment="Stretch">
             <Rectangle.Fill>
-                <SolidColorBrush Color="Green" Opacity=".4" />
+                <SolidColorBrush Color="Green" Opacity=".2" />
             </Rectangle.Fill>
         </Rectangle>
     </Grid>

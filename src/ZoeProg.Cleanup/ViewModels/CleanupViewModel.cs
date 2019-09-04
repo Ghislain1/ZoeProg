@@ -10,11 +10,16 @@ namespace ZoeProg.Cleanup.ViewModels
     using ZoeProg.Cleanup.Services;
     using ZoeProg.Common;
 
+    /// <summary>
+    /// TODO:
+    /// </summary>
+    /// <seealso cref="Prism.Mvvm.BindableBase"/>
+    /// <seealso cref="ZoeProg.Common.IPlugin"/>
     public class CleanupViewModel : BindableBase, IPlugin
     {
         private readonly ICleanupService cleanupService;
         private bool canDelete;
-        
+
         private string deleteCommandDisplayName = "Delete";
         private bool isSelected = false;
         private ObservableCollection<string> todos;
@@ -27,37 +32,25 @@ namespace ZoeProg.Cleanup.ViewModels
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
 
-          //  this.LoadForDemo().GetAwaiter();
+            // this.LoadForDemo().GetAwaiter();
 
             this.CommandParameter = this.GetType();
 
-
-            this.DeleteCommand = new DelegateCommand(async () =>
-{
-    this.IsBusy = true;
-    await this.cleanupService.CleanTempFilesAsync(() =>
-    {
-        this.IsBusy = false;
-        System.Windows.Application.Current.Dispatcher.Invoke(() => this.Todos = null);
-    });
-}, () => !this.IsBusy
-
-
-
-
-
-             );
-            this.ScanCommand = new DelegateCommand( () =>
+            this.DeleteCommand = new DelegateCommand(
+                async () =>
             {
-                this.LoadForDemo().GetAwaiter();
-            });
+                this.IsBusy = true;
+                await this.cleanupService.CleanTempFilesAsync(() =>
+                {
+                    this.IsBusy = false;
+                    System.Windows.Application.Current.Dispatcher.Invoke(() => this.Todos = null);
+                });
+            }, () => !this.IsBusy);
 
-
-
-             
-
-
-
+            this.ScanCommand = new DelegateCommand(() =>
+           {
+               this.LoadForDemo().GetAwaiter();
+           });
 
             //Todos.Add("User and Windows Temporary Directories");
             //Todos.Add(" Windows Installer Cache");
@@ -75,11 +68,7 @@ namespace ZoeProg.Cleanup.ViewModels
 
         public Type CommandParameter { get; set; }
 
-        public DelegateCommand DeleteCommand { get;   private set; }
-
-        public DelegateCommand ScanCommand { get; private set; }
-
-
+        public DelegateCommand DeleteCommand { get; private set; }
 
         public string DeleteCommandDisplayName
         {
@@ -94,11 +83,8 @@ namespace ZoeProg.Cleanup.ViewModels
         }
 
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public string Glyph { get; set; } = "\uE90F";
-
         public string Header => throw new NotImplementedException();
-
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public bool IsBusy
@@ -110,7 +96,7 @@ namespace ZoeProg.Cleanup.ViewModels
             }
             set
             {
-                if(this.SetProperty<bool>(ref this.canDelete, value))
+                if (this.SetProperty<bool>(ref this.canDelete, value))
                 {
                     this.DeleteCommand.RaiseCanExecuteChanged();
                 }
@@ -130,11 +116,9 @@ namespace ZoeProg.Cleanup.ViewModels
         }
 
         public string Kind { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
         public string Label { get; set; } = "Clean Up";
-
         public string NavigatePath { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        public DelegateCommand ScanCommand { get; private set; }
         public string Tag { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public string Title { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -149,7 +133,7 @@ namespace ZoeProg.Cleanup.ViewModels
             {
                 if (this.SetProperty<ObservableCollection<string>>(ref this.todos, value))
                 {
-                    this.DeleteCommandDisplayName = $" Delete({ (value==null?0:value.Count)})";
+                    this.DeleteCommandDisplayName = $" Delete({ (value == null ? 0 : value.Count)})";
                 }
             }
         }

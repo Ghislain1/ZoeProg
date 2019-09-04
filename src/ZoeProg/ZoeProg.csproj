@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.1-ci376" />
+    <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.1-ci524" />
     <PackageReference Include="Microsoft.PowerShell.SDK" Version="7.0.0-preview.2" />
     <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
   </ItemGroup>

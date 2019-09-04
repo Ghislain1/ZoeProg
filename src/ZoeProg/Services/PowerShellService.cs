@@ -105,7 +105,7 @@
                     onCompleted();
                 }
             });
-          
+
             return tcs.Task;
         }
     }
