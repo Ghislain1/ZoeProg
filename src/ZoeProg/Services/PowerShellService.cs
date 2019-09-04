@@ -96,29 +96,16 @@
                       {
                           s.ToString();
                       };
-
-                    ps.Streams.Error.DataAdded += (s, t) =>
-                    {
-                        onCompleted();
-                    };
-                    ps.Streams.Information.DataAdded += (s, t) =>
+                    ps.Streams.Error.DataAdded += (s, et) =>
                     {
                         s.ToString();
                     };
-
-                    ps.InvocationStateChanged += (se, es) =>
-                    {
-                        if (es.InvocationStateInfo.State == PSInvocationState.Completed)
-                        {
-                            // onCompleted();
-                        }
-                    };
-                    var collection = ps.AddScript(command).Invoke<string>();
-
+                    var collection = ps.AddScript(command).Invoke();
                     tcs.TrySetResult(null);
+                    onCompleted();
                 }
             });
-
+          
             return tcs.Task;
         }
     }

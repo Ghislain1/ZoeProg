@@ -14,28 +14,50 @@ namespace ZoeProg.Cleanup.ViewModels
     {
         private readonly ICleanupService cleanupService;
         private bool canDelete;
-        private DelegateCommand deleteCommand;
+        
         private string deleteCommandDisplayName = "Delete";
         private bool isSelected = false;
         private ObservableCollection<string> todos;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CleanupViewModel"/> class.
+        /// </summary>
+        /// <param name="cleanupService"></param>
         public CleanupViewModel(ICleanupService cleanupService)
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
 
-            this.LoadForDemo().GetAwaiter();
-
-            this.deleteCommand = new DelegateCommand(
-                async () =>
-             {
-                 this.IsBusy = true;
-                 await this.cleanupService.CleanTempFilesAsync(() =>
-                 {
-                     this.IsBusy = false;
-                 });
-             }, () => !this.IsBusy);
+          //  this.LoadForDemo().GetAwaiter();
 
             this.CommandParameter = this.GetType();
+
+
+            this.DeleteCommand = new DelegateCommand(async () =>
+{
+    this.IsBusy = true;
+    await this.cleanupService.CleanTempFilesAsync(() =>
+    {
+        this.IsBusy = false;
+        System.Windows.Application.Current.Dispatcher.Invoke(() => this.Todos = null);
+    });
+}, () => !this.IsBusy
+
+
+
+
+
+             );
+            this.ScanCommand = new DelegateCommand( () =>
+            {
+                this.LoadForDemo().GetAwaiter();
+            });
+
+
+
+             
+
+
+
 
             //Todos.Add("User and Windows Temporary Directories");
             //Todos.Add(" Windows Installer Cache");
@@ -46,16 +68,18 @@ namespace ZoeProg.Cleanup.ViewModels
             //Todos.Add("Steam Redistributable Packages");
         }
 
+        /// <inheritdoc/>
         public string Code { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public ICommand Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public Type CommandParameter { get; set; }
 
-        public DelegateCommand DeleteCommand
-        {
-            get { return this.deleteCommand; }
-        }
+        public DelegateCommand DeleteCommand { get;   private set; }
+
+        public DelegateCommand ScanCommand { get; private set; }
+
+
 
         public string DeleteCommandDisplayName
         {
@@ -86,7 +110,10 @@ namespace ZoeProg.Cleanup.ViewModels
             }
             set
             {
-                this.SetProperty<bool>(ref this.canDelete, value);
+                if(this.SetProperty<bool>(ref this.canDelete, value))
+                {
+                    this.DeleteCommand.RaiseCanExecuteChanged();
+                }
             }
         }
 
@@ -120,7 +147,10 @@ namespace ZoeProg.Cleanup.ViewModels
             }
             set
             {
-                this.SetProperty<ObservableCollection<string>>(ref this.todos, value);
+                if (this.SetProperty<ObservableCollection<string>>(ref this.todos, value))
+                {
+                    this.DeleteCommandDisplayName = $" Delete({ (value==null?0:value.Count)})";
+                }
             }
         }
 

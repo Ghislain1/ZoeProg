@@ -1,3 +1,17 @@
+#-----------------------------------------------------------------------------------------------#
+#       .NET Core .csproj files patching (see doc of AppVeyor)     #
+#-----------------------------------------------------------------------------------------------#
+
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+
+
 #---------------------------------#
 #  Build Script                   #
 #---------------------------------#

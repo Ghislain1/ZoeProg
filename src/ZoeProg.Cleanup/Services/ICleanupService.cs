@@ -48,7 +48,8 @@ namespace ZoeProg.Cleanup.Services
         public async Task CleanTempFilesAsync(Action onCompleted)
         {
             var path = "$env:TEMP";
-            var cmd = $"Remove-Item -Path {path} -Force -Recurse ";
+            var cmd = $"Get-ChildItem -Path {path} -Force -Recurse | "+ " ForEach-Object($_){ Remove-Item -Path $_.FullName -Force -Recurse}";
+            var cmd2 = $"Remove-Item -Path {path} -Force -Recurse ";
             await this.powerShellService.RunCommand(onCompleted, cmd);
         }
 
