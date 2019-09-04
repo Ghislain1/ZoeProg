@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>images/ZoeProg-180.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

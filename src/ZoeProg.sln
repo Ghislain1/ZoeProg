@@ -26,11 +26,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setup", "Setup", "{5DDD113F
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "ZoeProg.Installer", "ZoeProg.Installer\ZoeProg.Installer.wixproj", "{B2F7685C-0385-4062-B024-96681C965A89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Infrastructure", "ZoeProg.Infrastructure\ZoeProg.Infrastructure.csproj", "{5E0B0810-769F-475F-B86C-6D9C7BC0D5F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Infrastructure", "ZoeProg.Infrastructure\ZoeProg.Infrastructure.csproj", "{5E0B0810-769F-475F-B86C-6D9C7BC0D5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Core", "ZoeProg.Core\ZoeProg.Core.csproj", "{4A4D7630-3692-4BCC-915E-2C45AD1B482F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Core", "ZoeProg.Core\ZoeProg.Core.csproj", "{4A4D7630-3692-4BCC-915E-2C45AD1B482F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoeProg.Persistence", "ZoeProg.Persistence\ZoeProg.Persistence.csproj", "{7FA23C59-B756-4559-AC50-2F432999CFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Persistence", "ZoeProg.Persistence\ZoeProg.Persistence.csproj", "{7FA23C59-B756-4559-AC50-2F432999CFD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
