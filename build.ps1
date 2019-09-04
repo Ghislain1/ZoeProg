@@ -42,10 +42,13 @@ Set-Location $SolutionDir
 
 # Clean Bin and Obj
 Write-StageInformation -Text 'Bin and Objects Deleting... '
-$binObj = Get-ChildItem  -include bin, obj -Recurse 
+$binObj = Get-ChildItem .\ -Include bin, obj -Recurse 
 $binObj | ForEach-Object ($_) { 
-    Write-Host $_.FullName
-    Remove-Item $_.Fullname -Force -Recurse  
+    Write-CustomInformation -Text $_   
+    if (Test-Path $_.FullName) {
+        Remove-Item $_.Fullname -Recurse  -Force -ErrorAction Stop
+    }  
+    
  
 }
 
@@ -60,15 +63,16 @@ ForEach ( $pro in $projects) {
 Write-StageInformation -Text 'Solution building...'
 $BuildExpression = "dotnet msbuild /p:Configuration=Debug /p:Platform='Any CPU'"
 Invoke-Expression  $BuildExpression
-
-# Dotnet restore 
-# TODO: RestoreAllPackages    -SolutionDir "./"  -NUGETLOCATION "$NugetExePath"
+Write-CustomInformation -Text "Best way to use Invoke-Expression Command in Powershell Script has been done"  
 
 # Change to most recent location
 Pop-Location
 Write-StageInformation -Text 'Website for docs copying...'
 $SiteItems = Get-ChildItem $SiteDir  
 $SiteItems | Copy-Item -Destination $DocsDir -Force   -Verbose 
+
+
+# Inform user that solution finisched successfully
 Write-StageInformation -Text 'Solution Reading...'
 
 
