@@ -88,7 +88,7 @@ namespace ZoeProg.Cleanup.ViewModels
         }
 
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Glyph { get; set; } = "\uE90F";
+        public string Glyph { get; set; } = "\uf368";
         public string Header => throw new NotImplementedException();
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
