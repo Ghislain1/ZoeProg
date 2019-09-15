@@ -11,7 +11,7 @@ Coming soon ( see Issues) !!
 
 TeamCity | Appveyor
 ----------- | -------
-Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog)) has been done with docfx
+Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) 
 
 
 ## Documentation
