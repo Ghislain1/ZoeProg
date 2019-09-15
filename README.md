@@ -11,7 +11,7 @@ Coming soon ( see Issues) !!
 
 TeamCity | Appveyor  |  Github
 ----------- | ------- | -------
-Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) |  [![Release](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
+Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
 
 
 ## Documentation
