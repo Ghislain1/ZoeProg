@@ -24,6 +24,7 @@ namespace ZoeProg.Cleanup.Services
         /// <summary>
         /// Cleans the temporary files asynchronous.
         /// </summary>
+        /// <returns>representing the asynchronous operation.</returns>
         public Task CleanTempFilesAsync()
         {
             var path = "$env:TEMP";
@@ -65,11 +66,44 @@ namespace ZoeProg.Cleanup.Services
             });
         }
 
-        public async Task LoadTempFilesAsync(Action<string> onData)
+        /// <summary>
+        /// Loads the temporary files asynchronous.
+        /// </summary>
+        /// <param name="onData">The on data.</param>
+        /// <returns>a Task</returns>
+        public Task LoadTempFilesAsync(Action<string> onData)
         {
-            //var path = "$env:TEMP";
-            //var cmd = $"Remove-Item -Path {path} -Force -Recurse";
-            //await this.powerShellService.RunCommand(onData, cmd);
+            var rList = new List<string>();
+            var folderPath = System.IO.Path.GetTempPath();// Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            var cmd = $"Get-ChildItem {folderPath} -Recurse ";
+            return this.powerShellService.RunCommand(cmd, path =>
+            {
+                onData(path);
+            });
+        }
+
+        /// <summary>
+        /// Removes the file asnyc.
+        /// </summary>
+        /// <param name="filePathList">The file path list.</param>
+        /// <returns>task</returns>
+        public async Task RemoveFileAsnyc(List<string> filePathList)
+        {
+            foreach (var item in filePathList)
+            {
+                await this.RemoveFileAsnyc(item);
+            }
+        }
+
+        /// <summary>
+        /// Removes the file asnyc.
+        /// </summary>
+        /// <param name="filePath">The file path.</param>
+        /// <returns>Task</returns>
+        public Task RemoveFileAsnyc(string filePath)
+        {
+            var scriptString = $"Remove-Item -Path {filePath} -Force";
+            return this.powerShellService.RunCommand(CancellationToken.None, scriptString);
         }
 
         private async Task DoAsync()

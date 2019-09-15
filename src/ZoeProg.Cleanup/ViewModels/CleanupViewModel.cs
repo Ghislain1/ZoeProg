@@ -2,7 +2,9 @@
 
 namespace ZoeProg.Cleanup.ViewModels
 {
+    using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Linq;
     using System.Windows.Input;
     using Prism.Commands;
     using Prism.Mvvm;
@@ -21,7 +23,7 @@ namespace ZoeProg.Cleanup.ViewModels
 
         private string deleteCommandDisplayName = "Delete";
         private bool isSelected = false;
-        private ObservableCollection<string> todos;
+        private ObservableCollection<string> todos = new ObservableCollection<string>();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CleanupViewModel"/> class.
@@ -31,25 +33,29 @@ namespace ZoeProg.Cleanup.ViewModels
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
 
-            // this.LoadForDemo().GetAwaiter();
-
             this.CommandParameter = this.GetType();
 
-            this.DeleteCommand = new DelegateCommand(
-                async () =>
-            {
-                this.IsBusy = true;
-                await this.cleanupService.CleanTempFilesAsync(() =>
-                {
-                    this.IsBusy = false;
-                    System.Windows.Application.Current.Dispatcher.Invoke(() => this.Todos = null);
-                });
-            }, () => !this.IsBusy);
+            this.DeleteCommand = new DelegateCommand(async () =>
+                        {
+                            this.IsBusy = true;
+                            await this.cleanupService.RemoveFileAsnyc(this.Todos.ToList());
+                            this.Todos.Clear();
+                            this.IsBusy = false;
+                        });
 
-            this.ScanCommand = new DelegateCommand(() =>
-           {
-               // this.LoadForDemo().GetAwaiter();
-           });
+            this.ScanCommand = new DelegateCommand(async () =>
+          {
+              var result = new List<string>();
+              this.IsBusy = true;
+              await this.cleanupService.LoadTempFilesAsync(path => result.Add(path));
+              this.Todos.Clear();
+              foreach (var item in result)
+              {
+                  this.Todos.Add(item);
+              }
+
+              this.IsBusy = false;
+          });
 
             //Todos.Add("User and Windows Temporary Directories");
             //Todos.Add(" Windows Installer Cache");
