@@ -5,7 +5,7 @@
     using System.Threading.Tasks;
     using System.Windows.Input;
     using Prism.Mvvm;
-    using ZoeProg.Common;
+    using ZoeProg.Core;
     using ZoeProg.PlugIns.Audit.Models;
     using ZoeProg.PlugIns.Audit.Services;
 

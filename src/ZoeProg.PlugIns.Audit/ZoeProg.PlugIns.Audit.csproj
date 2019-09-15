@@ -8,12 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    <PackageReference Include="Ghis.PowershellLib" Version="1.0.2" />
     <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ZoeProg.Common\ZoeProg.Common.csproj" />
     <ProjectReference Include="..\ZoeProg.Core\ZoeProg.Core.csproj" />
   </ItemGroup>
 

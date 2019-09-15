@@ -3,7 +3,7 @@
     using System;
     using System.Windows.Input;
     using Prism.Mvvm;
-    using ZoeProg.Common;
+    using ZoeProg.Core;
 
     public class HomeViewModel : BindableBase, IPlugin
     {

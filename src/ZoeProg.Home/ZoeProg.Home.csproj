@@ -26,7 +26,6 @@
  
 
   <ItemGroup>
-    <ProjectReference Include="..\ZoeProg.Common\ZoeProg.Common.csproj" />
     <ProjectReference Include="..\ZoeProg.Core\ZoeProg.Core.csproj" />
   </ItemGroup>
 
