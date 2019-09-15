@@ -1,18 +1,19 @@
 ﻿namespace ZoeProg.Services
 {
-    using Common.Data;
     using System;
     using System.Collections.Generic;
     using System.Text.RegularExpressions;
     using System.Threading;
     using System.Threading.Tasks;
-    using ZoeProg.Common;
+    using Ghis.PowershellLib;
+    using ZoeProg.Core;
+    using ZoeProg.Core.Data;
 
     public class PackageRepository : IPackageRepository
     {
-        private readonly IPowerShellService powerShellService;
+        private readonly IPowershellService powerShellService;
 
-        public PackageRepository(IPowerShellService powerShellService)
+        public PackageRepository(IPowershellService powerShellService)
         {
             this.powerShellService = powerShellService;
         }

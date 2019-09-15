@@ -4,14 +4,13 @@
     using System.Threading;
     using System.Windows;
     using System.Windows.Controls;
+    using Ghis.PowershellLib;
     using MahApps.Metro.Controls;
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
     using Prism.Unity;
-    using ZoeProg.Common;
     using ZoeProg.Extensions;
-    using ZoeProg.Services;
     using ZoeProg.Views;
 
     /// <summary>
@@ -48,7 +47,7 @@
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterSingleton<IPowerShellService, PowerShellService>();
+            containerRegistry.RegisterSingleton<IPowershellService, PowershellService>();
         }
     }
 }

@@ -1,10 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk"> 
-  
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework> 
- </PropertyGroup>
-   
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZoeProg.Core\ZoeProg.Core.csproj" />
+  </ItemGroup>
 </Project>
- 
- 
- 

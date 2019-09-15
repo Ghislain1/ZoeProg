@@ -1,21 +1,14 @@
-﻿
-
-namespace ZoeProg.Extensions
+﻿namespace ZoeProg.Extensions
 {
-    using Prism.Regions;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
     using System.Windows.Controls;
-    using ZoeProg.Common;
+    using Prism.Regions;
+    using ZoeProg.Core;
 
     public sealed class ListViewRegionAdapter : RegionAdapterBase<ListView>
     {
         public ListViewRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory) : base(regionBehaviorFactory)
         { }
-       
+
         protected override void Adapt(IRegion region, ListView regionTarget)
         {
             region.ActiveViews.CollectionChanged += (s, e) =>
@@ -33,6 +26,7 @@ namespace ZoeProg.Extensions
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
                         break;
+
                     case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
                         foreach (var t in e.OldItems)
                         {

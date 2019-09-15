@@ -3,7 +3,7 @@ using Prism.Modularity;
 using Prism.Regions;
 using ZoeProg.Cleanup.Services;
 using ZoeProg.Cleanup.Views;
-using ZoeProg.Common;
+using ZoeProg.Core;
 
 namespace ZoeProg.Cleanup
 {

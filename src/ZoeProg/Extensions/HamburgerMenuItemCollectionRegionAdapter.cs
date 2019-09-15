@@ -3,7 +3,7 @@
     using System.Windows.Controls;
     using MahApps.Metro.Controls;
     using Prism.Regions;
-    using ZoeProg.Common;
+    using ZoeProg.Core;
 
     public class HamburgerMenuItemCollectionRegionAdapter : RegionAdapterBase<HamburgerMenuItemCollection>
     {

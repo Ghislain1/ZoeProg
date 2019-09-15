@@ -1,14 +1,10 @@
-﻿
-
-namespace ZoeProg.Extensions
+﻿namespace ZoeProg.Extensions
 {
     using System;
-    using System.Collections.Generic;
-    using System.Text;
     using System.Windows.Controls;
     using MahApps.Metro.Controls;
     using Prism.Regions;
-    using ZoeProg.Common;
+    using ZoeProg.Core;
 
     [Obsolete("Use HamburgerMenuItemCollection instead : Ghislain why? because HM store his items into HamburgerMenuItemCollection")]
     public class HamburgerMenuRegionAdapter : RegionAdapterBase<HamburgerMenu>
@@ -16,6 +12,7 @@ namespace ZoeProg.Extensions
         public HamburgerMenuRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory) : base(regionBehaviorFactory)
         {
         }
+
         protected override void Adapt(IRegion region, HamburgerMenu regionTarget)
         {
             region.ActiveViews.CollectionChanged += (s, e) =>
@@ -28,12 +25,12 @@ namespace ZoeProg.Extensions
                             var tb = new HamburgerMenuItem();
                             var iv = ((UserControl)e.NewItems[0]).DataContext as IPlugin;
                             tb.Label = iv.Header;
-                          //  tb.DataContext = iv;
-                            // tb.Content = ((UserControl)e.NewItems[0]);
+                            // tb.DataContext = iv; tb.Content = ((UserControl)e.NewItems[0]);
                             regionTarget.Items.Insert(regionTarget.Items.Count, tb);
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
                         break;
+
                     case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
                         foreach (var t in e.OldItems)
                         {
@@ -50,10 +47,8 @@ namespace ZoeProg.Extensions
                         break;
                 }
             };
-
         }
 
         protected override IRegion CreateRegion() => new AllActiveRegion();
-
     }
 }

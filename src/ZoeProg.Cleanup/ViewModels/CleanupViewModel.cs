@@ -3,12 +3,11 @@
 namespace ZoeProg.Cleanup.ViewModels
 {
     using System.Collections.ObjectModel;
-    using System.Threading.Tasks;
     using System.Windows.Input;
     using Prism.Commands;
     using Prism.Mvvm;
     using ZoeProg.Cleanup.Services;
-    using ZoeProg.Common;
+    using ZoeProg.Core;
 
     /// <summary>
     /// TODO:
@@ -49,7 +48,7 @@ namespace ZoeProg.Cleanup.ViewModels
 
             this.ScanCommand = new DelegateCommand(() =>
            {
-               this.LoadForDemo().GetAwaiter();
+               // this.LoadForDemo().GetAwaiter();
            });
 
             //Todos.Add("User and Windows Temporary Directories");
@@ -136,15 +135,6 @@ namespace ZoeProg.Cleanup.ViewModels
                     this.DeleteCommandDisplayName = $" Delete({ (value == null ? 0 : value.Count)})";
                 }
             }
-        }
-
-        private async Task LoadForDemo()
-        {
-            var collection = await this.cleanupService.GetTempFilesAsync();
-            this.Todos = new ObservableCollection<string>(collection);
-            this.DeleteCommandDisplayName = $" Delete({ this.Todos.Count})";
-            this.IsBusy = false;
-            this.DeleteCommand.RaiseCanExecuteChanged();
         }
     }
 }
