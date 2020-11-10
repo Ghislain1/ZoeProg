@@ -1,22 +1,7 @@
-
-<h1 align="center" style="background:green;">
-  ZoeProg
-</h1>
-
-## Installation
-
-Coming soon ( see Issues) !!
-
 ## Build Status
 
-TeamCity | Appveyor  |  Github
------------ | ------- | -------
-Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
+ [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
 
-
-## Documentation
-
-[Documentation](https://ghislain1.github.io/ZoeProg/api/index.html) has been done with docfx
 
 
 # Table of Contents
@@ -27,6 +12,7 @@ Coming soon | [![Appveyor Build status](https://ci.appveyor.com/api/projects/sta
   - [Road map](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Issues](https://github.com/Ghislain1/ZoeProg/issues)
   - [Scrum Board](https://github.com/Ghislain1/ZoeProg/projects/1)
+  - [Documentation](https://ghislain1.github.io/ZoeProg/api/index.html)
 
 # Look & Feel
 
