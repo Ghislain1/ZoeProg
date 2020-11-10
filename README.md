@@ -2,8 +2,6 @@
 
  [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
 
-
-
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Features](https://github.com/Ghislain1/ZoeProg/wiki)
@@ -13,6 +11,7 @@
   - [Issues](https://github.com/Ghislain1/ZoeProg/issues)
   - [Scrum Board](https://github.com/Ghislain1/ZoeProg/projects/1)
   - [Documentation](https://ghislain1.github.io/ZoeProg/api/index.html)
+  - [References](#references)
 
 # Look & Feel
 
@@ -39,6 +38,12 @@
   + Local Directory
   
   
+# References
+1. [Controls](https://mahapps.com/docs/controls/HamburgerMenu)
+2. [Prism WPF](https://github.com/PrismLibrary/Prism) - [His Doc](https://prismlibrary.com/docs/commanding.html) explaining
+3. [Style and Design]()
+4. [E2E Test](https://dev.azure.com/prismlibrary/Prism/_build/results?buildId=1923&view=results)
+5. []()
 # Dependencies
 - Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
 - [Mui](https://github.com/firstfloorsoftware/mui/wiki)
