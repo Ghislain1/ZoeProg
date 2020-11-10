@@ -1,9 +1,8 @@
 ﻿namespace ZoeProg.ViewModels
 {
-    using Prism.Mvvm;
     using System.ComponentModel;
-    using System.Linq;
     using System.Windows.Media;
+    using Prism.Mvvm;
 
     /// <summary>
     /// A simple view model for configuring theme, font and accent colors.
@@ -84,42 +83,19 @@
         public Color SelectedAccentColor
         {
             get { return this.selectedAccentColor; }
-            set
-            {
-                if (this.selectedAccentColor != value)
-                {
-                    this.selectedAccentColor = value;
-                    OnPropertyChanged("SelectedAccentColor");
-                }
-            }
+            set => this.SetProperty(ref this.selectedAccentColor, value);
         }
 
         public string SelectedFontSize
         {
             get { return this.selectedFontSize; }
-            set
-            {
-                if (this.selectedFontSize != value)
-                {
-                    this.selectedFontSize = value;
-                    OnPropertyChanged("SelectedFontSize");
-                }
-            }
+            set => this.SetProperty(ref this.selectedFontSize, value);
         }
 
         public string SelectedPalette
         {
             get { return this.selectedPalette; }
-            set
-            {
-                if (this.selectedPalette != value)
-                {
-                    this.selectedPalette = value;
-                    RaisePropertyChanged("AccentColors");
-
-                    this.SelectedAccentColor = this.AccentColors.FirstOrDefault();
-                }
-            }
+            set => this.SetProperty(ref this.selectedPalette, value);
         }
 
         public string SelectedTheme
@@ -145,7 +121,8 @@
 
         private void SyncThemeAndColor()
         {
-            // synchronizes the selected viewmodel theme with the actual theme used by the appearance manager.
+            // synchronizes the selected viewmodel theme with the actual theme used by the
+            // appearance manager.
         }
     }
 }
