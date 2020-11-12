@@ -1,6 +1,6 @@
 ## Build Status
 
- [![Appveyor Build status](https://ci.appveyor.com/api/projects/status/t7p3ywv3msu5ahl7/branch/develop?svg=true)](https://ci.appveyor.com/project/Ghislain1/zoeprog) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
+[![Build Status](https://dev.azure.com/ZEUSXY/ZoeApp/_apis/build/status/Ghislain1.ZoeProg?branchName=master)](https://dev.azure.com/ZEUSXY/ZoeApp/_build/latest?definitionId=1&branchName=master) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
 
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
