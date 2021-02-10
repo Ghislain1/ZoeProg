@@ -1,22 +1,8 @@
-﻿/*-
- * ---license-start
- * Zoe-App
- * ---
- * Copyright (C) 2021 GhislainOne and all other contributors
- * ---
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * ---license-end
- */
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="App.xaml.cs" company="PlaceholderCompany">
+//     Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace ZoeProg
 {
@@ -46,16 +32,10 @@ namespace ZoeProg
         {
             // WOrk around: https://github.com/dotnet/wpf/issues/738
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-
             base.ConfigureRegionAdapterMappings(regionAdapterMappings);
-
             RegionAdapterMappings mappings = regionAdapterMappings;
-            var regionBehaviorFactory = Container.Resolve<IRegionBehaviorFactory>();
-            // mappings.RegisterMapping(typeof(TabablzControl), new
-            // TabablzControlRegionAdapter(regionBehaviorFactory));
-            // mappings.RegisterMapping(typeof(ListView), new ListViewRegionAdapter(regionBehaviorFactory));
+            var regionBehaviorFactory = this.Container.Resolve<IRegionBehaviorFactory>();
             mappings.RegisterMapping(typeof(TabControl), new TabControlRegionAdapter(regionBehaviorFactory));
-
             mappings.RegisterMapping(typeof(HamburgerMenuItemCollection), this.Container.Resolve<HamburgerMenuItemCollectionRegionAdapter>());
         }
 
@@ -74,7 +54,7 @@ namespace ZoeProg
         /// <returns>The <see cref="Window"/>.</returns>
         protected override Window CreateShell()
         {
-            return Container.Resolve<Shell>();
+            return this.Container.Resolve<Shell>();
         }
 
         /// <summary>

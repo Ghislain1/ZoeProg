@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <!-- Das Strinh hier ist call TargetFrameworkMoniker!! e.g. netcoreapp2.2-->
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>

@@ -32,7 +32,7 @@ namespace ZoeProg.Views
         /// </summary>
         public ProgressView()
         {
-            InitializeComponent();
+            this.InitializeComponent();
             this.Owner = Application.Current.MainWindow;
             this.Width = this.Owner.ActualWidth;
             this.Height = this.Owner.ActualHeight;

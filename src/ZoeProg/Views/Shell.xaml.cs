@@ -1,5 +1,4 @@
-﻿/*-
- * ---license-start
+﻿/*----license-start
  * Zoe-App
  * ---
  * Copyright (C) 2021 GhislainOne and all other contributors
@@ -32,7 +31,7 @@ namespace ZoeProg.Views
         /// </summary>
         public Shell()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         /// <summary>
