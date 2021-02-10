@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Ghis.PowershellLib" Version="1.0.2" />
-    <PackageReference Include="MahApps.Metro" Version="2.3.4" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.3" />
     <PackageReference Include="MaterialDesignColors" Version="1.2.7" />
     <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.5" />

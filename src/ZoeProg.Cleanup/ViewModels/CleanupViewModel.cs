@@ -100,6 +100,7 @@ namespace ZoeProg.Cleanup.ViewModels
             {
                 return this.canDelete;
             }
+
             set
             {
                 if (this.SetProperty<bool>(ref this.canDelete, value))
