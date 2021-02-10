@@ -6,10 +6,7 @@
 
 namespace ZoeProg
 {
-    using System.Globalization;
-    using System.Threading;
     using System.Windows;
-    using System.Windows.Controls;
     using Ghis.PowershellLib;
     using MahApps.Metro.Controls;
     using Prism.Ioc;
@@ -28,14 +25,11 @@ namespace ZoeProg
         /// The ConfigureRegionAdapterMappings.
         /// </summary>
         /// <param name="regionAdapterMappings">The regionAdapterMappings <see cref="RegionAdapterMappings"/>.</param>
-        protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
+        protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings mappings)
         {
             // WOrk around: https://github.com/dotnet/wpf/issues/738
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-            base.ConfigureRegionAdapterMappings(regionAdapterMappings);
-            RegionAdapterMappings mappings = regionAdapterMappings;
-            var regionBehaviorFactory = this.Container.Resolve<IRegionBehaviorFactory>();
-            mappings.RegisterMapping(typeof(TabControl), new TabControlRegionAdapter(regionBehaviorFactory));
+            // Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+            base.ConfigureRegionAdapterMappings(mappings);
             mappings.RegisterMapping(typeof(HamburgerMenuItemCollection), this.Container.Resolve<HamburgerMenuItemCollectionRegionAdapter>());
         }
 

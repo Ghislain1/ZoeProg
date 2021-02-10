@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PackageRepository.PackageService
    ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -73,7 +73,8 @@
   
   <h1 id="ZoeProg_Services_PackageRepository_PackageService" data-uid="ZoeProg.Services.PackageRepository.PackageService" class="text-break">Class PackageRepository.PackageService
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines the <a class="xref" href="ZoeProg.Services.PackageRepository.PackageService.html">PackageRepository.PackageService</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -84,48 +85,25 @@
     <h5>Implements</h5>
     <div><a class="xref" href="ZoeProg.Core.IPackageService.html">IPackageService</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ZoeProg.Services.html">ZoeProg.Services</a></h6>
   <h6><strong>Assembly</strong>: ZoeProg.dll</h6>
   <h5 id="ZoeProg_Services_PackageRepository_PackageService_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PackageService : IPackageService</code></pre>
+    <pre><code class="lang-csharp hljs">public class PackageService : object, IPackageService</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package%2CSystem.Action%7BSystem.String%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package%2CAction%7BSystem.String%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L88">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L155">View Source</a>
   </span>
   <a id="ZoeProg_Services_PackageRepository_PackageService_Install_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Install*"></a>
-  <h4 id="ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)">Install(Package, Action&lt;String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)">Install(Package, Action&lt;String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The Install.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -144,17 +122,20 @@
       <tr>
         <td><a class="xref" href="ZoeProg.Core.Data.Package.html">Package</a></td>
         <td><span class="parametername">package</span></td>
-        <td></td>
+        <td><p>The package <a class="xref" href="ZoeProg.Core.Data.Package.html">Package</a>.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">onDataReceived</span></td>
-        <td></td>
+        <td><p>The onDataReceived <see cref="!:Action&lt;string>"></see>.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancelToken</span></td>
-        <td></td>
+        <td><p>The cancelToken <see cref="!:CancellationToken"></see>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -168,8 +149,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><span class="xref">Task</span></td>
+        <td><p>The <see cref="!:Task"></see>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -178,11 +160,12 @@
     <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_PackageVersion_.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.PackageVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L83">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L143">View Source</a>
   </span>
   <a id="ZoeProg_Services_PackageRepository_PackageService_Install_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Install*"></a>
   <h4 id="ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_PackageVersion_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.PackageVersion)">Install(PackageVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The Install.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -201,7 +184,8 @@
       <tr>
         <td><a class="xref" href="ZoeProg.Core.Data.PackageVersion.html">PackageVersion</a></td>
         <td><span class="parametername">package</span></td>
-        <td></td>
+        <td><p>The package <a class="xref" href="ZoeProg.Core.Data.PackageVersion.html">PackageVersion</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -215,21 +199,23 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><span class="xref">Task</span></td>
+        <td><p>The <see cref="!:Task"></see>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package%2CSystem.Action%7BSystem.String%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package%2CAction%7BSystem.String%7D%2CCancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L98">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L177">View Source</a>
   </span>
   <a id="ZoeProg_Services_PackageRepository_PackageService_UnInstall_" data-uid="ZoeProg.Services.PackageRepository.PackageService.UnInstall*"></a>
-  <h4 id="ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_" data-uid="ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)">UnInstall(Package, Action&lt;String&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_" data-uid="ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)">UnInstall(Package, Action&lt;String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The UnInstall.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,17 +234,20 @@
       <tr>
         <td><a class="xref" href="ZoeProg.Core.Data.Package.html">Package</a></td>
         <td><span class="parametername">package</span></td>
-        <td></td>
+        <td><p>The package <a class="xref" href="ZoeProg.Core.Data.Package.html">Package</a>.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">Action</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">onDataReceived</span></td>
-        <td></td>
+        <td><p>The onDataReceived <see cref="!:Action&lt;string>"></see>.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">cancelToken</span></td>
-        <td></td>
+        <td><p>The cancelToken <see cref="!:CancellationToken"></see>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -272,8 +261,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><span class="xref">Task</span></td>
+        <td><p>The <see cref="!:Task"></see>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -282,11 +272,12 @@
     <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService_Uninstall_ZoeProg_Core_Data_PackageVersion_.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L93">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L165">View Source</a>
   </span>
   <a id="ZoeProg_Services_PackageRepository_PackageService_Uninstall_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Uninstall*"></a>
   <h4 id="ZoeProg_Services_PackageRepository_PackageService_Uninstall_ZoeProg_Core_Data_PackageVersion_" data-uid="ZoeProg.Services.PackageRepository.PackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)">Uninstall(PackageVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The Uninstall.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -305,7 +296,8 @@
       <tr>
         <td><a class="xref" href="ZoeProg.Core.Data.PackageVersion.html">PackageVersion</a></td>
         <td><span class="parametername">package</span></td>
-        <td></td>
+        <td><p>The package <a class="xref" href="ZoeProg.Core.Data.PackageVersion.html">PackageVersion</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -319,8 +311,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><span class="xref">Task</span></td>
+        <td><p>The <see cref="!:Task"></see>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -339,12 +332,13 @@
                     <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Services_PackageRepository_PackageService.md&amp;value=---%0Auid%3A%20ZoeProg.Services.PackageRepository.PackageService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L81" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg/Services/PackageRepository.cs/#L136" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

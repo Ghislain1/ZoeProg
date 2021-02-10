@@ -28,7 +28,7 @@ namespace ZoeProg.Home.ViewModels
         /// <summary>
         /// Gets or sets the Code.
         /// </summary>
-        public string Code { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Code { get; set; }
 
         /// <summary>
         /// Gets or sets the Command.

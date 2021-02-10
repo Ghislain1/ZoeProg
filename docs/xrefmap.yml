@@ -1,6 +1,70 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: ZoeProg
+  name: ZoeProg
+  href: api/ZoeProg.html
+  commentId: N:ZoeProg
+  fullName: ZoeProg
+  nameWithType: ZoeProg
+- uid: ZoeProg.App
+  name: App
+  href: api/ZoeProg.App.html
+  commentId: T:ZoeProg.App
+  fullName: ZoeProg.App
+  nameWithType: App
+- uid: ZoeProg.App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  name: ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  href: api/ZoeProg.App.html#ZoeProg_App_ConfigureRegionAdapterMappings_RegionAdapterMappings_
+  commentId: M:ZoeProg.App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  fullName: ZoeProg.App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  nameWithType: App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+- uid: ZoeProg.App.ConfigureRegionAdapterMappings*
+  name: ConfigureRegionAdapterMappings
+  href: api/ZoeProg.App.html#ZoeProg_App_ConfigureRegionAdapterMappings_
+  commentId: Overload:ZoeProg.App.ConfigureRegionAdapterMappings
+  isSpec: "True"
+  fullName: ZoeProg.App.ConfigureRegionAdapterMappings
+  nameWithType: App.ConfigureRegionAdapterMappings
+- uid: ZoeProg.App.CreateModuleCatalog
+  name: CreateModuleCatalog()
+  href: api/ZoeProg.App.html#ZoeProg_App_CreateModuleCatalog
+  commentId: M:ZoeProg.App.CreateModuleCatalog
+  fullName: ZoeProg.App.CreateModuleCatalog()
+  nameWithType: App.CreateModuleCatalog()
+- uid: ZoeProg.App.CreateModuleCatalog*
+  name: CreateModuleCatalog
+  href: api/ZoeProg.App.html#ZoeProg_App_CreateModuleCatalog_
+  commentId: Overload:ZoeProg.App.CreateModuleCatalog
+  isSpec: "True"
+  fullName: ZoeProg.App.CreateModuleCatalog
+  nameWithType: App.CreateModuleCatalog
+- uid: ZoeProg.App.CreateShell
+  name: CreateShell()
+  href: api/ZoeProg.App.html#ZoeProg_App_CreateShell
+  commentId: M:ZoeProg.App.CreateShell
+  fullName: ZoeProg.App.CreateShell()
+  nameWithType: App.CreateShell()
+- uid: ZoeProg.App.CreateShell*
+  name: CreateShell
+  href: api/ZoeProg.App.html#ZoeProg_App_CreateShell_
+  commentId: Overload:ZoeProg.App.CreateShell
+  isSpec: "True"
+  fullName: ZoeProg.App.CreateShell
+  nameWithType: App.CreateShell
+- uid: ZoeProg.App.RegisterTypes(IContainerRegistry)
+  name: RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.App.html#ZoeProg_App_RegisterTypes_IContainerRegistry_
+  commentId: M:ZoeProg.App.RegisterTypes(IContainerRegistry)
+  fullName: ZoeProg.App.RegisterTypes(IContainerRegistry)
+  nameWithType: App.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.App.RegisterTypes*
+  name: RegisterTypes
+  href: api/ZoeProg.App.html#ZoeProg_App_RegisterTypes_
+  commentId: Overload:ZoeProg.App.RegisterTypes
+  isSpec: "True"
+  fullName: ZoeProg.App.RegisterTypes
+  nameWithType: App.RegisterTypes
 - uid: ZoeProg.Common
   name: ZoeProg.Common
   href: api/ZoeProg.Common.html
@@ -778,13 +842,13 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged
   nameWithType: PackageVersion.OnPropertyChanged
-- uid: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})
+- uid: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(Expression{Func{``0}})
   name: OnPropertyChanged<T>(Expression<Func<T>>)
-  href: api/ZoeProg.Core.Data.PackageVersion.html#ZoeProg_Core_Data_PackageVersion_OnPropertyChanged__1_System_Linq_Expressions_Expression_System_Func___0___
-  commentId: M:ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})
+  href: api/ZoeProg.Core.Data.PackageVersion.html#ZoeProg_Core_Data_PackageVersion_OnPropertyChanged__1_Expression_Func___0___
+  commentId: M:ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(Expression{Func{``0}})
   name.vb: OnPropertyChanged(Of T)(Expression(Of Func(Of T)))
-  fullName: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged<T>(System.Linq.Expressions.Expression<System.Func<T>>)
-  fullName.vb: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)))
+  fullName: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged<T>(Expression<Func<T>>)
+  fullName.vb: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged(Of T)(Expression(Of Func(Of T)))
   nameWithType: PackageVersion.OnPropertyChanged<T>(Expression<Func<T>>)
   nameWithType.vb: PackageVersion.OnPropertyChanged(Of T)(Expression(Of Func(Of T)))
 - uid: ZoeProg.Core.Data.PackageVersion.PropertyChanged
@@ -966,11 +1030,11 @@ references:
   commentId: T:ZoeProg.Core.IPackageRepository
   fullName: ZoeProg.Core.IPackageRepository
   nameWithType: IPackageRepository
-- uid: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,System.Threading.CancellationToken)
+- uid: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,CancellationToken)
   name: GetListAvailabePackages(String, CancellationToken)
-  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListAvailabePackages_System_String_System_Threading_CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,System.Threading.CancellationToken)
-  fullName: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String, System.Threading.CancellationToken)
+  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListAvailabePackages_System_String_CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,CancellationToken)
+  fullName: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String, CancellationToken)
   nameWithType: IPackageRepository.GetListAvailabePackages(String, CancellationToken)
 - uid: ZoeProg.Core.IPackageRepository.GetListAvailabePackages*
   name: GetListAvailabePackages
@@ -979,17 +1043,17 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPackageRepository.GetListAvailabePackages
   nameWithType: IPackageRepository.GetListAvailabePackages
-- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
+- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationToken)
   name: GetListInstalledPackages(CancellationToken)
-  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_System_Threading_CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
-  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
+  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationToken)
+  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationToken)
   nameWithType: IPackageRepository.GetListInstalledPackages(CancellationToken)
-- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
+- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
   name: GetListInstalledPackages(CancellationTokenSource)
-  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_System_Threading_CancellationTokenSource_
-  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
-  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
+  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_CancellationTokenSource_
+  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
+  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
   nameWithType: IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
 - uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages*
   name: GetListInstalledPackages
@@ -1004,13 +1068,13 @@ references:
   commentId: T:ZoeProg.Core.IPackageService
   fullName: ZoeProg.Core.IPackageService
   nameWithType: IPackageService
-- uid: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
+- uid: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
   name: Install(Package, Action<String>, CancellationToken)
-  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_Install_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
+  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_Install_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
   name.vb: Install(Package, Action(Of String), CancellationToken)
-  fullName: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, System.Action<System.String>, System.Threading.CancellationToken)
-  fullName.vb: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, System.Action(Of System.String), System.Threading.CancellationToken)
+  fullName: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
+  fullName.vb: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
   nameWithType: IPackageService.Install(Package, Action<String>, CancellationToken)
   nameWithType.vb: IPackageService.Install(Package, Action(Of String), CancellationToken)
 - uid: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.PackageVersion)
@@ -1026,13 +1090,13 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPackageService.Install
   nameWithType: IPackageService.Install
-- uid: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
+- uid: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
   name: UnInstall(Package, Action<String>, CancellationToken)
-  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_UnInstall_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
+  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_UnInstall_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
   name.vb: UnInstall(Package, Action(Of String), CancellationToken)
-  fullName: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, System.Action<System.String>, System.Threading.CancellationToken)
-  fullName.vb: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, System.Action(Of System.String), System.Threading.CancellationToken)
+  fullName: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
+  fullName.vb: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
   nameWithType: IPackageService.UnInstall(Package, Action<String>, CancellationToken)
   nameWithType.vb: IPackageService.UnInstall(Package, Action(Of String), CancellationToken)
 - uid: ZoeProg.Core.IPackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)
@@ -1398,15 +1462,201 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.Utils.DictionaryFlattener.Flatten
   nameWithType: DictionaryFlattener.Flatten
-- uid: ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(System.Collections.Generic.IDictionary{System.String,``0})
+- uid: ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(IDictionary{System.String,``0})
   name: Flatten<TCollection>(IDictionary<String, TCollection>)
-  href: api/ZoeProg.Core.Utils.DictionaryFlattener.html#ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_System_Collections_Generic_IDictionary_System_String___0__
-  commentId: M:ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(System.Collections.Generic.IDictionary{System.String,``0})
+  href: api/ZoeProg.Core.Utils.DictionaryFlattener.html#ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_IDictionary_System_String___0__
+  commentId: M:ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(IDictionary{System.String,``0})
   name.vb: Flatten(Of TCollection)(IDictionary(Of String, TCollection))
-  fullName: ZoeProg.Core.Utils.DictionaryFlattener.Flatten<TCollection>(System.Collections.Generic.IDictionary<System.String, TCollection>)
-  fullName.vb: ZoeProg.Core.Utils.DictionaryFlattener.Flatten(Of TCollection)(System.Collections.Generic.IDictionary(Of System.String, TCollection))
+  fullName: ZoeProg.Core.Utils.DictionaryFlattener.Flatten<TCollection>(IDictionary<System.String, TCollection>)
+  fullName.vb: ZoeProg.Core.Utils.DictionaryFlattener.Flatten(Of TCollection)(IDictionary(Of System.String, TCollection))
   nameWithType: DictionaryFlattener.Flatten<TCollection>(IDictionary<String, TCollection>)
   nameWithType.vb: DictionaryFlattener.Flatten(Of TCollection)(IDictionary(Of String, TCollection))
+- uid: ZoeProg.Extensions
+  name: ZoeProg.Extensions
+  href: api/ZoeProg.Extensions.html
+  commentId: N:ZoeProg.Extensions
+  fullName: ZoeProg.Extensions
+  nameWithType: ZoeProg.Extensions
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter
+  name: HamburgerMenuItemCollectionRegionAdapter
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html
+  commentId: T:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor(IRegionBehaviorFactory)
+  name: HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter__ctor_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor(IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory)
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor*
+  name: HamburgerMenuItemCollectionRegionAdapter
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter__ctor_
+  commentId: Overload:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion,HamburgerMenuItemCollection)
+  name: Adapt(IRegion, HamburgerMenuItemCollection)
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter_Adapt_IRegion_HamburgerMenuItemCollection_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion,HamburgerMenuItemCollection)
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion, HamburgerMenuItemCollection)
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion, HamburgerMenuItemCollection)
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt*
+  name: Adapt
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter_Adapt_
+  commentId: Overload:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter.Adapt
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.CreateRegion
+  name: CreateRegion()
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter_CreateRegion
+  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.CreateRegion
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.CreateRegion()
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter.CreateRegion()
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.CreateRegion*
+  name: CreateRegion
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter_CreateRegion_
+  commentId: Overload:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.CreateRegion
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.CreateRegion
+  nameWithType: HamburgerMenuItemCollectionRegionAdapter.CreateRegion
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter
+  name: HamburgerMenuRegionAdapter
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html
+  commentId: T:ZoeProg.Extensions.HamburgerMenuRegionAdapter
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter
+  nameWithType: HamburgerMenuRegionAdapter
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor(IRegionBehaviorFactory)
+  name: HamburgerMenuRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter__ctor_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor(IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter(IRegionBehaviorFactory)
+  nameWithType: HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor*
+  name: HamburgerMenuRegionAdapter
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter__ctor_
+  commentId: Overload:ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter
+  nameWithType: HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(IRegion,HamburgerMenu)
+  name: Adapt(IRegion, HamburgerMenu)
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter_Adapt_IRegion_HamburgerMenu_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(IRegion,HamburgerMenu)
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(IRegion, HamburgerMenu)
+  nameWithType: HamburgerMenuRegionAdapter.Adapt(IRegion, HamburgerMenu)
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt*
+  name: Adapt
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter_Adapt_
+  commentId: Overload:ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt
+  nameWithType: HamburgerMenuRegionAdapter.Adapt
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.CreateRegion
+  name: CreateRegion()
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter_CreateRegion
+  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.CreateRegion
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.CreateRegion()
+  nameWithType: HamburgerMenuRegionAdapter.CreateRegion()
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.CreateRegion*
+  name: CreateRegion
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter_CreateRegion_
+  commentId: Overload:ZoeProg.Extensions.HamburgerMenuRegionAdapter.CreateRegion
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.CreateRegion
+  nameWithType: HamburgerMenuRegionAdapter.CreateRegion
+- uid: ZoeProg.Extensions.ListViewRegionAdapter
+  name: ListViewRegionAdapter
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html
+  commentId: T:ZoeProg.Extensions.ListViewRegionAdapter
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter
+  nameWithType: ListViewRegionAdapter
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.#ctor(IRegionBehaviorFactory)
+  name: ListViewRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter__ctor_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.#ctor(IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.ListViewRegionAdapter(IRegionBehaviorFactory)
+  nameWithType: ListViewRegionAdapter.ListViewRegionAdapter(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.#ctor*
+  name: ListViewRegionAdapter
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter__ctor_
+  commentId: Overload:ZoeProg.Extensions.ListViewRegionAdapter.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.ListViewRegionAdapter
+  nameWithType: ListViewRegionAdapter.ListViewRegionAdapter
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,ListView)
+  name: Adapt(IRegion, ListView)
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_Adapt_IRegion_ListView_
+  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,ListView)
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion, ListView)
+  nameWithType: ListViewRegionAdapter.Adapt(IRegion, ListView)
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt*
+  name: Adapt
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_Adapt_
+  commentId: Overload:ZoeProg.Extensions.ListViewRegionAdapter.Adapt
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.Adapt
+  nameWithType: ListViewRegionAdapter.Adapt
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.CreateRegion
+  name: CreateRegion()
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_CreateRegion
+  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.CreateRegion
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.CreateRegion()
+  nameWithType: ListViewRegionAdapter.CreateRegion()
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.CreateRegion*
+  name: CreateRegion
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_CreateRegion_
+  commentId: Overload:ZoeProg.Extensions.ListViewRegionAdapter.CreateRegion
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.CreateRegion
+  nameWithType: ListViewRegionAdapter.CreateRegion
+- uid: ZoeProg.Extensions.TabControlRegionAdapter
+  name: TabControlRegionAdapter
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html
+  commentId: T:ZoeProg.Extensions.TabControlRegionAdapter
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter
+  nameWithType: TabControlRegionAdapter
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.#ctor(IRegionBehaviorFactory)
+  name: TabControlRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter__ctor_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.#ctor(IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.TabControlRegionAdapter(IRegionBehaviorFactory)
+  nameWithType: TabControlRegionAdapter.TabControlRegionAdapter(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.#ctor*
+  name: TabControlRegionAdapter
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter__ctor_
+  commentId: Overload:ZoeProg.Extensions.TabControlRegionAdapter.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.TabControlRegionAdapter
+  nameWithType: TabControlRegionAdapter.TabControlRegionAdapter
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,TabControl)
+  name: Adapt(IRegion, TabControl)
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_Adapt_IRegion_TabControl_
+  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,TabControl)
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion, TabControl)
+  nameWithType: TabControlRegionAdapter.Adapt(IRegion, TabControl)
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt*
+  name: Adapt
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_Adapt_
+  commentId: Overload:ZoeProg.Extensions.TabControlRegionAdapter.Adapt
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.Adapt
+  nameWithType: TabControlRegionAdapter.Adapt
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.CreateRegion
+  name: CreateRegion()
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_CreateRegion
+  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.CreateRegion
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.CreateRegion()
+  nameWithType: TabControlRegionAdapter.CreateRegion()
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.CreateRegion*
+  name: CreateRegion
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_CreateRegion_
+  commentId: Overload:ZoeProg.Extensions.TabControlRegionAdapter.CreateRegion
+  isSpec: "True"
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.CreateRegion
+  nameWithType: TabControlRegionAdapter.CreateRegion
 - uid: ZoeProg.Infrastructure
   name: ZoeProg.Infrastructure
   href: api/ZoeProg.Infrastructure.html
@@ -1470,3 +1720,458 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Persistence.IUnitOfWork.SaveChanges
   nameWithType: IUnitOfWork.SaveChanges
+- uid: ZoeProg.Services
+  name: ZoeProg.Services
+  href: api/ZoeProg.Services.html
+  commentId: N:ZoeProg.Services
+  fullName: ZoeProg.Services
+  nameWithType: ZoeProg.Services
+- uid: ZoeProg.Services.PackageRepository
+  name: PackageRepository
+  href: api/ZoeProg.Services.PackageRepository.html
+  commentId: T:ZoeProg.Services.PackageRepository
+  fullName: ZoeProg.Services.PackageRepository
+  nameWithType: PackageRepository
+- uid: ZoeProg.Services.PackageRepository.#ctor(IPowershellService)
+  name: PackageRepository(IPowershellService)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository__ctor_IPowershellService_
+  commentId: M:ZoeProg.Services.PackageRepository.#ctor(IPowershellService)
+  fullName: ZoeProg.Services.PackageRepository.PackageRepository(IPowershellService)
+  nameWithType: PackageRepository.PackageRepository(IPowershellService)
+- uid: ZoeProg.Services.PackageRepository.#ctor*
+  name: PackageRepository
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository__ctor_
+  commentId: Overload:ZoeProg.Services.PackageRepository.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Services.PackageRepository.PackageRepository
+  nameWithType: PackageRepository.PackageRepository
+- uid: ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String,CancellationToken)
+  name: GetListAvailabePackages(String, CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListAvailabePackages_System_String_CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String,CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String, CancellationToken)
+  nameWithType: PackageRepository.GetListAvailabePackages(String, CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.GetListAvailabePackages*
+  name: GetListAvailabePackages
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListAvailabePackages_
+  commentId: Overload:ZoeProg.Services.PackageRepository.GetListAvailabePackages
+  isSpec: "True"
+  fullName: ZoeProg.Services.PackageRepository.GetListAvailabePackages
+  nameWithType: PackageRepository.GetListAvailabePackages
+- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationToken)
+  name: GetListInstalledPackages(CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationToken)
+  nameWithType: PackageRepository.GetListInstalledPackages(CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationTokenSource)
+  name: GetListInstalledPackages(CancellationTokenSource)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_CancellationTokenSource_
+  commentId: M:ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationTokenSource)
+  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationTokenSource)
+  nameWithType: PackageRepository.GetListInstalledPackages(CancellationTokenSource)
+- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages*
+  name: GetListInstalledPackages
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_
+  commentId: Overload:ZoeProg.Services.PackageRepository.GetListInstalledPackages
+  isSpec: "True"
+  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages
+  nameWithType: PackageRepository.GetListInstalledPackages
+- uid: ZoeProg.Services.PackageRepository.PackageService
+  name: PackageRepository.PackageService
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html
+  commentId: T:ZoeProg.Services.PackageRepository.PackageService
+  fullName: ZoeProg.Services.PackageRepository.PackageService
+  nameWithType: PackageRepository.PackageService
+- uid: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  name: Install(Package, Action<String>, CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  name.vb: Install(Package, Action(Of String), CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
+  fullName.vb: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
+  nameWithType: PackageRepository.PackageService.Install(Package, Action<String>, CancellationToken)
+  nameWithType.vb: PackageRepository.PackageService.Install(Package, Action(Of String), CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.PackageVersion)
+  name: Install(PackageVersion)
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_PackageVersion_
+  commentId: M:ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.PackageVersion)
+  fullName: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.PackageVersion)
+  nameWithType: PackageRepository.PackageService.Install(PackageVersion)
+- uid: ZoeProg.Services.PackageRepository.PackageService.Install*
+  name: Install
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Install_
+  commentId: Overload:ZoeProg.Services.PackageRepository.PackageService.Install
+  isSpec: "True"
+  fullName: ZoeProg.Services.PackageRepository.PackageService.Install
+  nameWithType: PackageRepository.PackageService.Install
+- uid: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  name: UnInstall(Package, Action<String>, CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  name.vb: UnInstall(Package, Action(Of String), CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
+  fullName.vb: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
+  nameWithType: PackageRepository.PackageService.UnInstall(Package, Action<String>, CancellationToken)
+  nameWithType.vb: PackageRepository.PackageService.UnInstall(Package, Action(Of String), CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.PackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)
+  name: Uninstall(PackageVersion)
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Uninstall_ZoeProg_Core_Data_PackageVersion_
+  commentId: M:ZoeProg.Services.PackageRepository.PackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)
+  fullName: ZoeProg.Services.PackageRepository.PackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)
+  nameWithType: PackageRepository.PackageService.Uninstall(PackageVersion)
+- uid: ZoeProg.Services.PackageRepository.PackageService.Uninstall*
+  name: Uninstall
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Uninstall_
+  commentId: Overload:ZoeProg.Services.PackageRepository.PackageService.Uninstall
+  isSpec: "True"
+  fullName: ZoeProg.Services.PackageRepository.PackageService.Uninstall
+  nameWithType: PackageRepository.PackageService.Uninstall
+- uid: ZoeProg.Services.PackageRepository.PackageService.UnInstall*
+  name: UnInstall
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_UnInstall_
+  commentId: Overload:ZoeProg.Services.PackageRepository.PackageService.UnInstall
+  isSpec: "True"
+  fullName: ZoeProg.Services.PackageRepository.PackageService.UnInstall
+  nameWithType: PackageRepository.PackageService.UnInstall
+- uid: ZoeProg.Services.TaskService
+  name: TaskService
+  href: api/ZoeProg.Services.TaskService.html
+  commentId: T:ZoeProg.Services.TaskService
+  fullName: ZoeProg.Services.TaskService
+  nameWithType: TaskService
+- uid: ZoeProg.Services.TaskService.#ctor
+  name: TaskService()
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService__ctor
+  commentId: M:ZoeProg.Services.TaskService.#ctor
+  fullName: ZoeProg.Services.TaskService.TaskService()
+  nameWithType: TaskService.TaskService()
+- uid: ZoeProg.Services.TaskService.#ctor*
+  name: TaskService
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService__ctor_
+  commentId: Overload:ZoeProg.Services.TaskService.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Services.TaskService.TaskService
+  nameWithType: TaskService.TaskService
+- uid: ZoeProg.Services.TaskService.StartNew(Action)
+  name: StartNew(Action)
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_Action_
+  commentId: M:ZoeProg.Services.TaskService.StartNew(Action)
+  fullName: ZoeProg.Services.TaskService.StartNew(Action)
+  nameWithType: TaskService.StartNew(Action)
+- uid: ZoeProg.Services.TaskService.StartNew(Action,CancellationToken)
+  name: StartNew(Action, CancellationToken)
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_Action_CancellationToken_
+  commentId: M:ZoeProg.Services.TaskService.StartNew(Action,CancellationToken)
+  fullName: ZoeProg.Services.TaskService.StartNew(Action, CancellationToken)
+  nameWithType: TaskService.StartNew(Action, CancellationToken)
+- uid: ZoeProg.Services.TaskService.StartNew*
+  name: StartNew
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_
+  commentId: Overload:ZoeProg.Services.TaskService.StartNew
+  isSpec: "True"
+  fullName: ZoeProg.Services.TaskService.StartNew
+  nameWithType: TaskService.StartNew
+- uid: ZoeProg.Services.TaskService.StartNew``1(Func{``0})
+  name: StartNew<TResult>(Func<TResult>)
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew__1_Func___0__
+  commentId: M:ZoeProg.Services.TaskService.StartNew``1(Func{``0})
+  name.vb: StartNew(Of TResult)(Func(Of TResult))
+  fullName: ZoeProg.Services.TaskService.StartNew<TResult>(Func<TResult>)
+  fullName.vb: ZoeProg.Services.TaskService.StartNew(Of TResult)(Func(Of TResult))
+  nameWithType: TaskService.StartNew<TResult>(Func<TResult>)
+  nameWithType.vb: TaskService.StartNew(Of TResult)(Func(Of TResult))
+- uid: ZoeProg.ViewModels
+  name: ZoeProg.ViewModels
+  href: api/ZoeProg.ViewModels.html
+  commentId: N:ZoeProg.ViewModels
+  fullName: ZoeProg.ViewModels
+  nameWithType: ZoeProg.ViewModels
+- uid: ZoeProg.ViewModels.IShellViewModel
+  name: IShellViewModel
+  href: api/ZoeProg.ViewModels.IShellViewModel.html
+  commentId: T:ZoeProg.ViewModels.IShellViewModel
+  fullName: ZoeProg.ViewModels.IShellViewModel
+  nameWithType: IShellViewModel
+- uid: ZoeProg.ViewModels.IShellViewModel.Title
+  name: Title
+  href: api/ZoeProg.ViewModels.IShellViewModel.html#ZoeProg_ViewModels_IShellViewModel_Title
+  commentId: P:ZoeProg.ViewModels.IShellViewModel.Title
+  fullName: ZoeProg.ViewModels.IShellViewModel.Title
+  nameWithType: IShellViewModel.Title
+- uid: ZoeProg.ViewModels.IShellViewModel.Title*
+  name: Title
+  href: api/ZoeProg.ViewModels.IShellViewModel.html#ZoeProg_ViewModels_IShellViewModel_Title_
+  commentId: Overload:ZoeProg.ViewModels.IShellViewModel.Title
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.IShellViewModel.Title
+  nameWithType: IShellViewModel.Title
+- uid: ZoeProg.ViewModels.ProgressViewModel
+  name: ProgressViewModel
+  href: api/ZoeProg.ViewModels.ProgressViewModel.html
+  commentId: T:ZoeProg.ViewModels.ProgressViewModel
+  fullName: ZoeProg.ViewModels.ProgressViewModel
+  nameWithType: ProgressViewModel
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel
+  name: SettingsAppearanceViewModel
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html
+  commentId: T:ZoeProg.ViewModels.SettingsAppearanceViewModel
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel
+  nameWithType: SettingsAppearanceViewModel
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.#ctor
+  name: SettingsAppearanceViewModel()
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel__ctor
+  commentId: M:ZoeProg.ViewModels.SettingsAppearanceViewModel.#ctor
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SettingsAppearanceViewModel()
+  nameWithType: SettingsAppearanceViewModel.SettingsAppearanceViewModel()
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.#ctor*
+  name: SettingsAppearanceViewModel
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel__ctor_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SettingsAppearanceViewModel
+  nameWithType: SettingsAppearanceViewModel.SettingsAppearanceViewModel
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.AccentColors
+  name: AccentColors
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_AccentColors
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.AccentColors
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.AccentColors
+  nameWithType: SettingsAppearanceViewModel.AccentColors
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.AccentColors*
+  name: AccentColors
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_AccentColors_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.AccentColors
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.AccentColors
+  nameWithType: SettingsAppearanceViewModel.AccentColors
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.FontSizes
+  name: FontSizes
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_FontSizes
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.FontSizes
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.FontSizes
+  nameWithType: SettingsAppearanceViewModel.FontSizes
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.FontSizes*
+  name: FontSizes
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_FontSizes_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.FontSizes
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.FontSizes
+  nameWithType: SettingsAppearanceViewModel.FontSizes
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.Palettes
+  name: Palettes
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_Palettes
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.Palettes
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.Palettes
+  nameWithType: SettingsAppearanceViewModel.Palettes
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.Palettes*
+  name: Palettes
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_Palettes_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.Palettes
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.Palettes
+  nameWithType: SettingsAppearanceViewModel.Palettes
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedAccentColor
+  name: SelectedAccentColor
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedAccentColor
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedAccentColor
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedAccentColor
+  nameWithType: SettingsAppearanceViewModel.SelectedAccentColor
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedAccentColor*
+  name: SelectedAccentColor
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedAccentColor_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedAccentColor
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedAccentColor
+  nameWithType: SettingsAppearanceViewModel.SelectedAccentColor
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedFontSize
+  name: SelectedFontSize
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedFontSize
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedFontSize
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedFontSize
+  nameWithType: SettingsAppearanceViewModel.SelectedFontSize
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedFontSize*
+  name: SelectedFontSize
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedFontSize_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedFontSize
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedFontSize
+  nameWithType: SettingsAppearanceViewModel.SelectedFontSize
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedPalette
+  name: SelectedPalette
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedPalette
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedPalette
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedPalette
+  nameWithType: SettingsAppearanceViewModel.SelectedPalette
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedPalette*
+  name: SelectedPalette
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedPalette_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedPalette
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedPalette
+  nameWithType: SettingsAppearanceViewModel.SelectedPalette
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedTheme
+  name: SelectedTheme
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedTheme
+  commentId: P:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedTheme
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedTheme
+  nameWithType: SettingsAppearanceViewModel.SelectedTheme
+- uid: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedTheme*
+  name: SelectedTheme
+  href: api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html#ZoeProg_ViewModels_SettingsAppearanceViewModel_SelectedTheme_
+  commentId: Overload:ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedTheme
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.SettingsAppearanceViewModel.SelectedTheme
+  nameWithType: SettingsAppearanceViewModel.SelectedTheme
+- uid: ZoeProg.ViewModels.ShellViewModel
+  name: ShellViewModel
+  href: api/ZoeProg.ViewModels.ShellViewModel.html
+  commentId: T:ZoeProg.ViewModels.ShellViewModel
+  fullName: ZoeProg.ViewModels.ShellViewModel
+  nameWithType: ShellViewModel
+- uid: ZoeProg.ViewModels.ShellViewModel.#ctor
+  name: ShellViewModel()
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel__ctor
+  commentId: M:ZoeProg.ViewModels.ShellViewModel.#ctor
+  fullName: ZoeProg.ViewModels.ShellViewModel.ShellViewModel()
+  nameWithType: ShellViewModel.ShellViewModel()
+- uid: ZoeProg.ViewModels.ShellViewModel.#ctor*
+  name: ShellViewModel
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel__ctor_
+  commentId: Overload:ZoeProg.ViewModels.ShellViewModel.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.ShellViewModel.ShellViewModel
+  nameWithType: ShellViewModel.ShellViewModel
+- uid: ZoeProg.ViewModels.ShellViewModel.ActivatedItem
+  name: ActivatedItem
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_ActivatedItem
+  commentId: P:ZoeProg.ViewModels.ShellViewModel.ActivatedItem
+  fullName: ZoeProg.ViewModels.ShellViewModel.ActivatedItem
+  nameWithType: ShellViewModel.ActivatedItem
+- uid: ZoeProg.ViewModels.ShellViewModel.ActivatedItem*
+  name: ActivatedItem
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_ActivatedItem_
+  commentId: Overload:ZoeProg.ViewModels.ShellViewModel.ActivatedItem
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.ShellViewModel.ActivatedItem
+  nameWithType: ShellViewModel.ActivatedItem
+- uid: ZoeProg.ViewModels.ShellViewModel.IsPaneOpen
+  name: IsPaneOpen
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_IsPaneOpen
+  commentId: P:ZoeProg.ViewModels.ShellViewModel.IsPaneOpen
+  fullName: ZoeProg.ViewModels.ShellViewModel.IsPaneOpen
+  nameWithType: ShellViewModel.IsPaneOpen
+- uid: ZoeProg.ViewModels.ShellViewModel.IsPaneOpen*
+  name: IsPaneOpen
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_IsPaneOpen_
+  commentId: Overload:ZoeProg.ViewModels.ShellViewModel.IsPaneOpen
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.ShellViewModel.IsPaneOpen
+  nameWithType: ShellViewModel.IsPaneOpen
+- uid: ZoeProg.ViewModels.ShellViewModel.NavigateCommand
+  name: NavigateCommand
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_NavigateCommand
+  commentId: P:ZoeProg.ViewModels.ShellViewModel.NavigateCommand
+  fullName: ZoeProg.ViewModels.ShellViewModel.NavigateCommand
+  nameWithType: ShellViewModel.NavigateCommand
+- uid: ZoeProg.ViewModels.ShellViewModel.NavigateCommand*
+  name: NavigateCommand
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_NavigateCommand_
+  commentId: Overload:ZoeProg.ViewModels.ShellViewModel.NavigateCommand
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.ShellViewModel.NavigateCommand
+  nameWithType: ShellViewModel.NavigateCommand
+- uid: ZoeProg.ViewModels.ShellViewModel.Title
+  name: Title
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_Title
+  commentId: P:ZoeProg.ViewModels.ShellViewModel.Title
+  fullName: ZoeProg.ViewModels.ShellViewModel.Title
+  nameWithType: ShellViewModel.Title
+- uid: ZoeProg.ViewModels.ShellViewModel.Title*
+  name: Title
+  href: api/ZoeProg.ViewModels.ShellViewModel.html#ZoeProg_ViewModels_ShellViewModel_Title_
+  commentId: Overload:ZoeProg.ViewModels.ShellViewModel.Title
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.ShellViewModel.Title
+  nameWithType: ShellViewModel.Title
+- uid: ZoeProg.Views
+  name: ZoeProg.Views
+  href: api/ZoeProg.Views.html
+  commentId: N:ZoeProg.Views
+  fullName: ZoeProg.Views
+  nameWithType: ZoeProg.Views
+- uid: ZoeProg.Views.About
+  name: About
+  href: api/ZoeProg.Views.About.html
+  commentId: T:ZoeProg.Views.About
+  fullName: ZoeProg.Views.About
+  nameWithType: About
+- uid: ZoeProg.Views.About.#ctor
+  name: About()
+  href: api/ZoeProg.Views.About.html#ZoeProg_Views_About__ctor
+  commentId: M:ZoeProg.Views.About.#ctor
+  fullName: ZoeProg.Views.About.About()
+  nameWithType: About.About()
+- uid: ZoeProg.Views.About.#ctor*
+  name: About
+  href: api/ZoeProg.Views.About.html#ZoeProg_Views_About__ctor_
+  commentId: Overload:ZoeProg.Views.About.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Views.About.About
+  nameWithType: About.About
+- uid: ZoeProg.Views.ProgressView
+  name: ProgressView
+  href: api/ZoeProg.Views.ProgressView.html
+  commentId: T:ZoeProg.Views.ProgressView
+  fullName: ZoeProg.Views.ProgressView
+  nameWithType: ProgressView
+- uid: ZoeProg.Views.ProgressView.#ctor
+  name: ProgressView()
+  href: api/ZoeProg.Views.ProgressView.html#ZoeProg_Views_ProgressView__ctor
+  commentId: M:ZoeProg.Views.ProgressView.#ctor
+  fullName: ZoeProg.Views.ProgressView.ProgressView()
+  nameWithType: ProgressView.ProgressView()
+- uid: ZoeProg.Views.ProgressView.#ctor*
+  name: ProgressView
+  href: api/ZoeProg.Views.ProgressView.html#ZoeProg_Views_ProgressView__ctor_
+  commentId: Overload:ZoeProg.Views.ProgressView.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Views.ProgressView.ProgressView
+  nameWithType: ProgressView.ProgressView
+- uid: ZoeProg.Views.SettingsAppearance
+  name: SettingsAppearance
+  href: api/ZoeProg.Views.SettingsAppearance.html
+  commentId: T:ZoeProg.Views.SettingsAppearance
+  fullName: ZoeProg.Views.SettingsAppearance
+  nameWithType: SettingsAppearance
+- uid: ZoeProg.Views.SettingsAppearance.#ctor
+  name: SettingsAppearance()
+  href: api/ZoeProg.Views.SettingsAppearance.html#ZoeProg_Views_SettingsAppearance__ctor
+  commentId: M:ZoeProg.Views.SettingsAppearance.#ctor
+  fullName: ZoeProg.Views.SettingsAppearance.SettingsAppearance()
+  nameWithType: SettingsAppearance.SettingsAppearance()
+- uid: ZoeProg.Views.SettingsAppearance.#ctor*
+  name: SettingsAppearance
+  href: api/ZoeProg.Views.SettingsAppearance.html#ZoeProg_Views_SettingsAppearance__ctor_
+  commentId: Overload:ZoeProg.Views.SettingsAppearance.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Views.SettingsAppearance.SettingsAppearance
+  nameWithType: SettingsAppearance.SettingsAppearance
+- uid: ZoeProg.Views.Shell
+  name: Shell
+  href: api/ZoeProg.Views.Shell.html
+  commentId: T:ZoeProg.Views.Shell
+  fullName: ZoeProg.Views.Shell
+  nameWithType: Shell
+- uid: ZoeProg.Views.Shell.#ctor
+  name: Shell()
+  href: api/ZoeProg.Views.Shell.html#ZoeProg_Views_Shell__ctor
+  commentId: M:ZoeProg.Views.Shell.#ctor
+  fullName: ZoeProg.Views.Shell.Shell()
+  nameWithType: Shell.Shell()
+- uid: ZoeProg.Views.Shell.#ctor*
+  name: Shell
+  href: api/ZoeProg.Views.Shell.html#ZoeProg_Views_Shell__ctor_
+  commentId: Overload:ZoeProg.Views.Shell.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Views.Shell.Shell
+  nameWithType: Shell.Shell

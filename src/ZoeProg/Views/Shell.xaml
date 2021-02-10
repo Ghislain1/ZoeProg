@@ -1,10 +1,10 @@
 ﻿<metro:MetroWindow
     x:Class="ZoeProg.Views.Shell"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:core="clr-namespace:ZoeProg.Core;assembly=ZoeProg.Core"
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:prism="http://prismlibrary.com/"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:ZoeProg.Core;assembly=ZoeProg.Core"
     Title="{Binding Title}"
     Width="1225"
     Height="550"
@@ -13,24 +13,28 @@
     TextElement.FontWeight="Regular"
     TextOptions.TextFormattingMode="Ideal"
     TextOptions.TextRenderingMode="Auto">
-    <Window.Background>
+    <metro:MetroWindow.Background>
         <ImageBrush ImageSource="/images/background.love.jpg" />
-    </Window.Background>
+    </metro:MetroWindow.Background>
     <metro:MetroWindow.TitleTemplate>
         <DataTemplate>
             <StackPanel Height="100" Orientation="Horizontal">
                 <TextBlock Margin="5,5" Text="{Binding}" />
-                <TextBlock Margin="5,5" FontWeight="Bold"  Text="{Binding DataContext.ActivatedItem.Label, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}" />
+                <TextBlock
+                    Margin="5,5"
+                    FontWeight="Bold"
+                    Text="{Binding DataContext.ActivatedItem.Label, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}" />
             </StackPanel>
         </DataTemplate>
     </metro:MetroWindow.TitleTemplate>
+
     <metro:MetroContentControl>
         <metro:HamburgerMenu
             x:Name="HamburgerMenuControl"
             DisplayMode="CompactInline"
             Foreground="White"
             IsPaneOpen="{Binding IsPaneOpen}"
-            SelectedIndex="0"
+            SelectedIndex="1"
             SelectedItem="{Binding ActivatedItem}">
             <metro:HamburgerMenu.OptionsItemTemplate>
                 <DataTemplate DataType="{x:Type metro:HamburgerMenuGlyphItem}">
@@ -70,7 +74,7 @@
                             VerticalAlignment="Center"
                             FontFamily="Segoe MDL2 Assets"
                             FontSize="16"
-                            Foreground="White"
+                            Foreground="red"
                             Text="{Binding Glyph}"
                             Visibility="Visible" />
 
@@ -102,10 +106,11 @@
             <metro:HamburgerMenu.ContentTemplate>
                 <DataTemplate>
                     <DockPanel>
-
                         <Border
                             MinHeight="30"
                             Background="#FF444444"
+                            BorderBrush="SaddleBrown"
+                            BorderThickness="4"
                             DockPanel.Dock="Top">
                             <TextBlock
                                 x:Name="Header"
@@ -114,12 +119,19 @@
                                 Foreground="Red"
                                 Text="{Binding Path=DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type metro:HamburgerMenuGlyphItem}}}" />
                         </Border>
-
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            DockPanel.Dock="Top"
+                            Text="{Binding DataContext.ActivatedItem.Tag, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}" />
                         <!--  TODO: Can you explain how this works with blackbox principle? So hard 4 hours  -->
                         <metro:TransitioningContentControl
                             x:Name="ActiveItem"
-                            Content="{Binding DataContext.ActivatedItem.Tag, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}"
-                            Transition="LeftReplace" />
+                            Content="{Binding Label}"
+                            DataContext="{Binding DataContext.ActivatedItem, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}"
+                            Loaded="ActiveItem_Loaded"
+                            RestartTransitionOnContentChange="True"
+                            Transition="LeftReplace">
+                        </metro:TransitioningContentControl>
                     </DockPanel>
                 </DataTemplate>
             </metro:HamburgerMenu.ContentTemplate>

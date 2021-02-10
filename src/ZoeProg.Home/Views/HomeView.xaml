@@ -22,7 +22,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
-        <TextBlock FontSize="100" Text="{Binding}" Focusable="True"  Foreground="Black" />
+        <TextBlock Grid.Column="1" FontSize="100" Text="Ghislain" Focusable="True"  Foreground="White" />
+        <TextBlock Grid.Column="1" FontSize="100" Text="{Binding}" Focusable="True"  Foreground="White" />
     </Grid>
 </UserControl>

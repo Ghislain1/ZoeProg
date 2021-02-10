@@ -1,22 +1,9 @@
-﻿/*-
- * ---license-start
- * Zoe-App
- * ---
- * Copyright (C) 2021 GhislainOne and all other contributors
- * ---
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * ---license-end
- */
+﻿// --------------------------------------------------------------------------------------------------------------
+// <copyright file="HamburgerMenuItemCollectionRegionAdapter.cs" company="CompanyName">
+//     Copyright 2021 - GhislainOne Inc.
+//     Developer: GHISPC\Zoe ( 10.02.2021 18:19:30 )
+// </copyright>
+// ---------------------------------------------------------------------------------------------------------------
 
 namespace ZoeProg.Extensions
 {
@@ -51,22 +38,14 @@ namespace ZoeProg.Extensions
                 {
                     foreach (var element in e.NewItems)
                     {
-                        var sd = new TabItem();
-                        // Glyph = "/Assets/OptionOne.png";
-
-                        // Label = "Option One";
-
-                        // Command = ApplicationCommands.NavigateCommand;
-
-                        // CommandParameter = typeof(OptionOnePageView);
                         var plugin = ((UserControl)element).DataContext as IPlugin;
                         var hamburgerMenuGlyphItem = new HamburgerMenuGlyphItem();
-                        hamburgerMenuGlyphItem.Glyph = plugin.Glyph; // @"C:\Users\Zoe\Desktop\___Z_Todelte\ZoeProg\src\ZoeProg\images\background.love.jpg";
+                        hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
                         hamburgerMenuGlyphItem.Label = plugin.Label;
                         hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
-                        hamburgerMenuGlyphItem.Tag = element;
+                        hamburgerMenuGlyphItem.Tag = ((UserControl)element);
+                        hamburgerMenuGlyphItem.CommandParameter = element.GetType();
 
-                        // hamburgerMenuGlyphItem. CommandParameter = element.GetType();
                         regionTarget.Add(hamburgerMenuGlyphItem);
                         // regionTarget.Freeze();
                     }

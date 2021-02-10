@@ -1,22 +1,9 @@
-﻿/*-
- * ---license-start
- * Zoe-App
- * ---
- * Copyright (C) 2021 GhislainOne and all other contributors
- * ---
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * ---license-end
- */
+﻿// --------------------------------------------------------------------------------------------------------------
+// <copyright file="ShellViewModel.cs" company="CompanyName">
+//     Copyright 2021 - GhislainOne Inc.
+//     Developer: GHISPC\Zoe ( 10.02.2021 18:00:18 )
+// </copyright>
+// ---------------------------------------------------------------------------------------------------------------
 
 namespace ZoeProg.ViewModels
 {
@@ -39,7 +26,7 @@ namespace ZoeProg.ViewModels
         private bool isPaneOpen;
 
         /// <summary>
-        /// Defines the title.
+        /// Defines the this.title.
         /// </summary>
         private string title = "ZoeProg - Tool - ";
 
@@ -55,10 +42,10 @@ namespace ZoeProg.ViewModels
         /// </summary>
         public object ActivatedItem
         {
-            get { return this.activatedItem; }
+            get => this.activatedItem;
             set
             {
-                this.SetProperty(ref activatedItem, value);
+                this.SetProperty(ref this.activatedItem, value);
             }
         }
 
@@ -67,7 +54,7 @@ namespace ZoeProg.ViewModels
         /// </summary>
         public bool IsPaneOpen
         {
-            get { return this.isPaneOpen; }
+            get => this.isPaneOpen;
             set
             {
                 this.SetProperty(ref this.isPaneOpen, value);
@@ -85,7 +72,7 @@ namespace ZoeProg.ViewModels
         public string Title
         {
             get { return title; }
-            set { SetProperty(ref title, value); }
+            set { this.SetProperty(ref this.title, value); }
         }
     }
 }
