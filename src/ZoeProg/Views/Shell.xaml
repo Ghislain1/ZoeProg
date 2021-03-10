@@ -4,7 +4,7 @@
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:prism="http://prismlibrary.com/"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:Views="clr-namespace:ZoeProg.Views"
+    xmlns:core="clr-namespace:ZoeProg.Core.Constants;assembly=ZoeProg.Core"
     Title="{Binding Title}"
     Width="1225"
     Height="550"
@@ -88,12 +88,12 @@
                 </DataTemplate>
             </metro:HamburgerMenu.ItemTemplate>
 
-            <!--  Ghis:This is the first property of HamburgerMenu Say something
+            <!--  Ghis:This is the first property of HamburgerMenu Say something -->
             <metro:HamburgerMenu.ItemsSource>
                 <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.HamburgerMenuItemCollectionRegion}" />
-            </metro:HamburgerMenu.ItemsSource>-->
+            </metro:HamburgerMenu.ItemsSource>
 
-            <metro:HamburgerMenu.ItemsSource>
+            <!--<metro:HamburgerMenu.ItemsSource>
                 <metro:HamburgerMenuItemCollection>
                     <metro:HamburgerMenuGlyphItem Label="Big four summer heat" Tag="{Binding ElementName=s}" />
                     <metro:HamburgerMenuGlyphItem
@@ -113,7 +113,7 @@
                         </metro:HamburgerMenuGlyphItem.Tag>
                     </metro:HamburgerMenuGlyphItem>
                 </metro:HamburgerMenuItemCollection>
-            </metro:HamburgerMenu.ItemsSource>
+            </metro:HamburgerMenu.ItemsSource>-->
 
             <!--  Ghislain: HamburgerMenu OptionsItemsSource Poerty to store all OptionsItems
             <metro:HamburgerMenu.OptionsItemsSource>

@@ -25,6 +25,8 @@ namespace ZoeProg.Core.Constants
     /// </summary>
     public static class RegionNames
     {
+        public const string HamburgerMenuItemCollectionRegion = "HamburgerMenuItemCollectionRegion";
+
         /// <summary>
         /// Defines the WindowRegion.
         /// </summary>
