@@ -4,7 +4,7 @@
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:prism="http://prismlibrary.com/"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:core="clr-namespace:ZoeProg.Core;assembly=ZoeProg.Core"
+    xmlns:Views="clr-namespace:ZoeProg.Views"
     Title="{Binding Title}"
     Width="1225"
     Height="550"
@@ -88,12 +88,34 @@
                 </DataTemplate>
             </metro:HamburgerMenu.ItemTemplate>
 
-            <!--  Ghis:This is the first property of HamburgerMenu Say something  -->
+            <!--  Ghis:This is the first property of HamburgerMenu Say something
             <metro:HamburgerMenu.ItemsSource>
                 <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.HamburgerMenuItemCollectionRegion}" />
+            </metro:HamburgerMenu.ItemsSource>-->
+
+            <metro:HamburgerMenu.ItemsSource>
+                <metro:HamburgerMenuItemCollection>
+                    <metro:HamburgerMenuGlyphItem Label="Big four summer heat" Tag="{Binding ElementName=s}" />
+                    <metro:HamburgerMenuGlyphItem
+                        x:Name="s"
+                        Glyph="?"
+                        Label="Big four summer heat" />
+                    <metro:HamburgerMenuGlyphItem Glyph="" Label="Button">
+                        <metro:HamburgerMenuGlyphItem.Tag>
+                            <Grid>
+                                <Button Content="GHislaiBUtton" />
+                            </Grid>
+                        </metro:HamburgerMenuGlyphItem.Tag>
+                    </metro:HamburgerMenuGlyphItem>
+                    <metro:HamburgerMenuGlyphItem Label="ABOUT view should display">
+                        <metro:HamburgerMenuGlyphItem.Tag>
+                            <Views:About />
+                        </metro:HamburgerMenuGlyphItem.Tag>
+                    </metro:HamburgerMenuGlyphItem>
+                </metro:HamburgerMenuItemCollection>
             </metro:HamburgerMenu.ItemsSource>
 
-            <!--  Ghislain: HamburgerMenu OptionsItemsSource Poerty to store all OptionsItems  -->
+            <!--  Ghislain: HamburgerMenu OptionsItemsSource Poerty to store all OptionsItems
             <metro:HamburgerMenu.OptionsItemsSource>
                 <metro:HamburgerMenuItemCollection>
                     <metro:HamburgerMenuGlyphItem
@@ -101,11 +123,11 @@
                         Label="About"
                         Tag="About" />
                 </metro:HamburgerMenuItemCollection>
-            </metro:HamburgerMenu.OptionsItemsSource>
+            </metro:HamburgerMenu.OptionsItemsSource>-->
 
             <metro:HamburgerMenu.ContentTemplate>
-                <DataTemplate>
-                    <DockPanel>
+                <DataTemplate DataType="{x:Type metro:HamburgerMenuItem}">
+                    <DockPanel DataContext="{Binding DataContext.ActivatedItem, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}">
                         <Border
                             MinHeight="30"
                             Background="#FF444444"
@@ -115,23 +137,19 @@
                             <TextBlock
                                 x:Name="Header"
                                 Margin="20,0"
+                                FontSize="50"
                                 HorizontalAlignment="Center"
-                                Foreground="Red"
-                                Text="{Binding Path=DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type metro:HamburgerMenuGlyphItem}}}" />
+                                Foreground="Green"
+                                Text="{Binding Label}" />
                         </Border>
-                        <TextBlock
-                            HorizontalAlignment="Center"
-                            DockPanel.Dock="Top"
-                            Text="{Binding DataContext.ActivatedItem.Tag, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}" />
+
                         <!--  TODO: Can you explain how this works with blackbox principle? So hard 4 hours  -->
                         <metro:TransitioningContentControl
                             x:Name="ActiveItem"
-                            Content="{Binding Label}"
-                            DataContext="{Binding DataContext.ActivatedItem, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}"
-                            Loaded="ActiveItem_Loaded"
+                            Content="{Binding Tag}"
                             RestartTransitionOnContentChange="True"
-                            Transition="LeftReplace">
-                        </metro:TransitioningContentControl>
+                            Transition="LeftReplace"
+                            TransitionCompleted="ActiveItem_TransitionCompleted" />
                     </DockPanel>
                 </DataTemplate>
             </metro:HamburgerMenu.ContentTemplate>

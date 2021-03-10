@@ -34,20 +34,14 @@ namespace ZoeProg.Views
             this.InitializeComponent();
         }
 
-        private void ActiveItem_Loaded(object sender, System.Windows.RoutedEventArgs e)
-        {
-        }
-
         /// <summary>
-        /// The HamburgerMenuControl_ItemClick.
+        /// The ActiveItem_TransitionCompleted.
         /// </summary>
         /// <param name="sender">The sender <see cref="object"/>.</param>
-        /// <param name="e">The e <see cref="ItemClickEventArgs"/>.</param>
-        private void HamburgerMenuControl_ItemClick(object sender, ItemClickEventArgs e)
+        /// <param name="e">The e <see cref="System.Windows.RoutedEventArgs"/>.</param>
+        private void ActiveItem_TransitionCompleted(object sender, System.Windows.RoutedEventArgs e)
         {
-            //this.HamburgerMenuControl.Content = (e.ClickedItem as HamburgerMenuGlyphItem).Tag;
-            // this.HamburgerMenuControl.IsPaneOpen = false;
-            var ds = this.HamburgerMenuControl.SelectedItem;
+            var sd = (sender as TransitioningContentControl).Content;
         }
     }
 }

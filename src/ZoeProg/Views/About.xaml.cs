@@ -32,7 +32,7 @@ namespace ZoeProg.Views
         /// </summary>
         public About()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }

@@ -32,6 +32,7 @@ namespace ZoeProg.Extensions
         /// <param name="regionTarget">The regionTarget <see cref="HamburgerMenuItemCollection"/>.</param>
         protected override void Adapt(IRegion region, HamburgerMenuItemCollection regionTarget)
         {
+            return;
             region.Views.CollectionChanged += (s, e) =>
             {
                 if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
@@ -43,7 +44,7 @@ namespace ZoeProg.Extensions
                         hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
                         hamburgerMenuGlyphItem.Label = plugin.Label;
                         hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
-                        hamburgerMenuGlyphItem.Tag = ((UserControl)element);
+                        hamburgerMenuGlyphItem.Tag = (UserControl)element;
                         hamburgerMenuGlyphItem.CommandParameter = element.GetType();
 
                         regionTarget.Add(hamburgerMenuGlyphItem);
