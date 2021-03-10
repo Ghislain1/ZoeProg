@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Ghis.PowershellLib;
+
 using Prism.Events;
+using ZoeProg.Infrastructure;
 
 namespace ZoeProg.Cleanup.Services
 {
@@ -110,9 +111,9 @@ namespace ZoeProg.Cleanup.Services
         {
             await Task.Delay(1000);
             var cmd = "Get-ChildItem $env:TEMP -File -Recurse";
-            var sd = await this.powerShellService.RunCommand(CancellationToken.None, cmd);
-            this.tempFiles = new List<string>(sd);
-            this.eventAggregator.GetEvent<TempFileEvent>().Publish();
+            await this.powerShellService.RunCommand(CancellationToken.None, cmd);
+            //this.tempFiles = new List<string>(sd);
+            //this.eventAggregator.GetEvent<TempFileEvent>().Publish();
         }
     }
 

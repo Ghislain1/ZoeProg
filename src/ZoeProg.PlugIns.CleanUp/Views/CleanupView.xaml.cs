@@ -1,14 +1,13 @@
-﻿ 
-
-namespace ZoeProg.Cleanup.Views
+﻿namespace ZoeProg.PlugIns.CleanUp.Views
 {
     using System.Windows.Controls;
+
     /// <summary>
     /// Interaction logic for CleanupView.xaml
     /// </summary>
-    public partial class CleanupView : UserControl
+    public partial class CleanUpView : UserControl
     {
-        public CleanupView()
+        public CleanUpView()
         {
             InitializeComponent();
         }

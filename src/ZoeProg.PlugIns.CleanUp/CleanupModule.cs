@@ -24,10 +24,12 @@ namespace ZoeProg.PlugIns.CleanUp
     using Prism.Modularity;
     using Prism.Regions;
     using ZoeProg.Cleanup.Services;
-    using ZoeProg.Cleanup.Views;
+
+    using ZoeProg.Core.Constants;
+    using ZoeProg.PlugIns.CleanUp.Views;
 
     /// <summary>
-    /// Defines the <see cref="CleanupModule"/>.
+    /// Defines the <see cref="CleanUpModule"/>.
     /// </summary>
     public sealed class CleanUpModule : IModule
     {
@@ -39,7 +41,7 @@ namespace ZoeProg.PlugIns.CleanUp
         {
             var regionManager = containerProvider.Resolve<IRegionManager>();
             // regionManager.AddToRegion(RegionNames.HamburgerMenuItemCollectionRegion, containerProvider.Resolve<CleanupView>());
-            regionManager.RegisterViewWithRegion(RegionNames.HamburgerMenuItemCollectionRegion, typeof(CleanupView));
+            regionManager.RegisterViewWithRegion(RegionNames.HamburgerMenuItemCollectionRegion, typeof(CleanUpView));
 
             var sd = regionManager.Regions;
         }
