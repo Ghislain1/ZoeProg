@@ -5,7 +5,7 @@
 // </copyright>
 // ---------------------------------------------------------------------------------------------------------------
 
-namespace ZoeProg.Home.ViewModels
+namespace ZoeProg.PlugIns.Home.ViewModels
 {
     using System;
     using System.Windows.Input;

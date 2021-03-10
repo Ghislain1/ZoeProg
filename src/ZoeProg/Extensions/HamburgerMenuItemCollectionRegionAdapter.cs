@@ -32,7 +32,6 @@ namespace ZoeProg.Extensions
         /// <param name="regionTarget">The regionTarget <see cref="HamburgerMenuItemCollection"/>.</param>
         protected override void Adapt(IRegion region, HamburgerMenuItemCollection regionTarget)
         {
-            return;
             region.Views.CollectionChanged += (s, e) =>
             {
                 if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)

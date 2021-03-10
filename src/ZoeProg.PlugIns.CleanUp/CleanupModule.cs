@@ -42,8 +42,6 @@ namespace ZoeProg.PlugIns.CleanUp
             var regionManager = containerProvider.Resolve<IRegionManager>();
             // regionManager.AddToRegion(RegionNames.HamburgerMenuItemCollectionRegion, containerProvider.Resolve<CleanupView>());
             regionManager.RegisterViewWithRegion(RegionNames.HamburgerMenuItemCollectionRegion, typeof(CleanUpView));
-
-            var sd = regionManager.Regions;
         }
 
         /// <summary>

@@ -18,7 +18,7 @@
  * ---license-end
  */
 
-namespace ZoeProg.Cleanup.ViewModels
+namespace ZoeProg.PlugIns.CleanUp.ViewModels
 {
     using System;
     using System.Collections.Generic;
