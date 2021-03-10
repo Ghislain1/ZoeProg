@@ -18,19 +18,18 @@
  * ---license-end
  */
 
-namespace ZoeProg.Cleanup
+namespace ZoeProg.PlugIns.CleanUp
 {
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
     using ZoeProg.Cleanup.Services;
     using ZoeProg.Cleanup.Views;
-    using ZoeProg.Core;
 
     /// <summary>
     /// Defines the <see cref="CleanupModule"/>.
     /// </summary>
-    public sealed class CleanupModule : IModule
+    public sealed class CleanUpModule : IModule
     {
         /// <summary>
         /// Notifies the module that it has been initialized.

@@ -1,9 +1,10 @@
-﻿namespace ZoeProg.Home
+﻿namespace ZoeProg.PlugIns.Home
 {
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
-    using ZoeProg.Home.Views;
+    using ZoeProg.Core.Constants;
+    using ZoeProg.PlugIns.Home.Views;
 
     /// <summary>
     /// Home for logic module

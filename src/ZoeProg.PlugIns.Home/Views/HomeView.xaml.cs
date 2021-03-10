@@ -1,4 +1,4 @@
-﻿namespace ZoeProg.Home.Views
+﻿namespace ZoeProg.PlugIns.Home.Views
 {
     using System.Windows.Controls;
 
