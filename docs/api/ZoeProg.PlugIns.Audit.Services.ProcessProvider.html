@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ProcessProvider
    ">
-    <meta name="generator" content="docfx 2.45.0.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -84,47 +84,23 @@
     <h5>Implements</h5>
     <div><a class="xref" href="ZoeProg.PlugIns.Audit.Services.IProcessProvider.html">IProcessProvider</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ZoeProg.PlugIns.Audit.Services.html">ZoeProg.PlugIns.Audit.Services</a></h6>
   <h6><strong>Assembly</strong>: ZoeProg.PlugIns.Audit.dll</h6>
   <h5 id="ZoeProg_PlugIns_Audit_Services_ProcessProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ProcessProvider : IProcessProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class ProcessProvider : object, IProcessProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_Audit_Services_ProcessProvider__ctor_Ghis_PowershellLib_IPowershellService_.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.Audit.Services.ProcessProvider.%23ctor(Ghis.PowershellLib.IPowershellService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_Audit_Services_ProcessProvider__ctor_IPowershellService_.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.Audit.Services.ProcessProvider.%23ctor(IPowershellService)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.Audit/Services/ProcessProvider.cs/#L14">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_Audit_Services_ProcessProvider__ctor_" data-uid="ZoeProg.PlugIns.Audit.Services.ProcessProvider.#ctor*"></a>
-  <h4 id="ZoeProg_PlugIns_Audit_Services_ProcessProvider__ctor_Ghis_PowershellLib_IPowershellService_" data-uid="ZoeProg.PlugIns.Audit.Services.ProcessProvider.#ctor(Ghis.PowershellLib.IPowershellService)">ProcessProvider(IPowershellService)</h4>
+  <h4 id="ZoeProg_PlugIns_Audit_Services_ProcessProvider__ctor_IPowershellService_" data-uid="ZoeProg.PlugIns.Audit.Services.ProcessProvider.#ctor(IPowershellService)">ProcessProvider(IPowershellService)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -142,7 +118,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Ghis.PowershellLib.IPowershellService</span></td>
+        <td><span class="xref">IPowershellService</span></td>
         <td><span class="parametername">powerShellService</span></td>
         <td></td>
       </tr>
@@ -205,7 +181,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="ZoeProg.PlugIns.Audit.Models.ProcessItem.html">ProcessItem</a>&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="ZoeProg.PlugIns.Audit.Models.ProcessItem.html">ProcessItem</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -230,7 +206,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
