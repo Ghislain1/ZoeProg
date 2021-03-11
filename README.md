@@ -1,28 +1,28 @@
 ## Build Status
-
 [![Build Status](https://dev.azure.com/ZEUSXY/ZoeApp/_apis/build/status/Ghislain1.ZoeProg?branchName=master)](https://dev.azure.com/ZEUSXY/ZoeApp/_build/latest?definitionId=1&branchName=master) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
 
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Features](https://github.com/Ghislain1/ZoeProg/wiki)
   - [Requirements](https://github.com/Ghislain1/ZoeProg/wiki)
-  - [Version History](https://github.com/Ghislain1/ZoeProg/wiki)
-  - [Road map](https://github.com/Ghislain1/ZoeProg/wiki)
+  - [Dependencies](#dependencies)
+  - [KnowHow](#knowhow)
+  - [Road map](https://github.com/Ghislain1/ZoeProg/milestones)
   - [Issues](https://github.com/Ghislain1/ZoeProg/issues)
   - [Scrum Board](https://github.com/Ghislain1/ZoeProg/projects/1)
   - [Documentation](https://ghislain1.github.io/ZoeProg/api/index.html)
   - [References](#references)
+  - [Theory](#theory)
+  - [Next topics](#next-topics)
 
 # Look & Feel
-
 ![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docDev/imgs/1.JPG)
-
 ![alt text](https://github.com/Ghislain1/ZoeProg/blob/master/docDev/imgs/2.JPG)
- 
 
 # Requirements
 - Windows  10 (32, 64 bits)
-- .Net Core 3
+- .Net5.0 or later
+- Visual Studio 2019 or later
 
 # Modules or PlugIns
 - <b>Cleanup Plugin</b> can clean:
@@ -35,22 +35,32 @@
   + Google Chrome Cache
   + Steam Redistributable Packages
   + Temp Directory
-  + Local Directory
-  
+  + Local Directory 
   
 # References
 1. [Controls](https://mahapps.com/docs/controls/HamburgerMenu)
 2. [Prism WPF](https://github.com/PrismLibrary/Prism) - [His Doc](https://prismlibrary.com/docs/commanding.html) explaining
 3. [Style and Design]()
 4. [E2E Test](https://dev.azure.com/prismlibrary/Prism/_build/results?buildId=1923&view=results)
-5. []()
+
 # Dependencies
 - Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
 - [Mui](https://github.com/firstfloorsoftware/mui/wiki)
 - Powershell
 - [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
 
-## Architecture
+
+# Contributions
+- Dev:
+     + Install Git
+     + Clone the project ()
+     + Build the project from VS2017
+     + Start Coding!!
+ - Donation
+     + Paypal(soon)
+     + Amazon eGift Cards
+
+# Theory
 
 As mentioned previously this application consists of `Client` - Front End and `Server` - Back End. 
 
@@ -120,18 +130,7 @@ Template method pattern is a behavioral design pattern that defines the program 
 
 The prototype pattern is a creational design pattern in software development. It is used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects.
 
-# Contributions
-- Dev:
-     + Install Git
-     + Clone the project ()
-     + Build the project from VS2017
-     + Start Coding!!
- - Donation
-     + Paypal(soon)
-     + Amazon eGift Cards
-
-
-  # Thema for experience
+  # Next topics
   * Docker: https://docs.docker.com/engine/reference/commandline/dockerd/#options-per-storage-driver
            what is that?
   * Language: https://www.tiobe.com/tiobe-index//  here we can sse the best language for programming.
