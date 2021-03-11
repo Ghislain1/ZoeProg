@@ -3,8 +3,8 @@
 
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
-  - [Features](https://github.com/Ghislain1/ZoeProg/wiki)
-  - [Requirements](https://github.com/Ghislain1/ZoeProg/wiki)
+  - [Features](#Features)
+  - [Requirements](#Requirements)
   - [Dependencies](#dependencies)
   - [KnowHow](#knowhow)
   - [Road map](https://github.com/Ghislain1/ZoeProg/milestones)
@@ -24,7 +24,7 @@
 - .Net5.0 or later
 - Visual Studio 2019 or later
 
-# Modules or PlugIns
+# Features
 - <b>Cleanup Plugin</b> can clean:
   + User and Windows Temporary Directories
   + Windows Installer Cache
@@ -40,12 +40,13 @@
 # References
 1. [Controls](https://mahapps.com/docs/controls/HamburgerMenu)
 2. [Prism WPF](https://github.com/PrismLibrary/Prism) - [His Doc](https://prismlibrary.com/docs/commanding.html) explaining
-3. [Style and Design]()
-4. [E2E Test](https://dev.azure.com/prismlibrary/Prism/_build/results?buildId=1923&view=results)
+3. [Style and Design](https://uidesignsystem.com/desktop.html)
 
 # Dependencies
-- Prism [repositories](https://github.com/PrismLibrary/Prism) ,[Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , [doc](http://prismlibrary.github.io/docs/)
-- [Mui](https://github.com/firstfloorsoftware/mui/wiki)
+- [Prism repositories](https://github.com/PrismLibrary/Prism)
+- [Prism-Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , 
+- [Prism](http://prismlibrary.github.io/docs/)
+- [Prism-Test](https://dev.azure.com/prismlibrary/Prism/_build/results?buildId=1923&view=results)
 - Powershell
 - [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
 
@@ -57,6 +58,7 @@
 - [Git](https://git-scm.com/) - Version control system
 - [WPF](https://docs.microsoft.com/de-de/dotnet/desktop/wpf/?view=netdesktop-5.0)
 - [C-Sharp](https://docs.microsoft.com/en-us/dotnet/fundamentals/)
+- [Prism](http://prismlibrary.github.io/docs/)
 
 # Contributions
 - Dev:
