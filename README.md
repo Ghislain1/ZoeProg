@@ -47,6 +47,7 @@
 - [Prism-Samples](https://github.com/PrismLibrary/Prism-Samples-Wpf) , 
 - [Prism](http://prismlibrary.github.io/docs/)
 - [Prism-Test](https://dev.azure.com/prismlibrary/Prism/_build/results?buildId=1923&view=results)
+- [UI Design - Materila design XAML](http://materialdesigninxaml.net/)
 - Powershell
 - [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
 
