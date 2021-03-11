@@ -49,6 +49,14 @@
 - Powershell
 - [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
 
+# KnowHow
+- [Markdown](https://daringfireball.net/projects/markdown/) - To write text for the sofware document while developing
+- [Visual Studio](https://docs.microsoft.com/de-de/visualstudio/get-started/visual-studio-ide?view=vs-2019) - IDE
+- [Visual Studio code](https://code.visualstudio.com/) - Nice IDE
+- Github
+- [Git](https://git-scm.com/) - Version control system
+- [WPF](https://docs.microsoft.com/de-de/dotnet/desktop/wpf/?view=netdesktop-5.0)
+- [C-Sharp](https://docs.microsoft.com/en-us/dotnet/fundamentals/)
 
 # Contributions
 - Dev:
