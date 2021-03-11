@@ -25,6 +25,7 @@ jobs:
 
     steps:
     - name: Before Checkout
+      run: echo Ghislain says---> Hello World
       
     - name: Checkout
       uses: actions/checkout@v2
