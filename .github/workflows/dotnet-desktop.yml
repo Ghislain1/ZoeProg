@@ -1,4 +1,4 @@
-name: .NET Core Desktop
+name: New .NET Desktop
 
 on:
   push:
@@ -33,21 +33,22 @@ jobs:
         fetch-depth: 0
 
     # Install the .NET Core workload
-    - name: Install .NET Core
+    - name: Install .NET5.0 (version 5.0.x)
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
-    - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@2008f912f56e61277eefaac6d1888b750582aa16
+    - name: Setup MSBuild.exe (TODO)
+      run: Echo Why should we Set up MSBuild here
+     # uses: microsoft/setup-msbuild@2008f912f56e61277eefaac6d1888b750582aa16
 
     # Execute all unit tests in the solution
-    - name: Execute unit tests
+    - name: Execute unit tests (TODO)
       run: dotnet test
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
-    - name: Restore the application
+    - name: Restore the application( WHy?)
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
@@ -60,7 +61,7 @@ jobs:
         [IO.File]::WriteAllBytes("$certificatePath", $pfx_cert_byte)
 
     # Create the app package by building and packaging the Windows Application Packaging project
-    - name: Create the app package
+    - name: Create the app package(TODO)
       run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
       env:
         Appx_Bundle: Always
@@ -73,7 +74,7 @@ jobs:
       run: Remove-Item -path $env:Wap_Project_Directory\$env:Signing_Certificate
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-artifact
-    - name: Upload build artifacts
+    - name: Upload build artifacts (TODO)
       uses: actions/upload-artifact@v2
       with:
         name: MSIX Package
