@@ -49,12 +49,14 @@ jobs:
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application( TODO)
+      run: Echo Why do you need this Task?
     #  run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
     #   env:
     #   Configuration: ${{ matrix.configuration }}
 
     # Decode the base 64 encoded pfx and save the Signing_Certificate
     - name: Decode the pfx(TODO)
+      run: Echo Why do you need this Task?     
     #  run: |
     #   $pfx_cert_byte = [System.Convert]::FromBase64String("${{ secrets.Base64_Encoded_Pfx }}")
     #    $certificatePath = Join-Path -Path $env:Wap_Project_Directory -ChildPath GitHubActionsWorkflow.pfx
@@ -62,6 +64,8 @@ jobs:
 
     # Create the app package by building and packaging the Windows Application Packaging project
     - name: Create the app package(TODO)
+      run: Echo Why do you need this Task?
+    
     # run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:UapAppxPackageBuildMode=$env:Appx_Package_Build_Mode /p:AppxBundle=$env:Appx_Bundle /p:PackageCertificateKeyFile=GitHubActionsWorkflow.pfx /p:PackageCertificatePassword=${{ secrets.Pfx_Key }}
     #  env:
     #    Appx_Bundle: Always
@@ -71,10 +75,12 @@ jobs:
 
     # Remove the pfx
     - name: Remove the pfx (TODO)
+      run: Echo Why do you need this Task?    
      # run: Remove-Item -path $env:Wap_Project_Directory\$env:Signing_Certificate
 
     # Upload the MSIX package: https://github.com/marketplace/actions/upload-artifact
     - name: Upload build artifacts (TODO)
+      run: Echo Why do you need this Task?    
     # uses: actions/upload-artifact@v2
     #  with:
     #    name: MSIX Package
