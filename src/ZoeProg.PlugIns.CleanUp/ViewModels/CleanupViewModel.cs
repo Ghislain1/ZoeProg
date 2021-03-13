@@ -27,23 +27,23 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using System.Windows.Input;
     using Prism.Commands;
     using Prism.Mvvm;
-    using ZoeProg.Cleanup.Services;
     using ZoeProg.Core;
+    using ZoeProg.PlugIns.CleanUp.Services;
 
     /// <summary>
     /// TODO:.
     /// </summary>
-    public class CleanupViewModel : BindableBase, IPlugin
+    public class CleanUpViewModel : BindableBase, IPlugin
     {
-        /// <summary>
-        /// Defines the cleanupService.
-        /// </summary>
-        private readonly ICleanupService cleanupService;
-
         /// <summary>
         /// Defines the canDelete.
         /// </summary>
         private bool canDelete;
+
+        /// <summary>
+        /// Defines the cleanupService.
+        /// </summary>
+        private ICleanupService cleanupService;
 
         /// <summary>
         /// Defines the deleteCommandDisplayName.
@@ -60,37 +60,8 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// </summary>
         private ObservableCollection<string> todos = new ObservableCollection<string>();
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CleanupViewModel"/> class.
-        /// </summary>
-        /// <param name="cleanupService">.</param>
-        public CleanupViewModel(ICleanupService cleanupService)
+        public CleanUpViewModel()
         {
-            this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
-
-            this.CommandParameter = this.GetType();
-
-            this.DeleteCommand = new DelegateCommand(async () =>
-                        {
-                            this.IsBusy = true;
-                            await this.cleanupService.RemoveFileAsnyc(this.Todos.ToList());
-                            this.Todos.Clear();
-                            this.IsBusy = false;
-                        });
-
-            this.ScanCommand = new DelegateCommand(async () =>
-          {
-              var result = new List<string>();
-              this.IsBusy = true;
-              await this.cleanupService.LoadTempFilesAsync(path => result.Add(path));
-              this.Todos.Clear();
-              foreach (var item in result)
-              {
-                  this.Todos.Add(item);
-              }
-
-              this.IsBusy = false;
-          });
         }
 
         /// <inheritdoc/>
@@ -226,6 +197,39 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                     this.DeleteCommandDisplayName = $" Delete({ (value == null ? 0 : value.Count)})";
                 }
             }
+        }
+
+        /// <summary>
+        /// TODO Initializes a new instance of the <see cref="CleanupViewModel"/> class.
+        /// </summary>
+        /// <param name="cleanupService">.</param>
+        private void CleanUpViewModelTdood(ICleanupService cleanupService)
+        {
+            this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
+
+            this.CommandParameter = this.GetType();
+
+            this.DeleteCommand = new DelegateCommand(async () =>
+                        {
+                            this.IsBusy = true;
+                            await this.cleanupService.RemoveFileAsnyc(this.Todos.ToList());
+                            this.Todos.Clear();
+                            this.IsBusy = false;
+                        });
+
+            this.ScanCommand = new DelegateCommand(async () =>
+          {
+              var result = new List<string>();
+              this.IsBusy = true;
+              await this.cleanupService.LoadTempFilesAsync(path => result.Add(path));
+              this.Todos.Clear();
+              foreach (var item in result)
+              {
+                  this.Todos.Add(item);
+              }
+
+              this.IsBusy = false;
+          });
         }
     }
 }

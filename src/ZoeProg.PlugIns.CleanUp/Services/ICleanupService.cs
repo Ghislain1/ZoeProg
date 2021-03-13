@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ZoeProg.Cleanup.Services
+namespace ZoeProg.PlugIns.CleanUp.Services
 {
     public interface ICleanupService
     {

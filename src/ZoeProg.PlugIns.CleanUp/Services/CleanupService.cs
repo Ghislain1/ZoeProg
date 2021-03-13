@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Prism.Events;
 using ZoeProg.Infrastructure;
 
-namespace ZoeProg.Cleanup.Services
+namespace ZoeProg.PlugIns.CleanUp.Services
 {
     public class CleanupService : ICleanupService
     {
