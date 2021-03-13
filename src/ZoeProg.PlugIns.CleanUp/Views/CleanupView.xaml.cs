@@ -7,9 +7,12 @@
     /// </summary>
     public partial class CleanUpView : UserControl
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CleanUpView"/> class.
+        /// </summary>
         public CleanUpView()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
     }
 }
