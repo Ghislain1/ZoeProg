@@ -36,7 +36,7 @@
   + Steam Redistributable Packages
   + Temp Directory
   + Local Directory 
-  
+  //hello
 # References
 1. [Controls](https://mahapps.com/docs/controls/HamburgerMenu)
 2. [Prism WPF](https://github.com/PrismLibrary/Prism) - [His Doc](https://prismlibrary.com/docs/commanding.html) explaining
@@ -50,7 +50,7 @@
 - [UI Design - Materila design XAML](http://materialdesigninxaml.net/)
 - Powershell
 - [DocFX](https://dotnet.github.io/docfx/tutorial/intro_template.html)
-
+//test comment
 # KnowHow
 - [Markdown](https://daringfireball.net/projects/markdown/) - To write text for the sofware document while developing
 - [Visual Studio](https://docs.microsoft.com/de-de/visualstudio/get-started/visual-studio-ide?view=vs-2019) - IDE
