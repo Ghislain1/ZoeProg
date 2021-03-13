@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{444FD418-07D6-47FA-A72E-6276FCEC0798} = {444FD418-07D6-47FA-A72E-6276FCEC0798}
+		{4465A01E-03AC-403B-84A8-994C917B5EA4} = {4465A01E-03AC-403B-84A8-994C917B5EA4}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlugIns", "PlugIns", "{382BCB3F-EB66-418F-BEEB-DC24D47FB874}"
 EndProject

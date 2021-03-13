@@ -23,9 +23,9 @@ namespace ZoeProg.PlugIns.CleanUp
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
-    using ZoeProg.Cleanup.Services;
 
     using ZoeProg.Core.Constants;
+    using ZoeProg.PlugIns.CleanUp.Services;
     using ZoeProg.PlugIns.CleanUp.Views;
 
     /// <summary>
