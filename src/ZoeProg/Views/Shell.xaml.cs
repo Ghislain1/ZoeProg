@@ -43,5 +43,11 @@ namespace ZoeProg.Views
         {
             var sd = (sender as TransitioningContentControl).Content;
         }
+
+        private void HamburgerMenuControl_ItemClick(object sender, ItemClickEventArgs args)
+        {
+            // TODO; Don t remove this until otherwise hambuger menu show nothing
+            this.HamburgerMenuControl.Content = args.ClickedItem;
+        }
     }
 }

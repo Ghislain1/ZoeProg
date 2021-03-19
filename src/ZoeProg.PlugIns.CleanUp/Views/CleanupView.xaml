@@ -13,9 +13,9 @@
     <Grid>
 
         <DockPanel>
-            <UniformGrid DockPanel.Dock="Top" Columns="3">
+            <UniformGrid DockPanel.Dock="Top" Columns="2">
                 <Button Content="{Binding DeleteCommandDisplayName}" Command="{Binding DeleteCommand}" />
-                <Button Content=" Scan " Command="{Binding ScanCommand}" />
+                <Button FontSize="151" Content=" Scan " Command="{Binding ScanCommand}" />
             </UniformGrid>
 
             <Grid>
