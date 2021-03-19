@@ -17,54 +17,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Cleanup.Services.CleanupService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Cleanup.Services.CleanupService.html",
-          "hash": "K2ayenSpBRGn7Gf2lorl9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Cleanup.Services.ICleanupService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Cleanup.Services.ICleanupService.html",
-          "hash": "VlvemdzCSdHI/0nTd4rrow=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Cleanup.Services.TempFileEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Cleanup.Services.TempFileEvent.html",
-          "hash": "dFg6jm8Ni2qC2Qja2DDtKg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.Cleanup.Services.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.Cleanup.Services.html",
-          "hash": "qnuzVf09zs4go71MrjMb3w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/ZoeProg.Common.Cmds.yml",
       "output": {
         ".html": {
@@ -717,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.CleanUpModule.html",
-          "hash": "YTESSUHJbdBtnpAh307R1A=="
+          "hash": "CLMBChOVvjJT1wGhiL2j3Q=="
         }
       },
       "is_incremental": false,
@@ -725,11 +677,59 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.yml",
+      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html",
-          "hash": "4dlQ4NF24tUEgzBBgjo7/Q=="
+          "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html",
+          "hash": "w8o5pucdAt51G0RlsfKXvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html",
+          "hash": "JNgWyAcFRfuHQAJ9h060yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.TempFileEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.TempFileEvent.html",
+          "hash": "qMPGoU0zdf0p2V+zP0+ugg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.html",
+          "hash": "BWThMCqgjs0UsTEuEXpsNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html",
+          "hash": "PEOeUFR7icdymnCpclDADQ=="
         }
       },
       "is_incremental": false,
@@ -741,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.html",
-          "hash": "rE6V/7Z2O2YRioSz1YqEqQ=="
+          "hash": "qNHD8YcAXMLBujuug79Biw=="
         }
       },
       "is_incremental": false,
@@ -753,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.Views.CleanUpView.html",
-          "hash": "uETYAXzrSv55ja1CgW580Q=="
+          "hash": "r0IO93DUoEL/ZnVeviZNbA=="
         }
       },
       "is_incremental": false,
@@ -1125,7 +1125,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "52BnjnsMLpNvkMc7EOQtyQ=="
+          "hash": "O/fdIkXacpIfZ7emWMz+wg=="
         }
       },
       "is_incremental": false,

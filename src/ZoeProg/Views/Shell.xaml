@@ -93,38 +93,6 @@
                 <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.HamburgerMenuItemCollectionRegion}" />
             </metro:HamburgerMenu.ItemsSource>
 
-            <!--<metro:HamburgerMenu.ItemsSource>
-                <metro:HamburgerMenuItemCollection>
-                    <metro:HamburgerMenuGlyphItem Label="Big four summer heat" Tag="{Binding ElementName=s}" />
-                    <metro:HamburgerMenuGlyphItem
-                        x:Name="s"
-                        Glyph="?"
-                        Label="Big four summer heat" />
-                    <metro:HamburgerMenuGlyphItem Glyph="" Label="Button">
-                        <metro:HamburgerMenuGlyphItem.Tag>
-                            <Grid>
-                                <Button Content="GHislaiBUtton" />
-                            </Grid>
-                        </metro:HamburgerMenuGlyphItem.Tag>
-                    </metro:HamburgerMenuGlyphItem>
-                    <metro:HamburgerMenuGlyphItem Label="ABOUT view should display">
-                        <metro:HamburgerMenuGlyphItem.Tag>
-                            <Views:About />
-                        </metro:HamburgerMenuGlyphItem.Tag>
-                    </metro:HamburgerMenuGlyphItem>
-                </metro:HamburgerMenuItemCollection>
-            </metro:HamburgerMenu.ItemsSource>-->
-
-            <!--  Ghislain: HamburgerMenu OptionsItemsSource Poerty to store all OptionsItems
-            <metro:HamburgerMenu.OptionsItemsSource>
-                <metro:HamburgerMenuItemCollection>
-                    <metro:HamburgerMenuGlyphItem
-                        Glyph="&#xE946;"
-                        Label="About"
-                        Tag="About" />
-                </metro:HamburgerMenuItemCollection>
-            </metro:HamburgerMenu.OptionsItemsSource>-->
-
             <metro:HamburgerMenu.ContentTemplate>
                 <DataTemplate DataType="{x:Type metro:HamburgerMenuItem}">
                     <DockPanel DataContext="{Binding DataContext.ActivatedItem, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}">
