@@ -174,7 +174,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// <summary>
         /// Gets or sets the Tag.
         /// </summary>
-        public string Tag { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the Title.

@@ -65,221 +65,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.App.RegisterTypes
   nameWithType: App.RegisterTypes
-- uid: ZoeProg.Cleanup.Services
-  name: ZoeProg.Cleanup.Services
-  href: api/ZoeProg.Cleanup.Services.html
-  commentId: N:ZoeProg.Cleanup.Services
-  fullName: ZoeProg.Cleanup.Services
-  nameWithType: ZoeProg.Cleanup.Services
-- uid: ZoeProg.Cleanup.Services.CleanupService
-  name: CleanupService
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html
-  commentId: T:ZoeProg.Cleanup.Services.CleanupService
-  fullName: ZoeProg.Cleanup.Services.CleanupService
-  nameWithType: CleanupService
-- uid: ZoeProg.Cleanup.Services.CleanupService.#ctor(ZoeProg.Infrastructure.IPowershellService,IEventAggregator)
-  name: CleanupService(IPowershellService, IEventAggregator)
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService__ctor_ZoeProg_Infrastructure_IPowershellService_IEventAggregator_
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.#ctor(ZoeProg.Infrastructure.IPowershellService,IEventAggregator)
-  fullName: ZoeProg.Cleanup.Services.CleanupService.CleanupService(ZoeProg.Infrastructure.IPowershellService, IEventAggregator)
-  nameWithType: CleanupService.CleanupService(IPowershellService, IEventAggregator)
-- uid: ZoeProg.Cleanup.Services.CleanupService.#ctor*
-  name: CleanupService
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService__ctor_
-  commentId: Overload:ZoeProg.Cleanup.Services.CleanupService.#ctor
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.CleanupService.CleanupService
-  nameWithType: CleanupService.CleanupService
-- uid: ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync
-  name: CleanTempFilesAsync()
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_CleanTempFilesAsync
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync
-  fullName: ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync()
-  nameWithType: CleanupService.CleanTempFilesAsync()
-- uid: ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync(Action)
-  name: CleanTempFilesAsync(Action)
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_CleanTempFilesAsync_Action_
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync(Action)
-  fullName: ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync(Action)
-  nameWithType: CleanupService.CleanTempFilesAsync(Action)
-- uid: ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync*
-  name: CleanTempFilesAsync
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_CleanTempFilesAsync_
-  commentId: Overload:ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.CleanupService.CleanTempFilesAsync
-  nameWithType: CleanupService.CleanTempFilesAsync
-- uid: ZoeProg.Cleanup.Services.CleanupService.DeleteFileForDemoAsync
-  name: DeleteFileForDemoAsync()
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_DeleteFileForDemoAsync
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.DeleteFileForDemoAsync
-  fullName: ZoeProg.Cleanup.Services.CleanupService.DeleteFileForDemoAsync()
-  nameWithType: CleanupService.DeleteFileForDemoAsync()
-- uid: ZoeProg.Cleanup.Services.CleanupService.DeleteFileForDemoAsync*
-  name: DeleteFileForDemoAsync
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_DeleteFileForDemoAsync_
-  commentId: Overload:ZoeProg.Cleanup.Services.CleanupService.DeleteFileForDemoAsync
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.CleanupService.DeleteFileForDemoAsync
-  nameWithType: CleanupService.DeleteFileForDemoAsync
-- uid: ZoeProg.Cleanup.Services.CleanupService.GetAll
-  name: GetAll()
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_GetAll
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.GetAll
-  fullName: ZoeProg.Cleanup.Services.CleanupService.GetAll()
-  nameWithType: CleanupService.GetAll()
-- uid: ZoeProg.Cleanup.Services.CleanupService.GetAll*
-  name: GetAll
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_GetAll_
-  commentId: Overload:ZoeProg.Cleanup.Services.CleanupService.GetAll
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.CleanupService.GetAll
-  nameWithType: CleanupService.GetAll
-- uid: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync
-  name: LoadTempFilesAsync()
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_LoadTempFilesAsync
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync
-  fullName: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync()
-  nameWithType: CleanupService.LoadTempFilesAsync()
-- uid: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync(Action{System.String})
-  name: LoadTempFilesAsync(Action<String>)
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_LoadTempFilesAsync_Action_System_String__
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync(Action{System.String})
-  name.vb: LoadTempFilesAsync(Action(Of String))
-  fullName: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync(Action<System.String>)
-  fullName.vb: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync(Action(Of System.String))
-  nameWithType: CleanupService.LoadTempFilesAsync(Action<String>)
-  nameWithType.vb: CleanupService.LoadTempFilesAsync(Action(Of String))
-- uid: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync*
-  name: LoadTempFilesAsync
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_LoadTempFilesAsync_
-  commentId: Overload:ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.CleanupService.LoadTempFilesAsync
-  nameWithType: CleanupService.LoadTempFilesAsync
-- uid: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(List{System.String})
-  name: RemoveFileAsnyc(List<String>)
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_RemoveFileAsnyc_List_System_String__
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(List{System.String})
-  name.vb: RemoveFileAsnyc(List(Of String))
-  fullName: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(List<System.String>)
-  fullName.vb: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(List(Of System.String))
-  nameWithType: CleanupService.RemoveFileAsnyc(List<String>)
-  nameWithType.vb: CleanupService.RemoveFileAsnyc(List(Of String))
-- uid: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(System.String)
-  name: RemoveFileAsnyc(String)
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_RemoveFileAsnyc_System_String_
-  commentId: M:ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(System.String)
-  fullName: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc(System.String)
-  nameWithType: CleanupService.RemoveFileAsnyc(String)
-- uid: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc*
-  name: RemoveFileAsnyc
-  href: api/ZoeProg.Cleanup.Services.CleanupService.html#ZoeProg_Cleanup_Services_CleanupService_RemoveFileAsnyc_
-  commentId: Overload:ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.CleanupService.RemoveFileAsnyc
-  nameWithType: CleanupService.RemoveFileAsnyc
-- uid: ZoeProg.Cleanup.Services.ICleanupService
-  name: ICleanupService
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html
-  commentId: T:ZoeProg.Cleanup.Services.ICleanupService
-  fullName: ZoeProg.Cleanup.Services.ICleanupService
-  nameWithType: ICleanupService
-- uid: ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync
-  name: CleanTempFilesAsync()
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_CleanTempFilesAsync
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync()
-  nameWithType: ICleanupService.CleanTempFilesAsync()
-- uid: ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync(Action)
-  name: CleanTempFilesAsync(Action)
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_CleanTempFilesAsync_Action_
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync(Action)
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync(Action)
-  nameWithType: ICleanupService.CleanTempFilesAsync(Action)
-- uid: ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync*
-  name: CleanTempFilesAsync
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_CleanTempFilesAsync_
-  commentId: Overload:ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.CleanTempFilesAsync
-  nameWithType: ICleanupService.CleanTempFilesAsync
-- uid: ZoeProg.Cleanup.Services.ICleanupService.DeleteFileForDemoAsync
-  name: DeleteFileForDemoAsync()
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_DeleteFileForDemoAsync
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.DeleteFileForDemoAsync
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.DeleteFileForDemoAsync()
-  nameWithType: ICleanupService.DeleteFileForDemoAsync()
-- uid: ZoeProg.Cleanup.Services.ICleanupService.DeleteFileForDemoAsync*
-  name: DeleteFileForDemoAsync
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_DeleteFileForDemoAsync_
-  commentId: Overload:ZoeProg.Cleanup.Services.ICleanupService.DeleteFileForDemoAsync
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.DeleteFileForDemoAsync
-  nameWithType: ICleanupService.DeleteFileForDemoAsync
-- uid: ZoeProg.Cleanup.Services.ICleanupService.GetAll
-  name: GetAll()
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_GetAll
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.GetAll
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.GetAll()
-  nameWithType: ICleanupService.GetAll()
-- uid: ZoeProg.Cleanup.Services.ICleanupService.GetAll*
-  name: GetAll
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_GetAll_
-  commentId: Overload:ZoeProg.Cleanup.Services.ICleanupService.GetAll
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.GetAll
-  nameWithType: ICleanupService.GetAll
-- uid: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync
-  name: LoadTempFilesAsync()
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_LoadTempFilesAsync
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync()
-  nameWithType: ICleanupService.LoadTempFilesAsync()
-- uid: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync(Action{System.String})
-  name: LoadTempFilesAsync(Action<String>)
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_LoadTempFilesAsync_Action_System_String__
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync(Action{System.String})
-  name.vb: LoadTempFilesAsync(Action(Of String))
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync(Action<System.String>)
-  fullName.vb: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync(Action(Of System.String))
-  nameWithType: ICleanupService.LoadTempFilesAsync(Action<String>)
-  nameWithType.vb: ICleanupService.LoadTempFilesAsync(Action(Of String))
-- uid: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync*
-  name: LoadTempFilesAsync
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_LoadTempFilesAsync_
-  commentId: Overload:ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.LoadTempFilesAsync
-  nameWithType: ICleanupService.LoadTempFilesAsync
-- uid: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(List{System.String})
-  name: RemoveFileAsnyc(List<String>)
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_RemoveFileAsnyc_List_System_String__
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(List{System.String})
-  name.vb: RemoveFileAsnyc(List(Of String))
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(List<System.String>)
-  fullName.vb: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(List(Of System.String))
-  nameWithType: ICleanupService.RemoveFileAsnyc(List<String>)
-  nameWithType.vb: ICleanupService.RemoveFileAsnyc(List(Of String))
-- uid: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(System.String)
-  name: RemoveFileAsnyc(String)
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_RemoveFileAsnyc_System_String_
-  commentId: M:ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(System.String)
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc(System.String)
-  nameWithType: ICleanupService.RemoveFileAsnyc(String)
-- uid: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc*
-  name: RemoveFileAsnyc
-  href: api/ZoeProg.Cleanup.Services.ICleanupService.html#ZoeProg_Cleanup_Services_ICleanupService_RemoveFileAsnyc_
-  commentId: Overload:ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc
-  isSpec: "True"
-  fullName: ZoeProg.Cleanup.Services.ICleanupService.RemoveFileAsnyc
-  nameWithType: ICleanupService.RemoveFileAsnyc
-- uid: ZoeProg.Cleanup.Services.TempFileEvent
-  name: TempFileEvent
-  href: api/ZoeProg.Cleanup.Services.TempFileEvent.html
-  commentId: T:ZoeProg.Cleanup.Services.TempFileEvent
-  fullName: ZoeProg.Cleanup.Services.TempFileEvent
-  nameWithType: TempFileEvent
 - uid: ZoeProg.Common
   name: ZoeProg.Common
   href: api/ZoeProg.Common.html
@@ -2356,265 +2141,480 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes
   nameWithType: CleanUpModule.RegisterTypes
+- uid: ZoeProg.PlugIns.CleanUp.Services
+  name: ZoeProg.PlugIns.CleanUp.Services
+  href: api/ZoeProg.PlugIns.CleanUp.Services.html
+  commentId: N:ZoeProg.PlugIns.CleanUp.Services
+  fullName: ZoeProg.PlugIns.CleanUp.Services
+  nameWithType: ZoeProg.PlugIns.CleanUp.Services
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService
+  name: CleanupService
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html
+  commentId: T:ZoeProg.PlugIns.CleanUp.Services.CleanupService
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService
+  nameWithType: CleanupService
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor(ZoeProg.Infrastructure.IPowershellService,IEventAggregator)
+  name: CleanupService(IPowershellService, IEventAggregator)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService__ctor_ZoeProg_Infrastructure_IPowershellService_IEventAggregator_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor(ZoeProg.Infrastructure.IPowershellService,IEventAggregator)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanupService(ZoeProg.Infrastructure.IPowershellService, IEventAggregator)
+  nameWithType: CleanupService.CleanupService(IPowershellService, IEventAggregator)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor*
+  name: CleanupService
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService__ctor_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanupService
+  nameWithType: CleanupService.CleanupService
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync
+  name: CleanTempFilesAsync()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_CleanTempFilesAsync
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync()
+  nameWithType: CleanupService.CleanTempFilesAsync()
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(Action)
+  name: CleanTempFilesAsync(Action)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_CleanTempFilesAsync_Action_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(Action)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(Action)
+  nameWithType: CleanupService.CleanTempFilesAsync(Action)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync*
+  name: CleanTempFilesAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_CleanTempFilesAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync
+  nameWithType: CleanupService.CleanTempFilesAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync
+  name: DeleteFileForDemoAsync()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_DeleteFileForDemoAsync
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync()
+  nameWithType: CleanupService.DeleteFileForDemoAsync()
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync*
+  name: DeleteFileForDemoAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_DeleteFileForDemoAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync
+  nameWithType: CleanupService.DeleteFileForDemoAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll
+  name: GetAll()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_GetAll
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll()
+  nameWithType: CleanupService.GetAll()
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll*
+  name: GetAll
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_GetAll_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll
+  nameWithType: CleanupService.GetAll
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
+  name: LoadTempFilesAsync()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_LoadTempFilesAsync
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync()
+  nameWithType: CleanupService.LoadTempFilesAsync()
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action{System.String})
+  name: LoadTempFilesAsync(Action<String>)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_LoadTempFilesAsync_Action_System_String__
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action{System.String})
+  name.vb: LoadTempFilesAsync(Action(Of String))
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action<System.String>)
+  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action(Of System.String))
+  nameWithType: CleanupService.LoadTempFilesAsync(Action<String>)
+  nameWithType.vb: CleanupService.LoadTempFilesAsync(Action(Of String))
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync*
+  name: LoadTempFilesAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_LoadTempFilesAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
+  nameWithType: CleanupService.LoadTempFilesAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List{System.String})
+  name: RemoveFileAsnyc(List<String>)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_RemoveFileAsnyc_List_System_String__
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List{System.String})
+  name.vb: RemoveFileAsnyc(List(Of String))
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List<System.String>)
+  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List(Of System.String))
+  nameWithType: CleanupService.RemoveFileAsnyc(List<String>)
+  nameWithType.vb: CleanupService.RemoveFileAsnyc(List(Of String))
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(System.String)
+  name: RemoveFileAsnyc(String)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_RemoveFileAsnyc_System_String_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(System.String)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(System.String)
+  nameWithType: CleanupService.RemoveFileAsnyc(String)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc*
+  name: RemoveFileAsnyc
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_RemoveFileAsnyc_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc
+  nameWithType: CleanupService.RemoveFileAsnyc
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService
+  name: ICleanupService
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html
+  commentId: T:ZoeProg.PlugIns.CleanUp.Services.ICleanupService
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService
+  nameWithType: ICleanupService
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
+  name: CleanTempFilesAsync()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_CleanTempFilesAsync
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync()
+  nameWithType: ICleanupService.CleanTempFilesAsync()
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(Action)
+  name: CleanTempFilesAsync(Action)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_CleanTempFilesAsync_Action_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(Action)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(Action)
+  nameWithType: ICleanupService.CleanTempFilesAsync(Action)
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync*
+  name: CleanTempFilesAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_CleanTempFilesAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
+  nameWithType: ICleanupService.CleanTempFilesAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync
+  name: DeleteFileForDemoAsync()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_DeleteFileForDemoAsync
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync()
+  nameWithType: ICleanupService.DeleteFileForDemoAsync()
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync*
+  name: DeleteFileForDemoAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_DeleteFileForDemoAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync
+  nameWithType: ICleanupService.DeleteFileForDemoAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll
+  name: GetAll()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_GetAll
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll()
+  nameWithType: ICleanupService.GetAll()
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll*
+  name: GetAll
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_GetAll_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll
+  nameWithType: ICleanupService.GetAll
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
+  name: LoadTempFilesAsync()
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_LoadTempFilesAsync
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync()
+  nameWithType: ICleanupService.LoadTempFilesAsync()
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action{System.String})
+  name: LoadTempFilesAsync(Action<String>)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_LoadTempFilesAsync_Action_System_String__
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action{System.String})
+  name.vb: LoadTempFilesAsync(Action(Of String))
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action<System.String>)
+  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action(Of System.String))
+  nameWithType: ICleanupService.LoadTempFilesAsync(Action<String>)
+  nameWithType.vb: ICleanupService.LoadTempFilesAsync(Action(Of String))
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync*
+  name: LoadTempFilesAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_LoadTempFilesAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
+  nameWithType: ICleanupService.LoadTempFilesAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List{System.String})
+  name: RemoveFileAsnyc(List<String>)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_RemoveFileAsnyc_List_System_String__
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List{System.String})
+  name.vb: RemoveFileAsnyc(List(Of String))
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List<System.String>)
+  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List(Of System.String))
+  nameWithType: ICleanupService.RemoveFileAsnyc(List<String>)
+  nameWithType.vb: ICleanupService.RemoveFileAsnyc(List(Of String))
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(System.String)
+  name: RemoveFileAsnyc(String)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_RemoveFileAsnyc_System_String_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(System.String)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(System.String)
+  nameWithType: ICleanupService.RemoveFileAsnyc(String)
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc*
+  name: RemoveFileAsnyc
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_RemoveFileAsnyc_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc
+  nameWithType: ICleanupService.RemoveFileAsnyc
+- uid: ZoeProg.PlugIns.CleanUp.Services.TempFileEvent
+  name: TempFileEvent
+  href: api/ZoeProg.PlugIns.CleanUp.Services.TempFileEvent.html
+  commentId: T:ZoeProg.PlugIns.CleanUp.Services.TempFileEvent
+  fullName: ZoeProg.PlugIns.CleanUp.Services.TempFileEvent
+  nameWithType: TempFileEvent
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels
   name: ZoeProg.PlugIns.CleanUp.ViewModels
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.html
   commentId: N:ZoeProg.PlugIns.CleanUp.ViewModels
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels
   nameWithType: ZoeProg.PlugIns.CleanUp.ViewModels
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel
-  name: CleanupViewModel
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html
-  commentId: T:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel
-  nameWithType: CleanupViewModel
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.#ctor(ZoeProg.Cleanup.Services.ICleanupService)
-  name: CleanupViewModel(ICleanupService)
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel__ctor_ZoeProg_Cleanup_Services_ICleanupService_
-  commentId: M:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.#ctor(ZoeProg.Cleanup.Services.ICleanupService)
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CleanupViewModel(ZoeProg.Cleanup.Services.ICleanupService)
-  nameWithType: CleanupViewModel.CleanupViewModel(ICleanupService)
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.#ctor*
-  name: CleanupViewModel
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel__ctor_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.#ctor
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel
+  name: CleanUpViewModel
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html
+  commentId: T:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel
+  nameWithType: CleanUpViewModel
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor
+  name: CleanUpViewModel()
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor
+  commentId: M:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CleanUpViewModel()
+  nameWithType: CleanUpViewModel.CleanUpViewModel()
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor*
+  name: CleanUpViewModel
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CleanupViewModel
-  nameWithType: CleanupViewModel.CleanupViewModel
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Code
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CleanUpViewModel
+  nameWithType: CleanUpViewModel.CleanUpViewModel
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
   name: Code
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Code
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Code
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Code
-  nameWithType: CleanupViewModel.Code
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Code*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
+  nameWithType: CleanUpViewModel.Code
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code*
   name: Code
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Code_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Code
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Code
-  nameWithType: CleanupViewModel.Code
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Command
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
+  nameWithType: CleanUpViewModel.Code
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command
   name: Command
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Command
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Command
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Command
-  nameWithType: CleanupViewModel.Command
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Command*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command
+  nameWithType: CleanUpViewModel.Command
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command*
   name: Command
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Command_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Command
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Command
-  nameWithType: CleanupViewModel.Command
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CommandParameter
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command
+  nameWithType: CleanUpViewModel.Command
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter
   name: CommandParameter
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_CommandParameter
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CommandParameter
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CommandParameter
-  nameWithType: CleanupViewModel.CommandParameter
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CommandParameter*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_CommandParameter
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter
+  nameWithType: CleanUpViewModel.CommandParameter
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter*
   name: CommandParameter
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_CommandParameter_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CommandParameter
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_CommandParameter_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.CommandParameter
-  nameWithType: CleanupViewModel.CommandParameter
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommand
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter
+  nameWithType: CleanUpViewModel.CommandParameter
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand
   name: DeleteCommand
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_DeleteCommand
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommand
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommand
-  nameWithType: CleanupViewModel.DeleteCommand
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommand*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommand
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand
+  nameWithType: CleanUpViewModel.DeleteCommand
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand*
   name: DeleteCommand
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_DeleteCommand_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommand
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommand_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommand
-  nameWithType: CleanupViewModel.DeleteCommand
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommandDisplayName
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand
+  nameWithType: CleanUpViewModel.DeleteCommand
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
   name: DeleteCommandDisplayName
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_DeleteCommandDisplayName
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommandDisplayName
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommandDisplayName
-  nameWithType: CleanupViewModel.DeleteCommandDisplayName
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommandDisplayName*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
+  nameWithType: CleanUpViewModel.DeleteCommandDisplayName
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName*
   name: DeleteCommandDisplayName
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_DeleteCommandDisplayName_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommandDisplayName
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.DeleteCommandDisplayName
-  nameWithType: CleanupViewModel.DeleteCommandDisplayName
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Description
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
+  nameWithType: CleanUpViewModel.DeleteCommandDisplayName
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
   name: Description
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Description
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Description
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Description
-  nameWithType: CleanupViewModel.Description
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Description*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
+  nameWithType: CleanUpViewModel.Description
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description*
   name: Description
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Description_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Description
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Description
-  nameWithType: CleanupViewModel.Description
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Glyph
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
+  nameWithType: CleanUpViewModel.Description
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
   name: Glyph
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Glyph
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Glyph
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Glyph
-  nameWithType: CleanupViewModel.Glyph
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Glyph*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
+  nameWithType: CleanUpViewModel.Glyph
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph*
   name: Glyph
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Glyph_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Glyph
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Glyph
-  nameWithType: CleanupViewModel.Glyph
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Header
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
+  nameWithType: CleanUpViewModel.Glyph
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
   name: Header
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Header
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Header
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Header
-  nameWithType: CleanupViewModel.Header
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Header*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
+  nameWithType: CleanUpViewModel.Header
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header*
   name: Header
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Header_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Header
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Header
-  nameWithType: CleanupViewModel.Header
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Id
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
+  nameWithType: CleanUpViewModel.Header
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
   name: Id
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Id
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Id
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Id
-  nameWithType: CleanupViewModel.Id
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Id*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
+  nameWithType: CleanUpViewModel.Id
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id*
   name: Id
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Id_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Id
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Id
-  nameWithType: CleanupViewModel.Id
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsBusy
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
+  nameWithType: CleanUpViewModel.Id
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy
   name: IsBusy
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_IsBusy
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsBusy
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsBusy
-  nameWithType: CleanupViewModel.IsBusy
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsBusy*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy
+  nameWithType: CleanUpViewModel.IsBusy
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy*
   name: IsBusy
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_IsBusy_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsBusy
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsBusy
-  nameWithType: CleanupViewModel.IsBusy
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsSelected
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy
+  nameWithType: CleanUpViewModel.IsBusy
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected
   name: IsSelected
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_IsSelected
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsSelected
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsSelected
-  nameWithType: CleanupViewModel.IsSelected
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsSelected*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsSelected
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected
+  nameWithType: CleanUpViewModel.IsSelected
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected*
   name: IsSelected
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_IsSelected_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsSelected
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsSelected_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.IsSelected
-  nameWithType: CleanupViewModel.IsSelected
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Kind
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected
+  nameWithType: CleanUpViewModel.IsSelected
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
   name: Kind
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Kind
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Kind
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Kind
-  nameWithType: CleanupViewModel.Kind
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Kind*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
+  nameWithType: CleanUpViewModel.Kind
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind*
   name: Kind
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Kind_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Kind
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Kind
-  nameWithType: CleanupViewModel.Kind
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Label
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
+  nameWithType: CleanUpViewModel.Kind
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
   name: Label
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Label
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Label
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Label
-  nameWithType: CleanupViewModel.Label
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Label*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
+  nameWithType: CleanUpViewModel.Label
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label*
   name: Label
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Label_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Label
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Label
-  nameWithType: CleanupViewModel.Label
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.NavigatePath
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
+  nameWithType: CleanUpViewModel.Label
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath
   name: NavigatePath
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_NavigatePath
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.NavigatePath
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.NavigatePath
-  nameWithType: CleanupViewModel.NavigatePath
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.NavigatePath*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath
+  nameWithType: CleanUpViewModel.NavigatePath
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath*
   name: NavigatePath
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_NavigatePath_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.NavigatePath
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.NavigatePath
-  nameWithType: CleanupViewModel.NavigatePath
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.ScanCommand
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath
+  nameWithType: CleanUpViewModel.NavigatePath
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand
   name: ScanCommand
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_ScanCommand
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.ScanCommand
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.ScanCommand
-  nameWithType: CleanupViewModel.ScanCommand
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.ScanCommand*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ScanCommand
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand
+  nameWithType: CleanUpViewModel.ScanCommand
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand*
   name: ScanCommand
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_ScanCommand_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.ScanCommand
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ScanCommand_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.ScanCommand
-  nameWithType: CleanupViewModel.ScanCommand
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Tag
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand
+  nameWithType: CleanUpViewModel.ScanCommand
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
   name: Tag
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Tag
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Tag
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Tag
-  nameWithType: CleanupViewModel.Tag
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Tag*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
+  nameWithType: CleanUpViewModel.Tag
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag*
   name: Tag
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Tag_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Tag
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Tag
-  nameWithType: CleanupViewModel.Tag
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Title
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
+  nameWithType: CleanUpViewModel.Tag
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
   name: Title
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Title
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Title
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Title
-  nameWithType: CleanupViewModel.Title
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Title*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
+  nameWithType: CleanUpViewModel.Title
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title*
   name: Title
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Title_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Title
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Title
-  nameWithType: CleanupViewModel.Title
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Todos
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
+  nameWithType: CleanUpViewModel.Title
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
   name: Todos
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Todos
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Todos
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Todos
-  nameWithType: CleanupViewModel.Todos
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Todos*
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
+  nameWithType: CleanUpViewModel.Todos
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos*
   name: Todos
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanupViewModel_Todos_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Todos
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanupViewModel.Todos
-  nameWithType: CleanupViewModel.Todos
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
+  nameWithType: CleanUpViewModel.Todos
 - uid: ZoeProg.PlugIns.CleanUp.Views
   name: ZoeProg.PlugIns.CleanUp.Views
   href: api/ZoeProg.PlugIns.CleanUp.Views.html

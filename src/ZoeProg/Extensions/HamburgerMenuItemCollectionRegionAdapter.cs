@@ -34,21 +34,37 @@ namespace ZoeProg.Extensions
         {
             region.Views.CollectionChanged += (s, e) =>
             {
-                if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
+                switch (e.Action)
                 {
-                    foreach (var element in e.NewItems)
-                    {
-                        var plugin = ((UserControl)element).DataContext as IPlugin;
-                        var hamburgerMenuGlyphItem = new HamburgerMenuGlyphItem();
-                        hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
-                        hamburgerMenuGlyphItem.Label = plugin.Label;
-                        hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
-                        hamburgerMenuGlyphItem.Tag = (UserControl)element;
-                        hamburgerMenuGlyphItem.CommandParameter = element.GetType();
+                    case System.Collections.Specialized.NotifyCollectionChangedAction.Add:
+                        foreach (var element in e.NewItems)
+                        {
+                            var plugin = ((UserControl)element).DataContext as IPlugin;
+                            var hamburgerMenuGlyphItem = new HamburgerMenuGlyphItem();
+                            hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
+                            hamburgerMenuGlyphItem.Label = plugin.Label;
+                            hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
+                            hamburgerMenuGlyphItem.Tag = (UserControl)element;
+                            hamburgerMenuGlyphItem.CommandParameter = element.GetType();
+                            regionTarget.Add(hamburgerMenuGlyphItem);
+                            hamburgerMenuGlyphItem.IsVisible = true;
+                        }
+                        break;
 
-                        regionTarget.Add(hamburgerMenuGlyphItem);
-                        // regionTarget.Freeze();
-                    }
+                    case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
+                        foreach (var t in e.OldItems)
+                        {
+                            for (var i = 0; i < regionTarget.Count; i++)
+                            {
+                                var tab = regionTarget[i];
+                                if (tab.Tag == e.OldItems[0])
+                                {
+                                    regionTarget.Remove(tab);
+                                }
+                            }
+                            // regionTarget = regionTarget.Count - 1;
+                        }
+                        break;
                 }
             };
         }
