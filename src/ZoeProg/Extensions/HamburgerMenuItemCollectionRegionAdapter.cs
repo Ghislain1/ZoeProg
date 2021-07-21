@@ -21,7 +21,8 @@ namespace ZoeProg.Extensions
         /// Initializes a new instance of the <see cref="HamburgerMenuItemCollectionRegionAdapter"/> class.
         /// </summary>
         /// <param name="regionBehaviorFactory">The regionBehaviorFactory <see cref="IRegionBehaviorFactory"/>.</param>
-        public HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory) : base(regionBehaviorFactory)
+        public HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory)
+            : base(regionBehaviorFactory)
         {
         }
 
@@ -62,7 +63,7 @@ namespace ZoeProg.Extensions
                                     regionTarget.Remove(tab);
                                 }
                             }
-                            // regionTarget = regionTarget.Count - 1;
+
                         }
                         break;
                 }

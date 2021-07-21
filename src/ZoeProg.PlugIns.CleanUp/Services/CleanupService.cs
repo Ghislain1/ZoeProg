@@ -12,7 +12,7 @@ namespace ZoeProg.PlugIns.CleanUp.Services
     {
         private readonly IEventAggregator eventAggregator;
         private readonly IPowershellService powerShellService;
-        private List<string> tempFiles;
+        private readonly List<string> tempFiles;
 
         public CleanupService(IPowershellService powerShellService, IEventAggregator eventAggregator)
         {

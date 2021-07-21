@@ -53,7 +53,8 @@ namespace ZoeProg.ViewModels
         /// <summary>
         /// Defines the metroAccentColors.
         /// </summary>
-        private Color[] metroAccentColors = new Color[]{
+        private Color[] metroAccentColors = new Color[]
+        {
             Color.FromRgb(0x33, 0x99, 0xff),   // blue
             Color.FromRgb(0x00, 0xab, 0xa9),   // teal
             Color.FromRgb(0x33, 0x99, 0x33),   // green
@@ -89,7 +90,8 @@ namespace ZoeProg.ViewModels
         /// <summary>
         /// Defines the wpAccentColors.
         /// </summary>
-        private Color[] wpAccentColors = new Color[]{
+        private Color[] wpAccentColors = new Color[]
+        {
             Color.FromRgb(0xa4, 0xc4, 0x00),   // lime
             Color.FromRgb(0x60, 0xa9, 0x17),   // green
             Color.FromRgb(0x00, 0x8a, 0x00),   // emerald
@@ -176,12 +178,13 @@ namespace ZoeProg.ViewModels
         public string SelectedTheme
         {
             get { return this.selectedTheme; }
+
             set
             {
                 if (this.selectedTheme != value)
                 {
                     this.selectedTheme = value;
-                    RaisePropertyChanged("SelectedTheme");
+                    this.RaisePropertyChanged("SelectedTheme");
                 }
             }
         }
@@ -195,7 +198,7 @@ namespace ZoeProg.ViewModels
         {
             if (e.PropertyName == "ThemeSource" || e.PropertyName == "AccentColor")
             {
-                SyncThemeAndColor();
+                this.SyncThemeAndColor();
             }
         }
 

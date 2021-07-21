@@ -71,7 +71,7 @@ namespace ZoeProg.ViewModels
         /// </summary>
         public string Title
         {
-            get { return title; }
+            get { return this.title; }
             set { this.SetProperty(ref this.title, value); }
         }
     }

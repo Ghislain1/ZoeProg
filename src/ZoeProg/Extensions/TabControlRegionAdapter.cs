@@ -55,10 +55,11 @@ namespace ZoeProg.Extensions
                             var iv = ((UserControl)e.NewItems[0]).DataContext as IPlugin;
                             tb.Header = iv.Header;
                             tb.DataContext = iv;
-                            tb.Content = ((UserControl)e.NewItems[0]);
+                            tb.Content = (UserControl)e.NewItems[0];
                             regionTarget.Items.Insert(regionTarget.Items.Count, tb);
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
+
                         break;
 
                     case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
@@ -74,6 +75,7 @@ namespace ZoeProg.Extensions
                             }
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
+
                         break;
                 }
             };

@@ -36,7 +36,8 @@ namespace ZoeProg.Extensions
         /// Initializes a new instance of the <see cref="HamburgerMenuRegionAdapter"/> class.
         /// </summary>
         /// <param name="regionBehaviorFactory">The regionBehaviorFactory <see cref="IRegionBehaviorFactory"/>.</param>
-        public HamburgerMenuRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory) : base(regionBehaviorFactory)
+        public HamburgerMenuRegionAdapter(IRegionBehaviorFactory regionBehaviorFactory)
+            : base(regionBehaviorFactory)
         {
         }
 
@@ -61,6 +62,7 @@ namespace ZoeProg.Extensions
                             regionTarget.Items.Insert(regionTarget.Items.Count, tb);
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
+
                         break;
 
                     case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
@@ -76,6 +78,7 @@ namespace ZoeProg.Extensions
                             }
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
+
                         break;
                 }
             };
