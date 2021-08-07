@@ -18,13 +18,13 @@ jobs:
 
     env:
       Solution_Name: "./src/ZoeProg.sln" # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: your-test-project-path # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: your-wap-project-directory-name # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: your-wap-project-path # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      # Test_Project_Path: your-test-project-path # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+    #  Wap_Project_Directory: your-wap-project-directory-name # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+    # Wap_Project_Path: your-wap-project-path # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
       - name: Before Checkout
-        run: echo Ghislain says---> Hello World ${{ Solution_Name }}
+        run: echo Ghislain says---> Hello World ${{ env.Solution_Name }}
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -37,6 +37,9 @@ jobs:
         with:
           dotnet-version: "6.0.x"
           include-prerelease: true
+
+      - name: Check Diredctory
+        run: dir
 
         # Execute  solution
       - name: Build Solution
