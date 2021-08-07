@@ -32,10 +32,7 @@ Get-ChildItem $ScriptsDir | Where-Object { $_.Name -like "*.ps1" } | ForEach-Obj
 }
 
 # Set this location as Current location
-Push-Location 
-
-
- 
+Push-Location  
 
 # Set to location where solution.sln is located
 Set-Location $SolutionDir
@@ -60,20 +57,22 @@ ForEach ( $pro in $projects) {
 }
 
 # Build the whole solution using dotnet command
-Write-StageInformation -Text 'Solution building...'
-$BuildExpression = "dotnet msbuild /p:Configuration=Debug /p:Platform='Any CPU'"
-Invoke-Expression  $BuildExpression
-Write-CustomInformation -Text "Best way to use Invoke-Expression Command in Powershell Script has been done"  
+#Write-StageInformation -Text 'Solution building...'
+#$BuildExpression = "dotnet msbuild /p:Configuration=Debug /p:Platform='Any CPU'"
+#Invoke-Expression  $BuildExpression
+#Write-CustomInformation -Text "Best way to use Invoke-Expression Command in Powershell Script has been done"  
 
 # Change to most recent location
-Pop-Location
-Write-StageInformation -Text 'Website for docs copying...'
-$SiteItems = Get-ChildItem $SiteDir  
-$SiteItems | Copy-Item -Destination $DocsDir -Force   -Verbose 
+#Pop-Location
+#Write-StageInformation -Text 'Website for docs copying...'
+#$SiteItems = Get-ChildItem $SiteDir  
+#$SiteItems | Copy-Item -Destination $DocsDir -Force   -Verbose 
 
 
 # Inform user that solution finisched successfully
 Write-StageInformation -Text 'Solution Reading...'
+
+dotnet build -v d
 
 
 
