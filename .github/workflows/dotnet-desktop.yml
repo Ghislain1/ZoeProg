@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Before Checkout
-        run: echo Ghislain says---> Hello World ${{ Solution_Name }}
+        run: echo Ghislain says---> Hello World ${{ env.Solution_Name }}
 
       - name: Checkout
         uses: actions/checkout@v2
