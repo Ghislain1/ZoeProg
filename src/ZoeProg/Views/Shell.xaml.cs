@@ -33,17 +33,6 @@ namespace ZoeProg.Views
         {
             this.InitializeComponent();
         }
-
-        /// <summary>
-        /// The ActiveItem_TransitionCompleted.
-        /// </summary>
-        /// <param name="sender">The sender <see cref="object"/>.</param>
-        /// <param name="e">The e <see cref="System.Windows.RoutedEventArgs"/>.</param>
-        private void ActiveItem_TransitionCompleted(object sender, System.Windows.RoutedEventArgs e)
-        {
-            var sd = (sender as TransitioningContentControl).Content;
-        }
-
         private void HamburgerMenuControl_ItemClick(object sender, ItemClickEventArgs args)
         {
             // TODO; Don t remove this until otherwise hambuger menu show nothing

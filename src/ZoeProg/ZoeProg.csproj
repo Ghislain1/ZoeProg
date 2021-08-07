@@ -14,6 +14,7 @@
   <ItemGroup>
     <PackageReference Include="Ghis.PowershellLib" Version="1.0.2" />
     <PackageReference Include="MahApps.Metro" Version="2.4.7" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.8.0" />
     <PackageReference Include="MaterialDesignColors" Version="2.0.1" />
     <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.1.7" />
