@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28922.388
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -20,8 +20,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Infrastructure", "ZoeProg.Infrastructure\ZoeProg.Infrastructure.csproj", "{5E0B0810-769F-475F-B86C-6D9C7BC0D5F4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Core", "ZoeProg.Core\ZoeProg.Core.csproj", "{4A4D7630-3692-4BCC-915E-2C45AD1B482F}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Persistence", "ZoeProg.Persistence\ZoeProg.Persistence.csproj", "{7FA23C59-B756-4559-AC50-2F432999CFD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.Home", "ZoeProg.PlugIns.Home\ZoeProg.PlugIns.Home.csproj", "{4465A01E-03AC-403B-84A8-994C917B5EA4}"
 EndProject
@@ -73,14 +71,6 @@ Global
 		{4A4D7630-3692-4BCC-915E-2C45AD1B482F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4A4D7630-3692-4BCC-915E-2C45AD1B482F}.Release|x86.ActiveCfg = Release|Any CPU
 		{4A4D7630-3692-4BCC-915E-2C45AD1B482F}.Release|x86.Build.0 = Release|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Debug|x86.Build.0 = Debug|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Release|x86.ActiveCfg = Release|Any CPU
-		{7FA23C59-B756-4559-AC50-2F432999CFD2}.Release|x86.Build.0 = Release|Any CPU
 		{4465A01E-03AC-403B-84A8-994C917B5EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4465A01E-03AC-403B-84A8-994C917B5EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4465A01E-03AC-403B-84A8-994C917B5EA4}.Debug|x86.ActiveCfg = Debug|Any CPU

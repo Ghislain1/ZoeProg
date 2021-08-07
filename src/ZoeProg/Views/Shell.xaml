@@ -85,9 +85,11 @@
             </DockPanel>
         </DataTemplate>
     </metro:MetroWindow.Resources>
-    <!--<metro:MetroWindow.Background>
-        <ImageBrush ImageSource="/images/background.love.jpg" />
-    </metro:MetroWindow.Background>-->
+
+    <metro:MetroWindow.WindowButtonCommands>
+        <metro:WindowButtonCommands Template="{DynamicResource MahApps.Templates.WindowButtonCommands.Win10}" />
+    </metro:MetroWindow.WindowButtonCommands>
+    
     <metro:MetroWindow.TitleTemplate>
         <DataTemplate>
             <StackPanel Height="100" Orientation="Horizontal">
