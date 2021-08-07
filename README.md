@@ -1,5 +1,5 @@
 ## Build Status
-[![Build Status](https://dev.azure.com/ZEUSXY/ZoeApp/_apis/build/status/Ghislain1.ZoeProg?branchName=master)](https://dev.azure.com/ZEUSXY/ZoeApp/_build/latest?definitionId=1&branchName=master) |  [![Release445](https://img.shields.io/github/release/firstfloorsoftware/mui.svg)](https://github.com/Ghislain1/ZoeProg/releases/tag/v0.2-alpha)
+[REF Project](https://github.com/punker76/NETworkManager) with  CI
 
 # Table of Contents
   - [Description](https://github.com/Ghislain1/ZoeProg/wiki)
