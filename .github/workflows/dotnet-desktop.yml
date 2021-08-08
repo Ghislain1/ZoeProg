@@ -39,15 +39,17 @@ jobs:
           dotnet-version: "6.0.x"
           include-prerelease: true
 
-      - name: Check Diredctory
+      # Display info about working directory
+      - name: Display info about working directory
         run: dir
 
       # Show how to call PowerShell script with a GithubActions workflow!
-      - name: BUILD FROM SCRIPT
+      - name: Build Solution From Powershell-Script(build.ps1)
         shell: pwsh
         run: |
           .\build.ps1
 
         # Execute  solution
-      - name: Build Solution
-        run: dotnet build
+      - name: Build Solution From directly from dotnet command(dotnet build -v diag)
+        run: dotnet  -v diag
+        working-directory: ${{env.working-directory}}
