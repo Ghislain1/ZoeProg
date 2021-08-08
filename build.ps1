@@ -19,17 +19,13 @@ $SiteDir = "./src\ZoeProg.Documentation\_site"
 # Where the site is.
 $DocsDir = "./docs"
 # Combining two Paths using Powershell Commands
-# $CleanSolPath = Join-Path $SolutionDir "CleanSol.cmd"
-
-
-
- 
+# $CleanSolPath = Join-Path $SolutionDir "CleanSol.cmd" 
 
 # Importing the Custumonized PowerShell functions
-Get-ChildItem $ScriptsDir | Where-Object { $_.Name -like "*.ps1" } | ForEach-Object {
-    Write-Verbose "[Including $_]"
-    . .\scripts\$_
-}
+#Get-ChildItem $ScriptsDir | Where-Object { $_.Name -like "*.ps1" } | ForEach-Object {
+  #  Write-Verbose "[Including $_]"
+#. .\scripts\$_
+#}
 
 # Set this location as Current location
 Push-Location  
@@ -38,10 +34,10 @@ Push-Location
 Set-Location $SolutionDir
 
 # Clean Bin and Obj
-Write-StageInformation -Text 'Bin and Objects Deleting... '
+#Write-StageInformation -Text 'Bin and Objects Deleting... '
 $binObj = Get-ChildItem .\ -Include bin, obj -Recurse 
 $binObj | ForEach-Object ($_) { 
-    Write-CustomInformation -Text $_   
+   # Write-CustomInformation -Text $_   
     if (Test-Path $_.FullName) {
         Remove-Item $_.Fullname -Recurse  -Force -ErrorAction Stop
     }  
@@ -50,11 +46,11 @@ $binObj | ForEach-Object ($_) {
 }
 
 # Restore package using dotnet restore commands 
-Write-StageInformation -Text 'Package Restoring...'
-$projects = Get-ChildItem *.csproj -Recurse -Force
-ForEach ( $pro in $projects) {
-    dotnet restore $pro
-}
+#Write-StageInformation -Text 'Package Restoring...'
+#$projects = Get-ChildItem *.csproj -Recurse -Force
+#ForEach ( $pro in $projects) {
+ #   dotnet restore $pro
+#}
 
 # Build the whole solution using dotnet command
 #Write-StageInformation -Text 'Solution building...'
@@ -70,9 +66,10 @@ ForEach ( $pro in $projects) {
 
 
 # Inform user that solution finisched successfully
-Write-StageInformation -Text 'Solution Reading...'
-
 dotnet build -v d
+#Write-StageInformation -Text 'Solution Reading...'
+
+
 
 
 
