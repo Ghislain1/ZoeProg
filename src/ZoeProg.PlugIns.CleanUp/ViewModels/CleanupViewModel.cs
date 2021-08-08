@@ -23,11 +23,16 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.ComponentModel;
+    using System.IO;
     using System.Linq;
+    using System.Threading.Tasks;
+    using System.Windows.Data;
     using System.Windows.Input;
     using Prism.Commands;
     using Prism.Mvvm;
     using ZoeProg.Core;
+    using ZoeProg.Core.Models;
     using ZoeProg.PlugIns.CleanUp.Services;
 
     /// <summary>
@@ -58,10 +63,51 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// <summary>
         /// Defines the todos.
         /// </summary>
-        private ObservableCollection<string> todos = new ObservableCollection<string>();
+        private ObservableCollection<CleanItem> items = new();
 
-        public CleanUpViewModel()
+        public CleanUpViewModel(ICleanupService cleanupService)
         {
+            this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
+            this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
+            this.LoadData();
+            this.DeleteCommand = new DelegateCommand(async () => await DeleteAction());
+            
+
+        }
+
+        private Task DeleteAction()
+        {
+         return Task.Run(() =>   {
+                foreach (var item in this.Items)
+                {
+                    string combinedPath = Path.Combine(item.Group, item.Path);
+
+                    try
+                    {
+                        File.Delete(item.Path);
+                        string directoryName = Path.GetDirectoryName(combinedPath);
+                        if (directoryName != null)
+                        {
+                            Directory.Delete(directoryName);
+                        }
+                    }
+                    catch
+                    {
+                        //ignored
+                    }
+                }
+
+            });
+        }
+
+        private async void LoadData()
+        {
+            var filesToClean = await this.cleanupService.GetAllAsync();
+            this.Items.Clear();
+            foreach (var item in filesToClean)
+            {
+                this.Items.Add(item);
+            }
         }
 
         /// <inheritdoc/>
@@ -81,21 +127,6 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// Gets the DeleteCommand.
         /// </summary>
         public DelegateCommand DeleteCommand { get; private set; }
-
-        /// <summary>
-        /// Gets or sets the DeleteCommandDisplayName.
-        /// </summary>
-        public string DeleteCommandDisplayName
-        {
-            get
-            {
-                return this.deleteCommandDisplayName;
-            }
-            set
-            {
-                this.SetProperty<string>(ref this.deleteCommandDisplayName, value);
-            }
-        }
 
         /// <summary>
         /// Gets or sets the Description.
@@ -184,52 +215,13 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// <summary>
         /// Gets or sets the Todos.
         /// </summary>
-        public ObservableCollection<string> Todos
+        public ObservableCollection<CleanItem> Items
         {
-            get
-            {
-                return this.todos;
-            }
-            set
-            {
-                if (this.SetProperty<ObservableCollection<string>>(ref this.todos, value))
-                {
-                    this.DeleteCommandDisplayName = $" Delete({ (value == null ? 0 : value.Count)})";
-                }
-            }
+            get =>this.items;
+            set => this.SetProperty<ObservableCollection<CleanItem>>(ref this.items, value);
+                
         }
+        public ICollectionView ItemsView { get; }
 
-        /// <summary>
-        /// TODO Initializes a new instance of the <see cref="CleanupViewModel"/> class.
-        /// </summary>
-        /// <param name="cleanupService">.</param>
-        private void CleanUpViewModelTdood(ICleanupService cleanupService)
-        {
-            this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
-
-            this.CommandParameter = this.GetType();
-
-            this.DeleteCommand = new DelegateCommand(async () =>
-                        {
-                            this.IsBusy = true;
-                            await this.cleanupService.RemoveFileAsnyc(this.Todos.ToList());
-                            this.Todos.Clear();
-                            this.IsBusy = false;
-                        });
-
-            this.ScanCommand = new DelegateCommand(async () =>
-          {
-              var result = new List<string>();
-              this.IsBusy = true;
-              await this.cleanupService.LoadTempFilesAsync(path => result.Add(path));
-              this.Todos.Clear();
-              foreach (var item in result)
-              {
-                  this.Todos.Add(item);
-              }
-
-              this.IsBusy = false;
-          });
-        }
     }
 }

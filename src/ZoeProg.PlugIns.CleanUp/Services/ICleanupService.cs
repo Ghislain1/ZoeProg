@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ZoeProg.Core.Models;
 
 namespace ZoeProg.PlugIns.CleanUp.Services
 {
@@ -8,11 +9,13 @@ namespace ZoeProg.PlugIns.CleanUp.Services
     {
         Task CleanTempFilesAsync();
 
+        Task<IEnumerable<CleanItem>> GetAllAsync();
+
         Task CleanTempFilesAsync(Action onCompleted);
 
         Task DeleteFileForDemoAsync();
 
-        List<string> GetAll();
+        IEnumerable<CleanItem> GetAll();
 
         Task LoadTempFilesAsync();
 
