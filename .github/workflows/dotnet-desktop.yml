@@ -42,7 +42,9 @@ jobs:
         run: dir
 
       - name: BUILD FROM SCRIPT
-        run: build.ps1
+        shell: pwsh
+        run: |
+          .\build.ps1
 
         # Execute  solution
       - name: Build Solution
