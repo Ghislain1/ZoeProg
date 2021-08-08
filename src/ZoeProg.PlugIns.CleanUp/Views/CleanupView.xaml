@@ -14,7 +14,13 @@
     <Grid>
 
         <DockPanel>
-            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center" DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <UniformGrid DockPanel.Dock="Bottom" Columns="2">
+                <StackPanel Margin="4,0,0,0"  VerticalAlignment="Center" HorizontalAlignment="Left"  Orientation="Horizontal">
+                    <TextBlock Text="Items: "/>
+                    <TextBlock Text="{Binding ItemsCount}"/>
+                </StackPanel>
+                
+            <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center"  Orientation="Horizontal">
                 <Button Command="{Binding DeleteCommand}" >
                     <Button.Content>
                         <Grid>
@@ -32,7 +38,8 @@
                     </Button.Content>
                 </Button>               
             </StackPanel>
-            
+            </UniformGrid>
+
             <DataGrid IsReadOnly="True" ItemsSource="{Binding Items}"></DataGrid>
 
         </DockPanel>

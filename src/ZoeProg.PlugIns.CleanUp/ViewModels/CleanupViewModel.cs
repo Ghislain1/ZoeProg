@@ -108,6 +108,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             {
                 this.Items.Add(item);
             }
+            this.ItemsCount= this.Items.Count;
         }
 
         /// <inheritdoc/>
@@ -166,7 +167,19 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 }
             }
         }
-
+        int itemsCount;
+        /// <summary>
+        /// Gets or sets a value indicating whether IsSelected.
+        /// </summary>
+        public int ItemsCount
+        {
+            get => this.          itemsCount;          
+            
+            set
+            {
+                this.SetProperty<int>(ref this.itemsCount, value);
+            }
+        }
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
         /// </summary>
