@@ -69,14 +69,22 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
             this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
+        
+            this.DeleteCommand = new DelegateCommand(async () => {
+                this.IsBusy = true;
+                await DeleteAction();
+                this.IsBusy = false;
+                this.LoadData();
+            }, () => !this.IsBusy);
+
             this.LoadData();
-            this.DeleteCommand = new DelegateCommand(async () => await DeleteAction());
-            
+
 
         }
 
         private Task DeleteAction()
         {
+            
          return Task.Run(() =>   {
                 foreach (var item in this.Items)
                 {
@@ -102,6 +110,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
 
         private async void LoadData()
         {
+            this.IsBusy = true;
             var filesToClean = await this.cleanupService.GetAllAsync();
             this.Items.Clear();
             foreach (var item in filesToClean)
@@ -109,6 +118,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 this.Items.Add(item);
             }
             this.ItemsCount= this.Items.Count;
+            this.IsBusy = false;
         }
 
         /// <inheritdoc/>
@@ -148,7 +158,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// Gets or sets the Id.
         /// </summary>
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        bool isBusy;
         /// <summary>
         /// Gets or sets a value indicating whether IsBusy.
         /// </summary>
@@ -156,12 +166,12 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         {
             get
             {
-                return this.canDelete;
+                return this.isBusy;
             }
 
             set
             {
-                if (this.SetProperty<bool>(ref this.canDelete, value))
+                if (this.SetProperty<bool>(ref this.isBusy, value))
                 {
                     this.DeleteCommand.RaiseCanExecuteChanged();
                 }

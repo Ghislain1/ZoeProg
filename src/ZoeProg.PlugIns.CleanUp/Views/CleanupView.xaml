@@ -21,7 +21,7 @@
                 </StackPanel>
                 
             <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center"  Orientation="Horizontal">
-                <Button Command="{Binding DeleteCommand}" >
+                <Button   Command="{Binding DeleteCommand}" >
                     <Button.Content>
                         <Grid>
                             <Grid.ColumnDefinitions>
