@@ -183,7 +183,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// </summary>
         public int ItemsCount
         {
-            get => this.          itemsCount;          
+            get => this.itemsCount;          
             
             set
             {

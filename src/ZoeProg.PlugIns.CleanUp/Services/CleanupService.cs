@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Prism.Events;
 using ZoeProg.Core.Models;
+using ZoeProg.Core.Utils;
 
 namespace ZoeProg.PlugIns.CleanUp.Services
 {
@@ -63,6 +64,9 @@ namespace ZoeProg.PlugIns.CleanUp.Services
             {
                 try
                 {
+                    var cmd = $"Get-ChildItem {directories[item]} -Recurse -File";
+                    PowerShellHelper.ExecuteCommand(cmd);   
+
                     // TODO@GhZe: Find best way with Powershell
                     var filees = Directory.EnumerateFiles(directories[item], "*", SearchOption.AllDirectories);
                     foreach (var filePath in filees)
