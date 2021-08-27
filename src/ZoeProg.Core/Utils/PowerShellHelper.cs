@@ -32,28 +32,30 @@ namespace ZoeProg.Core.Utils
             {
                 FileName = "powershell.exe",
                 Arguments = $"-NoProfile -NoLogo -Command {command}",
-                UseShellExecute = true,
+                UseShellExecute = false,
                 WindowStyle = windowStyle
             };
 
             if (asAdmin)
                 info.Verb = "runas";
 
-            using var process = new Process();
-
-            process.StartInfo = info;
-            process.StartInfo.RedirectStandardOutput = true;
-
-            process.Start();
-            while (!process.StandardOutput.EndOfStream)
+            using (var process = new Process())
+            { 
+                process.StartInfo = info;
+                process.StartInfo.RedirectStandardOutput = true;
+                
+                process.Start();
+                Debug.WriteLine("Output - {0}", process.StandardOutput.ReadToEnd());
+                while (!process.StandardOutput.EndOfStream)
             {
                 string line = process.StandardOutput.ReadLine();
-                // Console.WriteLine("Output - {0}", process.StandardOutput.ReadToEnd());
-                Console.WriteLine("Output - {0}",  line);
+                // 
+                Debug.WriteLine("Output - {0}", line);
             }
 
-           
+
             process.WaitForExit();
+        }
         }
     }
 }
