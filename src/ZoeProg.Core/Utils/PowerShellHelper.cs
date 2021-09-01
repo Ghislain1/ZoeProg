@@ -37,25 +37,20 @@ namespace ZoeProg.Core.Utils
             };
 
             if (asAdmin)
-                info.Verb = "runas";
-
-            using (var process = new Process())
-            { 
-                process.StartInfo = info;
-                process.StartInfo.RedirectStandardOutput = true;
-                
-                process.Start();
-                Debug.WriteLine("Output - {0}", process.StandardOutput.ReadToEnd());
-                while (!process.StandardOutput.EndOfStream)
             {
-                string line = process.StandardOutput.ReadLine();
-                // 
-                Debug.WriteLine("Output - {0}", line);
+                info.Verb = "runas";
             }
 
 
-            process.WaitForExit();
-        }
+            using (var process = new Process())
+            {
+                process.StartInfo = info;
+                process.StartInfo.RedirectStandardOutput = true;
+
+                process.Start();
+                Debug.WriteLine("Output - {0}", process.StandardOutput.ReadToEnd());
+                process.WaitForExit();
+            }
         }
     }
 }

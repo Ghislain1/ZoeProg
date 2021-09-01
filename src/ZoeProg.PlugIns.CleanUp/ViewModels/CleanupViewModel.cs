@@ -69,8 +69,9 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
             this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
-        
-            this.DeleteCommand = new DelegateCommand(async () => {
+
+            this.DeleteCommand = new DelegateCommand(async () =>
+            {
                 this.IsBusy = true;
                 await DeleteAction();
                 this.IsBusy = false;
@@ -84,8 +85,9 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
 
         private Task DeleteAction()
         {
-            
-         return Task.Run(() =>   {
+
+            return Task.Run(() =>
+            {
                 foreach (var item in this.Items)
                 {
                     string combinedPath = Path.Combine(item.Group, item.Path);
@@ -117,7 +119,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             {
                 this.Items.Add(item);
             }
-            this.ItemsCount= this.Items.Count;
+            this.ItemsCount = this.Items.Count;
             this.IsBusy = false;
         }
 
@@ -183,12 +185,10 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// </summary>
         public int ItemsCount
         {
-            get => this.itemsCount;          
-            
-            set
-            {
-                this.SetProperty<int>(ref this.itemsCount, value);
-            }
+            get => this.itemsCount;
+
+            set => this.SetProperty<int>(ref this.itemsCount, value);
+
         }
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
@@ -240,9 +240,9 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// </summary>
         public ObservableCollection<CleanItem> Items
         {
-            get =>this.items;
+            get => this.items;
             set => this.SetProperty<ObservableCollection<CleanItem>>(ref this.items, value);
-                
+
         }
         public ICollectionView ItemsView { get; }
 
