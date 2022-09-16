@@ -66,7 +66,7 @@ $binObj | ForEach-Object ($_) {
 
 
 # Inform user that solution finisched successfully
-dotnet build -v d
+# dotnet build -v d
 #Write-StageInformation -Text 'Solution Reading...'
 
 
