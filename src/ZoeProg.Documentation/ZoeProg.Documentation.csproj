@@ -4,11 +4,7 @@
     <!-- Das Strinh hier ist call TargetFrameworkMoniker!! e.g. netcoreapp2.2-->
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="images\background.love.jpg" />
-  </ItemGroup>
-
+ 
   <ItemGroup>
     <!-- Using PackageReference format !!-->
     <PackageReference Include="docfx.console" Version="2.56.7">
@@ -35,8 +31,7 @@
 
   <Target Name="Construct" BeforeTargets="PreBuildEvent">
          <Exec Command="dir " />
-    <Delete Files="_site" />
-  
+    <Delete Files="_site" />  
     <Exec Command="cls " />
         <Exec Command="dir " />
  </Target>
