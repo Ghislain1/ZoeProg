@@ -51,27 +51,31 @@ namespace ZoeProg.PlugIns.CleanUp.Services
         /// Gets all.
         /// </summary>
         /// <returns>list of</returns>
-        public IEnumerable<FileInfo> GetAll()
+        public IEnumerable<CleanUpItem> GetAll()
         {
             var directories = this.GetPresetDirectorySources();
-            var result = new List<FileInfo>();
-            int index = 0;
+            var result = new List<CleanUpItem>();           
 
             foreach (var item in directories.Keys)
             {
-               
-                    //  TODO@Ghislain: pop poweshel window 
-                    // var cmd = $"Get-ChildItem {directories[item]} -Recurse -File";
-                    // PowerShellHelper.ExecuteCommand(cmd);   
 
-                    // TODO@GhZe: Find best way with Powershell
+                try
+                {
                     var filees = Directory.EnumerateFiles(directories[item], "*", SearchOption.AllDirectories);
                     foreach (var filePath in filees)
                     {
-                      
-                          result.Add(new FileInfo(filePath));                       
+
+                        result.Add(this.CreateCleanUpItem(new FileInfo(filePath), item));
                     }
-            
+                }
+                catch (FileNotFoundException)
+                {
+                }
+                catch (UnauthorizedAccessException)
+                {
+
+                }
+
 
             }
             return result;
@@ -187,9 +191,24 @@ namespace ZoeProg.PlugIns.CleanUp.Services
 
         }
 
-        public async Task<IEnumerable<FileInfo>> GetAllAsync(CancellationToken cancellationToken)
+        public async Task<IEnumerable<CleanUpItem>> GetAllAsync(CancellationToken cancellationToken)
         {
           return  await Task.Run(() => this.GetAll(), cancellationToken);
+        }
+
+        private CleanUpItem CreateCleanUpItem(FileInfo fileInfo,  string group="")
+        {
+
+            var fileSize = fileInfo.Length / 1024 + 1;
+            var cleanItem = new CleanUpItem
+            {
+                Path = fileInfo.FullName,
+                Size = fileSize + " KB",
+                Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                Extension = Path.GetExtension(fileInfo.FullName).ToLower(),
+                Group = group
+            };
+            return cleanItem;
         }
     }
 }

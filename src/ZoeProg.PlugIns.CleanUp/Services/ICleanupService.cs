@@ -11,13 +11,13 @@ namespace ZoeProg.PlugIns.CleanUp.Services
     {
         Task CleanTempFilesAsync();
 
-        Task<IEnumerable<FileInfo>> GetAllAsync(CancellationToken cancellationToken);
+        Task<IEnumerable<CleanUpItem>> GetAllAsync(CancellationToken cancellationToken);
 
         Task CleanTempFilesAsync(Action onCompleted);
 
         Task DeleteFileForDemoAsync();
 
-        IEnumerable<FileInfo> GetAll();
+        IEnumerable<CleanUpItem> GetAll();
 
         Task LoadTempFilesAsync();
 

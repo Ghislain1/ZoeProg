@@ -21,7 +21,7 @@
 namespace ZoeProg.PlugIns.CleanUp.ViewModels
 {
     using System;
-    using System.Collections.Generic;
+    
     using System.Collections.ObjectModel;
     using System.ComponentModel;
     using System.Globalization;
@@ -34,8 +34,9 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using Prism.Commands;
     using Prism.Mvvm;
     using ZoeProg.Core;
-    using ZoeProg.Core.Models;
+     
     using ZoeProg.PlugIns.CleanUp.Services;
+    using ZoeProg.PlugIns.ViewModels;
 
     /// <summary>
     /// TODO:.
@@ -65,6 +66,18 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
             this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
+            this.ItemsView.Filter = item =>
+            {
+                if (item is CleanUpItemViewModel cleanUpItemViewModel)
+                {
+                    return File.Exists(cleanUpItemViewModel.CleanUpItem.Path);
+                }
+                else
+                {
+                    return true;
+                }
+
+            };
             this.cancellationTokenSource = new CancellationTokenSource();
 
             this.DeleteCommand = new DelegateCommand(async () =>
@@ -72,7 +85,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 this.IsBusy = true;
                 await DeleteAction();
                 this.IsBusy = false;
-               await this.LoadData();
+                
             }, () => !this.IsBusy);
 
             this.LoadData().GetAwaiter();
@@ -87,16 +100,17 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             {
                 foreach (var item in this.Items)
                 {
-                    string combinedPath = Path.Combine(item.Group, item.Path);
+                    string combinedPath = Path.Combine(item.CleanUpItem.Group, item.CleanUpItem.Path);
 
                     try
                     {
-                        File.Delete(item.Path);
+                        File.Delete(item.CleanUpItem.Path);
                       
                     }
                     catch
                     {
-                        //ignored
+                        item.CleanUpItem.IsLockedFile = true;
+                       // this.OnPropertyChanged(nameof(item.CleanUpItem.IsLockedFile));
                     }
                 }
 
@@ -110,7 +124,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             this.Items.Clear();
             foreach (var item in filesToClean)
             {
-                this.Items.Add(this.CreateCleanUpItemViewModel(item));
+                this.Items.Add(new CleanUpItemViewModel(item));
             }
             this.ItemsCount = this.Items.Count;
             this.IsBusy = false;
@@ -169,6 +183,10 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 if (this.SetProperty<bool>(ref this.isBusy, value))
                 {
                     this.DeleteCommand.RaiseCanExecuteChanged();
+                }
+                if (!value)
+                {
+                    this.ItemsView.Refresh();
                 }
             }
         }
@@ -239,20 +257,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         }
         public ICollectionView ItemsView { get; }
 
-        private CleanUpItemViewModel CreateCleanUpItemViewModel(FileInfo fileInfo)
-        {
-
-            var fileSize = fileInfo.Length / 1024 + 1;
-            var cleanItem = new CleanUpItemViewModel
-            {
-                Path = fileInfo.FullName,
-                Size = fileSize + " KB",
-                Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
-                Extension = Path.GetExtension(fileInfo.FullName).ToLower(),
-                Group = "TODO"
-            };
-            return cleanItem;
-        }
+   
 
     }
 }
