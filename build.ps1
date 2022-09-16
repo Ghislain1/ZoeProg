@@ -1,22 +1,20 @@
 ###################################################################################
 #
-#                        		ChocolateyNuGet project @ Ghislain 
+#                        		ChocolateyNuGet project 
 #
-##					 Powershell Script to 
-#:: 
+#
+# 
 #
 #   Inspired:
-#       * https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/blob/master/Scripts/GenerateThemesWikiMarkdown.ps1
+#   * https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/blob/master/Scripts/GenerateThemesWikiMarkdown.ps1
 ##################################################################################
 
 Clear-Host
 
 # Variables
-
 $SolutionDir = "./src"
 $ScriptsDir = "./scripts"
 $SiteDir = "./src\ZoeProg.Documentation\_site"
-# Where the site is.
 $DocsDir = "./docs"
 # Combining two Paths using Powershell Commands
 # $CleanSolPath = Join-Path $SolutionDir "CleanSol.cmd" 
