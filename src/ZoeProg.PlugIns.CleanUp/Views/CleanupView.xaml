@@ -11,7 +11,7 @@
     <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis" />
     </UserControl.Resources>
-    <Grid>
+    <Grid Margin="8" >
 
         <DockPanel>
             <UniformGrid DockPanel.Dock="Bottom" Columns="2">

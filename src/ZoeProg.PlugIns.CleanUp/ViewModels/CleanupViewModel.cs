@@ -24,8 +24,10 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.ComponentModel;
+    using System.Globalization;
     using System.IO;
     using System.Linq;
+    using System.Threading;
     using System.Threading.Tasks;
     using System.Windows.Data;
     using System.Windows.Input;
@@ -40,20 +42,13 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     /// </summary>
     public class CleanUpViewModel : BindableBase, IPlugin
     {
-        /// <summary>
-        /// Defines the canDelete.
-        /// </summary>
-        private bool canDelete;
+        
 
         /// <summary>
         /// Defines the cleanupService.
         /// </summary>
         private ICleanupService cleanupService;
-
-        /// <summary>
-        /// Defines the deleteCommandDisplayName.
-        /// </summary>
-        private string deleteCommandDisplayName = "Delete";
+ 
 
         /// <summary>
         /// Defines the isSelected.
@@ -63,22 +58,24 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// <summary>
         /// Defines the todos.
         /// </summary>
-        private ObservableCollection<CleanItem> items = new();
+        private ObservableCollection<CleanUpItemViewModel> items = new();
+        private CancellationTokenSource cancellationTokenSource;
 
         public CleanUpViewModel(ICleanupService cleanupService)
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
             this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
+            this.cancellationTokenSource = new CancellationTokenSource();
 
             this.DeleteCommand = new DelegateCommand(async () =>
             {
                 this.IsBusy = true;
                 await DeleteAction();
                 this.IsBusy = false;
-                this.LoadData();
+               await this.LoadData();
             }, () => !this.IsBusy);
 
-            this.LoadData();
+            this.LoadData().GetAwaiter();
 
 
         }
@@ -95,11 +92,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                     try
                     {
                         File.Delete(item.Path);
-                        string directoryName = Path.GetDirectoryName(combinedPath);
-                        if (directoryName != null)
-                        {
-                            Directory.Delete(directoryName);
-                        }
+                      
                     }
                     catch
                     {
@@ -110,14 +103,14 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             });
         }
 
-        private async void LoadData()
+        private async Task LoadData()
         {
             this.IsBusy = true;
-            var filesToClean = await this.cleanupService.GetAllAsync();
+            var filesToClean = await this.cleanupService.GetAllAsync(this.cancellationTokenSource.Token);
             this.Items.Clear();
             foreach (var item in filesToClean)
             {
-                this.Items.Add(item);
+                this.Items.Add(this.CreateCleanUpItemViewModel(item));
             }
             this.ItemsCount = this.Items.Count;
             this.IsBusy = false;
@@ -238,13 +231,28 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// <summary>
         /// Gets or sets the Todos.
         /// </summary>
-        public ObservableCollection<CleanItem> Items
+        public ObservableCollection<CleanUpItemViewModel> Items
         {
             get => this.items;
-            set => this.SetProperty<ObservableCollection<CleanItem>>(ref this.items, value);
+            set => this.SetProperty<ObservableCollection<CleanUpItemViewModel>>(ref this.items, value);
 
         }
         public ICollectionView ItemsView { get; }
+
+        private CleanUpItemViewModel CreateCleanUpItemViewModel(FileInfo fileInfo)
+        {
+
+            var fileSize = fileInfo.Length / 1024 + 1;
+            var cleanItem = new CleanUpItemViewModel
+            {
+                Path = fileInfo.FullName,
+                Size = fileSize + " KB",
+                Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+                Extension = Path.GetExtension(fileInfo.FullName).ToLower(),
+                Group = "TODO"
+            };
+            return cleanItem;
+        }
 
     }
 }

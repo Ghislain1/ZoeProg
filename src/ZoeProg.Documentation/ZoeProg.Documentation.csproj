@@ -7,12 +7,12 @@
  
   <ItemGroup>
     <!-- Using PackageReference format !!-->
-    <PackageReference Include="docfx.console" Version="2.56.7">
+    <PackageReference Include="docfx.console" Version="2.59.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <!--Using packagereference format for supporting JSON object-->
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,9 +30,9 @@
   </Target>
 
   <Target Name="Construct" BeforeTargets="PreBuildEvent">
-         <Exec Command="dir " />
+    <Exec Command="dir " />
     <Delete Files="_site" />  
     <Exec Command="cls " />
-        <Exec Command="dir " />
+    <Exec Command="dir " />
  </Target>
 </Project>

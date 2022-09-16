@@ -18,10 +18,7 @@ namespace ZoeProg.PlugIns.CleanUp.Services
 
         public CleanupService(IEventAggregator eventAggregator)
         {
-
-            this.eventAggregator = eventAggregator ?? throw new ArgumentNullException(nameof(eventAggregator));
-
-
+          this.eventAggregator = eventAggregator ?? throw new ArgumentNullException(nameof(eventAggregator));
         }
 
         /// <summary>
@@ -54,46 +51,66 @@ namespace ZoeProg.PlugIns.CleanUp.Services
         /// Gets all.
         /// </summary>
         /// <returns>list of</returns>
-        public IEnumerable<CleanItem> GetAll()
+        public IEnumerable<FileInfo> GetAll()
         {
             var directories = this.GetPresetDirectorySources();
-            var result = new List<CleanItem>();
+            var result = new List<FileInfo>();
             int index = 0;
-           
+
             foreach (var item in directories.Keys)
             {
-                try
-                {
-                    var cmd = $"Get-ChildItem {directories[item]} -Recurse -File";
-                    PowerShellHelper.ExecuteCommand(cmd);   
+               
+                    //  TODO@Ghislain: pop poweshel window 
+                    // var cmd = $"Get-ChildItem {directories[item]} -Recurse -File";
+                    // PowerShellHelper.ExecuteCommand(cmd);   
 
                     // TODO@GhZe: Find best way with Powershell
                     var filees = Directory.EnumerateFiles(directories[item], "*", SearchOption.AllDirectories);
                     foreach (var filePath in filees)
                     {
-                        FileInfo fileInfo = new FileInfo(filePath);
-                        var fileSize = fileInfo.Length / 1024 + 1;
-                        var cleanItem = new CleanItem
-                        {
-                            Path = fileInfo.FullName,
-                            Size = fileSize + " KB",
-                            Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
-                            Extension = Path.GetExtension(filePath).ToLower(),
-                            Group = item
-                        };
-                        result.Add(cleanItem);
+                      
+                          result.Add(new FileInfo(filePath));                       
                     }
-                }
-                catch (FileNotFoundException)
-                {
-                }
-                catch (UnauthorizedAccessException)
-                {
-
-                }
+            
 
             }
             return result;
+
+            //foreach (var item in directories.Keys)
+            //{
+            //    try
+            //    {
+            //        //  TODO@Ghislain: pop poweshel window 
+            //       // var cmd = $"Get-ChildItem {directories[item]} -Recurse -File";
+            //       // PowerShellHelper.ExecuteCommand(cmd);   
+
+            //        // TODO@GhZe: Find best way with Powershell
+            //        var filees = Directory.EnumerateFiles(directories[item], "*", SearchOption.AllDirectories);
+            //        foreach (var filePath in filees)
+            //        {
+            //            FileInfo fileInfo = new FileInfo(filePath);
+            //            var fileSize = fileInfo.Length / 1024 + 1;
+            //            var cleanItem = new CleanUpItemViewModel
+            //            {
+            //                Path = fileInfo.FullName,
+            //                Size = fileSize + " KB",
+            //                Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
+            //                Extension = Path.GetExtension(filePath).ToLower(),
+            //                Group = item
+            //            };
+            //            result.Add(cleanItem);
+            //        }
+            //    }
+            //    catch (FileNotFoundException)
+            //    {
+            //    }
+            //    catch (UnauthorizedAccessException)
+            //    {
+
+            //    }
+
+            //}
+            // return result;
 
 
         }
@@ -170,14 +187,9 @@ namespace ZoeProg.PlugIns.CleanUp.Services
 
         }
 
-
-        public Task<IEnumerable<CleanItem>> GetAllAsync()
+        public async Task<IEnumerable<FileInfo>> GetAllAsync(CancellationToken cancellationToken)
         {
-            return Task.Run(() => this.GetAll());
+          return  await Task.Run(() => this.GetAll(), cancellationToken);
         }
-
-
-
-
     }
 }
