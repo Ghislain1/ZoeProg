@@ -107,10 +107,17 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                         File.Delete(item.CleanUpItem.Path);
                       
                     }
-                    catch
+                    catch (IOException)
                     {
                         item.CleanUpItem.IsLockedFile = true;
-                       // this.OnPropertyChanged(nameof(item.CleanUpItem.IsLockedFile));
+                     
+                        this.RaisePropertyChanged(nameof(item.CleanUpItem.IsLockedFile));
+                    }
+                    catch (UnauthorizedAccessException)
+                    {
+                        
+                        item.CleanUpItem.IsUnauthorizedAccess = true;
+                        this.RaisePropertyChanged(nameof(item.CleanUpItem.IsLockedFile));
                     }
                 }
 
@@ -126,8 +133,9 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             {
                 this.Items.Add(new CleanUpItemViewModel(item));
             }
-            this.ItemsCount = this.Items.Count;
+         
             this.IsBusy = false;
+            this.RaisePropertyChanged(nameof(this.ItemsCount));
         }
 
         /// <inheritdoc/>
@@ -187,20 +195,17 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 if (!value)
                 {
                     this.ItemsView.Refresh();
+                    this.RaisePropertyChanged(nameof(this.ItemsCount));
                 }
             }
         }
-        int itemsCount;
+   
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
         /// </summary>
-        public int ItemsCount
-        {
-            get => this.itemsCount;
-
-            set => this.SetProperty<int>(ref this.itemsCount, value);
-
-        }
+        public int ItemsCount => this.Items.Count();
+       
+        
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
         /// </summary>

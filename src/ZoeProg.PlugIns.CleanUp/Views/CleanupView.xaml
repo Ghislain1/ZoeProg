@@ -33,14 +33,26 @@
                                     <VisualBrush Stretch="Uniform" Visual="{iconPacks:Material Kind=DeleteClock}" />
                                 </Rectangle.OpacityMask>
                             </Rectangle>
-                            <TextBlock Grid.Column="1" Text="Delete" TextAlignment="Center" Margin="10,5" />
+                            <TextBlock Grid.Column="1" Text="Delete" TextAlignment="Center"  />
                         </Grid>
                     </Button.Content>
                 </Button>               
             </StackPanel>
             </UniformGrid>
 
-            <DataGrid IsReadOnly="True" ItemsSource="{Binding Items}"></DataGrid>
+            <DataGrid AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding Items}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Date" Binding="{Binding CleanUpItem.Date}"/>
+                    <DataGridTextColumn Header="Extension" Binding="{Binding CleanUpItem.Extension}"/>
+                    <DataGridTextColumn Header="Path" Binding="{Binding CleanUpItem.Path}"/>
+                    <DataGridTextColumn Header="Size" Binding="{Binding CleanUpItem.Size}"/>
+                    <DataGridTextColumn Header="IsLockedFile" Binding="{Binding CleanUpItem.IsLockedFile}"/>
+                    <DataGridTextColumn Header="IsUnauthorizedAccess" Binding="{Binding CleanUpItem.IsUnauthorizedAccess}"/>
+
+ 
+
+                </DataGrid.Columns>
+            </DataGrid>
 
         </DockPanel>
     </Grid>
