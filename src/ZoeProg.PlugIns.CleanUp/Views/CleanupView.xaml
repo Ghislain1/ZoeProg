@@ -42,6 +42,12 @@
 
             <DataGrid AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding Items}">
                 <DataGrid.Columns>
+                    <DataGridCheckBoxColumn
+                    Binding="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
+                    EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}"
+                    Header="Selected">
+                    </DataGridCheckBoxColumn>
                     <DataGridTextColumn Header="Date" Binding="{Binding CleanUpItem.Date}"/>
                     <DataGridTextColumn Header="Extension" Binding="{Binding CleanUpItem.Extension}"/>
                     <DataGridTextColumn Header="Path" Binding="{Binding CleanUpItem.Path}"/>

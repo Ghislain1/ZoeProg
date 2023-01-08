@@ -49,7 +49,8 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// Defines the cleanupService.
         /// </summary>
         private ICleanupService cleanupService;
- 
+        bool isBusy;
+
 
         /// <summary>
         /// Defines the isSelected.
@@ -165,6 +166,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// Gets or sets the Glyph.
         /// </summary>
         public string Glyph { get; set; } = "\uE81F";
+        private SemaphoreSlim semaphoreSlim = new(1, 1);
 
         /// <summary>
         /// Gets the Header.
@@ -175,7 +177,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// Gets or sets the Id.
         /// </summary>
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        bool isBusy;
+     
         /// <summary>
         /// Gets or sets a value indicating whether IsBusy.
         /// </summary>

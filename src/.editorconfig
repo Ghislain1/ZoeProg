@@ -1,235 +1,93 @@
-# EditorConfig is awesome:http://EditorConfig.org
-# From https://raw.githubusercontent.com/dotnet/roslyn/master/.editorconfig
+# EditorConfig: https://EditorConfig.org
 
 # top-most EditorConfig file
 root = true
 
-# Don't use tabs for indentation.
+# Code
 [*]
 indent_style = space
-trim_trailing_whitespace = true
-# (Please don't specify an indent_size here; that has too many unintended consequences.)
-
-# Code files
-[*.{cs,csx,vb,vbx}]
 indent_size = 4
-insert_final_newline = true
-charset = utf-8-bom
+tab_width = 4
 
-# Xml project files
-[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
+# Google ProtoBuf
+[*.proto]
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+# Other files
+[*.{build,config,dbml,discomap,dtd,nuspec,props,resjson,StyleCop,targets,tasks,xsd}]
+indent_style = space
 indent_size = 2
+tab_width = 2
 
-# Xml config files
-[*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
+# Project files
+[*.{csproj,jsproj,lsproj,njsproj,proj,vbproj,vcxproj}]
+indent_style = space
 indent_size = 2
+tab_width = 2
 
-# Yml/Yaml files
+# Resource files
+[*.{resw,resx}]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# JSON
+[*.{json}]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# XML, XAML
+[*.{axml,xml,xaml,xoml,xamlx}]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# YAML
 [*.{yaml,yml}]
+indent_style = space
 indent_size = 2
+tab_width = 2
 
-# Powershell files
-[*.ps1]
-indent_size = 2
-
-# JSON files
-[*.json]
-indent_size = 2
-
-# Shell scripts
-[*.sh]
-end_of_line = lf
-
-[*.{cmd,bat}]
-end_of_line = crlf
-
-# Dotnet code style settings:
-[*.{cs,vb}]
-# Sort using and Import directives with System.* appearing first
-dotnet_sort_system_directives_first = true
-# Put a blank line between System.* and Microsoft.*
-dotnet_separate_import_directive_groups = true
-
-# Avoid "this." and "Me." if not necessary
-dotnet_style_qualification_for_field = false:suggestion
-dotnet_style_qualification_for_property = false:suggestion
-dotnet_style_qualification_for_method = false:suggestion
-dotnet_style_qualification_for_event = false:suggestion
-
-# Use language keywords instead of framework type names for type references
-dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
-dotnet_style_predefined_type_for_member_access = true:suggestion
-
-# Prefer read-only on fields
-dotnet_style_readonly_field = true:warning
-
-# Suggest more modern language features when available
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_coalesce_expression = true:suggestion
-dotnet_style_null_propagation = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
-dotnet_style_prefer_is_null_check_over_reference_equality_method = true:suggestion
-dotnet_style_prefer_conditional_expression_over_return = false
-dotnet_style_prefer_conditional_expression_over_assignment = false
-dotnet_style_prefer_auto_properties = true:suggestion
-
-# Parentheses
-dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:silent
-dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:silent
-dotnet_style_parentheses_in_other_operators = never_if_unnecessary:silent
-dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:silent
-
-# Accessibility modifiers
-dotnet_style_require_accessibility_modifiers = always:suggestion
-
-
-# Naming Rules
-
-# Interfaces start with an I and are PascalCased
-dotnet_naming_rule.interfaces_must_be_pascal_cased_and_prefixed_with_I.symbols                        = interface_symbols
-dotnet_naming_rule.interfaces_must_be_pascal_cased_and_prefixed_with_I.style                          = pascal_case_and_prefix_with_I_style
-dotnet_naming_rule.interfaces_must_be_pascal_cased_and_prefixed_with_I.severity                       = warning
-
-# External members are PascalCased
-dotnet_naming_rule.externally_visible_members_must_be_pascal_cased.symbols                            = externally_visible_symbols
-dotnet_naming_rule.externally_visible_members_must_be_pascal_cased.style                              = pascal_case_style
-dotnet_naming_rule.externally_visible_members_must_be_pascal_cased.severity                           = warning
-
-# Parameters are camelCased
-dotnet_naming_rule.parameters_must_be_camel_cased.symbols                                             = parameter_symbols
-dotnet_naming_rule.parameters_must_be_camel_cased.style                                               = camel_case_style
-dotnet_naming_rule.parameters_must_be_camel_cased.severity                                            = warning
-
-# Constants are PascalCased
-dotnet_naming_rule.constants_must_be_pascal_cased.symbols                                             = constant_symbols
-dotnet_naming_rule.constants_must_be_pascal_cased.style                                               = pascal_case_style
-dotnet_naming_rule.constants_must_be_pascal_cased.severity                                            = warning
-
-# Uncomment this group and comment out the next group if you prefer s_ prefixes for static fields
-
-# Private static fields are prefixed with s_ and are camelCased like s_myStatic
-#dotnet_naming_rule.private_static_fields_must_be_camel_cased_and_prefixed_with_s_underscore.symbols   = private_static_field_symbols
-#dotnet_naming_rule.private_static_fields_must_be_camel_cased_and_prefixed_with_s_underscore.style     = camel_case_and_prefix_with_s_underscore_style
-#dotnet_naming_rule.private_static_fields_must_be_camel_cased_and_prefixed_with_s_underscore.severity  = warning
-
-# Static readonly fields are PascalCased
-dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.symbols                               = private_static_readonly_field_symbols
-dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.style                                 = pascal_case_style
-dotnet_naming_rule.static_readonly_fields_should_be_pascal_case.severity                              = warning
-
-# Comment this group and uncomment out the next group if you don't want _ prefixed fields.
-
-# Private instance fields are camelCased with an _ like _myField
-dotnet_naming_rule.private_instance_fields_must_be_camel_cased_and_prefixed_with_underscore.symbols   = private_field_symbols
-dotnet_naming_rule.private_instance_fields_must_be_camel_cased_and_prefixed_with_underscore.style     = camel_case_and_prefix_with_underscore_style
-dotnet_naming_rule.private_instance_fields_must_be_camel_cased_and_prefixed_with_underscore.severity  = warning
-
-# Private instance fields are camelCased
-#dotnet_naming_rule.private_instance_fields_must_be_camel_cased.symbols                                = private_field_symbols
-#dotnet_naming_rule.private_instance_fields_must_be_camel_cased.style                                  = camel_case_style
-#dotnet_naming_rule.private_instance_fields_must_be_camel_cased.severity                               = warning
-
-# Symbols
-dotnet_naming_symbols.externally_visible_symbols.applicable_kinds                                     = class,struct,interface,enum,property,method,field,event,delegate
-dotnet_naming_symbols.externally_visible_symbols.applicable_accessibilities                           = public,internal,friend,protected,protected_internal,protected_friend,private_protected
-
-dotnet_naming_symbols.interface_symbols.applicable_kinds                                              = interface
-dotnet_naming_symbols.interface_symbols.applicable_accessibilities                                    = *
-
-dotnet_naming_symbols.parameter_symbols.applicable_kinds                                              = parameter
-dotnet_naming_symbols.parameter_symbols.applicable_accessibilities                                    = *
-
-dotnet_naming_symbols.constant_symbols.applicable_kinds                                               = field
-dotnet_naming_symbols.constant_symbols.required_modifiers                                             = const
-dotnet_naming_symbols.constant_symbols.applicable_accessibilities                                     = *
-
-dotnet_naming_symbols.private_static_field_symbols.applicable_kinds                                   = field
-dotnet_naming_symbols.private_static_field_symbols.required_modifiers                                 = static,shared
-dotnet_naming_symbols.private_static_field_symbols.applicable_accessibilities                         = private
-
-dotnet_naming_symbols.private_static_readonly_field_symbols.applicable_kinds                          = field
-dotnet_naming_symbols.private_static_readonly_field_symbols.required_modifiers                        = static,shared,readonly
-dotnet_naming_symbols.private_static_readonly_field_symbols.applicable_accessibilities                = private
-
-dotnet_naming_symbols.private_field_symbols.applicable_kinds                                          = field
-dotnet_naming_symbols.private_field_symbols.applicable_accessibilities                                = private
-
-# Styles
-dotnet_naming_style.camel_case_style.capitalization                                                   = camel_case
-
-dotnet_naming_style.pascal_case_style.capitalization                                                  = pascal_case
-
-dotnet_naming_style.camel_case_and_prefix_with_s_underscore_style.required_prefix                     = s_
-dotnet_naming_style.camel_case_and_prefix_with_s_underscore_style.capitalization                      = camel_case
-
-dotnet_naming_style.camel_case_and_prefix_with_underscore_style.required_prefix                       = _
-dotnet_naming_style.camel_case_and_prefix_with_underscore_style.capitalization                        = camel_case
-
-dotnet_naming_style.pascal_case_and_prefix_with_I_style.required_prefix                               = I
-dotnet_naming_style.pascal_case_and_prefix_with_I_style.capitalization                                = pascal_case
-
-
-# CSharp code style settings:
+# C# Files
 [*.cs]
-# Modifier order
-csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
+indent_style = space
+indent_size = 4
+tab_width = 4
 
-# Code block
-csharp_prefer_braces = false:none
+end_of_line = crlf
+insert_final_newline = false
 
-# Indentation preferences
-csharp_indent_block_contents = true
-csharp_indent_braces = false
-csharp_indent_case_contents = true
-csharp_indent_switch_labels = true
-csharp_indent_labels = flush_left
+#### .NET Coding Conventions ####
 
-# Prefer "var" everywhere
+# File preferences
+
+file_header_template = <copyright company="Ghislain One Inc.">\n Copyright (c) GhislainOne\n This computer program includes confidential, proprietary\n information and is a trade secret of GhislainOne. All use,\n disclosure, or reproduction is prohibited unless authorized in\n writing by an officer of Ghis. All Rights Reserved.\n</copyright>
+
+# 'using' directive preferences
+
+csharp_using_directive_placement = inside_namespace:warning
+
+# var preferences
+
+csharp_style_var_elsewhere = true:suggestion
 csharp_style_var_for_built_in_types = true:suggestion
 csharp_style_var_when_type_is_apparent = true:suggestion
-csharp_style_var_elsewhere = true:suggestion
 
-# Code style defaults
-csharp_preserve_single_line_blocks = true
-csharp_preserve_single_line_statements = true
+# Modifier preferences
 
-# Prefer method-like constructs to have a block body
-csharp_style_expression_bodied_methods = false:none
-csharp_style_expression_bodied_constructors = false:none
-csharp_style_expression_bodied_operators = false:none
+csharp_prefer_static_local_function = true:suggestion
+csharp_preferred_modifier_order = public,private,protected,internal,new,abstract,virtual,sealed,override,static,readonly,extern,unsafe,volatile,async:suggestion
 
-# Prefer property-like constructs to have an expression-body
-csharp_style_expression_bodied_properties = true:none
-csharp_style_expression_bodied_indexers = true:none
-csharp_style_expression_bodied_accessors = true:none
+# Code-block preferences
 
-# Expression 
-csharp_prefer_simple_default_expression = true:suggestion
-csharp_style_deconstructed_variable_declaration = true:suggestion
-csharp_style_pattern_local_over_anonymous_function = true:suggestion
-
-# Pattern matching
-csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
-csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
-csharp_style_inlined_variable_declaration = true:suggestion
-
-# Null checking preferences
-csharp_style_throw_expression = true:suggestion
-csharp_style_conditional_delegate_call = true:suggestion
-
-# Newline settings
-csharp_new_line_before_open_brace = all
-csharp_new_line_before_else = true
-csharp_new_line_before_catch = true
-csharp_new_line_before_finally = true
-csharp_new_line_before_members_in_object_initializers = true
-csharp_new_line_before_members_in_anonymous_types = true
-csharp_new_line_between_query_expression_clauses = true
+csharp_prefer_braces = true:silent
+csharp_prefer_simple_using_statement = true:suggestion
 
 # Space preferences
+
 csharp_space_after_cast = false
 csharp_space_after_colon_in_inheritance_clause = true
 csharp_space_after_comma = true
@@ -237,7 +95,7 @@ csharp_space_after_dot = false
 csharp_space_after_keywords_in_control_flow_statements = true
 csharp_space_after_semicolon_in_for_statement = true
 csharp_space_around_binary_operators = before_and_after
-csharp_space_around_declaration_statements = do_not_ignore
+csharp_space_around_declaration_statements = false
 csharp_space_before_colon_in_inheritance_clause = true
 csharp_space_before_comma = false
 csharp_space_before_dot = false
@@ -253,21 +111,851 @@ csharp_space_between_method_declaration_parameter_list_parentheses = false
 csharp_space_between_parentheses = false
 csharp_space_between_square_brackets = false
 
-# CA1303: Do not pass literals as localized parameters
-dotnet_diagnostic.CA1303.severity = none
+# Pattern matching preferences
 
-# CA1051: Do not declare visible instance fields
-dotnet_diagnostic.CA1051.severity = none
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_prefer_not_pattern = true:suggestion
+csharp_style_prefer_pattern_matching = true:silent
+csharp_style_prefer_switch_expression = true:suggestion
 
-# CA1031: Do not catch general exception types
-dotnet_diagnostic.CA1031.severity = none
+# Language keywords vs BCL types preferences
 
-# CA1812: Avoid uninstantiated internal classes
-dotnet_diagnostic.CA1812.severity = silent
+dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
+dotnet_style_predefined_type_for_member_access = true:suggestion
 
-# CA1816: Dispose methods should call SuppressFinalize
-dotnet_diagnostic.CA1816.severity = silent
+# this. and Me. preferences
 
-# CA1054: Uri parameters should not be strings
-dotnet_diagnostic.CA1054.severity = none
-dotnet_diagnostic.CA1056.severity = none
+dotnet_style_qualification_for_event = true:suggestion
+dotnet_style_qualification_for_field = true:suggestion
+dotnet_style_qualification_for_method = true:suggestion
+dotnet_style_qualification_for_property = true:suggestion
+
+# Modifier preferences
+
+dotnet_style_require_accessibility_modifiers = for_non_interface_members:suggestion
+
+# Parentheses preferences
+
+dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary:none
+dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary:none
+
+# Naming rules
+
+dotnet_naming_rule.interface_should_be_begins_with_i.import_to_resharper = as_predefined
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.constants_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.constants_rule.severity = none
+dotnet_naming_rule.constants_rule.style = all_upper_style
+dotnet_naming_rule.constants_rule.symbols = constants_symbols
+
+dotnet_naming_rule.event_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.event_rule.severity = none
+dotnet_naming_rule.event_rule.style = upper_camel_case_style
+dotnet_naming_rule.event_rule.symbols = event_symbols
+
+dotnet_naming_rule.local_constants_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.local_constants_rule.severity = none
+dotnet_naming_rule.local_constants_rule.style = all_upper_style
+dotnet_naming_rule.local_constants_rule.symbols = local_constants_symbols
+
+dotnet_naming_rule.method_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.method_rule.severity = none
+dotnet_naming_rule.method_rule.style = upper_camel_case_style
+dotnet_naming_rule.method_rule.symbols = method_symbols
+
+dotnet_naming_rule.private_constants_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.private_constants_rule.severity = none
+dotnet_naming_rule.private_constants_rule.style = all_upper_style
+dotnet_naming_rule.private_constants_rule.symbols = private_constants_symbols
+
+dotnet_naming_rule.private_instance_fields_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.private_instance_fields_rule.severity = none
+dotnet_naming_rule.private_instance_fields_rule.style = lower_camel_case_style
+dotnet_naming_rule.private_instance_fields_rule.symbols = private_instance_fields_symbols
+
+dotnet_naming_rule.private_static_fields_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.private_static_fields_rule.severity = none
+dotnet_naming_rule.private_static_fields_rule.style = lower_camel_case_style
+dotnet_naming_rule.private_static_fields_rule.symbols = private_static_fields_symbols
+
+dotnet_naming_rule.private_static_readonly_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.private_static_readonly_rule.severity = none
+dotnet_naming_rule.private_static_readonly_rule.style = upper_camel_case_style
+dotnet_naming_rule.private_static_readonly_rule.symbols = private_static_readonly_symbols
+
+dotnet_naming_rule.property_rule.import_to_resharper = as_predefined
+dotnet_naming_rule.property_rule.severity = none
+dotnet_naming_rule.property_rule.style = upper_camel_case_style
+dotnet_naming_rule.property_rule.symbols = property_symbols
+
+# Symbol specifications
+
+dotnet_naming_symbols.constants_symbols.applicable_accessibilities = public,internal,protected,protected_internal,private_protected
+dotnet_naming_symbols.constants_symbols.applicable_kinds = field
+dotnet_naming_symbols.constants_symbols.required_modifiers = const
+
+dotnet_naming_symbols.event_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.event_symbols.applicable_kinds = event
+
+dotnet_naming_symbols.local_constants_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.local_constants_symbols.applicable_kinds = local
+dotnet_naming_symbols.local_constants_symbols.required_modifiers = const
+
+dotnet_naming_symbols.method_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.method_symbols.applicable_kinds = method
+
+dotnet_naming_symbols.private_constants_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.private_constants_symbols.applicable_kinds = field
+dotnet_naming_symbols.private_constants_symbols.required_modifiers = const
+
+dotnet_naming_symbols.private_instance_fields_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.private_instance_fields_symbols.applicable_kinds = field
+
+dotnet_naming_symbols.private_static_fields_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.private_static_fields_symbols.applicable_kinds = field
+dotnet_naming_symbols.private_static_fields_symbols.required_modifiers = static
+
+dotnet_naming_symbols.private_static_readonly_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.private_static_readonly_symbols.applicable_kinds = field
+dotnet_naming_symbols.private_static_readonly_symbols.required_modifiers = static,readonly
+
+dotnet_naming_symbols.property_symbols.applicable_accessibilities = *
+dotnet_naming_symbols.property_symbols.applicable_kinds = property
+
+dotnet_naming_symbols.interface.applicable_kinds = interface
+dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.interface.required_modifiers =
+
+dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
+dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.types.required_modifiers =
+
+dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
+dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
+dotnet_naming_symbols.non_field_members.required_modifiers =
+
+# Naming styles
+
+dotnet_naming_style.all_upper_style.required_prefix =
+dotnet_naming_style.all_upper_style.required_suffix =
+dotnet_naming_style.all_upper_style.word_separator = _
+dotnet_naming_style.all_upper_style.capitalization = all_uppwer
+
+dotnet_naming_style.lower_camel_case_style.required_prefix =
+dotnet_naming_style.lower_camel_case_style.required_suffix =
+dotnet_naming_style.lower_camel_case_style.word_separator =
+dotnet_naming_style.lower_camel_case_style.capitalization = camel_case
+
+dotnet_naming_style.upper_camel_case_style.required_prefix =
+dotnet_naming_style.upper_camel_case_style.required_suffix =
+dotnet_naming_style.upper_camel_case_style.word_separator =
+dotnet_naming_style.upper_camel_case_style.capitalization = pascal_case
+
+dotnet_naming_style.begins_with_i.required_prefix = I
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+# ReSharper properties
+
+resharper_align_multiline_array_and_object_initializer = true
+resharper_blank_lines_around_single_line_auto_property = 1
+resharper_blank_lines_around_single_line_property = 1
+resharper_csharp_blank_lines_around_single_line_field = 1
+resharper_csharp_blank_lines_around_single_line_invocable = 1
+resharper_csharp_keep_blank_lines_in_code = 1
+resharper_csharp_keep_blank_lines_in_declarations = 1
+resharper_csharp_max_line_length = 160
+resharper_csharp_naming_rule.method_property_event = AaBb:do_not_check
+resharper_csharp_new_line_before_while = true
+resharper_csharp_stick_comment = false
+resharper_csharp_wrap_after_declaration_lpar = true
+resharper_csharp_wrap_after_invocation_lpar = true
+resharper_csharp_wrap_arguments_style = chop_if_long
+resharper_csharp_wrap_before_binary_opsign = true
+resharper_csharp_wrap_extends_list_style = chop_if_long
+resharper_csharp_wrap_parameters_style = chop_if_long
+resharper_default_exception_variable_name = 
+resharper_event_handler_pattern_long = $object$_On$event$
+resharper_instance_members_qualify_members = none, field, property, event, method, all
+resharper_keep_existing_expr_member_arrangement = false
+resharper_keep_existing_initializer_arrangement = false
+resharper_keep_existing_linebreaks = false
+resharper_place_accessorholder_attribute_on_same_line = false
+resharper_place_constructor_initializer_on_same_line = false
+resharper_place_field_attribute_on_same_line = false
+resharper_place_simple_accessor_on_single_line = false
+resharper_place_simple_embedded_statement_on_same_line = true
+resharper_place_type_constraints_on_same_line = false
+resharper_qualified_using_at_nested_scope = true
+resharper_space_within_single_line_array_initializer_braces = true
+resharper_static_members_qualify_members = none, field, property, event, method
+resharper_wrap_before_first_type_parameter_constraint = true
+
+# ReSharper inspection severities
+
+resharper_arrange_this_qualifier_highlighting = hint
+resharper_arrange_type_member_modifiers_highlighting = hint
+resharper_arrange_type_modifiers_highlighting = hint
+resharper_assign_null_to_not_null_attribute_highlighting = hint
+resharper_built_in_type_reference_style_for_member_access_highlighting = hint
+resharper_built_in_type_reference_style_highlighting = hint
+resharper_check_namespace_highlighting = hint
+resharper_convert_if_statement_to_conditional_ternary_expression_highlighting = hint
+resharper_convert_to_constant_global_highlighting = none
+resharper_convert_to_constant_local_highlighting = none
+resharper_inconsistent_naming_highlighting = none
+resharper_possible_null_reference_exception_highlighting = hint
+resharper_redundant_name_qualifier_highlighting = none
+resharper_specify_a_culture_in_string_conversion_explicitly_highlighting = suggestion
+resharper_suggest_var_or_type_built_in_types_highlighting = hint
+resharper_suggest_var_or_type_elsewhere_highlighting = hint
+resharper_suggest_var_or_type_simple_types_highlighting = hint
+resharper_use_string_interpolation_highlighting = hint
+
+#
+# Microsoft.CodeAnalysis.CSharp
+#
+
+# CS0028: '{0}' has the wrong signature to be an entry point
+dotnet_diagnostic.CS0028.severity = none
+
+# CS0067: The event '{0}' is never used
+dotnet_diagnostic.CS0067.severity = none
+
+# CS0078: The 'l' suffix is easily confused with the digit '1' -- use 'L' for clarity
+dotnet_diagnostic.CS0078.severity = none
+
+# CS0105: The using directive for '{0}' appeared previously in this namespace
+dotnet_diagnostic.CS0105.severity = none
+
+# CS0108: '{0}' hides inherited member '{1}'. Use the new keyword if hiding was intended.
+dotnet_diagnostic.CS0108.severity = none
+
+# CS0109: The member '{0}' does not hide an accessible member. The new keyword is not required.
+dotnet_diagnostic.CS0109.severity = none
+
+# CS0114: '{0}' hides inherited member '{1}'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword.
+dotnet_diagnostic.CS0114.severity = none
+
+# CS0162: Unreachable code detected
+dotnet_diagnostic.CS0162.severity = none
+
+# CS0164: This label has not been referenced
+dotnet_diagnostic.CS0164.severity = none
+
+# CS0168: The variable '{0}' is declared but never used
+dotnet_diagnostic.CS0168.severity = none
+
+# CS0183: The given expression is always of the provided ('{0}') type
+dotnet_diagnostic.CS0183.severity = none
+
+# CS0184: The given expression is never of the provided ('{0}') type
+dotnet_diagnostic.CS0184.severity = none
+
+# CS0197: Using '{0}' as a ref or out value or taking its address may cause a runtime exception because it is a field of a marshal-by-reference class
+dotnet_diagnostic.CS0197.severity = none
+
+# CS0219: The variable '{0}' is assigned but its value is never used
+dotnet_diagnostic.CS0219.severity = none
+
+# CS0251: Indexing an array with a negative index (array indices always start at zero)
+dotnet_diagnostic.CS0251.severity = none
+
+# CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type '{0}'
+dotnet_diagnostic.CS0252.severity = none
+
+# CS0253: Possible unintended reference comparison; to get a value comparison, cast the right hand side to type '{0}'
+dotnet_diagnostic.CS0253.severity = none
+
+# CS0278: '{0}' does not implement the '{1}' pattern. '{2}' is ambiguous with '{3}'.
+dotnet_diagnostic.CS0278.severity = none
+
+# CS0279: '{0}' does not implement the '{1}' pattern. '{2}' is either static or not public.
+dotnet_diagnostic.CS0279.severity = none
+
+# CS0280: '{0}' does not implement the '{1}' pattern. '{2}' has the wrong signature.
+dotnet_diagnostic.CS0280.severity = none
+
+# CS0282: There is no defined ordering between fields in multiple declarations of partial struct '{0}'. To specify an ordering, all instance fields must be in the same declaration.
+dotnet_diagnostic.CS0282.severity = none
+
+# CS0402: '{0}': an entry point cannot be generic or in a generic type
+dotnet_diagnostic.CS0402.severity = none
+
+# CS0419: Ambiguous reference in cref attribute: '{0}'. Assuming '{1}', but could have also matched other overloads including '{2}'.
+dotnet_diagnostic.CS0419.severity = none
+
+# CS0420: '{0}': a reference to a volatile field will not be treated as volatile
+dotnet_diagnostic.CS0420.severity = none
+
+# CS0435: The namespace '{1}' in '{0}' conflicts with the imported type '{3}' in '{2}'. Using the namespace defined in '{0}'.
+dotnet_diagnostic.CS0435.severity = none
+
+# CS0436: The type '{1}' in '{0}' conflicts with the imported type '{3}' in '{2}'. Using the type defined in '{0}'.
+dotnet_diagnostic.CS0436.severity = none
+
+# CS0437: The type '{1}' in '{0}' conflicts with the imported namespace '{3}' in '{2}'. Using the type defined in '{0}'.
+dotnet_diagnostic.CS0437.severity = none
+
+# CS0440: Defining an alias named 'global' is ill-advised since 'global::' always references the global namespace and not an alias
+dotnet_diagnostic.CS0440.severity = none
+
+# CS0458: The result of the expression is always 'null' of type '{0}'
+dotnet_diagnostic.CS0458.severity = none
+
+# CS0464: Comparing with null of type '{0}' always produces 'false'
+dotnet_diagnostic.CS0464.severity = none
+
+# CS0465: Introducing a 'Finalize' method can interfere with destructor invocation. Did you intend to declare a destructor?
+dotnet_diagnostic.CS0465.severity = none
+
+# CS0469: The 'goto case' value is not implicitly convertible to type '{0}'
+dotnet_diagnostic.CS0469.severity = none
+
+# CS0472: The result of the expression is always '{0}' since a value of type '{1}' is never equal to 'null' of type '{2}'
+dotnet_diagnostic.CS0472.severity = none
+
+# CS0473: Explicit interface implementation '{0}' matches more than one interface member. Which interface member is actually chosen is implementation-dependent. Consider using a non-explicit implementation instead.
+dotnet_diagnostic.CS0473.severity = none
+
+# CS0626: Method, operator, or accessor '{0}' is marked external and has no attributes on it. Consider adding a DllImport attribute to specify the external implementation.
+dotnet_diagnostic.CS0626.severity = none
+
+# CS0628: '{0}': new protected member declared in sealed class
+dotnet_diagnostic.CS0628.severity = none
+
+# CS0642: Possible mistaken empty statement
+dotnet_diagnostic.CS0642.severity = none
+
+# CS0652: Comparison to integral constant is useless; the constant is outside the range of type '{0}'
+dotnet_diagnostic.CS0652.severity = none
+
+# CS0657: '{0}' is not a valid attribute location for this declaration. Valid attribute locations for this declaration are '{1}'. All attributes in this block will be ignored.
+dotnet_diagnostic.CS0657.severity = none
+
+# CS0658: '{0}' is not a recognized attribute location. Valid attribute locations for this declaration are '{1}'. All attributes in this block will be ignored.
+dotnet_diagnostic.CS0658.severity = none
+
+# CS0659: '{0}' overrides Object.Equals(object o) but does not override Object.GetHashCode()
+dotnet_diagnostic.CS0659.severity = none
+
+# CS0660: '{0}' defines operator == or operator != but does not override Object.Equals(object o)
+dotnet_diagnostic.CS0660.severity = none
+
+# CS0661: '{0}' defines operator == or operator != but does not override Object.GetHashCode()
+dotnet_diagnostic.CS0661.severity = none
+
+# CS0665: Assignment in conditional expression is always constant; did you mean to use == instead of = ?
+dotnet_diagnostic.CS0665.severity = none
+
+# CS0672: Member '{0}' overrides obsolete member '{1}'. Add the Obsolete attribute to '{0}'.
+dotnet_diagnostic.CS0672.severity = none
+
+# CS0675: Bitwise-or operator used on a sign-extended operand; consider casting to a smaller unsigned type first
+dotnet_diagnostic.CS0675.severity = none
+
+# CS0684: '{0}' interface marked with 'CoClassAttribute' not marked with 'ComImportAttribute'
+dotnet_diagnostic.CS0684.severity = none
+
+# CS0693: Type parameter '{0}' has the same name as the type parameter from outer type '{1}'
+dotnet_diagnostic.CS0693.severity = none
+
+# CS0728: Possibly incorrect assignment to local '{0}' which is the argument to a using or lock statement. The Dispose call or unlocking will happen on the original value of the local.
+dotnet_diagnostic.CS0728.severity = none
+
+# CS0809: Obsolete member '{0}' overrides non-obsolete member '{1}'
+dotnet_diagnostic.CS0809.severity = none
+
+# CS0811: The fully qualified name for '{0}' is too long for debug information. Compile without '/debug' option.
+dotnet_diagnostic.CS0811.severity = none
+
+# CS0824: Constructor '{0}' is marked external
+dotnet_diagnostic.CS0824.severity = none
+
+# CS1030: #warning: '{0}'
+dotnet_diagnostic.CS1030.severity = none
+
+# CS1058: A previous catch clause already catches all exceptions. All non-exceptions thrown will be wrapped in a System.Runtime.CompilerServices.RuntimeWrappedException.
+dotnet_diagnostic.CS1058.severity = none
+
+# CS1062: The best overloaded Add method '{0}' for the collection initializer element is obsolete. {1}
+dotnet_diagnostic.CS1062.severity = none
+
+# CS1064: The best overloaded Add method '{0}' for the collection initializer element is obsolete.
+dotnet_diagnostic.CS1064.severity = none
+
+# CS1066: The default value specified for parameter '{0}' will have no effect because it applies to a member that is used in contexts that do not allow optional arguments
+dotnet_diagnostic.CS1066.severity = none
+
+# CS1072: Expected identifier or numeric literal.
+dotnet_diagnostic.CS1072.severity = none
+
+# CS1522: Empty switch block
+dotnet_diagnostic.CS1522.severity = none
+
+# CS1570: XML comment has badly formed XML -- '{0}'
+dotnet_diagnostic.CS1570.severity = none
+
+# CS1571: XML comment has a duplicate param tag for '{0}'
+dotnet_diagnostic.CS1571.severity = none
+
+# CS1572: XML comment has a param tag for '{0}', but there is no parameter by that name
+dotnet_diagnostic.CS1572.severity = none
+
+# CS1573: Parameter '{0}' has no matching param tag in the XML comment for '{1}' (but other parameters do)
+dotnet_diagnostic.CS1573.severity = none
+
+# CS1574: XML comment has cref attribute '{0}' that could not be resolved
+dotnet_diagnostic.CS1574.severity = none
+
+# CS1580: Invalid type for parameter {0} in XML comment cref attribute: '{1}'
+dotnet_diagnostic.CS1580.severity = none
+
+# CS1581: Invalid return type in XML comment cref attribute
+dotnet_diagnostic.CS1581.severity = none
+
+# CS1584: XML comment has syntactically incorrect cref attribute '{0}'
+dotnet_diagnostic.CS1584.severity = none
+
+# CS1587: XML comment is not placed on a valid language element
+dotnet_diagnostic.CS1587.severity = none
+
+# CS1589: Unable to include XML fragment '{1}' of file '{0}' -- {2}
+dotnet_diagnostic.CS1589.severity = none
+
+# CS1590: Invalid XML include element -- {0}
+dotnet_diagnostic.CS1590.severity = none
+
+# CS1591: Missing XML comment for publicly visible type or member '{0}'
+dotnet_diagnostic.CS1591.severity = none
+
+# CS1592: Badly formed XML in included comments file -- '{0}'
+dotnet_diagnostic.CS1592.severity = none
+
+# CS1616: Option '{0}' overrides attribute '{1}' given in a source file or added module
+dotnet_diagnostic.CS1616.severity = none
+
+# CS1633: Unrecognized #pragma directive
+dotnet_diagnostic.CS1633.severity = none
+
+# CS1634: Expected 'disable' or 'restore'
+dotnet_diagnostic.CS1634.severity = none
+
+# CS1635: Cannot restore warning 'CS{0}' because it was disabled globally
+dotnet_diagnostic.CS1635.severity = none
+
+# CS1645: Feature '{0}' is not part of the standardized ISO C# language specification, and may not be accepted by other compilers
+dotnet_diagnostic.CS1645.severity = none
+
+# CS1658: {0}. See also error CS{1}.
+dotnet_diagnostic.CS1658.severity = none
+
+# CS1668: Invalid search path '{0}' specified in '{1}' -- '{2}'
+dotnet_diagnostic.CS1668.severity = none
+
+# CS1685: The predefined type '{0}' is defined in multiple assemblies in the global alias; using definition from '{1}'
+dotnet_diagnostic.CS1685.severity = none
+
+# CS1687: Source file has exceeded the limit of 16,707,565 lines representable in the PDB; debug information will be incorrect
+dotnet_diagnostic.CS1687.severity = none
+
+# CS1690: Accessing a member on '{0}' may cause a runtime exception because it is a field of a marshal-by-reference class
+dotnet_diagnostic.CS1690.severity = none
+
+# CS1692: Invalid number
+dotnet_diagnostic.CS1692.severity = none
+
+# CS1695: Invalid #pragma checksum syntax; should be #pragma checksum "filename" "{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}" "XXXX..."
+dotnet_diagnostic.CS1695.severity = none
+
+# CS1696: Single-line comment or end-of-line expected
+dotnet_diagnostic.CS1696.severity = none
+
+# CS1697: Different checksum values given for '{0}'
+dotnet_diagnostic.CS1697.severity = none
+
+# CS1700: Assembly reference '{0}' is invalid and cannot be resolved
+dotnet_diagnostic.CS1700.severity = none
+
+# CS1701: Assuming assembly reference '{0}' used by '{1}' matches identity '{2}' of '{3}', you may need to supply runtime policy
+dotnet_diagnostic.CS1701.severity = none
+
+# CS1702: Assuming assembly reference '{0}' used by '{1}' matches identity '{2}' of '{3}', you may need to supply runtime policy
+dotnet_diagnostic.CS1702.severity = none
+
+# CS1710: XML comment has a duplicate typeparam tag for '{0}'
+dotnet_diagnostic.CS1710.severity = none
+
+# CS1711: XML comment has a typeparam tag for '{0}', but there is no type parameter by that name
+dotnet_diagnostic.CS1711.severity = none
+
+# CS1712: Type parameter '{0}' has no matching typeparam tag in the XML comment on '{1}' (but other type parameters do)
+dotnet_diagnostic.CS1712.severity = none
+
+# CS1717: Assignment made to same variable; did you mean to assign something else?
+dotnet_diagnostic.CS1717.severity = none
+
+# CS1718: Comparison made to same variable; did you mean to compare something else?
+dotnet_diagnostic.CS1718.severity = none
+
+# CS1720: Expression will always cause a System.NullReferenceException because the default value of '{0}' is null
+dotnet_diagnostic.CS1720.severity = none
+
+# CS1723: XML comment has cref attribute '{0}' that refers to a type parameter
+dotnet_diagnostic.CS1723.severity = none
+
+# CS1734: XML comment on '{1}' has a paramref tag for '{0}', but there is no parameter by that name
+dotnet_diagnostic.CS1734.severity = none
+
+# CS1735: XML comment on '{1}' has a typeparamref tag for '{0}', but there is no type parameter by that name
+dotnet_diagnostic.CS1735.severity = none
+
+# CS1762: A reference was created to embedded interop assembly '{0}' because of an indirect reference to that assembly created by assembly '{1}'. Consider changing the 'Embed Interop Types' property on either assembly.
+dotnet_diagnostic.CS1762.severity = none
+
+# CS1927: Ignoring /win32manifest for module because it only applies to assemblies
+dotnet_diagnostic.CS1927.severity = none
+
+# CS1956: Member '{0}' implements interface member '{1}' in type '{2}'. There are multiple matches for the interface member at run-time. It is implementation dependent which method will be called.
+dotnet_diagnostic.CS1956.severity = none
+
+# CS1957: Member '{1}' overrides '{0}'. There are multiple override candidates at run-time. It is implementation dependent which method will be called.
+dotnet_diagnostic.CS1957.severity = none
+
+# CS1974: The dynamically dispatched call to method '{0}' may fail at runtime because one or more applicable overloads are conditional methods.
+dotnet_diagnostic.CS1974.severity = none
+
+# CS1981: Using '{0}' to test compatibility with '{1}' is essentially identical to testing compatibility with '{2}' and will succeed for all non-null values
+dotnet_diagnostic.CS1981.severity = none
+
+# CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+dotnet_diagnostic.CS1998.severity = none
+
+# CS2002: Source file '{0}' specified multiple times
+dotnet_diagnostic.CS2002.severity = none
+
+# CS2008: No source files specified.
+dotnet_diagnostic.CS2008.severity = none
+
+# CS2023: Ignoring /noconfig option because it was specified in a response file
+dotnet_diagnostic.CS2023.severity = none
+
+# CS2029: Invalid name for a preprocessing symbol; '{0}' is not a valid identifier
+dotnet_diagnostic.CS2029.severity = none
+
+# CS2038: The language name '{0}' is invalid.
+dotnet_diagnostic.CS2038.severity = none
+
+# CS3000: Methods with variable arguments are not CLS-compliant
+dotnet_diagnostic.CS3000.severity = none
+
+# CS3001: Argument type '{0}' is not CLS-compliant
+dotnet_diagnostic.CS3001.severity = none
+
+# CS3002: Return type of '{0}' is not CLS-compliant
+dotnet_diagnostic.CS3002.severity = none
+
+# CS3003: Type of '{0}' is not CLS-compliant
+dotnet_diagnostic.CS3003.severity = none
+
+# CS3005: Identifier '{0}' differing only in case is not CLS-compliant
+dotnet_diagnostic.CS3005.severity = none
+
+# CS3006: Overloaded method '{0}' differing only in ref or out, or in array rank, is not CLS-compliant
+dotnet_diagnostic.CS3006.severity = none
+
+# CS3007: Overloaded method '{0}' differing only by unnamed array types is not CLS-compliant
+dotnet_diagnostic.CS3007.severity = none
+
+# CS3008: Identifier '{0}' is not CLS-compliant
+dotnet_diagnostic.CS3008.severity = none
+
+# CS3009: '{0}': base type '{1}' is not CLS-compliant
+dotnet_diagnostic.CS3009.severity = none
+
+# CS3010: '{0}': CLS-compliant interfaces must have only CLS-compliant members
+dotnet_diagnostic.CS3010.severity = none
+
+# CS3011: '{0}': only CLS-compliant members can be abstract
+dotnet_diagnostic.CS3011.severity = none
+
+# CS3012: You must specify the CLSCompliant attribute on the assembly, not the module, to enable CLS compliance checking
+dotnet_diagnostic.CS3012.severity = none
+
+# CS3013: Added modules must be marked with the CLSCompliant attribute to match the assembly
+dotnet_diagnostic.CS3013.severity = none
+
+# CS3014: '{0}' cannot be marked as CLS-compliant because the assembly does not have a CLSCompliant attribute
+dotnet_diagnostic.CS3014.severity = none
+
+# CS3015: '{0}' has no accessible constructors which use only CLS-compliant types
+dotnet_diagnostic.CS3015.severity = none
+
+# CS3016: Arrays as attribute arguments is not CLS-compliant
+dotnet_diagnostic.CS3016.severity = none
+
+# CS3017: You cannot specify the CLSCompliant attribute on a module that differs from the CLSCompliant attribute on the assembly
+dotnet_diagnostic.CS3017.severity = none
+
+# CS3018: '{0}' cannot be marked as CLS-compliant because it is a member of non-CLS-compliant type '{1}'
+dotnet_diagnostic.CS3018.severity = none
+
+# CS3019: CLS compliance checking will not be performed on '{0}' because it is not visible from outside this assembly
+dotnet_diagnostic.CS3019.severity = none
+
+# CS3021: '{0}' does not need a CLSCompliant attribute because the assembly does not have a CLSCompliant attribute
+dotnet_diagnostic.CS3021.severity = none
+
+# CS3022: CLSCompliant attribute has no meaning when applied to parameters. Try putting it on the method instead.
+dotnet_diagnostic.CS3022.severity = none
+
+# CS3023: CLSCompliant attribute has no meaning when applied to return types. Try putting it on the method instead.
+dotnet_diagnostic.CS3023.severity = none
+
+# CS3024: Constraint type '{0}' is not CLS-compliant
+dotnet_diagnostic.CS3024.severity = none
+
+# CS3026: CLS-compliant field '{0}' cannot be volatile
+dotnet_diagnostic.CS3026.severity = none
+
+# CS3027: '{0}' is not CLS-compliant because base interface '{1}' is not CLS-compliant
+dotnet_diagnostic.CS3027.severity = none
+
+# CS4014: Because this call is not awaited, execution of the current method continues before the call is completed. Consider applying the 'await' operator to the result of the call.
+dotnet_diagnostic.CS4014.severity = none
+
+# CS4024: The CallerLineNumberAttribute applied to parameter '{0}' will have no effect because it applies to a member that is used in contexts that do not allow optional arguments
+dotnet_diagnostic.CS4024.severity = none
+
+# CS4025: The CallerFilePathAttribute applied to parameter '{0}' will have no effect because it applies to a member that is used in contexts that do not allow optional arguments
+dotnet_diagnostic.CS4025.severity = none
+
+# CS4026: The CallerMemberNameAttribute applied to parameter '{0}' will have no effect because it applies to a member that is used in contexts that do not allow optional arguments
+dotnet_diagnostic.CS4026.severity = none
+
+# CS7022: The entry point of the program is global script code; ignoring '{0}' entry point.
+dotnet_diagnostic.CS7022.severity = none
+
+# CS7033: Delay signing was specified and requires a public key, but no public key was specified
+dotnet_diagnostic.CS7033.severity = none
+
+# CS7035: The specified version string does not conform to the recommended format - major.minor.build.revision
+dotnet_diagnostic.CS7035.severity = none
+
+# CS7080: The CallerMemberNameAttribute applied to parameter '{0}' will have no effect. It is overridden by the CallerFilePathAttribute.
+dotnet_diagnostic.CS7080.severity = none
+
+# CS7081: The CallerMemberNameAttribute applied to parameter '{0}' will have no effect. It is overridden by the CallerLineNumberAttribute.
+dotnet_diagnostic.CS7081.severity = none
+
+# CS7082: The CallerFilePathAttribute applied to parameter '{0}' will have no effect. It is overridden by the CallerLineNumberAttribute.
+dotnet_diagnostic.CS7082.severity = none
+
+# CS7090: Attribute '{0}' from module '{1}' will be ignored in favor of the instance appearing in source
+dotnet_diagnostic.CS7090.severity = none
+
+# CS7095: Filter expression is a constant 'true', consider removing the filter
+dotnet_diagnostic.CS7095.severity = none
+
+# CS8001: The command line switch '{0}' is not yet implemented and was ignored.
+dotnet_diagnostic.CS8001.severity = none
+
+# CS8009: Referenced assembly '{0}' has different culture setting of '{1}'.
+dotnet_diagnostic.CS8009.severity = none
+
+# CS8012: Referenced assembly '{0}' targets a different processor.
+dotnet_diagnostic.CS8012.severity = none
+
+# CS8018: Within cref attributes, nested types of generic types should be qualified.
+dotnet_diagnostic.CS8018.severity = none
+
+# CS8019: Unnecessary using directive.
+dotnet_diagnostic.CS8019.severity = none
+
+# CS8020: Unused extern alias.
+dotnet_diagnostic.CS8020.severity = none
+
+# CS8021: No value for RuntimeMetadataVersion found. No assembly containing System.Object was found nor was a value for RuntimeMetadataVersion specified through options.
+dotnet_diagnostic.CS8021.severity = none
+
+# CS8029: Local name '{0}' is too long for PDB. Consider shortening or compiling without /debug.
+dotnet_diagnostic.CS8029.severity = none
+
+# CS8032: An instance of analyzer {0} cannot be created from {1} : {2}.
+dotnet_diagnostic.CS8032.severity = none
+
+# CS8033: The assembly {0} does not contain any analyzers.
+dotnet_diagnostic.CS8033.severity = none
+
+# CS8034: Unable to load Analyzer assembly {0} : {1}
+dotnet_diagnostic.CS8034.severity = none
+
+# CS8040: Skipping some types in analyzer assembly {0} due to a ReflectionTypeLoadException : {1}.
+dotnet_diagnostic.CS8040.severity = none
+
+# CS8073: The result of the expression is always '{0}' since a value of type '{1}' is never equal to 'null' of type '{2}'
+dotnet_diagnostic.CS8073.severity = none
+
+# CS8094: Alignment value {0} has a magnitude greater than {1} and may result in a large formatted string.
+dotnet_diagnostic.CS8094.severity = none
+
+#
+# Microsoft.CodeAnalysis.CSharp.Features
+#
+
+# IDE0001: Simplify name
+dotnet_diagnostic.IDE0001.severity = none
+
+# IDE0002: Simplify member access
+dotnet_diagnostic.IDE0002.severity = none
+
+# IDE0003: Remove this or Me qualification
+dotnet_diagnostic.IDE0003.severity = none
+
+# IDE0004: Remove unnecessary cast
+dotnet_diagnostic.IDE0004.severity = none
+
+# IDE0005: Remove unnecessary import
+dotnet_diagnostic.IDE0005.severity = none
+
+# IDE0047: Remove unnecessary parentheses
+dotnet_diagnostic.IDE0047.severity = none
+
+#
+# StyleCop.Analyzers
+#
+
+# SA0001: XmlCommentAnalysisDisabled
+dotnet_diagnostic.SA0001.severity = none
+
+# SA1028: CodeMustNotContainTrailingWhitespace
+dotnet_diagnostic.SA1028.severity = none
+
+# SA1116: SplitParametersMustStartOnLineAfterDeclaration
+dotnet_diagnostic.SA1116.severity = none
+
+# SA1117: ParametersMustBeOnSameLineOrSeparateLines
+dotnet_diagnostic.SA1117.severity = none
+
+# SA1118: ParameterMustNotSpanMultipleLines
+dotnet_diagnostic.SA1118.severity = none
+
+# SA1119: StatementMustNotUseUnnecessaryParenthesis
+dotnet_diagnostic.SA1119.severity = none
+
+# SA1121: UseBuiltInTypeAlias
+dotnet_diagnostic.SA1121.severity = none
+
+# SA1124: DoNotUseRegions
+dotnet_diagnostic.SA1124.severity = none
+
+# SA1127: GenericTypeConstraintsMustBeOnOwnLine
+dotnet_diagnostic.SA1127.severity = none
+
+# SA1128: ConstructorInitializerMustBeOnOwnLine
+dotnet_diagnostic.SA1128.severity = none
+
+# SA1129: DoNotUseDefaultValueTypeConstructor
+dotnet_diagnostic.SA1129.severity = none
+
+# SA1130: UseLambdaSyntax
+dotnet_diagnostic.SA1130.severity = none
+
+# SA1131: UseReadableConditions
+dotnet_diagnostic.SA1131.severity = none
+
+# SA1133: DoNotCombineAttributes
+dotnet_diagnostic.SA1133.severity = none
+
+# SA1139: UseLiteralsSuffixNotationInsteadOfCasting
+dotnet_diagnostic.SA1139.severity = none
+
+# SA1200: UsingDirectivesMustBePlacedCorrectly
+dotnet_diagnostic.SA1200.severity = none
+
+# SA1201: ElementsMustAppearInTheCorrectOrder
+dotnet_diagnostic.SA1201.severity = none
+
+# SA1202: ElementsMustBeOrderedByAccess
+dotnet_diagnostic.SA1202.severity = none
+
+# SA1203: ConstantsMustAppearBeforeFields
+dotnet_diagnostic.SA1203.severity = none
+
+# SA1204: StaticElementsMustAppearBeforeInstanceElements
+dotnet_diagnostic.SA1204.severity = none
+
+# SA1214: ReadonlyElementsMustAppearBeforeNonReadonlyElements
+dotnet_diagnostic.SA1214.severity = none
+
+# SA1215: InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements
+dotnet_diagnostic.SA1215.severity = none
+
+# SA1305: FieldNamesMustNotUseHungarianNotation
+dotnet_diagnostic.SA1305.severity = warning
+
+# SA1310: FieldNamesMustNotContainUnderscore
+dotnet_diagnostic.SA1310.severity = none
+
+# SA1314: TypeParameterNamesMustBeginWithT
+dotnet_diagnostic.SA1314.severity = none
+
+# SA1413: UseTrailingCommasInMultiLineInitializers
+dotnet_diagnostic.SA1413.severity = none
+
+# SA1515: SingleLineCommentMustBePrecededByBlankLine
+dotnet_diagnostic.SA1515.severity = none
+
+# SA1600: ElementsMustBeDocumented
+dotnet_diagnostic.SA1600.severity = none
+
+# SA1601: PartialElementsMustBeDocumented
+dotnet_diagnostic.SA1601.severity = none
+
+# SA1602: EnumerationItemsMustBeDocumented
+dotnet_diagnostic.SA1602.severity = none
+
+# SA1610: PropertyDocumentationMustHaveValueText
+dotnet_diagnostic.SA1610.severity = none
+
+# SA1611: ElementParametersMustBeDocumented
+dotnet_diagnostic.SA1611.severity = none
+
+# SA1614: ElementParameterDocumentationMustHaveText
+dotnet_diagnostic.SA1614.severity = none
+
+# SA1615: ElementReturnValueMustBeDocumented
+dotnet_diagnostic.SA1615.severity = none
+
+# SA1616: ElementReturnValueDocumentationMustHaveText
+dotnet_diagnostic.SA1616.severity = none
+
+# SA1636: FileHeaderCopyrightTextMustMatch
+dotnet_diagnostic.SA1636.severity = none
+
+# SA1637: FileHeaderMustContainFileName
+dotnet_diagnostic.SA1637.severity = none
+
+# SA1638: FileHeaderFileNameDocumentationMustMatchFileName
+dotnet_diagnostic.SA1638.severity = none
+
+# SA1641: FileHeaderCompanyNameTextMustMatch
+dotnet_diagnostic.SA1641.severity = none
+
+# SA1644: DocumentationHeadersMustNotContainBlankLines
+dotnet_diagnostic.SA1644.severity = warning
+
+# SA1649: FileNameMustMatchTypeName
+dotnet_diagnostic.SA1649.severity = none
+
+# SA1651: DoNotUsePlaceholderElements
+dotnet_diagnostic.SA1651.severity = none
+
+# SA1652: EnableXmlDocumentationOutput
+dotnet_diagnostic.SA1652.severity = none
