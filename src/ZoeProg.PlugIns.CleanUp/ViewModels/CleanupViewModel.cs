@@ -92,7 +92,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
             {
                 await this.DeleteDataAsync();
 
-            }, () => !this.IsBusy);
+            }, () => !this.IsBusy && this.Items is not null && this.Items.Any(ite=> !ite.Deny));
 
 
         }
