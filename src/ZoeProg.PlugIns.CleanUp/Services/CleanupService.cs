@@ -1,24 +1,73 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
-using Prism.Events;
-using ZoeProg.Core.Models;
-using ZoeProg.Core.Utils;
+﻿
 
 namespace ZoeProg.PlugIns.CleanUp.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Globalization;
+    using System.IO;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Prism.Events;
+    using ZoeProg.Core.Models;
+    using ZoeProg.Core.Utils;
     public class CleanupService : ICleanupService
     {
         private readonly IEventAggregator eventAggregator;
 
-        private readonly List<string> tempFiles;
+        private readonly List<string>? tempFiles;
 
         public CleanupService(IEventAggregator eventAggregator)
         {
-          this.eventAggregator = eventAggregator ?? throw new ArgumentNullException(nameof(eventAggregator));
+            this.eventAggregator = eventAggregator ?? throw new ArgumentNullException(nameof(eventAggregator));
+        }
+
+        public async Task DeleteAsync(string fullPath, Action<Exception> onError)
+        {
+            
+           await Task.Run(() => {
+               try
+               {
+                   File.Delete(fullPath);
+               }
+               catch (Exception ex)
+               {
+
+                   onError(ex);
+               }
+            
+               }
+           );          
+          
+        }
+        public async Task<IEnumerable<CleanUpItem>> GetAllAsync(string locationFolder, CancellationToken cancellationToken)
+        {
+            return await Task.Run(() =>
+              {
+                  var result = new List<CleanUpItem>();
+                  try
+                  {
+                      var filees = Directory.EnumerateFiles(locationFolder, "*", SearchOption.AllDirectories);
+                      foreach (var filePath in filees)
+                      {
+
+                          result.Add(new CleanUpItem(filePath));
+                      }
+
+                  }
+                  catch (FileNotFoundException)
+                  {
+                  }
+                  catch (UnauthorizedAccessException)
+                  {
+
+                  }
+
+
+                  return result;
+
+
+              }, cancellationToken);
         }
 
         /// <summary>
@@ -53,32 +102,33 @@ namespace ZoeProg.PlugIns.CleanUp.Services
         /// <returns>list of</returns>
         public IEnumerable<CleanUpItem> GetAll()
         {
-            var directories = this.GetPresetDirectorySources();
-            var result = new List<CleanUpItem>();           
+            throw new NotImplementedException();
 
-            foreach (var item in directories.Keys)
-            {
+            //var result = new List<CleanUpItem>();
 
-                try
-                {
-                    var filees = Directory.EnumerateFiles(directories[item], "*", SearchOption.AllDirectories);
-                    foreach (var filePath in filees)
-                    {
+            //foreach (var item in directories.Keys)
+            //{
 
-                        result.Add(this.CreateCleanUpItem(new FileInfo(filePath), item));
-                    }
-                }
-                catch (FileNotFoundException)
-                {
-                }
-                catch (UnauthorizedAccessException)
-                {
+            //    try
+            //    {
+            //        var filees = Directory.EnumerateFiles(directories[item], "*", SearchOption.AllDirectories);
+            //        foreach (var filePath in filees)
+            //        {
 
-                }
+            //            result.Add(this.CreateCleanUpItem(new FileInfo(filePath), item));
+            //        }
+            //    }
+            //    catch (FileNotFoundException)
+            //    {
+            //    }
+            //    catch (UnauthorizedAccessException)
+            //    {
+
+            //    }
 
 
-            }
-            return result;
+            //}
+            //return result;
 
             //foreach (var item in directories.Keys)
             //{
@@ -118,27 +168,7 @@ namespace ZoeProg.PlugIns.CleanUp.Services
 
 
         }
-        private Dictionary<string, string> GetPresetDirectorySources()
-        {
-            string winDir = Environment.GetFolderPath(Environment.SpecialFolder.Windows);
-            Dictionary<string, string> result = new Dictionary<string, string>
-            {
-                {"Temporary Directory", Path.GetTempPath()},
-                {"Win Temporary Directory", Path.Combine(winDir, @"Temp")},
-                {"Windows Installer Cache", Path.Combine(winDir, @"Installer\$PatchCache$\Managed")},
-                {"Windows Update Cache", Path.Combine(winDir, @"SoftwareDistribution\Download")},
-                {"Windows Logs Directory", Path.Combine(winDir, @"Logs")},
-                {"Prefetch Cache", Path.Combine(winDir, @"Prefetch")},
-                {
-                    "Crash Dump Directory",
-                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                        @"CrashDumps")
-                },
-              //  {"Google Chrome Cache", Path.Combine(Window7.ChromeDataPath, @"Default\Cache")},
-             //   {"Steam Redist Packages", SteamLibraryDir}
-            };
-            return result;
-        }
+
         public Task LoadTempFilesAsync()
         {
             var rList = new List<string>();
@@ -146,69 +176,17 @@ namespace ZoeProg.PlugIns.CleanUp.Services
             return Task.Delay(1000);
         }
 
-        /// <summary>
-        /// Loads the temporary files asynchronous.
-        /// </summary>
-        /// <param name="onData">The on data.</param>
-        /// <returns>a Task</returns>
-        public Task LoadTempFilesAsync(Action<string> onData)
-        {
-            var rList = new List<string>();
-            var folderPath = System.IO.Path.GetTempPath();// Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            var cmd = $"Get-ChildItem {folderPath} -Recurse ";
-            return Task.Delay(1000);
-        }
+    
+       
+      
 
-        /// <summary>
-        /// Removes the file asnyc.
-        /// </summary>
-        /// <param name="filePathList">The file path list.</param>
-        /// <returns>task</returns>
-        public async Task RemoveFileAsnyc(List<string> filePathList)
-        {
-            foreach (var item in filePathList)
-            {
-                await this.RemoveFileAsnyc(item);
-            }
-        }
-
-        /// <summary>
-        /// Removes the file asnyc.
-        /// </summary>
-        /// <param name="filePath">The file path.</param>
-        /// <returns>Task</returns>
-        public Task RemoveFileAsnyc(string filePath)
-        {
-            var scriptString = $"Remove-Item -Path {filePath} -Force";
-            return Task.Delay(1000);
-        }
-
-        private async Task DoAsync()
-        {
-            await Task.Delay(1000);
-            var cmd = "Get-ChildItem $env:TEMP -File -Recurse";
-            await Task.Delay(1000);
-
-        }
+     
 
         public async Task<IEnumerable<CleanUpItem>> GetAllAsync(CancellationToken cancellationToken)
         {
-          return  await Task.Run(() => this.GetAll(), cancellationToken);
+            return await Task.Run(() => this.GetAll(), cancellationToken);
         }
 
-        private CleanUpItem CreateCleanUpItem(FileInfo fileInfo,  string group="")
-        {
-
-            var fileSize = fileInfo.Length / 1024 + 1;
-            var cleanItem = new CleanUpItem
-            {
-                Path = fileInfo.FullName,
-                Size = fileSize + " KB",
-                Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture),
-                Extension = Path.GetExtension(fileInfo.FullName).ToLower(),
-                Group = group
-            };
-            return cleanItem;
-        }
+     
     }
 }

@@ -41,22 +41,22 @@ namespace ZoeProg.Core
         /// <summary>
         /// Gets or sets the CommandParameter.
         /// </summary>
-        Type CommandParameter { get; set; }
+        Type ? CommandParameter { get; set; }
 
         /// <summary>
         /// Gets or sets the Description.
         /// </summary>
-        string Description { get; set; }
+        string ? Description { get; set; }
 
         /// <summary>
         /// Gets or sets the Glyph.
         /// </summary>
-        string Glyph { get; set; }
+        string ? Glyph { get; set; }
 
         /// <summary>
         /// Gets or sets the Id.
         /// </summary>
-        string Id { get; set; }
+        string ? Id { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.

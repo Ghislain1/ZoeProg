@@ -10,7 +10,15 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis" />
-    </UserControl.Resources>
+    <Style  TargetType="{x:Type DataGridCell}" >
+      <Style.Triggers>
+        <DataTrigger Binding="{Binding Deny}" Value="True">
+          <Setter Property="Opacity" Value="0.5"/>
+        </DataTrigger>
+      </Style.Triggers>
+    </Style>
+      
+  </UserControl.Resources>
     <Grid Margin="8" >
 
         <DockPanel>
@@ -21,26 +29,12 @@
                 </StackPanel>
                 
             <StackPanel  VerticalAlignment="Center" HorizontalAlignment="Center"  Orientation="Horizontal">
-                <Button   Command="{Binding DeleteCommand}" >
-                    <Button.Content>
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Rectangle Width="20" Height="20" Fill="Gray" Margin="10,5,0,5">
-                                <Rectangle.OpacityMask>
-                                    <VisualBrush Stretch="Uniform" Visual="{iconPacks:Material Kind=DeleteClock}" />
-                                </Rectangle.OpacityMask>
-                            </Rectangle>
-                            <TextBlock Grid.Column="1" Text="Delete" TextAlignment="Center"  />
-                        </Grid>
-                    </Button.Content>
-                </Button>               
-            </StackPanel>
+          <Button  Content="Scan"  Command="{Binding ScanCommand}" Margin="5,0,5,0"  />
+          <Button  Content="Delete"   Command="{Binding DeleteCommand}"  />
+        </StackPanel>
             </UniformGrid>
 
-            <DataGrid AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding Items}">
+      <DataGrid AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding    Items}">
                 <DataGrid.Columns>
                     <DataGridCheckBoxColumn
                     Binding="{Binding IsSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
@@ -54,10 +48,8 @@
                     <DataGridTextColumn Header="Size" Binding="{Binding CleanUpItem.Size}"/>
                     <DataGridTextColumn Header="IsLockedFile" Binding="{Binding CleanUpItem.IsLockedFile}"/>
                     <DataGridTextColumn Header="IsUnauthorizedAccess" Binding="{Binding CleanUpItem.IsUnauthorizedAccess}"/>
-
- 
-
-                </DataGrid.Columns>
+          <DataGridTextColumn Header="Group" Binding="{Binding Group}"/>
+        </DataGrid.Columns>
             </DataGrid>
 
         </DockPanel>

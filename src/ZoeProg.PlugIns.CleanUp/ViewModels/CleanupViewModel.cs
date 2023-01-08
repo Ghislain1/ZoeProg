@@ -21,7 +21,7 @@
 namespace ZoeProg.PlugIns.CleanUp.ViewModels
 {
     using System;
-    
+    using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.ComponentModel;
     using System.Globalization;
@@ -34,7 +34,6 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using Prism.Commands;
     using Prism.Mvvm;
     using ZoeProg.Core;
-     
     using ZoeProg.PlugIns.CleanUp.Services;
     using ZoeProg.PlugIns.ViewModels;
 
@@ -43,25 +42,29 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     /// </summary>
     public class CleanUpViewModel : BindableBase, IPlugin
     {
-        
+        // TODO@Ghis: can we configure from View
+        private readonly Dictionary<string, string> PresetDirectorySources = new Dictionary<string, string>
+            {
+                {"Temporary Directory", Path.GetTempPath()},
+                {"Win Temporary Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Temp")},
+                {"Windows Installer Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Installer\$PatchCache$\Managed")},
+                {"Windows Update Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"SoftwareDistribution\Download")},
+                {"Windows Logs Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Logs")},
+                {"Prefetch Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Prefetch")},
+                {
+                    "Crash Dump Directory",
+                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                        @"CrashDumps")
+                },
+              //  {"Google Chrome Cache", Path.Combine(Window7.ChromeDataPath, @"Default\Cache")},
+             //   {"Steam Redist Packages", SteamLibraryDir}
+            };
 
-        /// <summary>
-        /// Defines the cleanupService.
-        /// </summary>
-        private ICleanupService cleanupService;
-        bool isBusy;
-
-
-        /// <summary>
-        /// Defines the isSelected.
-        /// </summary>
+        private readonly ICleanupService cleanupService;
+        private bool isBusy;
         private bool isSelected = false;
-
-        /// <summary>
-        /// Defines the todos.
-        /// </summary>
         private ObservableCollection<CleanUpItemViewModel> items = new();
-        private CancellationTokenSource cancellationTokenSource;
+        private CancellationTokenSource cancellationTokenSource = new();
 
         public CleanUpViewModel(ICleanupService cleanupService)
         {
@@ -79,94 +82,75 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 }
 
             };
-            this.cancellationTokenSource = new CancellationTokenSource();
+
+            this.ScanCommand = new DelegateCommand(async () =>
+            {
+                await this.LoadDataAsync();
+            }, () => !this.IsBusy);
 
             this.DeleteCommand = new DelegateCommand(async () =>
             {
-                this.IsBusy = true;
-                await DeleteAction();
-                this.IsBusy = false;
-                
+                await this.DeleteDataAsync();
+
             }, () => !this.IsBusy);
 
-            this.LoadData().GetAwaiter();
-
 
         }
 
-        private Task DeleteAction()
-        {
+ 
 
-            return Task.Run(() =>
-            {
-                foreach (var item in this.Items)
-                {
-                    string combinedPath = Path.Combine(item.CleanUpItem.Group, item.CleanUpItem.Path);
-
-                    try
-                    {
-                        File.Delete(item.CleanUpItem.Path);
-                      
-                    }
-                    catch (IOException)
-                    {
-                        item.CleanUpItem.IsLockedFile = true;
-                     
-                        this.RaisePropertyChanged(nameof(item.CleanUpItem.IsLockedFile));
-                    }
-                    catch (UnauthorizedAccessException)
-                    {
-                        
-                        item.CleanUpItem.IsUnauthorizedAccess = true;
-                        this.RaisePropertyChanged(nameof(item.CleanUpItem.IsLockedFile));
-                    }
-                }
-
-            });
-        }
-
-        private async Task LoadData()
+        private async Task LoadDataAsync()
         {
             this.IsBusy = true;
-            var filesToClean = await this.cleanupService.GetAllAsync(this.cancellationTokenSource.Token);
             this.Items.Clear();
-            foreach (var item in filesToClean)
+            // TODO@Just for demo
+            //var demoFolder = PresetDirectorySources.Values.First();
+            foreach (var demoFolder in PresetDirectorySources.Keys.ToList())
             {
-                this.Items.Add(new CleanUpItemViewModel(item));
+                var filesToClean = await this.cleanupService.GetAllAsync(PresetDirectorySources[demoFolder], this.cancellationTokenSource.Token);
+                
+                foreach (var item in filesToClean)
+                {
+                    this.Items.Add(new CleanUpItemViewModel(item, demoFolder));
+                }
             }
-         
             this.IsBusy = false;
-            this.RaisePropertyChanged(nameof(this.ItemsCount));
+
         }
 
-        /// <inheritdoc/>
-        public string Code { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        private async Task DeleteDataAsync()
+        {
+            this.IsBusy = true;
+            foreach (var item in this.Items)
+            {
+                await this.cleanupService.DeleteAsync(item.CleanUpItem.Path, e =>
+                {
+                    item.Deny = true;
 
-        /// <summary>
-        /// Gets or sets the Command.
-        /// </summary>
-        public ICommand Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+                });
+            }
+            this.IsBusy = false;
 
-        /// <summary>
-        /// Gets or sets the CommandParameter.
-        /// </summary>
+        }
+
+
+        public string? Code { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+
+        public ICommand? Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public Type CommandParameter { get; set; }
 
-        /// <summary>
-        /// Gets the DeleteCommand.
-        /// </summary>
         public DelegateCommand DeleteCommand { get; private set; }
 
-        /// <summary>
-        /// Gets or sets the Description.
-        /// </summary>
+
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         /// <summary>
         /// Gets or sets the Glyph.
         /// </summary>
         public string Glyph { get; set; } = "\uE81F";
-        private SemaphoreSlim semaphoreSlim = new(1, 1);
+
 
         /// <summary>
         /// Gets the Header.
@@ -177,7 +161,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// Gets or sets the Id.
         /// </summary>
         public string Id { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-     
+
         /// <summary>
         /// Gets or sets a value indicating whether IsBusy.
         /// </summary>
@@ -193,6 +177,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 if (this.SetProperty<bool>(ref this.isBusy, value))
                 {
                     this.DeleteCommand.RaiseCanExecuteChanged();
+                    this.ScanCommand.RaiseCanExecuteChanged();
                 }
                 if (!value)
                 {
@@ -201,13 +186,13 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 }
             }
         }
-   
+
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
         /// </summary>
         public int ItemsCount => this.Items.Count();
-       
-        
+
+
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
         /// </summary>
@@ -264,7 +249,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         }
         public ICollectionView ItemsView { get; }
 
-   
+
 
     }
 }

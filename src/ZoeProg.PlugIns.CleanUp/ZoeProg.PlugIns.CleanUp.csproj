@@ -3,11 +3,12 @@
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.8.0" />
-    <PackageReference Include="Prism.Unity" Version="8.0.0.1909" />
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
   </ItemGroup>
 
   <ItemGroup>
