@@ -51,10 +51,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                 {"Windows Update Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"SoftwareDistribution\Download")},
                 {"Windows Logs Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Logs")},
                 {"Prefetch Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Prefetch")},
-                {
-                    "Crash Dump Directory",
-                    Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                        @"CrashDumps")
+                {"Crash Dump Directory",Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),@"CrashDumps")
                 },
               //  {"Google Chrome Cache", Path.Combine(Window7.ChromeDataPath, @"Default\Cache")},
              //   {"Steam Redist Packages", SteamLibraryDir}
@@ -139,7 +136,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
 
         public ICommand? Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        public Type CommandParameter { get; set; }
+        public Type? CommandParameter { get; set; }
 
         public DelegateCommand DeleteCommand { get; private set; }
 
@@ -231,7 +228,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         /// <summary>
         /// Gets or sets the Tag.
         /// </summary>
-        public string Tag { get; set; }
+        public string? Tag { get; set; }
 
         /// <summary>
         /// Gets or sets the Title.
