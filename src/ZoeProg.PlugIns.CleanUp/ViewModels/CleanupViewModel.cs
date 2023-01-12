@@ -105,9 +105,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
          
             var controller = await this.dialogCoordinator.ShowProgressAsync(this, "[Ghislain-ToDo] Please wait...", "Progress message");
             controller.SetIndeterminate();
-            this.Items.Clear();
-            // TODO@Just for demo
-            //var demoFolder = PresetDirectorySources.Values.First();
+            this.Items.Clear();       
             foreach (var demoFolder in PresetDirectorySources.Keys.ToList())
             {
                 var filesToClean = await this.cleanupService.GetAllAsync(PresetDirectorySources[demoFolder], this.cancellationTokenSource.Token);
@@ -125,6 +123,8 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         private async Task DeleteDataAsync()
         {
             this.IsBusy = true;
+            var controller = await this.dialogCoordinator.ShowProgressAsync(this, "[Ghislain-ToDo] Please wait...", "Deleting File ... ");
+            controller.SetIndeterminate();
             foreach (var item in this.Items)
             {
                 await this.cleanupService.DeleteAsync(item.CleanUpItem.Path, e =>
@@ -133,6 +133,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
 
                 });
             }
+            await controller.CloseAsync();
             this.IsBusy = false;
 
         }

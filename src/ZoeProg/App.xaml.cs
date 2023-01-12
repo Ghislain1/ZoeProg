@@ -59,8 +59,8 @@ namespace ZoeProg
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IPowershellService, PowershellService>();
-            // We dont  need it ==>  Dialog:DialogParticipation.Register="{Binding}" on window
-             containerRegistry.RegisterSingleton<IDialogCoordinator>( () =>DialogCoordinator.Instance);
+            // We dont  need it ==>  Dialog:DialogParticipation.Register="{Binding}" on desired view
+            containerRegistry.RegisterSingleton<IDialogCoordinator>( () =>DialogCoordinator.Instance);
 
         }
     }
