@@ -36,6 +36,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using ZoeProg.Core;
     using ZoeProg.PlugIns.CleanUp.Services;
     using ZoeProg.PlugIns.ViewModels;
+    using MahApps.Metro.Controls.Dialogs;
 
     /// <summary>
     /// TODO:.
@@ -63,7 +64,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         private ObservableCollection<CleanUpItemViewModel> items = new();
         private CancellationTokenSource cancellationTokenSource = new();
 
-        public CleanUpViewModel(ICleanupService cleanupService)
+        public CleanUpViewModel(ICleanupService cleanupService, IDialogCoordinator dialogCoordinator)
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
             this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);

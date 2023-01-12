@@ -1,5 +1,8 @@
 #  NetworkManager
 - https://github.com/BornToBeRoot/NETworkManager ==> structure of wpf project
+- Usage of     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+- Usage of DialogCoordinator ==> to pop message on wpf
+
 
 
 # Prism
