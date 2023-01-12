@@ -9,6 +9,7 @@ namespace ZoeProg
     using System.Windows;
     using Ghis.PowershellLib;
     using MahApps.Metro.Controls;
+    using MahApps.Metro.Controls.Dialogs;
     using Prism.Ioc;
     using Prism.Modularity;
     using Prism.Regions;
@@ -58,6 +59,9 @@ namespace ZoeProg
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterSingleton<IPowershellService, PowershellService>();
+            // We dont  need it ==>  Dialog:DialogParticipation.Register="{Binding}" on window
+             containerRegistry.RegisterSingleton<IDialogCoordinator>( () =>DialogCoordinator.Instance);
+
         }
     }
 }

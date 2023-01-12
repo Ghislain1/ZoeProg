@@ -37,6 +37,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
     using ZoeProg.PlugIns.CleanUp.Services;
     using ZoeProg.PlugIns.ViewModels;
     using MahApps.Metro.Controls.Dialogs;
+    using System.Windows;
 
     /// <summary>
     /// TODO:.
@@ -57,7 +58,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
               //  {"Google Chrome Cache", Path.Combine(Window7.ChromeDataPath, @"Default\Cache")},
              //   {"Steam Redist Packages", SteamLibraryDir}
             };
-
+        private readonly IDialogCoordinator dialogCoordinator;
         private readonly ICleanupService cleanupService;
         private bool isBusy;
         private bool isSelected = false;
@@ -67,6 +68,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
         public CleanUpViewModel(ICleanupService cleanupService, IDialogCoordinator dialogCoordinator)
         {
             this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
+            this.dialogCoordinator = dialogCoordinator ?? throw new ArgumentNullException(nameof(dialogCoordinator));
             this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
             this.ItemsView.Filter = item =>
             {
@@ -99,7 +101,10 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
 
         private async Task LoadDataAsync()
         {
-            this.IsBusy = true;
+            this.IsBusy = true;         
+         
+            var controller = await this.dialogCoordinator.ShowProgressAsync(this, "[Ghislain-ToDo] Please wait...", "Progress message");
+            controller.SetIndeterminate();
             this.Items.Clear();
             // TODO@Just for demo
             //var demoFolder = PresetDirectorySources.Values.First();
@@ -112,6 +117,7 @@ namespace ZoeProg.PlugIns.CleanUp.ViewModels
                     this.Items.Add(new CleanUpItemViewModel(item, demoFolder));
                 }
             }
+            await controller.CloseAsync();
             this.IsBusy = false;
 
         }
