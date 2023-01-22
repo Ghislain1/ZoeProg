@@ -18,18 +18,22 @@
  * ---license-end
  */
 
-namespace ZoeProg.Core.Constants
-{
-    /// <summary>
-    /// Defines the <see cref="RegionNames"/>.
-    /// </summary>
-    public static class RegionNames
-    {
-        public const string HamburgerMenuItemCollectionRegion = "HamburgerMenuItemCollectionRegion";
+namespace ZoeProg.Core.Constants;
 
-        /// <summary>
-        /// Defines the WindowRegion.
-        /// </summary>
-        public const string WindowRegion = "WindowRegion";
-    }
+/// <summary>
+/// Defines the <see cref="RegionNames"/>.
+/// </summary>
+public static class RegionNames
+{
+    public const string HamburgerMenuItemCollectionRegion = "HamburgerMenuItemCollectionRegion";
+
+    /// <summary>
+    /// Option of Hamburger control should resgistry over this.
+    /// </summary>
+    public const string OptionRegion = "OptionRegion";
+
+    /// <summary>
+    /// Defines the WindowRegion.
+    /// </summary>
+    public const string WindowRegion = "WindowRegion";
 }

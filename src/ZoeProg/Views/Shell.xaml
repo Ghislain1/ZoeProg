@@ -6,8 +6,7 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:core="clr-namespace:ZoeProg.Core.Constants;assembly=ZoeProg.Core"
-    xmlns:dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
-    
+    xmlns:dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"    
     Title="{Binding Title}"
     Width="1225"
     Height="550"
@@ -75,7 +74,7 @@
                                 x:Name="Header"
                                 Margin="20,0"
                                 HorizontalAlignment="Center"
-                                FontSize="50"
+                                FontSize="30"
                                 Foreground="Green"
                                 Text="{Binding Label}" />
                 </Border>
@@ -117,13 +116,18 @@
             DisplayMode="CompactInline"
             ItemClick="HamburgerMenuControl_ItemClick"
             IsPaneOpen="{Binding IsPaneOpen}"
-          SelectedIndex="1"
+            SelectedIndex="1"
             ContentTemplate="{StaticResource ContentTemplateKey}"
             ItemTemplate="{StaticResource ItemTemplateKey}">
             <!--  Ghis@TODO:This is the first property of HamburgerMenu Say something  -->
             <metro:HamburgerMenu.ItemsSource>
                 <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.HamburgerMenuItemCollectionRegion}" />
             </metro:HamburgerMenu.ItemsSource>
-        </metro:HamburgerMenu>
+          
+          <!--Adding Options Functions using Prism-->
+      <metro:HamburgerMenu.OptionsItemsSource>
+        <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.OptionRegion}" />
+      </metro:HamburgerMenu.OptionsItemsSource>
+    </metro:HamburgerMenu>
     </metro:MetroContentControl>
 </metro:MetroWindow>

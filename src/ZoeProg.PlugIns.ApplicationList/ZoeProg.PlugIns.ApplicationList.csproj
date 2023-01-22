@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZoeProg.Core\ZoeProg.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!--   <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(SolutionDir)\$(SolutionName)\$(OutDir)" /Y</PostBuildEvent> -->
+    <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(SolutionDir)\$(SolutionName)\bin\Debug\net6.0-windows\" /Y</PostBuildEvent>
+  </PropertyGroup>
+
+</Project>

@@ -15,6 +15,7 @@ namespace ZoeProg
     using Prism.Regions;
     using Prism.Unity;
     using ZoeProg.Extensions;
+    using ZoeProg.Settings;
     using ZoeProg.Views;
 
     /// <summary>
@@ -40,7 +41,9 @@ namespace ZoeProg
         /// <returns>The <see cref="IModuleCatalog"/>.</returns>
         protected override IModuleCatalog CreateModuleCatalog()
         {
-            return new ConfigurationModuleCatalog();
+            var configurationModuleCatalog = new ConfigurationModuleCatalog();
+            configurationModuleCatalog.AddModule<SettingsModule>();
+            return configurationModuleCatalog;
         }
 
         /// <summary>
