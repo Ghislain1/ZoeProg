@@ -1,4 +1,8 @@
-﻿/*-
+﻿// <copyright file="ListViewRegionAdapter.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+/*-
  * ---license-start
  * Zoe-App
  * ---
@@ -58,6 +62,7 @@ namespace ZoeProg.Extensions
                             regionTarget.Items.Insert(regionTarget.Items.Count, tb);
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
+
                         break;
 
                     case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
@@ -71,8 +76,10 @@ namespace ZoeProg.Extensions
                                     regionTarget.Items.Remove(tab);
                                 }
                             }
+
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
+
                         break;
                 }
             };

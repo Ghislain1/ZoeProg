@@ -1,4 +1,8 @@
-﻿/*-
+﻿// <copyright file="TabControlRegionAdapter.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+/*-
  * ---license-start
  * Zoe-App
  * ---
@@ -73,6 +77,7 @@ namespace ZoeProg.Extensions
                                     regionTarget.Items.Remove(tab);
                                 }
                             }
+
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
                         }
 

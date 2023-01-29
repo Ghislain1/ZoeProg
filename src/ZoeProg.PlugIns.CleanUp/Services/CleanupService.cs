@@ -24,21 +24,22 @@ namespace ZoeProg.PlugIns.CleanUp.Services
 
         public async Task DeleteAsync(string fullPath, Action<Exception> onError)
         {
-            
-           await Task.Run(() => {
-               try
-               {
-                   File.Delete(fullPath);
-               }
-               catch (Exception ex)
-               {
 
-                   onError(ex);
-               }
-            
-               }
-           );          
-          
+            await Task.Run(() =>
+            {
+                try
+                {
+                    File.Delete(fullPath);
+                }
+                catch (Exception ex)
+                {
+
+                    onError(ex);
+                }
+
+            }
+            );
+
         }
         public async Task<IEnumerable<CleanUpItem>> GetAllAsync(string locationFolder, CancellationToken cancellationToken)
         {
@@ -176,17 +177,17 @@ namespace ZoeProg.PlugIns.CleanUp.Services
             return Task.Delay(1000);
         }
 
-    
-       
-      
 
-     
+
+
+
+
 
         public async Task<IEnumerable<CleanUpItem>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await Task.Run(() => this.GetAll(), cancellationToken);
         }
 
-     
+
     }
 }

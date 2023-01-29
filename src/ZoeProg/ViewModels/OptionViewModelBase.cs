@@ -8,12 +8,12 @@
 
 namespace ZoeProg.ViewModels
 {
-    using Prism.Mvvm;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using Prism.Mvvm;
 
     public abstract class OptionViewModelBase : BindableBase
     {

@@ -1,4 +1,8 @@
-﻿/*----license-start
+﻿// <copyright file="Shell.xaml.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+/*----license-start
  * Zoe-App
  * ---
  * Copyright (C) 2021 GhislainOne and all other contributors
@@ -33,6 +37,7 @@ namespace ZoeProg.Views
         {
             this.InitializeComponent();
         }
+
         private void HamburgerMenuControl_ItemClick(object sender, ItemClickEventArgs args)
         {
             // TODO; Don t remove this until otherwise hambuger menu show nothing

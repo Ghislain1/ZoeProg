@@ -1,4 +1,8 @@
-﻿/*-
+﻿// <copyright file="ProgressViewModel.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+/*-
  * ---license-start
  * Zoe-App
  * ---

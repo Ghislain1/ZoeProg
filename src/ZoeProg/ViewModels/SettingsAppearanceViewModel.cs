@@ -1,4 +1,8 @@
-﻿/*-
+﻿// <copyright file="SettingsAppearanceViewModel.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+/*-
  * ---license-start
  * Zoe-App
  * ---
@@ -50,6 +54,7 @@ namespace ZoeProg.ViewModels
         private const string PaletteWP = "windows phone";
 
         // 9 accent colors from metro design principles
+
         /// <summary>
         /// Defines the metroAccentColors.
         /// </summary>
@@ -87,6 +92,7 @@ namespace ZoeProg.ViewModels
         private string selectedTheme;
 
         // 20 accent colors from Windows Phone 8
+
         /// <summary>
         /// Defines the wpAccentColors.
         /// </summary>
@@ -177,7 +183,10 @@ namespace ZoeProg.ViewModels
         /// </summary>
         public string SelectedTheme
         {
-            get { return this.selectedTheme; }
+            get
+            {
+                return this.selectedTheme;
+            }
 
             set
             {

@@ -6,10 +6,11 @@
 //  writing by an officer of Ghis. All Rights Reserved.
 // </copyright>
 
- namespace ZoeProg.PlugIns.ApplicationList.Services;
+namespace ZoeProg.PlugIns.ApplicationList.Services;
 
-    using ZoeProg.PlugIns.ApplicationList.Services;
+using ZoeProg.PlugIns.ApplicationList.Services;
 
-    public class ApplicationListService : IApplicationListService
-    {
-    }
+public class ApplicationListService : IApplicationListService
+{
+
+}

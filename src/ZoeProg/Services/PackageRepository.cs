@@ -1,4 +1,8 @@
-﻿/*-
+﻿// <copyright file="PackageRepository.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
+
+/*-
  * ---license-start
  * Zoe-App
  * ---
@@ -93,6 +97,7 @@ namespace ZoeProg.Services
                     result.Add(package);
                 }
             }
+
             return result;
         }
 
@@ -127,6 +132,7 @@ namespace ZoeProg.Services
             {
                 throw new Exception("Impossibe");
             }
+
             return installedPackage;
         }
 

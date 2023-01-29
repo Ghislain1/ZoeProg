@@ -36,4 +36,3 @@ public sealed class ApplicationListModule : IModule
         containerRegistry.RegisterSingleton<IApplicationListService, ApplicationListService>();
     }
 }
-

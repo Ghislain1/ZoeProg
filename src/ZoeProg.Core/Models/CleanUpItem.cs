@@ -24,16 +24,16 @@ namespace ZoeProg.Core.Models
             this.Path = fileInfo.FullName;
             this.Size = fileSize + " KB";
             this.Date = fileInfo.LastAccessTime.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
-            this.Extension =   System.IO. Path.GetExtension(fileInfo.FullName).ToLower();
-        
+            this.Extension = System.IO.Path.GetExtension(fileInfo.FullName).ToLower();
+
         }
         public string Date { get; set; }
         public string Extension { get; set; }
-   
+
         public string Path { get; set; }
         public string Size { get; set; }
         public bool IsLockedFile { get; set; }
         public bool IsUnauthorizedAccess { get; set; }
-        
+
     }
 }

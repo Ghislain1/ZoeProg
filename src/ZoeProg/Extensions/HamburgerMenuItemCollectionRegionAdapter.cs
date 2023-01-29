@@ -44,7 +44,6 @@ namespace ZoeProg.Extensions
                             var hamburgerMenuGlyphItem = new HamburgerMenuGlyphItem();
                             if (plugin != null)
                             {
-                              
                                 hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
                                 hamburgerMenuGlyphItem.Label = plugin.Label;
                                 hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
@@ -54,11 +53,12 @@ namespace ZoeProg.Extensions
                             }
                             else
                             {
-                                hamburgerMenuGlyphItem.Label = "Missing ";    
+                                hamburgerMenuGlyphItem.Label = "Missing ";
                             }
 
                             regionTarget.Add(hamburgerMenuGlyphItem);
                         }
+
                         break;
 
                     case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
@@ -72,8 +72,8 @@ namespace ZoeProg.Extensions
                                     regionTarget.Remove(tab);
                                 }
                             }
-
                         }
+
                         break;
                 }
             };

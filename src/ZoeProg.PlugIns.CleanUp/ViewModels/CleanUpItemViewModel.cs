@@ -9,9 +9,9 @@ namespace ZoeProg.PlugIns.ViewModels
     using System.Threading.Tasks;
     using Prism.Mvvm;
     using ZoeProg.Core.Models;
-    public  class CleanUpItemViewModel: BindableBase
+    public class CleanUpItemViewModel : BindableBase
     {
-        
+
         private bool deny;
         //i.e. cannot be deleted
         public bool Deny
@@ -25,9 +25,9 @@ namespace ZoeProg.PlugIns.ViewModels
             {
                 if (this.SetProperty<bool>(ref this.deny, value))
                 {
-                  
+
                 }
-               
+
             }
         }
         private string group;

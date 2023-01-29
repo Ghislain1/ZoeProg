@@ -26,12 +26,8 @@ namespace ZoeProg.Core
     /// <summary>
     /// Defines the <see cref="IPlugin"/>.
     /// </summary>
-    public interface IPlugin : IPluginHeader
+    public interface IPlugin
     {
-        /// <summary>
-        /// Gets or sets the Code.
-        /// </summary>
-        string Code { get; set; }
 
         /// <summary>
         /// Gets or sets the Command.
@@ -41,22 +37,12 @@ namespace ZoeProg.Core
         /// <summary>
         /// Gets or sets the CommandParameter.
         /// </summary>
-        Type ? CommandParameter { get; set; }
+        Type CommandParameter { get; set; }
 
         /// <summary>
-        /// Gets or sets the Description.
+        /// Gets or sets the Description. for tooltip
         /// </summary>
-        string ? Description { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Glyph.
-        /// </summary>
-        string ? Glyph { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Id.
-        /// </summary>
-        string ? Id { get; set; }
+        string Description { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether IsSelected.
@@ -71,7 +57,7 @@ namespace ZoeProg.Core
         /// <summary>
         /// Gets or sets the Label.
         /// </summary>
-        string Label { get; set; }
+        string Header { get; set; }
 
         /// <summary>
         /// Gets or sets the NavigatePath.
@@ -83,9 +69,6 @@ namespace ZoeProg.Core
         /// </summary>
         string Tag { get; set; }
 
-        /// <summary>
-        /// Gets or sets the Title.
-        /// </summary>
-        string Title { get; set; }
+
     }
 }

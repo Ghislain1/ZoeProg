@@ -24,7 +24,7 @@ namespace ZoeProg.Settings.Views
     using System.Windows.Shapes;
 
     /// <summary>
-    /// Interaction logic for SettingView.xaml
+    /// Interaction logic for SettingView.xaml.
     /// </summary>
     public partial class SettingView : UserControl
     {
