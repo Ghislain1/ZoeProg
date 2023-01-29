@@ -3,13 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31423.177
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}"
-	ProjectSection(ProjectDependencies) = postProject
-		{444FD418-07D6-47FA-A72E-6276FCEC0798} = {444FD418-07D6-47FA-A72E-6276FCEC0798}
-		{4465A01E-03AC-403B-84A8-994C917B5EA4} = {4465A01E-03AC-403B-84A8-994C917B5EA4}
-		{C46EBA66-CE23-4A78-87F0-AF870FC44735} = {C46EBA66-CE23-4A78-87F0-AF870FC44735}
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlugIns", "PlugIns", "{382BCB3F-EB66-418F-BEEB-DC24D47FB874}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Documentation", "ZoeProg.Documentation\ZoeProg.Documentation.csproj", "{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}"
@@ -34,14 +27,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Debug|x86.Build.0 = Debug|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Release|x86.ActiveCfg = Release|Any CPU
-		{D49F88C4-3FD7-4CC2-B578-DBD69BC65D7D}.Release|x86.Build.0 = Release|Any CPU
 		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF70559A-6EFF-4EC3-A6A8-6B70F0B6E8C5}.Debug|x86.ActiveCfg = Debug|Any CPU
