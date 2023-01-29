@@ -5,7 +5,8 @@
     xmlns:prism="http://prismlibrary.com/"
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:core="clr-namespace:ZoeProg.Core.Constants;assembly=ZoeProg.Core"
+    xmlns:viewModels="clr-namespace:ZoeProg.ViewModels"
+                   xmlns:core="clr-namespace:ZoeProg.Core.Constants;assembly=ZoeProg.Core"
     xmlns:dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"    
     Title="{Binding Title}"
     Width="1225"
@@ -17,7 +18,12 @@
     TextOptions.TextFormattingMode="Ideal"
     TextOptions.TextRenderingMode="Auto">
     <metro:MetroWindow.Resources>
-        <!---OPTION TEMPLATE-->
+
+    <DataTemplate x:Key="Options"
+                  DataType="{x:Type viewModels:OptionViewModelBase}">
+      <TextBlock Text="{Binding Title}" Background="Red" />
+    </DataTemplate>
+    <!---OPTION TEMPLATE-->
         <DataTemplate x:Key="OptionTemplateKey" DataType="{x:Type metro:HamburgerMenuGlyphItem}">
             <Grid Height="48">
                 <Grid.ColumnDefinitions>
@@ -117,6 +123,7 @@
             ItemClick="HamburgerMenuControl_ItemClick"
             IsPaneOpen="{Binding IsPaneOpen}"
             SelectedIndex="1"
+            OptionsItemTemplate="{StaticResource Options}"
             ContentTemplate="{StaticResource ContentTemplateKey}"
             ItemTemplate="{StaticResource ItemTemplateKey}">
             <!--  Ghis@TODO:This is the first property of HamburgerMenu Say something  -->
@@ -125,9 +132,15 @@
             </metro:HamburgerMenu.ItemsSource>
           
           <!--Adding Options Functions using Prism-->
-      <metro:HamburgerMenu.OptionsItemsSource>
+         <metro:HamburgerMenu.OptionsItemsSource>
         <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.OptionRegion}" />
-      </metro:HamburgerMenu.OptionsItemsSource>
+         </metro:HamburgerMenu.OptionsItemsSource>
+
+      <metro:HamburgerMenu.Resources>
+       
+
+    
+      </metro:HamburgerMenu.Resources>
     </metro:HamburgerMenu>
     </metro:MetroContentControl>
 </metro:MetroWindow>

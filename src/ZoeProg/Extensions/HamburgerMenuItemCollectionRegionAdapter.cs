@@ -42,13 +42,22 @@ namespace ZoeProg.Extensions
                         {
                             var plugin = ((UserControl)element).DataContext as IPlugin;
                             var hamburgerMenuGlyphItem = new HamburgerMenuGlyphItem();
-                            hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
-                            hamburgerMenuGlyphItem.Label = plugin.Label;
-                            hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
-                            hamburgerMenuGlyphItem.Tag = (UserControl)element;
-                            hamburgerMenuGlyphItem.CommandParameter = element.GetType();
+                            if (plugin != null)
+                            {
+                              
+                                hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
+                                hamburgerMenuGlyphItem.Label = plugin.Label;
+                                hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
+                                hamburgerMenuGlyphItem.Tag = (UserControl)element;
+                                hamburgerMenuGlyphItem.CommandParameter = element.GetType();
+                                hamburgerMenuGlyphItem.IsVisible = true;
+                            }
+                            else
+                            {
+                                hamburgerMenuGlyphItem.Label = "Missing ";    
+                            }
+
                             regionTarget.Add(hamburgerMenuGlyphItem);
-                            hamburgerMenuGlyphItem.IsVisible = true;
                         }
                         break;
 

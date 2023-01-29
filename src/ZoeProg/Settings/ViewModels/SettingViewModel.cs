@@ -17,4 +17,8 @@ using ZoeProg.ViewModels;
 
 public class SettingViewModel : OptionViewModelBase
 {
+    public SettingViewModel()
+    {
+        this.Title = "GH";
+    }
 }

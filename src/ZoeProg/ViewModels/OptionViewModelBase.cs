@@ -17,5 +17,6 @@ namespace ZoeProg.ViewModels
 
     public abstract class OptionViewModelBase : BindableBase
     {
+        public string Title { get; set; } = "GHSISI";
     }
 }
