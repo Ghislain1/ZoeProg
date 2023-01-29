@@ -482,6 +482,12 @@ references:
   commentId: F:ZoeProg.Core.Constants.RegionNames.HamburgerMenuItemCollectionRegion
   fullName: ZoeProg.Core.Constants.RegionNames.HamburgerMenuItemCollectionRegion
   nameWithType: RegionNames.HamburgerMenuItemCollectionRegion
+- uid: ZoeProg.Core.Constants.RegionNames.OptionRegion
+  name: OptionRegion
+  href: api/ZoeProg.Core.Constants.RegionNames.html#ZoeProg_Core_Constants_RegionNames_OptionRegion
+  commentId: F:ZoeProg.Core.Constants.RegionNames.OptionRegion
+  fullName: ZoeProg.Core.Constants.RegionNames.OptionRegion
+  nameWithType: RegionNames.OptionRegion
 - uid: ZoeProg.Core.Constants.RegionNames.WindowRegion
   name: WindowRegion
   href: api/ZoeProg.Core.Constants.RegionNames.html#ZoeProg_Core_Constants_RegionNames_WindowRegion
@@ -848,13 +854,13 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged
   nameWithType: PackageVersion.OnPropertyChanged
-- uid: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(Expression{Func{``0}})
+- uid: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})
   name: OnPropertyChanged<T>(Expression<Func<T>>)
-  href: api/ZoeProg.Core.Data.PackageVersion.html#ZoeProg_Core_Data_PackageVersion_OnPropertyChanged__1_Expression_Func___0___
-  commentId: M:ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(Expression{Func{``0}})
+  href: api/ZoeProg.Core.Data.PackageVersion.html#ZoeProg_Core_Data_PackageVersion_OnPropertyChanged__1_System_Linq_Expressions_Expression_System_Func___0___
+  commentId: M:ZoeProg.Core.Data.PackageVersion.OnPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})
   name.vb: OnPropertyChanged(Of T)(Expression(Of Func(Of T)))
-  fullName: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged<T>(Expression<Func<T>>)
-  fullName.vb: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged(Of T)(Expression(Of Func(Of T)))
+  fullName: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged<T>(System.Linq.Expressions.Expression<System.Func<T>>)
+  fullName.vb: ZoeProg.Core.Data.PackageVersion.OnPropertyChanged(Of T)(System.Linq.Expressions.Expression(Of System.Func(Of T)))
   nameWithType: PackageVersion.OnPropertyChanged<T>(Expression<Func<T>>)
   nameWithType.vb: PackageVersion.OnPropertyChanged(Of T)(Expression(Of Func(Of T)))
 - uid: ZoeProg.Core.Data.PackageVersion.PropertyChanged
@@ -1036,11 +1042,11 @@ references:
   commentId: T:ZoeProg.Core.IPackageRepository
   fullName: ZoeProg.Core.IPackageRepository
   nameWithType: IPackageRepository
-- uid: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,CancellationToken)
+- uid: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,System.Threading.CancellationToken)
   name: GetListAvailabePackages(String, CancellationToken)
-  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListAvailabePackages_System_String_CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,CancellationToken)
-  fullName: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String, CancellationToken)
+  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListAvailabePackages_System_String_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String,System.Threading.CancellationToken)
+  fullName: ZoeProg.Core.IPackageRepository.GetListAvailabePackages(System.String, System.Threading.CancellationToken)
   nameWithType: IPackageRepository.GetListAvailabePackages(String, CancellationToken)
 - uid: ZoeProg.Core.IPackageRepository.GetListAvailabePackages*
   name: GetListAvailabePackages
@@ -1049,17 +1055,17 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPackageRepository.GetListAvailabePackages
   nameWithType: IPackageRepository.GetListAvailabePackages
-- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationToken)
+- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
   name: GetListInstalledPackages(CancellationToken)
-  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationToken)
-  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationToken)
+  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
+  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
   nameWithType: IPackageRepository.GetListInstalledPackages(CancellationToken)
-- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
+- uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
   name: GetListInstalledPackages(CancellationTokenSource)
-  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_CancellationTokenSource_
-  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
-  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
+  href: api/ZoeProg.Core.IPackageRepository.html#ZoeProg_Core_IPackageRepository_GetListInstalledPackages_System_Threading_CancellationTokenSource_
+  commentId: M:ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
+  fullName: ZoeProg.Core.IPackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
   nameWithType: IPackageRepository.GetListInstalledPackages(CancellationTokenSource)
 - uid: ZoeProg.Core.IPackageRepository.GetListInstalledPackages*
   name: GetListInstalledPackages
@@ -1074,13 +1080,13 @@ references:
   commentId: T:ZoeProg.Core.IPackageService
   fullName: ZoeProg.Core.IPackageService
   nameWithType: IPackageService
-- uid: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+- uid: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name: Install(Package, Action<String>, CancellationToken)
-  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_Install_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_Install_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name.vb: Install(Package, Action(Of String), CancellationToken)
-  fullName: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
-  fullName.vb: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
+  fullName: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, System.Action<System.String>, System.Threading.CancellationToken)
+  fullName.vb: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.Package, System.Action(Of System.String), System.Threading.CancellationToken)
   nameWithType: IPackageService.Install(Package, Action<String>, CancellationToken)
   nameWithType.vb: IPackageService.Install(Package, Action(Of String), CancellationToken)
 - uid: ZoeProg.Core.IPackageService.Install(ZoeProg.Core.Data.PackageVersion)
@@ -1096,13 +1102,13 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPackageService.Install
   nameWithType: IPackageService.Install
-- uid: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+- uid: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name: UnInstall(Package, Action<String>, CancellationToken)
-  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_UnInstall_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
-  commentId: M:ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  href: api/ZoeProg.Core.IPackageService.html#ZoeProg_Core_IPackageService_UnInstall_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name.vb: UnInstall(Package, Action(Of String), CancellationToken)
-  fullName: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
-  fullName.vb: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
+  fullName: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, System.Action<System.String>, System.Threading.CancellationToken)
+  fullName.vb: ZoeProg.Core.IPackageService.UnInstall(ZoeProg.Core.Data.Package, System.Action(Of System.String), System.Threading.CancellationToken)
   nameWithType: IPackageService.UnInstall(Package, Action<String>, CancellationToken)
   nameWithType.vb: IPackageService.UnInstall(Package, Action(Of String), CancellationToken)
 - uid: ZoeProg.Core.IPackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)
@@ -1362,6 +1368,109 @@ references:
   commentId: N:ZoeProg.Core.Models
   fullName: ZoeProg.Core.Models
   nameWithType: ZoeProg.Core.Models
+- uid: ZoeProg.Core.Models.CleanUpItem
+  name: CleanUpItem
+  href: api/ZoeProg.Core.Models.CleanUpItem.html
+  commentId: T:ZoeProg.Core.Models.CleanUpItem
+  fullName: ZoeProg.Core.Models.CleanUpItem
+  nameWithType: CleanUpItem
+- uid: ZoeProg.Core.Models.CleanUpItem.#ctor
+  name: CleanUpItem()
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem__ctor
+  commentId: M:ZoeProg.Core.Models.CleanUpItem.#ctor
+  fullName: ZoeProg.Core.Models.CleanUpItem.CleanUpItem()
+  nameWithType: CleanUpItem.CleanUpItem()
+- uid: ZoeProg.Core.Models.CleanUpItem.#ctor(System.String)
+  name: CleanUpItem(String)
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem__ctor_System_String_
+  commentId: M:ZoeProg.Core.Models.CleanUpItem.#ctor(System.String)
+  fullName: ZoeProg.Core.Models.CleanUpItem.CleanUpItem(System.String)
+  nameWithType: CleanUpItem.CleanUpItem(String)
+- uid: ZoeProg.Core.Models.CleanUpItem.#ctor*
+  name: CleanUpItem
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem__ctor_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.CleanUpItem
+  nameWithType: CleanUpItem.CleanUpItem
+- uid: ZoeProg.Core.Models.CleanUpItem.Date
+  name: Date
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Date
+  commentId: P:ZoeProg.Core.Models.CleanUpItem.Date
+  fullName: ZoeProg.Core.Models.CleanUpItem.Date
+  nameWithType: CleanUpItem.Date
+- uid: ZoeProg.Core.Models.CleanUpItem.Date*
+  name: Date
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Date_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.Date
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.Date
+  nameWithType: CleanUpItem.Date
+- uid: ZoeProg.Core.Models.CleanUpItem.Extension
+  name: Extension
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Extension
+  commentId: P:ZoeProg.Core.Models.CleanUpItem.Extension
+  fullName: ZoeProg.Core.Models.CleanUpItem.Extension
+  nameWithType: CleanUpItem.Extension
+- uid: ZoeProg.Core.Models.CleanUpItem.Extension*
+  name: Extension
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Extension_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.Extension
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.Extension
+  nameWithType: CleanUpItem.Extension
+- uid: ZoeProg.Core.Models.CleanUpItem.IsLockedFile
+  name: IsLockedFile
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_IsLockedFile
+  commentId: P:ZoeProg.Core.Models.CleanUpItem.IsLockedFile
+  fullName: ZoeProg.Core.Models.CleanUpItem.IsLockedFile
+  nameWithType: CleanUpItem.IsLockedFile
+- uid: ZoeProg.Core.Models.CleanUpItem.IsLockedFile*
+  name: IsLockedFile
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_IsLockedFile_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.IsLockedFile
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.IsLockedFile
+  nameWithType: CleanUpItem.IsLockedFile
+- uid: ZoeProg.Core.Models.CleanUpItem.IsUnauthorizedAccess
+  name: IsUnauthorizedAccess
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_IsUnauthorizedAccess
+  commentId: P:ZoeProg.Core.Models.CleanUpItem.IsUnauthorizedAccess
+  fullName: ZoeProg.Core.Models.CleanUpItem.IsUnauthorizedAccess
+  nameWithType: CleanUpItem.IsUnauthorizedAccess
+- uid: ZoeProg.Core.Models.CleanUpItem.IsUnauthorizedAccess*
+  name: IsUnauthorizedAccess
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_IsUnauthorizedAccess_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.IsUnauthorizedAccess
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.IsUnauthorizedAccess
+  nameWithType: CleanUpItem.IsUnauthorizedAccess
+- uid: ZoeProg.Core.Models.CleanUpItem.Path
+  name: Path
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Path
+  commentId: P:ZoeProg.Core.Models.CleanUpItem.Path
+  fullName: ZoeProg.Core.Models.CleanUpItem.Path
+  nameWithType: CleanUpItem.Path
+- uid: ZoeProg.Core.Models.CleanUpItem.Path*
+  name: Path
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Path_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.Path
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.Path
+  nameWithType: CleanUpItem.Path
+- uid: ZoeProg.Core.Models.CleanUpItem.Size
+  name: Size
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Size
+  commentId: P:ZoeProg.Core.Models.CleanUpItem.Size
+  fullName: ZoeProg.Core.Models.CleanUpItem.Size
+  nameWithType: CleanUpItem.Size
+- uid: ZoeProg.Core.Models.CleanUpItem.Size*
+  name: Size
+  href: api/ZoeProg.Core.Models.CleanUpItem.html#ZoeProg_Core_Models_CleanUpItem_Size_
+  commentId: Overload:ZoeProg.Core.Models.CleanUpItem.Size
+  isSpec: "True"
+  fullName: ZoeProg.Core.Models.CleanUpItem.Size
+  nameWithType: CleanUpItem.Size
 - uid: ZoeProg.Core.Models.LogModel
   name: LogModel
   href: api/ZoeProg.Core.Models.LogModel.html
@@ -1426,15 +1535,34 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.Utils.DictionaryFlattener.Flatten
   nameWithType: DictionaryFlattener.Flatten
-- uid: ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(IDictionary{System.String,``0})
+- uid: ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(System.Collections.Generic.IDictionary{System.String,``0})
   name: Flatten<TCollection>(IDictionary<String, TCollection>)
-  href: api/ZoeProg.Core.Utils.DictionaryFlattener.html#ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_IDictionary_System_String___0__
-  commentId: M:ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(IDictionary{System.String,``0})
+  href: api/ZoeProg.Core.Utils.DictionaryFlattener.html#ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_System_Collections_Generic_IDictionary_System_String___0__
+  commentId: M:ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(System.Collections.Generic.IDictionary{System.String,``0})
   name.vb: Flatten(Of TCollection)(IDictionary(Of String, TCollection))
-  fullName: ZoeProg.Core.Utils.DictionaryFlattener.Flatten<TCollection>(IDictionary<System.String, TCollection>)
-  fullName.vb: ZoeProg.Core.Utils.DictionaryFlattener.Flatten(Of TCollection)(IDictionary(Of System.String, TCollection))
+  fullName: ZoeProg.Core.Utils.DictionaryFlattener.Flatten<TCollection>(System.Collections.Generic.IDictionary<System.String, TCollection>)
+  fullName.vb: ZoeProg.Core.Utils.DictionaryFlattener.Flatten(Of TCollection)(System.Collections.Generic.IDictionary(Of System.String, TCollection))
   nameWithType: DictionaryFlattener.Flatten<TCollection>(IDictionary<String, TCollection>)
   nameWithType.vb: DictionaryFlattener.Flatten(Of TCollection)(IDictionary(Of String, TCollection))
+- uid: ZoeProg.Core.Utils.PowerShellHelper
+  name: PowerShellHelper
+  href: api/ZoeProg.Core.Utils.PowerShellHelper.html
+  commentId: T:ZoeProg.Core.Utils.PowerShellHelper
+  fullName: ZoeProg.Core.Utils.PowerShellHelper
+  nameWithType: PowerShellHelper
+- uid: ZoeProg.Core.Utils.PowerShellHelper.ExecuteCommand(System.String,System.Boolean,System.Diagnostics.ProcessWindowStyle)
+  name: ExecuteCommand(String, Boolean, ProcessWindowStyle)
+  href: api/ZoeProg.Core.Utils.PowerShellHelper.html#ZoeProg_Core_Utils_PowerShellHelper_ExecuteCommand_System_String_System_Boolean_System_Diagnostics_ProcessWindowStyle_
+  commentId: M:ZoeProg.Core.Utils.PowerShellHelper.ExecuteCommand(System.String,System.Boolean,System.Diagnostics.ProcessWindowStyle)
+  fullName: ZoeProg.Core.Utils.PowerShellHelper.ExecuteCommand(System.String, System.Boolean, System.Diagnostics.ProcessWindowStyle)
+  nameWithType: PowerShellHelper.ExecuteCommand(String, Boolean, ProcessWindowStyle)
+- uid: ZoeProg.Core.Utils.PowerShellHelper.ExecuteCommand*
+  name: ExecuteCommand
+  href: api/ZoeProg.Core.Utils.PowerShellHelper.html#ZoeProg_Core_Utils_PowerShellHelper_ExecuteCommand_
+  commentId: Overload:ZoeProg.Core.Utils.PowerShellHelper.ExecuteCommand
+  isSpec: "True"
+  fullName: ZoeProg.Core.Utils.PowerShellHelper.ExecuteCommand
+  nameWithType: PowerShellHelper.ExecuteCommand
 - uid: ZoeProg.Extensions
   name: ZoeProg.Extensions
   href: api/ZoeProg.Extensions.html
@@ -1550,11 +1678,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Extensions.ListViewRegionAdapter.ListViewRegionAdapter
   nameWithType: ListViewRegionAdapter.ListViewRegionAdapter
-- uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,ListView)
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,System.Windows.Controls.ListView)
   name: Adapt(IRegion, ListView)
-  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_Adapt_IRegion_ListView_
-  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,ListView)
-  fullName: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion, ListView)
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_Adapt_IRegion_System_Windows_Controls_ListView_
+  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,System.Windows.Controls.ListView)
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion, System.Windows.Controls.ListView)
   nameWithType: ListViewRegionAdapter.Adapt(IRegion, ListView)
 - uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt*
   name: Adapt
@@ -1595,11 +1723,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Extensions.TabControlRegionAdapter.TabControlRegionAdapter
   nameWithType: TabControlRegionAdapter.TabControlRegionAdapter
-- uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,TabControl)
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,System.Windows.Controls.TabControl)
   name: Adapt(IRegion, TabControl)
-  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_Adapt_IRegion_TabControl_
-  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,TabControl)
-  fullName: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion, TabControl)
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_Adapt_IRegion_System_Windows_Controls_TabControl_
+  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,System.Windows.Controls.TabControl)
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion, System.Windows.Controls.TabControl)
   nameWithType: TabControlRegionAdapter.Adapt(IRegion, TabControl)
 - uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt*
   name: Adapt
@@ -1712,6 +1840,281 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Persistence.IUnitOfWork.SaveChanges
   nameWithType: IUnitOfWork.SaveChanges
+- uid: ZoeProg.PlugIns.ApplicationList
+  name: ZoeProg.PlugIns.ApplicationList
+  href: api/ZoeProg.PlugIns.ApplicationList.html
+  commentId: N:ZoeProg.PlugIns.ApplicationList
+  fullName: ZoeProg.PlugIns.ApplicationList
+  nameWithType: ZoeProg.PlugIns.ApplicationList
+- uid: ZoeProg.PlugIns.ApplicationList.ApplicationListModule
+  name: ApplicationListModule
+  href: api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.html
+  commentId: T:ZoeProg.PlugIns.ApplicationList.ApplicationListModule
+  fullName: ZoeProg.PlugIns.ApplicationList.ApplicationListModule
+  nameWithType: ApplicationListModule
+- uid: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  name: OnInitialized(IContainerProvider)
+  href: api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.html#ZoeProg_PlugIns_ApplicationList_ApplicationListModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  commentId: M:ZoeProg.PlugIns.ApplicationList.ApplicationListModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  fullName: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  nameWithType: ApplicationListModule.OnInitialized(IContainerProvider)
+- uid: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.OnInitialized*
+  name: OnInitialized
+  href: api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.html#ZoeProg_PlugIns_ApplicationList_ApplicationListModule_OnInitialized_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ApplicationListModule.OnInitialized
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.OnInitialized
+  nameWithType: ApplicationListModule.OnInitialized
+- uid: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  name: RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.html#ZoeProg_PlugIns_ApplicationList_ApplicationListModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  commentId: M:ZoeProg.PlugIns.ApplicationList.ApplicationListModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  fullName: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  nameWithType: ApplicationListModule.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.RegisterTypes*
+  name: RegisterTypes
+  href: api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.html#ZoeProg_PlugIns_ApplicationList_ApplicationListModule_RegisterTypes_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ApplicationListModule.RegisterTypes
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ApplicationListModule.RegisterTypes
+  nameWithType: ApplicationListModule.RegisterTypes
+- uid: ZoeProg.PlugIns.ApplicationList.Services
+  name: ZoeProg.PlugIns.ApplicationList.Services
+  href: api/ZoeProg.PlugIns.ApplicationList.Services.html
+  commentId: N:ZoeProg.PlugIns.ApplicationList.Services
+  fullName: ZoeProg.PlugIns.ApplicationList.Services
+  nameWithType: ZoeProg.PlugIns.ApplicationList.Services
+- uid: ZoeProg.PlugIns.ApplicationList.Services.ApplicationListService
+  name: ApplicationListService
+  href: api/ZoeProg.PlugIns.ApplicationList.Services.ApplicationListService.html
+  commentId: T:ZoeProg.PlugIns.ApplicationList.Services.ApplicationListService
+  fullName: ZoeProg.PlugIns.ApplicationList.Services.ApplicationListService
+  nameWithType: ApplicationListService
+- uid: ZoeProg.PlugIns.ApplicationList.Services.IApplicationListService
+  name: IApplicationListService
+  href: api/ZoeProg.PlugIns.ApplicationList.Services.IApplicationListService.html
+  commentId: T:ZoeProg.PlugIns.ApplicationList.Services.IApplicationListService
+  fullName: ZoeProg.PlugIns.ApplicationList.Services.IApplicationListService
+  nameWithType: IApplicationListService
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels
+  name: ZoeProg.PlugIns.ApplicationList.ViewModels
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.html
+  commentId: N:ZoeProg.PlugIns.ApplicationList.ViewModels
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels
+  nameWithType: ZoeProg.PlugIns.ApplicationList.ViewModels
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel
+  name: ApplicationListViewModel
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html
+  commentId: T:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel
+  nameWithType: ApplicationListViewModel
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
+  name: Code
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Code
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
+  nameWithType: ApplicationListViewModel.Code
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code*
+  name: Code
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Code_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
+  nameWithType: ApplicationListViewModel.Code
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command
+  name: Command
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Command
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command
+  nameWithType: ApplicationListViewModel.Command
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command*
+  name: Command
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Command_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command
+  nameWithType: ApplicationListViewModel.Command
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.CommandParameter
+  name: CommandParameter
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_CommandParameter
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.CommandParameter
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.CommandParameter
+  nameWithType: ApplicationListViewModel.CommandParameter
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.CommandParameter*
+  name: CommandParameter
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_CommandParameter_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.CommandParameter
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.CommandParameter
+  nameWithType: ApplicationListViewModel.CommandParameter
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Description
+  name: Description
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Description
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Description
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Description
+  nameWithType: ApplicationListViewModel.Description
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Description*
+  name: Description
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Description_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Description
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Description
+  nameWithType: ApplicationListViewModel.Description
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Glyph
+  name: Glyph
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Glyph
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Glyph
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Glyph
+  nameWithType: ApplicationListViewModel.Glyph
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Glyph*
+  name: Glyph
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Glyph_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Glyph
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Glyph
+  nameWithType: ApplicationListViewModel.Glyph
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Header
+  name: Header
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Header
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Header
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Header
+  nameWithType: ApplicationListViewModel.Header
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Header*
+  name: Header
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Header_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Header
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Header
+  nameWithType: ApplicationListViewModel.Header
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Id
+  name: Id
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Id
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Id
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Id
+  nameWithType: ApplicationListViewModel.Id
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Id*
+  name: Id
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Id_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Id
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Id
+  nameWithType: ApplicationListViewModel.Id
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.IsSelected
+  name: IsSelected
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_IsSelected
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.IsSelected
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.IsSelected
+  nameWithType: ApplicationListViewModel.IsSelected
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.IsSelected*
+  name: IsSelected
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_IsSelected_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.IsSelected
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.IsSelected
+  nameWithType: ApplicationListViewModel.IsSelected
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind
+  name: Kind
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Kind
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind
+  nameWithType: ApplicationListViewModel.Kind
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind*
+  name: Kind
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Kind_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind
+  nameWithType: ApplicationListViewModel.Kind
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
+  name: Label
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Label
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
+  nameWithType: ApplicationListViewModel.Label
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label*
+  name: Label
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Label_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
+  nameWithType: ApplicationListViewModel.Label
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath
+  name: NavigatePath
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_NavigatePath
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath
+  nameWithType: ApplicationListViewModel.NavigatePath
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath*
+  name: NavigatePath
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_NavigatePath_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath
+  nameWithType: ApplicationListViewModel.NavigatePath
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag
+  name: Tag
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Tag
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag
+  nameWithType: ApplicationListViewModel.Tag
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag*
+  name: Tag
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Tag_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag
+  nameWithType: ApplicationListViewModel.Tag
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
+  name: Title
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Title
+  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
+  nameWithType: ApplicationListViewModel.Title
+- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title*
+  name: Title
+  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Title_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
+  nameWithType: ApplicationListViewModel.Title
+- uid: ZoeProg.PlugIns.ApplicationList.Views
+  name: ZoeProg.PlugIns.ApplicationList.Views
+  href: api/ZoeProg.PlugIns.ApplicationList.Views.html
+  commentId: N:ZoeProg.PlugIns.ApplicationList.Views
+  fullName: ZoeProg.PlugIns.ApplicationList.Views
+  nameWithType: ZoeProg.PlugIns.ApplicationList.Views
+- uid: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView
+  name: ApplicationListView
+  href: api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.html
+  commentId: T:ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView
+  fullName: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView
+  nameWithType: ApplicationListView
+- uid: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.#ctor
+  name: ApplicationListView()
+  href: api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.html#ZoeProg_PlugIns_ApplicationList_Views_ApplicationListView__ctor
+  commentId: M:ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.#ctor
+  fullName: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.ApplicationListView()
+  nameWithType: ApplicationListView.ApplicationListView()
+- uid: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.#ctor*
+  name: ApplicationListView
+  href: api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.html#ZoeProg_PlugIns_ApplicationList_Views_ApplicationListView__ctor_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.ApplicationListView
+  nameWithType: ApplicationListView.ApplicationListView
+- uid: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.html#ZoeProg_PlugIns_ApplicationList_Views_ApplicationListView_InitializeComponent
+  commentId: M:ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.InitializeComponent
+  fullName: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.InitializeComponent()
+  nameWithType: ApplicationListView.InitializeComponent()
+- uid: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.html#ZoeProg_PlugIns_ApplicationList_Views_ApplicationListView_InitializeComponent_
+  commentId: Overload:ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.InitializeComponent
+  nameWithType: ApplicationListView.InitializeComponent
 - uid: ZoeProg.PlugIns.Audit
   name: ZoeProg.PlugIns.Audit
   href: api/ZoeProg.PlugIns.Audit.html
@@ -2115,11 +2518,11 @@ references:
   commentId: T:ZoeProg.PlugIns.CleanUp.CleanUpModule
   fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule
   nameWithType: CleanUpModule
-- uid: ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized(IContainerProvider)
+- uid: ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized(Prism.Ioc.IContainerProvider)
   name: OnInitialized(IContainerProvider)
-  href: api/ZoeProg.PlugIns.CleanUp.CleanUpModule.html#ZoeProg_PlugIns_CleanUp_CleanUpModule_OnInitialized_IContainerProvider_
-  commentId: M:ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized(IContainerProvider)
-  fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized(IContainerProvider)
+  href: api/ZoeProg.PlugIns.CleanUp.CleanUpModule.html#ZoeProg_PlugIns_CleanUp_CleanUpModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  commentId: M:ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized(Prism.Ioc.IContainerProvider)
   nameWithType: CleanUpModule.OnInitialized(IContainerProvider)
 - uid: ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized*
   name: OnInitialized
@@ -2128,11 +2531,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule.OnInitialized
   nameWithType: CleanUpModule.OnInitialized
-- uid: ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   name: RegisterTypes(IContainerRegistry)
-  href: api/ZoeProg.PlugIns.CleanUp.CleanUpModule.html#ZoeProg_PlugIns_CleanUp_CleanUpModule_RegisterTypes_IContainerRegistry_
-  commentId: M:ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes(IContainerRegistry)
-  fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.PlugIns.CleanUp.CleanUpModule.html#ZoeProg_PlugIns_CleanUp_CleanUpModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  commentId: M:ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  fullName: ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   nameWithType: CleanUpModule.RegisterTypes(IContainerRegistry)
 - uid: ZoeProg.PlugIns.CleanUp.CleanUpModule.RegisterTypes*
   name: RegisterTypes
@@ -2153,12 +2556,12 @@ references:
   commentId: T:ZoeProg.PlugIns.CleanUp.Services.CleanupService
   fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService
   nameWithType: CleanupService
-- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor(ZoeProg.Infrastructure.IPowershellService,IEventAggregator)
-  name: CleanupService(IPowershellService, IEventAggregator)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService__ctor_ZoeProg_Infrastructure_IPowershellService_IEventAggregator_
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor(ZoeProg.Infrastructure.IPowershellService,IEventAggregator)
-  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanupService(ZoeProg.Infrastructure.IPowershellService, IEventAggregator)
-  nameWithType: CleanupService.CleanupService(IPowershellService, IEventAggregator)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor(Prism.Events.IEventAggregator)
+  name: CleanupService(IEventAggregator)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService__ctor_Prism_Events_IEventAggregator_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor(Prism.Events.IEventAggregator)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanupService(Prism.Events.IEventAggregator)
+  nameWithType: CleanupService.CleanupService(IEventAggregator)
 - uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.#ctor*
   name: CleanupService
   href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService__ctor_
@@ -2172,11 +2575,11 @@ references:
   commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync
   fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync()
   nameWithType: CleanupService.CleanTempFilesAsync()
-- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(Action)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(System.Action)
   name: CleanTempFilesAsync(Action)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_CleanTempFilesAsync_Action_
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(Action)
-  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(Action)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_CleanTempFilesAsync_System_Action_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(System.Action)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync(System.Action)
   nameWithType: CleanupService.CleanTempFilesAsync(Action)
 - uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync*
   name: CleanTempFilesAsync
@@ -2185,6 +2588,22 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.CleanTempFilesAsync
   nameWithType: CleanupService.CleanTempFilesAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync(System.String,System.Action{System.Exception})
+  name: DeleteAsync(String, Action<Exception>)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_DeleteAsync_System_String_System_Action_System_Exception__
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync(System.String,System.Action{System.Exception})
+  name.vb: DeleteAsync(String, Action(Of Exception))
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync(System.String, System.Action<System.Exception>)
+  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync(System.String, System.Action(Of System.Exception))
+  nameWithType: CleanupService.DeleteAsync(String, Action<Exception>)
+  nameWithType.vb: CleanupService.DeleteAsync(String, Action(Of Exception))
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync*
+  name: DeleteAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_DeleteAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteAsync
+  nameWithType: CleanupService.DeleteAsync
 - uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.DeleteFileForDemoAsync
   name: DeleteFileForDemoAsync()
   href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_DeleteFileForDemoAsync
@@ -2211,21 +2630,31 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAll
   nameWithType: CleanupService.GetAll
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync(System.String,System.Threading.CancellationToken)
+  name: GetAllAsync(String, CancellationToken)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_GetAllAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync(System.String,System.Threading.CancellationToken)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync(System.String, System.Threading.CancellationToken)
+  nameWithType: CleanupService.GetAllAsync(String, CancellationToken)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync(System.Threading.CancellationToken)
+  name: GetAllAsync(CancellationToken)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_GetAllAsync_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync(System.Threading.CancellationToken)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync(System.Threading.CancellationToken)
+  nameWithType: CleanupService.GetAllAsync(CancellationToken)
+- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync*
+  name: GetAllAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_GetAllAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.GetAllAsync
+  nameWithType: CleanupService.GetAllAsync
 - uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
   name: LoadTempFilesAsync()
   href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_LoadTempFilesAsync
   commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
   fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync()
   nameWithType: CleanupService.LoadTempFilesAsync()
-- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action{System.String})
-  name: LoadTempFilesAsync(Action<String>)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_LoadTempFilesAsync_Action_System_String__
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action{System.String})
-  name.vb: LoadTempFilesAsync(Action(Of String))
-  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action<System.String>)
-  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync(Action(Of System.String))
-  nameWithType: CleanupService.LoadTempFilesAsync(Action<String>)
-  nameWithType.vb: CleanupService.LoadTempFilesAsync(Action(Of String))
 - uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync*
   name: LoadTempFilesAsync
   href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_LoadTempFilesAsync_
@@ -2233,45 +2662,17 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.LoadTempFilesAsync
   nameWithType: CleanupService.LoadTempFilesAsync
-- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List{System.String})
-  name: RemoveFileAsnyc(List<String>)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_RemoveFileAsnyc_List_System_String__
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List{System.String})
-  name.vb: RemoveFileAsnyc(List(Of String))
-  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List<System.String>)
-  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(List(Of System.String))
-  nameWithType: CleanupService.RemoveFileAsnyc(List<String>)
-  nameWithType.vb: CleanupService.RemoveFileAsnyc(List(Of String))
-- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(System.String)
-  name: RemoveFileAsnyc(String)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_RemoveFileAsnyc_System_String_
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(System.String)
-  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc(System.String)
-  nameWithType: CleanupService.RemoveFileAsnyc(String)
-- uid: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc*
-  name: RemoveFileAsnyc
-  href: api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html#ZoeProg_PlugIns_CleanUp_Services_CleanupService_RemoveFileAsnyc_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.Services.CleanupService.RemoveFileAsnyc
-  nameWithType: CleanupService.RemoveFileAsnyc
 - uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService
   name: ICleanupService
   href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html
   commentId: T:ZoeProg.PlugIns.CleanUp.Services.ICleanupService
   fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService
   nameWithType: ICleanupService
-- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
-  name: CleanTempFilesAsync()
-  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_CleanTempFilesAsync
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
-  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync()
-  nameWithType: ICleanupService.CleanTempFilesAsync()
-- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(Action)
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(System.Action)
   name: CleanTempFilesAsync(Action)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_CleanTempFilesAsync_Action_
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(Action)
-  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(Action)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_CleanTempFilesAsync_System_Action_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(System.Action)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync(System.Action)
   nameWithType: ICleanupService.CleanTempFilesAsync(Action)
 - uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync*
   name: CleanTempFilesAsync
@@ -2280,6 +2681,22 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.CleanTempFilesAsync
   nameWithType: ICleanupService.CleanTempFilesAsync
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync(System.String,System.Action{System.Exception})
+  name: DeleteAsync(String, Action<Exception>)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_DeleteAsync_System_String_System_Action_System_Exception__
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync(System.String,System.Action{System.Exception})
+  name.vb: DeleteAsync(String, Action(Of Exception))
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync(System.String, System.Action<System.Exception>)
+  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync(System.String, System.Action(Of System.Exception))
+  nameWithType: ICleanupService.DeleteAsync(String, Action<Exception>)
+  nameWithType.vb: ICleanupService.DeleteAsync(String, Action(Of Exception))
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync*
+  name: DeleteAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_DeleteAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteAsync
+  nameWithType: ICleanupService.DeleteAsync
 - uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.DeleteFileForDemoAsync
   name: DeleteFileForDemoAsync()
   href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_DeleteFileForDemoAsync
@@ -2306,21 +2723,25 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAll
   nameWithType: ICleanupService.GetAll
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAllAsync(System.String,System.Threading.CancellationToken)
+  name: GetAllAsync(String, CancellationToken)
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_GetAllAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAllAsync(System.String,System.Threading.CancellationToken)
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAllAsync(System.String, System.Threading.CancellationToken)
+  nameWithType: ICleanupService.GetAllAsync(String, CancellationToken)
+- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAllAsync*
+  name: GetAllAsync
+  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_GetAllAsync_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAllAsync
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.GetAllAsync
+  nameWithType: ICleanupService.GetAllAsync
 - uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
   name: LoadTempFilesAsync()
   href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_LoadTempFilesAsync
   commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
   fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync()
   nameWithType: ICleanupService.LoadTempFilesAsync()
-- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action{System.String})
-  name: LoadTempFilesAsync(Action<String>)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_LoadTempFilesAsync_Action_System_String__
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action{System.String})
-  name.vb: LoadTempFilesAsync(Action(Of String))
-  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action<System.String>)
-  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync(Action(Of System.String))
-  nameWithType: ICleanupService.LoadTempFilesAsync(Action<String>)
-  nameWithType.vb: ICleanupService.LoadTempFilesAsync(Action(Of String))
 - uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync*
   name: LoadTempFilesAsync
   href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_LoadTempFilesAsync_
@@ -2328,34 +2749,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.LoadTempFilesAsync
   nameWithType: ICleanupService.LoadTempFilesAsync
-- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List{System.String})
-  name: RemoveFileAsnyc(List<String>)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_RemoveFileAsnyc_List_System_String__
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List{System.String})
-  name.vb: RemoveFileAsnyc(List(Of String))
-  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List<System.String>)
-  fullName.vb: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(List(Of System.String))
-  nameWithType: ICleanupService.RemoveFileAsnyc(List<String>)
-  nameWithType.vb: ICleanupService.RemoveFileAsnyc(List(Of String))
-- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(System.String)
-  name: RemoveFileAsnyc(String)
-  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_RemoveFileAsnyc_System_String_
-  commentId: M:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(System.String)
-  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc(System.String)
-  nameWithType: ICleanupService.RemoveFileAsnyc(String)
-- uid: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc*
-  name: RemoveFileAsnyc
-  href: api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html#ZoeProg_PlugIns_CleanUp_Services_ICleanupService_RemoveFileAsnyc_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.Services.ICleanupService.RemoveFileAsnyc
-  nameWithType: ICleanupService.RemoveFileAsnyc
-- uid: ZoeProg.PlugIns.CleanUp.Services.TempFileEvent
-  name: TempFileEvent
-  href: api/ZoeProg.PlugIns.CleanUp.Services.TempFileEvent.html
-  commentId: T:ZoeProg.PlugIns.CleanUp.Services.TempFileEvent
-  fullName: ZoeProg.PlugIns.CleanUp.Services.TempFileEvent
-  nameWithType: TempFileEvent
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels
   name: ZoeProg.PlugIns.CleanUp.ViewModels
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.html
@@ -2368,12 +2761,12 @@ references:
   commentId: T:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel
   nameWithType: CleanUpViewModel
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor
-  name: CleanUpViewModel()
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor
-  commentId: M:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CleanUpViewModel()
-  nameWithType: CleanUpViewModel.CleanUpViewModel()
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor(ZoeProg.PlugIns.CleanUp.Services.ICleanupService,MahApps.Metro.Controls.Dialogs.IDialogCoordinator)
+  name: CleanUpViewModel(ICleanupService, IDialogCoordinator)
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor_ZoeProg_PlugIns_CleanUp_Services_ICleanupService_MahApps_Metro_Controls_Dialogs_IDialogCoordinator_
+  commentId: M:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor(ZoeProg.PlugIns.CleanUp.Services.ICleanupService,MahApps.Metro.Controls.Dialogs.IDialogCoordinator)
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CleanUpViewModel(ZoeProg.PlugIns.CleanUp.Services.ICleanupService, MahApps.Metro.Controls.Dialogs.IDialogCoordinator)
+  nameWithType: CleanUpViewModel.CleanUpViewModel(ICleanupService, IDialogCoordinator)
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor*
   name: CleanUpViewModel
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor_
@@ -2433,19 +2826,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand
   nameWithType: CleanUpViewModel.DeleteCommand
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
-  name: DeleteCommandDisplayName
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
-  nameWithType: CleanUpViewModel.DeleteCommandDisplayName
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName*
-  name: DeleteCommandDisplayName
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName
-  nameWithType: CleanUpViewModel.DeleteCommandDisplayName
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
   name: Description
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description
@@ -2524,6 +2904,45 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected
   nameWithType: CleanUpViewModel.IsSelected
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items
+  name: Items
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Items
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items
+  nameWithType: CleanUpViewModel.Items
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items*
+  name: Items
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Items_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items
+  nameWithType: CleanUpViewModel.Items
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount
+  name: ItemsCount
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsCount
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount
+  nameWithType: CleanUpViewModel.ItemsCount
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount*
+  name: ItemsCount
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsCount_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount
+  nameWithType: CleanUpViewModel.ItemsCount
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView
+  name: ItemsView
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsView
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView
+  nameWithType: CleanUpViewModel.ItemsView
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView*
+  name: ItemsView
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsView_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView
+  nameWithType: CleanUpViewModel.ItemsView
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
   name: Kind
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind
@@ -2602,19 +3021,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
   nameWithType: CleanUpViewModel.Title
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
-  name: Todos
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
-  nameWithType: CleanUpViewModel.Todos
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos*
-  name: Todos
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos
-  nameWithType: CleanUpViewModel.Todos
 - uid: ZoeProg.PlugIns.CleanUp.Views
   name: ZoeProg.PlugIns.CleanUp.Views
   href: api/ZoeProg.PlugIns.CleanUp.Views.html
@@ -2640,6 +3046,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.Views.CleanUpView.CleanUpView
   nameWithType: CleanUpView.CleanUpView
+- uid: ZoeProg.PlugIns.CleanUp.Views.CleanUpView.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.PlugIns.CleanUp.Views.CleanUpView.html#ZoeProg_PlugIns_CleanUp_Views_CleanUpView_InitializeComponent
+  commentId: M:ZoeProg.PlugIns.CleanUp.Views.CleanUpView.InitializeComponent
+  fullName: ZoeProg.PlugIns.CleanUp.Views.CleanUpView.InitializeComponent()
+  nameWithType: CleanUpView.InitializeComponent()
+- uid: ZoeProg.PlugIns.CleanUp.Views.CleanUpView.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.PlugIns.CleanUp.Views.CleanUpView.html#ZoeProg_PlugIns_CleanUp_Views_CleanUpView_InitializeComponent_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.Views.CleanUpView.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.CleanUp.Views.CleanUpView.InitializeComponent
+  nameWithType: CleanUpView.InitializeComponent
 - uid: ZoeProg.PlugIns.Home
   name: ZoeProg.PlugIns.Home
   href: api/ZoeProg.PlugIns.Home.html
@@ -2652,11 +3071,11 @@ references:
   commentId: T:ZoeProg.PlugIns.Home.HomeModule
   fullName: ZoeProg.PlugIns.Home.HomeModule
   nameWithType: HomeModule
-- uid: ZoeProg.PlugIns.Home.HomeModule.OnInitialized(IContainerProvider)
+- uid: ZoeProg.PlugIns.Home.HomeModule.OnInitialized(Prism.Ioc.IContainerProvider)
   name: OnInitialized(IContainerProvider)
-  href: api/ZoeProg.PlugIns.Home.HomeModule.html#ZoeProg_PlugIns_Home_HomeModule_OnInitialized_IContainerProvider_
-  commentId: M:ZoeProg.PlugIns.Home.HomeModule.OnInitialized(IContainerProvider)
-  fullName: ZoeProg.PlugIns.Home.HomeModule.OnInitialized(IContainerProvider)
+  href: api/ZoeProg.PlugIns.Home.HomeModule.html#ZoeProg_PlugIns_Home_HomeModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  commentId: M:ZoeProg.PlugIns.Home.HomeModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  fullName: ZoeProg.PlugIns.Home.HomeModule.OnInitialized(Prism.Ioc.IContainerProvider)
   nameWithType: HomeModule.OnInitialized(IContainerProvider)
 - uid: ZoeProg.PlugIns.Home.HomeModule.OnInitialized*
   name: OnInitialized
@@ -2665,11 +3084,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.HomeModule.OnInitialized
   nameWithType: HomeModule.OnInitialized
-- uid: ZoeProg.PlugIns.Home.HomeModule.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.PlugIns.Home.HomeModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   name: RegisterTypes(IContainerRegistry)
-  href: api/ZoeProg.PlugIns.Home.HomeModule.html#ZoeProg_PlugIns_Home_HomeModule_RegisterTypes_IContainerRegistry_
-  commentId: M:ZoeProg.PlugIns.Home.HomeModule.RegisterTypes(IContainerRegistry)
-  fullName: ZoeProg.PlugIns.Home.HomeModule.RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.PlugIns.Home.HomeModule.html#ZoeProg_PlugIns_Home_HomeModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  commentId: M:ZoeProg.PlugIns.Home.HomeModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  fullName: ZoeProg.PlugIns.Home.HomeModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   nameWithType: HomeModule.RegisterTypes(IContainerRegistry)
 - uid: ZoeProg.PlugIns.Home.HomeModule.RegisterTypes*
   name: RegisterTypes
@@ -2897,6 +3316,83 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.Views.HomeView.HomeView
   nameWithType: HomeView.HomeView
+- uid: ZoeProg.PlugIns.Home.Views.HomeView.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.PlugIns.Home.Views.HomeView.html#ZoeProg_PlugIns_Home_Views_HomeView_InitializeComponent
+  commentId: M:ZoeProg.PlugIns.Home.Views.HomeView.InitializeComponent
+  fullName: ZoeProg.PlugIns.Home.Views.HomeView.InitializeComponent()
+  nameWithType: HomeView.InitializeComponent()
+- uid: ZoeProg.PlugIns.Home.Views.HomeView.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.PlugIns.Home.Views.HomeView.html#ZoeProg_PlugIns_Home_Views_HomeView_InitializeComponent_
+  commentId: Overload:ZoeProg.PlugIns.Home.Views.HomeView.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.Views.HomeView.InitializeComponent
+  nameWithType: HomeView.InitializeComponent
+- uid: ZoeProg.PlugIns.ViewModels
+  name: ZoeProg.PlugIns.ViewModels
+  href: api/ZoeProg.PlugIns.ViewModels.html
+  commentId: N:ZoeProg.PlugIns.ViewModels
+  fullName: ZoeProg.PlugIns.ViewModels
+  nameWithType: ZoeProg.PlugIns.ViewModels
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel
+  name: CleanUpItemViewModel
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html
+  commentId: T:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel
+  nameWithType: CleanUpItemViewModel
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.#ctor(ZoeProg.Core.Models.CleanUpItem,System.String)
+  name: CleanUpItemViewModel(CleanUpItem, String)
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel__ctor_ZoeProg_Core_Models_CleanUpItem_System_String_
+  commentId: M:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.#ctor(ZoeProg.Core.Models.CleanUpItem,System.String)
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItemViewModel(ZoeProg.Core.Models.CleanUpItem, System.String)
+  nameWithType: CleanUpItemViewModel.CleanUpItemViewModel(CleanUpItem, String)
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.#ctor*
+  name: CleanUpItemViewModel
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel__ctor_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItemViewModel
+  nameWithType: CleanUpItemViewModel.CleanUpItemViewModel
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItem
+  name: CleanUpItem
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel_CleanUpItem
+  commentId: P:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItem
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItem
+  nameWithType: CleanUpItemViewModel.CleanUpItem
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItem*
+  name: CleanUpItem
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel_CleanUpItem_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItem
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.CleanUpItem
+  nameWithType: CleanUpItemViewModel.CleanUpItem
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Deny
+  name: Deny
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel_Deny
+  commentId: P:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Deny
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Deny
+  nameWithType: CleanUpItemViewModel.Deny
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Deny*
+  name: Deny
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel_Deny_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Deny
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Deny
+  nameWithType: CleanUpItemViewModel.Deny
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Group
+  name: Group
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel_Group
+  commentId: P:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Group
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Group
+  nameWithType: CleanUpItemViewModel.Group
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Group*
+  name: Group
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpItemViewModel_Group_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Group
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.Group
+  nameWithType: CleanUpItemViewModel.Group
 - uid: ZoeProg.Services
   name: ZoeProg.Services
   href: api/ZoeProg.Services.html
@@ -2922,11 +3418,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Services.PackageRepository.PackageRepository
   nameWithType: PackageRepository.PackageRepository
-- uid: ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String,CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String,System.Threading.CancellationToken)
   name: GetListAvailabePackages(String, CancellationToken)
-  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListAvailabePackages_System_String_CancellationToken_
-  commentId: M:ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String,CancellationToken)
-  fullName: ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String, CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListAvailabePackages_System_String_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String,System.Threading.CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.GetListAvailabePackages(System.String, System.Threading.CancellationToken)
   nameWithType: PackageRepository.GetListAvailabePackages(String, CancellationToken)
 - uid: ZoeProg.Services.PackageRepository.GetListAvailabePackages*
   name: GetListAvailabePackages
@@ -2935,17 +3431,17 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Services.PackageRepository.GetListAvailabePackages
   nameWithType: PackageRepository.GetListAvailabePackages
-- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
   name: GetListInstalledPackages(CancellationToken)
-  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_CancellationToken_
-  commentId: M:ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationToken)
-  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages(System.Threading.CancellationToken)
   nameWithType: PackageRepository.GetListInstalledPackages(CancellationToken)
-- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationTokenSource)
+- uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
   name: GetListInstalledPackages(CancellationTokenSource)
-  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_CancellationTokenSource_
-  commentId: M:ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationTokenSource)
-  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages(CancellationTokenSource)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository_GetListInstalledPackages_System_Threading_CancellationTokenSource_
+  commentId: M:ZoeProg.Services.PackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
+  fullName: ZoeProg.Services.PackageRepository.GetListInstalledPackages(System.Threading.CancellationTokenSource)
   nameWithType: PackageRepository.GetListInstalledPackages(CancellationTokenSource)
 - uid: ZoeProg.Services.PackageRepository.GetListInstalledPackages*
   name: GetListInstalledPackages
@@ -2960,13 +3456,13 @@ references:
   commentId: T:ZoeProg.Services.PackageRepository.PackageService
   fullName: ZoeProg.Services.PackageRepository.PackageService
   nameWithType: PackageRepository.PackageService
-- uid: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name: Install(Package, Action<String>, CancellationToken)
-  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
-  commentId: M:ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_Install_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name.vb: Install(Package, Action(Of String), CancellationToken)
-  fullName: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
-  fullName.vb: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package, System.Action<System.String>, System.Threading.CancellationToken)
+  fullName.vb: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.Package, System.Action(Of System.String), System.Threading.CancellationToken)
   nameWithType: PackageRepository.PackageService.Install(Package, Action<String>, CancellationToken)
   nameWithType.vb: PackageRepository.PackageService.Install(Package, Action(Of String), CancellationToken)
 - uid: ZoeProg.Services.PackageRepository.PackageService.Install(ZoeProg.Core.Data.PackageVersion)
@@ -2982,13 +3478,13 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Services.PackageRepository.PackageService.Install
   nameWithType: PackageRepository.PackageService.Install
-- uid: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+- uid: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name: UnInstall(Package, Action<String>, CancellationToken)
-  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_Action_System_String__CancellationToken_
-  commentId: M:ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,Action{System.String},CancellationToken)
+  href: api/ZoeProg.Services.PackageRepository.PackageService.html#ZoeProg_Services_PackageRepository_PackageService_UnInstall_ZoeProg_Core_Data_Package_System_Action_System_String__System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package,System.Action{System.String},System.Threading.CancellationToken)
   name.vb: UnInstall(Package, Action(Of String), CancellationToken)
-  fullName: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package, Action<System.String>, CancellationToken)
-  fullName.vb: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package, Action(Of System.String), CancellationToken)
+  fullName: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package, System.Action<System.String>, System.Threading.CancellationToken)
+  fullName.vb: ZoeProg.Services.PackageRepository.PackageService.UnInstall(ZoeProg.Core.Data.Package, System.Action(Of System.String), System.Threading.CancellationToken)
   nameWithType: PackageRepository.PackageService.UnInstall(Package, Action<String>, CancellationToken)
   nameWithType.vb: PackageRepository.PackageService.UnInstall(Package, Action(Of String), CancellationToken)
 - uid: ZoeProg.Services.PackageRepository.PackageService.Uninstall(ZoeProg.Core.Data.PackageVersion)
@@ -3030,17 +3526,17 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Services.TaskService.TaskService
   nameWithType: TaskService.TaskService
-- uid: ZoeProg.Services.TaskService.StartNew(Action)
+- uid: ZoeProg.Services.TaskService.StartNew(System.Action)
   name: StartNew(Action)
-  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_Action_
-  commentId: M:ZoeProg.Services.TaskService.StartNew(Action)
-  fullName: ZoeProg.Services.TaskService.StartNew(Action)
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_System_Action_
+  commentId: M:ZoeProg.Services.TaskService.StartNew(System.Action)
+  fullName: ZoeProg.Services.TaskService.StartNew(System.Action)
   nameWithType: TaskService.StartNew(Action)
-- uid: ZoeProg.Services.TaskService.StartNew(Action,CancellationToken)
+- uid: ZoeProg.Services.TaskService.StartNew(System.Action,System.Threading.CancellationToken)
   name: StartNew(Action, CancellationToken)
-  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_Action_CancellationToken_
-  commentId: M:ZoeProg.Services.TaskService.StartNew(Action,CancellationToken)
-  fullName: ZoeProg.Services.TaskService.StartNew(Action, CancellationToken)
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew_System_Action_System_Threading_CancellationToken_
+  commentId: M:ZoeProg.Services.TaskService.StartNew(System.Action,System.Threading.CancellationToken)
+  fullName: ZoeProg.Services.TaskService.StartNew(System.Action, System.Threading.CancellationToken)
   nameWithType: TaskService.StartNew(Action, CancellationToken)
 - uid: ZoeProg.Services.TaskService.StartNew*
   name: StartNew
@@ -3049,13 +3545,13 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Services.TaskService.StartNew
   nameWithType: TaskService.StartNew
-- uid: ZoeProg.Services.TaskService.StartNew``1(Func{``0})
+- uid: ZoeProg.Services.TaskService.StartNew``1(System.Func{``0})
   name: StartNew<TResult>(Func<TResult>)
-  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew__1_Func___0__
-  commentId: M:ZoeProg.Services.TaskService.StartNew``1(Func{``0})
+  href: api/ZoeProg.Services.TaskService.html#ZoeProg_Services_TaskService_StartNew__1_System_Func___0__
+  commentId: M:ZoeProg.Services.TaskService.StartNew``1(System.Func{``0})
   name.vb: StartNew(Of TResult)(Func(Of TResult))
-  fullName: ZoeProg.Services.TaskService.StartNew<TResult>(Func<TResult>)
-  fullName.vb: ZoeProg.Services.TaskService.StartNew(Of TResult)(Func(Of TResult))
+  fullName: ZoeProg.Services.TaskService.StartNew<TResult>(System.Func<TResult>)
+  fullName.vb: ZoeProg.Services.TaskService.StartNew(Of TResult)(System.Func(Of TResult))
   nameWithType: TaskService.StartNew<TResult>(Func<TResult>)
   nameWithType.vb: TaskService.StartNew(Of TResult)(Func(Of TResult))
 - uid: ZoeProg.Setting
@@ -3367,6 +3863,94 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Setting.Views.SettingView.SettingView
   nameWithType: SettingView.SettingView
+- uid: ZoeProg.Settings
+  name: ZoeProg.Settings
+  href: api/ZoeProg.Settings.html
+  commentId: N:ZoeProg.Settings
+  fullName: ZoeProg.Settings
+  nameWithType: ZoeProg.Settings
+- uid: ZoeProg.Settings.SettingsModule
+  name: SettingsModule
+  href: api/ZoeProg.Settings.SettingsModule.html
+  commentId: T:ZoeProg.Settings.SettingsModule
+  fullName: ZoeProg.Settings.SettingsModule
+  nameWithType: SettingsModule
+- uid: ZoeProg.Settings.SettingsModule.OnInitialized(IContainerProvider)
+  name: OnInitialized(IContainerProvider)
+  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_OnInitialized_IContainerProvider_
+  commentId: M:ZoeProg.Settings.SettingsModule.OnInitialized(IContainerProvider)
+  fullName: ZoeProg.Settings.SettingsModule.OnInitialized(IContainerProvider)
+  nameWithType: SettingsModule.OnInitialized(IContainerProvider)
+- uid: ZoeProg.Settings.SettingsModule.OnInitialized*
+  name: OnInitialized
+  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_OnInitialized_
+  commentId: Overload:ZoeProg.Settings.SettingsModule.OnInitialized
+  isSpec: "True"
+  fullName: ZoeProg.Settings.SettingsModule.OnInitialized
+  nameWithType: SettingsModule.OnInitialized
+- uid: ZoeProg.Settings.SettingsModule.RegisterTypes(IContainerRegistry)
+  name: RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_RegisterTypes_IContainerRegistry_
+  commentId: M:ZoeProg.Settings.SettingsModule.RegisterTypes(IContainerRegistry)
+  fullName: ZoeProg.Settings.SettingsModule.RegisterTypes(IContainerRegistry)
+  nameWithType: SettingsModule.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.Settings.SettingsModule.RegisterTypes*
+  name: RegisterTypes
+  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_RegisterTypes_
+  commentId: Overload:ZoeProg.Settings.SettingsModule.RegisterTypes
+  isSpec: "True"
+  fullName: ZoeProg.Settings.SettingsModule.RegisterTypes
+  nameWithType: SettingsModule.RegisterTypes
+- uid: ZoeProg.Settings.ViewModels
+  name: ZoeProg.Settings.ViewModels
+  href: api/ZoeProg.Settings.ViewModels.html
+  commentId: N:ZoeProg.Settings.ViewModels
+  fullName: ZoeProg.Settings.ViewModels
+  nameWithType: ZoeProg.Settings.ViewModels
+- uid: ZoeProg.Settings.ViewModels.SettingViewModel
+  name: SettingViewModel
+  href: api/ZoeProg.Settings.ViewModels.SettingViewModel.html
+  commentId: T:ZoeProg.Settings.ViewModels.SettingViewModel
+  fullName: ZoeProg.Settings.ViewModels.SettingViewModel
+  nameWithType: SettingViewModel
+- uid: ZoeProg.Settings.ViewModels.SettingViewModel.#ctor
+  name: SettingViewModel()
+  href: api/ZoeProg.Settings.ViewModels.SettingViewModel.html#ZoeProg_Settings_ViewModels_SettingViewModel__ctor
+  commentId: M:ZoeProg.Settings.ViewModels.SettingViewModel.#ctor
+  fullName: ZoeProg.Settings.ViewModels.SettingViewModel.SettingViewModel()
+  nameWithType: SettingViewModel.SettingViewModel()
+- uid: ZoeProg.Settings.ViewModels.SettingViewModel.#ctor*
+  name: SettingViewModel
+  href: api/ZoeProg.Settings.ViewModels.SettingViewModel.html#ZoeProg_Settings_ViewModels_SettingViewModel__ctor_
+  commentId: Overload:ZoeProg.Settings.ViewModels.SettingViewModel.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Settings.ViewModels.SettingViewModel.SettingViewModel
+  nameWithType: SettingViewModel.SettingViewModel
+- uid: ZoeProg.Settings.Views
+  name: ZoeProg.Settings.Views
+  href: api/ZoeProg.Settings.Views.html
+  commentId: N:ZoeProg.Settings.Views
+  fullName: ZoeProg.Settings.Views
+  nameWithType: ZoeProg.Settings.Views
+- uid: ZoeProg.Settings.Views.SettingView
+  name: SettingView
+  href: api/ZoeProg.Settings.Views.SettingView.html
+  commentId: T:ZoeProg.Settings.Views.SettingView
+  fullName: ZoeProg.Settings.Views.SettingView
+  nameWithType: SettingView
+- uid: ZoeProg.Settings.Views.SettingView.#ctor
+  name: SettingView()
+  href: api/ZoeProg.Settings.Views.SettingView.html#ZoeProg_Settings_Views_SettingView__ctor
+  commentId: M:ZoeProg.Settings.Views.SettingView.#ctor
+  fullName: ZoeProg.Settings.Views.SettingView.SettingView()
+  nameWithType: SettingView.SettingView()
+- uid: ZoeProg.Settings.Views.SettingView.#ctor*
+  name: SettingView
+  href: api/ZoeProg.Settings.Views.SettingView.html#ZoeProg_Settings_Views_SettingView__ctor_
+  commentId: Overload:ZoeProg.Settings.Views.SettingView.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.Settings.Views.SettingView.SettingView
+  nameWithType: SettingView.SettingView
 - uid: ZoeProg.ViewModels
   name: ZoeProg.ViewModels
   href: api/ZoeProg.ViewModels.html
@@ -3392,6 +3976,25 @@ references:
   isSpec: "True"
   fullName: ZoeProg.ViewModels.IShellViewModel.Title
   nameWithType: IShellViewModel.Title
+- uid: ZoeProg.ViewModels.OptionViewModelBase
+  name: OptionViewModelBase
+  href: api/ZoeProg.ViewModels.OptionViewModelBase.html
+  commentId: T:ZoeProg.ViewModels.OptionViewModelBase
+  fullName: ZoeProg.ViewModels.OptionViewModelBase
+  nameWithType: OptionViewModelBase
+- uid: ZoeProg.ViewModels.OptionViewModelBase.Title
+  name: Title
+  href: api/ZoeProg.ViewModels.OptionViewModelBase.html#ZoeProg_ViewModels_OptionViewModelBase_Title
+  commentId: P:ZoeProg.ViewModels.OptionViewModelBase.Title
+  fullName: ZoeProg.ViewModels.OptionViewModelBase.Title
+  nameWithType: OptionViewModelBase.Title
+- uid: ZoeProg.ViewModels.OptionViewModelBase.Title*
+  name: Title
+  href: api/ZoeProg.ViewModels.OptionViewModelBase.html#ZoeProg_ViewModels_OptionViewModelBase_Title_
+  commentId: Overload:ZoeProg.ViewModels.OptionViewModelBase.Title
+  isSpec: "True"
+  fullName: ZoeProg.ViewModels.OptionViewModelBase.Title
+  nameWithType: OptionViewModelBase.Title
 - uid: ZoeProg.ViewModels.ProgressViewModel
   name: ProgressViewModel
   href: api/ZoeProg.ViewModels.ProgressViewModel.html
@@ -3604,6 +4207,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Views.About.About
   nameWithType: About.About
+- uid: ZoeProg.Views.About.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.Views.About.html#ZoeProg_Views_About_InitializeComponent
+  commentId: M:ZoeProg.Views.About.InitializeComponent
+  fullName: ZoeProg.Views.About.InitializeComponent()
+  nameWithType: About.InitializeComponent()
+- uid: ZoeProg.Views.About.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.Views.About.html#ZoeProg_Views_About_InitializeComponent_
+  commentId: Overload:ZoeProg.Views.About.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.Views.About.InitializeComponent
+  nameWithType: About.InitializeComponent
 - uid: ZoeProg.Views.ProgressView
   name: ProgressView
   href: api/ZoeProg.Views.ProgressView.html
@@ -3623,6 +4239,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Views.ProgressView.ProgressView
   nameWithType: ProgressView.ProgressView
+- uid: ZoeProg.Views.ProgressView.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.Views.ProgressView.html#ZoeProg_Views_ProgressView_InitializeComponent
+  commentId: M:ZoeProg.Views.ProgressView.InitializeComponent
+  fullName: ZoeProg.Views.ProgressView.InitializeComponent()
+  nameWithType: ProgressView.InitializeComponent()
+- uid: ZoeProg.Views.ProgressView.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.Views.ProgressView.html#ZoeProg_Views_ProgressView_InitializeComponent_
+  commentId: Overload:ZoeProg.Views.ProgressView.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.Views.ProgressView.InitializeComponent
+  nameWithType: ProgressView.InitializeComponent
 - uid: ZoeProg.Views.SettingsAppearance
   name: SettingsAppearance
   href: api/ZoeProg.Views.SettingsAppearance.html
@@ -3642,6 +4271,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Views.SettingsAppearance.SettingsAppearance
   nameWithType: SettingsAppearance.SettingsAppearance
+- uid: ZoeProg.Views.SettingsAppearance.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.Views.SettingsAppearance.html#ZoeProg_Views_SettingsAppearance_InitializeComponent
+  commentId: M:ZoeProg.Views.SettingsAppearance.InitializeComponent
+  fullName: ZoeProg.Views.SettingsAppearance.InitializeComponent()
+  nameWithType: SettingsAppearance.InitializeComponent()
+- uid: ZoeProg.Views.SettingsAppearance.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.Views.SettingsAppearance.html#ZoeProg_Views_SettingsAppearance_InitializeComponent_
+  commentId: Overload:ZoeProg.Views.SettingsAppearance.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.Views.SettingsAppearance.InitializeComponent
+  nameWithType: SettingsAppearance.InitializeComponent
 - uid: ZoeProg.Views.Shell
   name: Shell
   href: api/ZoeProg.Views.Shell.html

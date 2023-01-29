@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/GIT/CSharpProjects/ZoeProg/src/ZoeProg.Documentation",
+  "source_base_path": "C:/GIT/ZoeProg/src/ZoeProg.Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,10 +9,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.App.html",
-          "hash": "vAQ0syhVAvAJ3O26IO4shg=="
+          "hash": "g60BTdyB4c5WUSs4RePOiBjIut/2ve15wyjM1KTF8/I="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -21,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.Cmds.html",
-          "hash": "IB6bJ0QLhsSZj2yPt25kOg=="
+          "hash": "B9i17TWEbJg+xkZvnbvt6xtTWDRr3xwBH1bwdQRYNkI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -33,10 +33,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.IConfigurationService.html",
-          "hash": "e+OGZPxmducUGdRF9KL93g=="
+          "hash": "hGBMBma5C/kvLrdjlKO42ISHE72MK4979JGEvBxYT1E="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -45,10 +45,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.IPlugin.html",
-          "hash": "SWpWNTP3SWKitKxrIJq5TA=="
+          "hash": "FK5b26BWgCA+GXWtoNWM3LQNaBpkYPaj5cAiJ6n9ilc="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -57,10 +57,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.IProgressViewModel.html",
-          "hash": "RWtwarSAneSVORNJmo+VPA=="
+          "hash": "StfbgwspSy6B4OI+519j08fAga3jydWBGIgvzcMft+g="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -69,10 +69,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.ISettingService.html",
-          "hash": "8LsPOrriLS9hM/aO9k14tQ=="
+          "hash": "PuaF3ay7r86TcL6gD5waw5OHlN3bPf9bioHdzr0vHMk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -81,10 +81,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.Models.Drive.html",
-          "hash": "Mu29H8qDctDneTtNDYe4Aw=="
+          "hash": "QDbQoavAXIcLPHAWYWC+aJ+pPteiPchRxR079JuBIFw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -93,10 +93,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.Models.ProviderType.html",
-          "hash": "mo4rT/XEHr/mbmoW66icbA=="
+          "hash": "k1qtu2PAZgKOqeQCqAZQaeQn5mwvrBo6OPh5zmwQkI4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -105,10 +105,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.Models.html",
-          "hash": "Z62wRJHsR+01Szmvz9M9+A=="
+          "hash": "tqz3u0W6jWMLbi2d9khXZQk6M4l3GiQYVfybRdYJS/s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -117,10 +117,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Common.html",
-          "hash": "OtVFKKap//yjGxdLvBCZrA=="
+          "hash": "V4c+1KxFb/sC2SQfZ0ZfsB2XtndayDiYbdSwMaCueKo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -129,10 +129,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Cmds.html",
-          "hash": "gReUfsEg5bSnVSwayxwLRA=="
+          "hash": "lV/Hw7V9FXKU2p/kscGLoznZHM8i47PSeXjHsiFSRls="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -141,10 +141,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Constants.RegionNames.html",
-          "hash": "xbDFJG6zSPtKLfUSBS1cVw=="
+          "hash": "QacLdqarlc2WYzHtA+ezqZNa7MURdCzogsjgdKoo3gg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -153,10 +153,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Constants.html",
-          "hash": "3qZxD7hrJU2CoBgbHYqQcQ=="
+          "hash": "S3XsAY7g72OBS7ld9aPwbMoBNZyR1+oPafRTKI5G8kI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -165,10 +165,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Data.InstalledPackage.html",
-          "hash": "ivX9PVZtSar5L8+oSSesvQ=="
+          "hash": "9LSQV1l4AcCmAslThgMYn+uzwNZP2VKxb2VlED100wI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -177,10 +177,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Data.Package.html",
-          "hash": "JyN+dHuVW48RnuC10tFamg=="
+          "hash": "E3qAo7PEVcEG73F32K2UdSza13qmTjri4Kab9bFoO1s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -189,10 +189,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Data.PackageFilter.html",
-          "hash": "wqW/vlhXVjr+riMfTshB3A=="
+          "hash": "Hg44ky3UPH9QL9z4KmBJHW7chapIgN5MYEfvFZADshY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -201,10 +201,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Data.PackageVersion.html",
-          "hash": "GJPG95mpV0fir4kCQD7jWg=="
+          "hash": "GlKqnljikFCG5DWSo16/7txorxT7lEj1cYgvceD/EHw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -213,10 +213,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Data.UninstalledPackage.html",
-          "hash": "I+GbIjDEsuEptxgF4wB7MQ=="
+          "hash": "Nv2UoM9el5ux8omaa89o2k7pZNccAzvak2lRvH8wfeg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -225,10 +225,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Data.html",
-          "hash": "oWP6o5ME8gcLpHndonm+xQ=="
+          "hash": "4IhUUmrH4OgCdbqAxyxiZLV/2TWzCMfDr77PpqTilEI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -237,10 +237,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IAuthenticationService.html",
-          "hash": "+BTWV72To8e+2L+JKo53xw=="
+          "hash": "ZgmgLpsFGYUifkg0lK4dlcUWW7g3s4kxwW64DAzZ1OU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -249,10 +249,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.ICommandManager.html",
-          "hash": "4R3IydfePZUA5dHRgEyqSQ=="
+          "hash": "NUb6Pfs305nsdQt2WWIyuPnWwwTX4QNnPGBO7PfsqUA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -261,10 +261,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IPackageRepository.html",
-          "hash": "SHmzP6MdW12ZHWVq+2oDDQ=="
+          "hash": "vrjvwd7x4qgWFNyw0/FDqAdPXkm6K5rTgX89EtRvzZY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -273,10 +273,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IPackageService.html",
-          "hash": "CyntnSH7/ddVwXCYuXa3pw=="
+          "hash": "3ZWB8vJMG227kcQnfaEfQHnTBk3WC0862DYpgKUKGKQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -285,10 +285,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IPlugin.html",
-          "hash": "q/szHD/3ZDaM3kOzLOHttg=="
+          "hash": "YMwcLutaRdz81U46ZlpJQl9VinTmrGLuUdxRg5lyjEQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -297,10 +297,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IPluginHeader.html",
-          "hash": "RsyL5eKWpYSw5acmYTxP1Q=="
+          "hash": "plgfWa7yQwWAhtiMbi0IQRqRnl74F0SjQhwP1BqimxI="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -309,10 +309,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IProgressViewModel.html",
-          "hash": "mhY0Dp2rUtZ8TlveNJdVdA=="
+          "hash": "iOnWh3+VgSTHJnToZAbapRkqNoXoDyPzRH85IYFIf0c="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -321,10 +321,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.ISettingService.html",
-          "hash": "kYBokdUdb0DYDREX0lOw4w=="
+          "hash": "tY68PKYLfJ+dGO82iFta8mDSSVriAWG2hCjY5qr+ckM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -333,10 +333,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IUndoableCommand.html",
-          "hash": "rvtpTPKEMVFVU9SvTUHwpg=="
+          "hash": "YegHehb9qKkNTqZB8cnnZSXCdNR+/qi+qp6m+P/S3ig="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -345,10 +345,22 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.IUserService.html",
-          "hash": "OtAtrSLGu5oGtCUXRlt0ug=="
+          "hash": "2HPTiCPQXkmkXjP8olUWRR5zZUKQ3gVm0s93/APMVdw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Core.Models.CleanUpItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Core.Models.CleanUpItem.html",
+          "hash": "ehKJ9plvl0CNMq43YveATpFC7PGmwBumGn3V5eQFEb8="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -357,10 +369,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Models.LogModel.html",
-          "hash": "uySd752dkxGsvM5rngcqTw=="
+          "hash": "bbJGL5T7DqqmiNM4eiXTD+qScEuFt1WNM1OsZYJFN7c="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -369,10 +381,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Models.html",
-          "hash": "KBBJ2Br57wKFfb/WvzCaxw=="
+          "hash": "+s/EMYx0Beb6+VSfHQRfa/j8zeCiBw7A3H9K6jwMDVQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -381,10 +393,22 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Utils.DictionaryFlattener.html",
-          "hash": "dWGIl9a+JEmsD5y6/GcxZA=="
+          "hash": "vS6D0rp0W6t3DngyuxU4zQI1T7J/55ok6KjTfHTTga0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Core.Utils.PowerShellHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Core.Utils.PowerShellHelper.html",
+          "hash": "1TgW0Imk86Yd5Uw2zL/ybs18C1xpVn9WVc/eVpuT1j4="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -393,10 +417,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.Utils.html",
-          "hash": "3I2rYqHSTnPW6I+BWr7KGw=="
+          "hash": "uNO1GX9UHGfE6rwYLgwGruWiRPjBatnbY17aACBK2U0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -405,10 +429,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Core.html",
-          "hash": "nJsEocP9avLPw28cAjs62g=="
+          "hash": "gv+3LoGXZBiOhb2RaKNnonxr96Wk+4VDVl1afwh2fN4="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -417,10 +441,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html",
-          "hash": "QrhIefzTVFNmDFO9qYmdMw=="
+          "hash": "fkylmTo4uAMzDzMoS1yc1k+3zhDqRR+Xr8rfWolLKlE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -429,10 +453,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html",
-          "hash": "T7Xq/zduD6RVRhKOjyWWsw=="
+          "hash": "KXX2d9tGIdBuacir4zqogLN0ww78lyPxiROQclrSZhY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -441,10 +465,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Extensions.ListViewRegionAdapter.html",
-          "hash": "Oy3v70pLFn16jC24eT7Y0w=="
+          "hash": "GyWysIWcr/yiPaqwoRBSziuHgulQYYNVoKlNj+4lp2c="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -453,10 +477,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Extensions.TabControlRegionAdapter.html",
-          "hash": "nD1Y5NLIqC+1u9+yCrGq/Q=="
+          "hash": "2FAKZvgurkrkgsGyKMvNNXDaZCSOBl74K0DCvu8sPlw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -465,10 +489,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Extensions.html",
-          "hash": "gOBiKDdHUew2IHtBjRKkPg=="
+          "hash": "jYrITrJFIyRseil6DhqrvyFBn5VF1qFwEy8S2ij5sk8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -477,10 +501,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Infrastructure.IAuthChannelFactory.html",
-          "hash": "OKcjr9NcQrMn85yYW4LDRA=="
+          "hash": "6U8wN4YDAgk9g7E4HR/ZfF9RZSaUyolQsaZn/zLRPns="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -489,10 +513,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Infrastructure.IPowershellService.html",
-          "hash": "lRyBWzbRLIOVF7YdtrViYw=="
+          "hash": "WGeHQSwQ4SIUAu63L3HzJA/YKOA71lh2beHKDO8WERY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -501,10 +525,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Infrastructure.html",
-          "hash": "myu8PBtSQ7HCA5sFEr9xLg=="
+          "hash": "HRuJfoZL9uhTUGI8psE0EQgahUmD48Re9uLVGhmgGHk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -513,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Persistence.IUnitOfWork.html",
-          "hash": "+rOo1Qlgzl1UWHL22dKtTQ=="
+          "hash": "2Tbat6ToLe5QWo+sNiv3SWNU9okVZPakuN2VqWW8sNE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -525,10 +549,118 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Persistence.html",
-          "hash": "x4+/qZcnPhfCRB5Eha0Ggw=="
+          "hash": "hL8giZNWxsvDJZlI87Y03xkjgb3GRfOxq5WL5DrH5S8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.ApplicationListModule.html",
+          "hash": "7LRTIHzPXQyj7JDJhWFV3qWuUFcWcF0uDXWQXO2JYjM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.Services.ApplicationListService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.Services.ApplicationListService.html",
+          "hash": "dDskir9t0YLtUKKlaHG36JparnFmfRBrJFB/h5Sn8JQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.Services.IApplicationListService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.Services.IApplicationListService.html",
+          "hash": "LeySzQvVShVofTy+DqaBz2NwuU4lcU9vmsVsnnD7xHs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.Services.html",
+          "hash": "RsTdmHaNWWVYmEUKkszDpaKkVJGp9DjfpdjTzie9LNc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html",
+          "hash": "yCG0BZtpZlContmqNjGMG18FxdKBBlkxhdkTRmqLVoc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.ViewModels.html",
+          "hash": "mUbI0490z3PLGAUcRSRPNP/aHtmZmghYDKnefkvl2K0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.Views.ApplicationListView.html",
+          "hash": "a6veSu9oOeZXoLMj5dXdqXBBx+oBxFlNQz5DLRtFoBQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.Views.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.Views.html",
+          "hash": "gss1iolKzNXjiGeFkmOnT+GFwX/xbL6JwpcH0RX07bc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ApplicationList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ApplicationList.html",
+          "hash": "dGVDKW0dH5i2QwD91iMreBLChQCKkVSyV6vTJco0GOI="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -537,10 +669,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.AuditModule.html",
-          "hash": "sPWaicCD7GBOeJeNqSsOVQ=="
+          "hash": "G+axQb2OnJiYU9OrUHqNVV+GSaZdZG023zMncIsbm/U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -549,10 +681,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Models.ProcessItem.html",
-          "hash": "dUZGx+a67tKyPhY5lIPhUQ=="
+          "hash": "UjUmG5RSNl6eeWReFUUNZZB8N5UU0X0FVf+NDPjmPPU="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -561,10 +693,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Models.html",
-          "hash": "j2el3pmUzVhi4bPFWbQwHg=="
+          "hash": "tVLUzOvN8cTZjaMm7o5z1LKFPNl/bRtgITE7V1RVTB0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -573,10 +705,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Services.IProcessProvider.html",
-          "hash": "kUTwWAi52L9YEYCEPIRQNA=="
+          "hash": "JulrJ5aHZZuGnj2wkt7j09UjjOVHXz0yY4/u82jzHvE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -585,10 +717,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Services.ProcessProvider.html",
-          "hash": "m1X8XuGnGD8XF57OlywB9A=="
+          "hash": "rVsDClS/lUEE36Mo6f7Z1X/B5j+93CttNlCkcbwb8zY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -597,10 +729,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Services.html",
-          "hash": "FIEZfIT++6bH9vJn2yrhKg=="
+          "hash": "0oO4nhrURD0QyrKNWfXkUQvhh9LcW8w4BcDD5WVm+zg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -609,10 +741,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.ViewModels.AuditViewModel.html",
-          "hash": "mPE9jwUhtyGzrwozXyujYA=="
+          "hash": "qrZ3hU57iBRNCpK8EbkIt2frLS7z/oe1Y1ogWdbZ0IM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -621,10 +753,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.ViewModels.html",
-          "hash": "teN14Tgj+ibKvu8autvd7A=="
+          "hash": "HO8OPvjJuPPphD3+CdK9Gf+aZTG1KV0LvIkpc4PKdvw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -633,10 +765,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Views.AuditView.html",
-          "hash": "AV7fjybOTfazTXuoEpm4lg=="
+          "hash": "BFflsgPhJTECJtQtZ8Md0mctz+r302ekDxIAnUHzn4U="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -645,10 +777,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.Views.html",
-          "hash": "ObvPIlsOF6i6NAt5+lK04A=="
+          "hash": "1AetFlxBeCTd1I1RB1JVywf0xXDZUHKz5PDvueQcxpE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -657,10 +789,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Audit.html",
-          "hash": "GLbhwmDT1KMqPVP/3G+A/Q=="
+          "hash": "OEv50bRDttEOPZ2Tabe7oF0EgcOcdNw2aidjGubvoMg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -669,10 +801,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.CleanUpModule.html",
-          "hash": "n2FAZFtD/BhEc5UnOHQehg=="
+          "hash": "p7xxnVrzgeX1KondNmBT6+5X9e6Gj0cbgQ746E/1dzs="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -681,10 +813,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.CleanupService.html",
-          "hash": "JJPIK6N3ByTg1oJN0FZNMA=="
+          "hash": "F1f3AHxEjQSFZVU5SXaYXDZ6PRytKPDUZO49kCHS7y8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -693,22 +825,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html",
-          "hash": "MKt9MlY/sIQaAatj4eu15g=="
+          "hash": "nN+AFpIVBkm2x472aIWpbxIVOXTtWdtwxXIgSx3y8z8="
         }
       },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.TempFileEvent.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.TempFileEvent.html",
-          "hash": "8zsM1+fi5gF9Nf/m++WtGQ=="
-        }
-      },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -717,10 +837,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.Services.html",
-          "hash": "v8XAFngrX6hTxj7ZXAddkw=="
+          "hash": "BcXwUeg1W6wKPYVC6B6MnPE9S/OsMInh0f+JZAOVy8M="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -729,10 +849,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html",
-          "hash": "ZdZHCBy//HL4Qg4Yar1rXw=="
+          "hash": "RdCw8MmmngacvWEwjTz3Rqg94xY7d5jPo2vJnx2Xko8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -741,10 +861,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.ViewModels.html",
-          "hash": "42bfxrRHdXBV+tz/ArbrDQ=="
+          "hash": "eR7d0SJn5zrHH6YFvgeToy3Cs7pepN2rEEujeFVO0/s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -753,10 +873,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.Views.CleanUpView.html",
-          "hash": "m8vXJbGb9lkQfHnKb6bQEQ=="
+          "hash": "oQAU/hixrghCzBlMmdvnzHMzAip57/QqTXYHKP2VcU0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -765,10 +885,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.Views.html",
-          "hash": "VD7XGQxUH5vq6czruCQmpA=="
+          "hash": "sAHHGmBZ3FZhB/zwGiXDlLxHv11pGYnEmmC467MxB20="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -777,10 +897,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.CleanUp.html",
-          "hash": "ea4gDUd70U/w47/nP5y62Q=="
+          "hash": "z/rxhwKhpRlF1qAKLRI3wo7HbBCgVcXWZXGQcgCj+i8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -789,10 +909,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Home.HomeModule.html",
-          "hash": "QkM3Gv1P2Ix6W1QzAVN4+g=="
+          "hash": "dqUgMtaGDojWDSv/EjWPoPUNuHvSD92CbRj9utQcTmY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -801,10 +921,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html",
-          "hash": "iqCz9/gajeoy9kJ4szJVoQ=="
+          "hash": "yJrpWuraNKqhRUp0jjyVMJX9XBZX34lHggMMZeQIRM8="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -813,10 +933,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Home.ViewModels.html",
-          "hash": "qA7O+n0C5glcWVIplHwfQw=="
+          "hash": "NOQyxW/TpAjCGzwTExixO6Xxmqt4TjPxvLqVdmIFe30="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -825,10 +945,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Home.Views.HomeView.html",
-          "hash": "8pvHdRF8D0qiiRMoa0KnNg=="
+          "hash": "XAm1pp/bGK2b63hIP6/DfFzlBzzAF/EVf7nZctbP3j0="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -837,10 +957,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Home.Views.html",
-          "hash": "30RdoUIsMh94Pzt4GvSExA=="
+          "hash": "bIc6MjVkiWEES/4cZtLdbh8lwmXtsa5RJMhgFgXMzpE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -849,10 +969,34 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.PlugIns.Home.html",
-          "hash": "0izDINCWhnggjNiuQiKvpw=="
+          "hash": "ntF+pvcaM9jAlx+ji/Eb6HnIdh8VSpB5QJELiZDz7OQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html",
+          "hash": "98jRW9/R9tSCHPR63S3C0Xl3s6kZkmz0IKmPsUtXWPU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.PlugIns.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.PlugIns.ViewModels.html",
+          "hash": "YadtMfnk+HVLqT6jUbamPxp0KY4cT3utaxjkGnDa2DQ="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -861,10 +1005,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Services.PackageRepository.PackageService.html",
-          "hash": "+S/25WVkLyP3e6WpJMCUqA=="
+          "hash": "Ct52JH1obE+9EX4P9KMY431ocLb2pWu+xzdNgSyomTQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -873,10 +1017,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Services.PackageRepository.html",
-          "hash": "JdGIjyKYw5lwc7bW0o4xzg=="
+          "hash": "9wYZIWidDSLZbrttEOd4ONPkktdnjl4bdNEkh1lbw4Q="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -885,10 +1029,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Services.TaskService.html",
-          "hash": "kzNZIh1ULNFI9MEE/8wqoA=="
+          "hash": "F8aLmbXFjLTL4plH4NUbp17GhOqdzwFQmcd+s2JwX3A="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -897,10 +1041,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Services.html",
-          "hash": "PwgcIPG7as3ymppMUIX42A=="
+          "hash": "zF021rASPmxbGuqJrBx/q533CceCxl28p2ue+71Gh/s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -909,10 +1053,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Setting.SettingModule.html",
-          "hash": "+EMhA6EoCxFyHwW/uPEQQw=="
+          "hash": "R+UmX0YRVEKuxAOMix2yYSeJ1o5hr3aUV+OZ6dX+d+k="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -921,10 +1065,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Setting.ViewModels.SettingViewModel.html",
-          "hash": "3rPu9GSFjg9GZ8T8dDNAfQ=="
+          "hash": "Gdk4EIl8rL0AVx8qdED7RxgZEgzb699R8TtZ4TMWaeY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -933,10 +1077,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Setting.ViewModels.html",
-          "hash": "uXnxeTrNVk0YOzt6qD+TtQ=="
+          "hash": "W4imR4Dz4uFvHct9RdtsmZ2dt5VyRc6mNdZvsyzpycM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -945,10 +1089,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Setting.Views.SettingView.html",
-          "hash": "bTJ3+Wt4mKardQfyLHfWpg=="
+          "hash": "JJ9GW3FI7dxxNrh7XcimVL9Cw+lGHCpgahPAtBruwLY="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -957,10 +1101,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Setting.Views.html",
-          "hash": "snXsFKTh0ZKW4paAyMZGoA=="
+          "hash": "urP/U5CDPmnkBF/E2V9batbjN4Kar8LL4avuiW2bheg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -969,10 +1113,82 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Setting.html",
-          "hash": "yyXQCcf3e7PxsGDIhcO92w=="
+          "hash": "9Bxjb+jB7Jcb29gb54LxLiSXzm52MqMmG9s5SlBLa3k="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Settings.SettingsModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Settings.SettingsModule.html",
+          "hash": "MExOb/KfQVrRRdtkc7smnCGd8//xmmM1qAQvGfPJ6q4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Settings.ViewModels.SettingViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Settings.ViewModels.SettingViewModel.html",
+          "hash": "QP5k+zb0/J2aaqkDPcG/WyVWyxX8QFeZM4MF2G0r2HA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Settings.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Settings.ViewModels.html",
+          "hash": "ix6qAG7nlH51hYWPdXJ0OV8uL1E8nd0DyVF7nN67bTg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Settings.Views.SettingView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Settings.Views.SettingView.html",
+          "hash": "tc/ibz1XABKtR9sFIfmfsXxb2FjBU7yp6rBlQLO+Ebw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Settings.Views.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Settings.Views.html",
+          "hash": "B3PVIKOMOh+B10+/8bHDwgM5aSCmkFyjI9WG0GvmIHQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.Settings.html",
+          "hash": "nfLKfv/JJAOQiUmPJroL3Nw6kTB6YbUuVSfQOu/rlrc="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -981,10 +1197,22 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.ViewModels.IShellViewModel.html",
-          "hash": "Es19aceysJSAcaUyWvgZmA=="
+          "hash": "wO9RclZlODRYUzfYj7WxhW39w39W66ocd3/vPzfcfUA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ZoeProg.ViewModels.OptionViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ZoeProg.ViewModels.OptionViewModelBase.html",
+          "hash": "5hUQ6XQjljYmcb6o8V0Ns1x6fzhSDy419I30uw5rZbk="
+        }
+      },
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -993,10 +1221,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.ViewModels.ProgressViewModel.html",
-          "hash": "HmU3Hgo+auzx5eCHXR4PoA=="
+          "hash": "CDDqyDHOENTgBVZdEVQHdbAjrAUiVBgBw1iqfUBIBnw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1005,10 +1233,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.ViewModels.SettingsAppearanceViewModel.html",
-          "hash": "rpv3BMZDdZ0K7l/BsBU5Jg=="
+          "hash": "xwNeKberdjEO6vqdU32MID6DB+k1iiFEgEPyIvZKwOk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1017,10 +1245,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.ViewModels.ShellViewModel.html",
-          "hash": "34w0/IvIZ7uanMbZc1TYVw=="
+          "hash": "hs0txsoVjmVN6naw7y5FISTUjLgsudFgiEzkhZqnPyg="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1029,10 +1257,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.ViewModels.html",
-          "hash": "ui0rpVgC+7Sepa/JrUL74g=="
+          "hash": "dnE/o5KMxnqE46oy3c16HON8xfbn4obKOjpwXO2pCEo="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1041,10 +1269,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Views.About.html",
-          "hash": "lfWGuIrsRRJ/VFd3IIu+qg=="
+          "hash": "ZaI0wZ7Mo6fkszsEbte/kT4pzfyaHkSGZS9U/eYOjWM="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1053,10 +1281,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Views.ProgressView.html",
-          "hash": "aAVqeE3qPIsyny+b/L4gWg=="
+          "hash": "JxEyvHIGFVhZxxDdqo4vo7cLkVbXf77XH6AnnAYmEXA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1065,10 +1293,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Views.SettingsAppearance.html",
-          "hash": "+qcqyJdsrIoXtDZUawr17A=="
+          "hash": "w1Sp2vttgu40+KwVE7RgJZTJ6CWM45Q1LPaJhX2BCoQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1077,10 +1305,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Views.Shell.html",
-          "hash": "WOFjSkm2GthWTh0S4Hlw0w=="
+          "hash": "Uf44TFDs7tkj76ca30+YCgokYyVFx3f3IPj2y/7vMVA="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1089,10 +1317,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.Views.html",
-          "hash": "280NMC/IFF8pdQK8VP3MYg=="
+          "hash": "x/DhWSI5jD0MRRy0bHBrUzreo5p6G5fB5GHmU4YreFQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1101,10 +1329,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ZoeProg.html",
-          "hash": "XF2hu1L/3H9cJNe+rwbIFA=="
+          "hash": "Ng1AhsV4EACtkRlq0KzNAs1f8vn/9PUaQ17+pbaxito="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1113,10 +1341,10 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "3+ygfiotFFCRxeLhO4YTgw=="
+          "hash": "6tY4BpSkZwVwX3cuyTQaJFnntPr99DhBlNGHUYPQTVk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1125,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "O/fdIkXacpIfZ7emWMz+wg=="
+          "hash": "sY6+kH/A0jmF6LB6OUfWxbyxHk7gUUmEnaD62LtTF8w="
         }
       },
       "is_incremental": false,
@@ -1137,10 +1365,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "a3DkEQN+8Cga9f2C2Ki/RQ=="
+          "hash": "eGlzSFzrlGC2kOS5cTSwI7bxNHHTIjTVTX8HTgMZ5zQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1149,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "gB8AESyvNru97tzIZofEEg=="
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
       "is_incremental": false,
@@ -1161,10 +1389,10 @@
       "output": {
         ".html": {
           "relative_path": "home/intro.html",
-          "hash": "jDF6M8YX55zB897iEDFnqw=="
+          "hash": "ENR/DCMnxjoe9juRxkW7t/chcAuYhDVIc1Ty/m8gL3s="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1173,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "home/toc.html",
-          "hash": "qvRv8ylrzP+4Gz/eKEeLXg=="
+          "hash": "m//lSbc65+8QcrHnXfnmUrxPjuaenlGli3aD1JwQeTU="
         }
       },
       "is_incremental": false,
@@ -1196,10 +1424,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "d3nombPTHnWt2/Ph8x91gQ=="
+          "hash": "W0cEbUu+p9QIuu00R/M5rI9Efe6lwmVzmuB8HLmDoIk="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1208,10 +1436,10 @@
       "output": {
         ".html": {
           "relative_path": "specs/intro.html",
-          "hash": "ujh9At1znaqcu4KxKXOVqQ=="
+          "hash": "T/SCOkgZeb6FXCWsb7tHeexWxYzKVvcnxGt8Jii1AUQ="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1220,7 +1448,7 @@
       "output": {
         ".html": {
           "relative_path": "specs/toc.html",
-          "hash": "B29i8yOtaRfC61wlQ/2v/Q=="
+          "hash": "J3HYnjX6YpP0ztiIXmIT9KVdxwY0cJGTR7L8KPCYF6Q="
         }
       },
       "is_incremental": false,
@@ -1232,7 +1460,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "NiPdzNqpkKLdDLXHtO+cpA=="
+          "hash": "UWzXusKzRB5p7n29IjdWzsjG90tmalXUJCfWK9e4sGE="
         }
       },
       "is_incremental": false,
@@ -1242,25 +1470,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 5,
-          "skipped_file_count": 0
+          "skipped_file_count": 5
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 92,
-          "skipped_file_count": 0
+          "total_file_count": 111,
+          "skipped_file_count": 111
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -1280,8 +1506,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

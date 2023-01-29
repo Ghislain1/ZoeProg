@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CleanUpViewModel
    ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -79,44 +79,107 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CleanUpViewModel</span></div>
+    <div class="level1"><span class="xref">Prism.Mvvm.BindableBase</span></div>
+    <div class="level2"><span class="xref">CleanUpViewModel</span></div>
   </div>
-  <div classs="implements">
+  <div class="implements">
     <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
     <div><a class="xref" href="ZoeProg.Core.IPlugin.html">IPlugin</a></div>
     <div><a class="xref" href="ZoeProg.Core.IPluginHeader.html">IPluginHeader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Prism.Mvvm.BindableBase.SetProperty&lt;T&gt;(T, T, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Prism.Mvvm.BindableBase.SetProperty&lt;T&gt;(T, T, System.Action, System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Prism.Mvvm.BindableBase.RaisePropertyChanged(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Prism.Mvvm.BindableBase.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)</span>
+    </div>
+    <div>
+      <span class="xref">Prism.Mvvm.BindableBase.PropertyChanged</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ZoeProg.PlugIns.CleanUp.ViewModels.html">ZoeProg.PlugIns.CleanUp.ViewModels</a></h6>
   <h6><strong>Assembly</strong>: ZoeProg.PlugIns.CleanUp.dll</h6>
   <h5 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CleanUpViewModel : BindableBase, IPlugin, IPluginHeader</code></pre>
+    <pre><code class="lang-csharp hljs">public class CleanUpViewModel : BindableBase, INotifyPropertyChanged, IPlugin, IPluginHeader</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor_ZoeProg_PlugIns_CleanUp_Services_ICleanupService_MahApps_Metro_Controls_Dialogs_IDialogCoordinator_.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.%23ctor(ZoeProg.PlugIns.CleanUp.Services.ICleanupService%2CMahApps.Metro.Controls.Dialogs.IDialogCoordinator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L63">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L68">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor*"></a>
-  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor">CleanUpViewModel()</h4>
+  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel__ctor_ZoeProg_PlugIns_CleanUp_Services_ICleanupService_MahApps_Metro_Controls_Dialogs_IDialogCoordinator_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.#ctor(ZoeProg.PlugIns.CleanUp.Services.ICleanupService,MahApps.Metro.Controls.Dialogs.IDialogCoordinator)">CleanUpViewModel(ICleanupService, IDialogCoordinator)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CleanUpViewModel()</code></pre>
+    <pre><code class="lang-csharp hljs">public CleanUpViewModel(ICleanupService cleanupService, IDialogCoordinator dialogCoordinator)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ZoeProg.PlugIns.CleanUp.Services.ICleanupService.html">ICleanupService</a></td>
+        <td><span class="parametername">cleanupService</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">MahApps.Metro.Controls.Dialogs.IDialogCoordinator</span></td>
+        <td><span class="parametername">dialogCoordinator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L68">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L142">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code">Code</h4>
@@ -143,15 +206,14 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L73">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L145">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command">Command</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Command.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,22 +229,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICommand</span></td>
+        <td><span class="xref">System.Windows.Input.ICommand</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_CommandParameter.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_CommandParameter.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L78">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L147">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_CommandParameter_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_CommandParameter" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CommandParameter">CommandParameter</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the CommandParameter.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -198,22 +259,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Type</span></td>
+        <td><span class="xref">System.Type</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommand.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommand.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L83">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L149">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommand_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommand" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommand">DeleteCommand</h4>
-  <div class="markdown level1 summary"><p>Gets the DeleteCommand.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -229,53 +289,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DelegateCommand</span></td>
+        <td><span class="xref">Prism.Commands.DelegateCommand</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L88">View Source</a>
-  </span>
-  <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName*"></a>
-  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_DeleteCommandDisplayName" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.DeleteCommandDisplayName">DeleteCommandDisplayName</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the DeleteCommandDisplayName.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string DeleteCommandDisplayName { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L103">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L152">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Description" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description">Description</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Description.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -298,10 +326,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L108">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L157">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph">Glyph</h4>
@@ -329,10 +357,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L113">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L163">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header">Header</h4>
@@ -360,10 +388,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L118">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L168">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id">Id</h4>
@@ -391,10 +419,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L123">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L173">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy">IsBusy</h4>
@@ -422,10 +450,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsSelected.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsSelected.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L142">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L204">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsSelected_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsSelected" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsSelected">IsSelected</h4>
@@ -453,10 +481,102 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Items.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L157">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L249">View Source</a>
+  </span>
+  <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Items_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items*"></a>
+  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Items" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Items">Items</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Todos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;CleanUpItemViewModel&gt; Items { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html">CleanUpItemViewModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsCount.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L198">View Source</a>
+  </span>
+  <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsCount_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount*"></a>
+  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsCount" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsCount">ItemsCount</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether IsSelected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ItemsCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsView.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L255">View Source</a>
+  </span>
+  <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsView_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView*"></a>
+  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ItemsView" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ItemsView">ItemsView</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollectionView ItemsView { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ComponentModel.ICollectionView</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L219">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Kind" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind">Kind</h4>
@@ -484,10 +604,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L162">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L224">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label">Label</h4>
@@ -515,10 +635,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L167">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L229">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath">NavigatePath</h4>
@@ -546,10 +666,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ScanCommand.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ScanCommand.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L172">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L234">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ScanCommand_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_ScanCommand" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand">ScanCommand</h4>
@@ -570,17 +690,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">DelegateCommand</span></td>
+        <td><span class="xref">Prism.Commands.DelegateCommand</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L177">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L239">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag">Tag</h4>
@@ -608,10 +728,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L182">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L244">View Source</a>
   </span>
   <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title*"></a>
   <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title">Title</h4>
@@ -637,38 +757,10 @@
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L187">View Source</a>
-  </span>
-  <a id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos_" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos*"></a>
-  <h4 id="ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Todos" data-uid="ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Todos">Todos</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Todos.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;string&gt; Todos { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">ObservableCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
   <div>
       <a class="xref" href="ZoeProg.Core.IPlugin.html">IPlugin</a>
   </div>
@@ -683,10 +775,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel.md&amp;value=---%0Auid%3A%20ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanUpViewModel.cs/#L36" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.PlugIns.CleanUp/ViewModels/CleanupViewModel.cs/#L45" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DictionaryFlattener
    ">
-    <meta name="generator" content="docfx 2.56.7.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,29 +81,54 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">DictionaryFlattener</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ZoeProg.Core.Utils.html">ZoeProg.Core.Utils</a></h6>
   <h6><strong>Assembly</strong>: ZoeProg.Core.dll</h6>
   <h5 id="ZoeProg_Core_Utils_DictionaryFlattener_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class DictionaryFlattener : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DictionaryFlattener</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_IDictionary_System_String___0__.md&amp;value=---%0Auid%3A%20ZoeProg.Core.Utils.DictionaryFlattener.Flatten%60%601(IDictionary%7BSystem.String%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_System_Collections_Generic_IDictionary_System_String___0__.md&amp;value=---%0Auid%3A%20ZoeProg.Core.Utils.DictionaryFlattener.Flatten%60%601(System.Collections.Generic.IDictionary%7BSystem.String%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.Core/Utils/DictionaryFlattener.cs/#L36">View Source</a>
+    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.Core/Utils/DictionaryFlattener.cs/#L36">View Source</a>
   </span>
   <a id="ZoeProg_Core_Utils_DictionaryFlattener_Flatten_" data-uid="ZoeProg.Core.Utils.DictionaryFlattener.Flatten*"></a>
-  <h4 id="ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_IDictionary_System_String___0__" data-uid="ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(IDictionary{System.String,``0})">Flatten&lt;TCollection&gt;(IDictionary&lt;String, TCollection&gt;)</h4>
+  <h4 id="ZoeProg_Core_Utils_DictionaryFlattener_Flatten__1_System_Collections_Generic_IDictionary_System_String___0__" data-uid="ZoeProg.Core.Utils.DictionaryFlattener.Flatten``1(System.Collections.Generic.IDictionary{System.String,``0})">Flatten&lt;TCollection&gt;(IDictionary&lt;String, TCollection&gt;)</h4>
   <div class="markdown level1 summary"><p>The Flatten.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static ICollection&lt;string&gt; Flatten&lt;TCollection&gt;(IDictionary&lt;string, TCollection&gt; dictionary)
+
     where TCollection : IEnumerable&lt;string&gt;</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -117,9 +142,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, TCollection&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, TCollection&gt;</td>
         <td><span class="parametername">dictionary</span></td>
-        <td><p>The dictionary <see cref="!:IDictionary&lt;string, TCollection>"></see>.</p>
+        <td><p>The dictionary <span class="xref">System.Collections.Generic.IDictionary&lt;TKey, TValue&gt;</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -134,8 +159,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>The <see cref="!:ICollection&lt;string>"></see>.</p>
+        <td><span class="xref">System.Collections.Generic.ICollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The <span class="xref">System.Collections.Generic.ICollection&lt;T&gt;</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -164,10 +189,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Ghislain1/ZoeProg/new/intro-project-with-you-guys/apiSpec/new?filename=ZoeProg_Core_Utils_DictionaryFlattener.md&amp;value=---%0Auid%3A%20ZoeProg.Core.Utils.DictionaryFlattener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/Ghislain1/ZoeProg/new/master/apiSpec/new?filename=ZoeProg_Core_Utils_DictionaryFlattener.md&amp;value=---%0Auid%3A%20ZoeProg.Core.Utils.DictionaryFlattener%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Ghislain1/ZoeProg/blob/intro-project-with-you-guys/src/ZoeProg.Core/Utils/DictionaryFlattener.cs/#L28" class="contribution-link">View Source</a>
+                    <a href="https://github.com/Ghislain1/ZoeProg/blob/master/src/ZoeProg.Core/Utils/DictionaryFlattener.cs/#L28" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
