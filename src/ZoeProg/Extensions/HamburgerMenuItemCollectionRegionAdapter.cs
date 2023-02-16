@@ -44,8 +44,8 @@ namespace ZoeProg.Extensions
                             var hamburgerMenuGlyphItem = new HamburgerMenuGlyphItem();
                             if (plugin != null)
                             {
-                                hamburgerMenuGlyphItem.Glyph = plugin.Glyph;
-                                hamburgerMenuGlyphItem.Label = plugin.Label;
+                                hamburgerMenuGlyphItem.Glyph = plugin.Kind;
+                                hamburgerMenuGlyphItem.Label = plugin.Header;
                                 hamburgerMenuGlyphItem.CommandParameter = plugin.CommandParameter;
                                 hamburgerMenuGlyphItem.Tag = (UserControl)element;
                                 hamburgerMenuGlyphItem.CommandParameter = element.GetType();

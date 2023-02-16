@@ -18,11 +18,11 @@ jobs:
           dotnet-version: 6.0.x
       - name: Restore dependencies
         run: dotnet restore
-      - name: Build
+      - name: Build ON release
         run: dotnet build -c Release --no-restore
-      - name: Test Debug
+      - name: Test ON Debug
         run: dotnet test -c Debug --no-restore --verbosity normal --collect:"XPlat Code Coverage"
-      - name: Test Release
+      - name: Test ON Release
         run: dotnet test -c Release --no-restore --verbosity normal --collect:"XPlat Code Coverage"
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1

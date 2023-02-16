@@ -89,5 +89,6 @@ namespace ZoeProg.PlugIns.Home.ViewModels
         /// Gets or sets the Title.
         /// </summary>
         public string Title { get; set; } = "Home";
+        string IPlugin.Header { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }
