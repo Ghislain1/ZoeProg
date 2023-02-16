@@ -1,5 +1,5 @@
-﻿namespace ZoeProg.PlugIns.Home.Views
-{
+﻿namespace ZoeProg.PlugIns.Home.Views;
+
     using System.Windows.Controls;
 
     /// <summary>
@@ -16,4 +16,3 @@
             this.InitializeComponent();
         }
     }
-}
