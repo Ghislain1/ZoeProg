@@ -13,9 +13,23 @@ namespace ZoeProg.PlugIns.CleanUp.Services
     using ZoeProg.Core.Utils;
     public class CleanupService : ICleanupService
     {
+        // TODO@Ghis: can we configure from View
+        private readonly Dictionary<string, string> PresetDirectorySources = new Dictionary<string, string>
+            {
+                {"Temporary Directory", Path.GetTempPath()},
+                {"Win Temporary Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Temp")},
+                {"Windows Installer Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Installer\$PatchCache$\Managed")},
+                {"Windows Update Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"SoftwareDistribution\Download")},
+                {"Windows Logs Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Logs")},
+                {"Prefetch Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Prefetch")},
+                {"Crash Dump Directory",Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),@"CrashDumps")
+                },
+              //  {"Google Chrome Cache", Path.Combine(Window7.ChromeDataPath, @"Default\Cache")},
+             //   {"Steam Redist Packages", SteamLibraryDir}
+            };
         private readonly IEventAggregator eventAggregator;
+        public IDictionary<string, string> GetPresetDirectories() => this.PresetDirectorySources;
 
-        private readonly List<string>? tempFiles;
 
         public CleanupService(IEventAggregator eventAggregator)
         {

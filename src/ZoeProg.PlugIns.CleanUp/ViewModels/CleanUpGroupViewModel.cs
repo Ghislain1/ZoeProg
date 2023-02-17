@@ -1,6 +1,6 @@
 ﻿
 
-namespace ZoeProg.PlugIns.ViewModels;
+namespace ZoeProg.PlugIns.CleanUp.ViewModels;
 
 using System;
 using System.Collections.Generic;
@@ -12,29 +12,30 @@ using ZoeProg.Core.Models;
 public class CleanUpGroupViewModel : BindableBase
 {
 
-    private bool deny;
+    private bool isChecked;
     private string group;
-    //i.e. cannot be deleted
-    public bool Deny
+    private string fullPath;
+
+    public bool IsChecked
     {
-        get => this.deny;
-        set => this.SetProperty<bool>(ref this.deny, value);
+        get => this.isChecked;
+        set => this.SetProperty<bool>(ref this.isChecked, value);
     }
 
-    public string Group
-    {
-        get => this.group;
-        set => this.SetProperty<string>(ref this.group, value);
-
-    }
-    public string Key
+    public string? GroupName
     {
         get;
     }
 
-    public CleanUpGroupViewModel(string key, string group)
+    public string? FullPath
     {
-        this.Key = key;
-        this.Group = group;
+        get;
+
+    }
+
+    public CleanUpGroupViewModel(string groupName, string fullPath)
+    {
+        this.GroupName = groupName;
+        this.FullPath = fullPath;
     }
 }

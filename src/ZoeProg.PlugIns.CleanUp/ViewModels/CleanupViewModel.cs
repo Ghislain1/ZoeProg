@@ -44,20 +44,7 @@ using System.Windows;
 /// </summary>
 public class CleanUpViewModel : BindableBase, IPlugin
 {
-    // TODO@Ghis: can we configure from View
-    private readonly Dictionary<string, string> PresetDirectorySources = new Dictionary<string, string>
-            {
-                {"Temporary Directory", Path.GetTempPath()},
-                {"Win Temporary Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Temp")},
-                {"Windows Installer Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Installer\$PatchCache$\Managed")},
-                {"Windows Update Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"SoftwareDistribution\Download")},
-                {"Windows Logs Directory", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Logs")},
-                {"Prefetch Cache", Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Windows), @"Prefetch")},
-                {"Crash Dump Directory",Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),@"CrashDumps")
-                },
-              //  {"Google Chrome Cache", Path.Combine(Window7.ChromeDataPath, @"Default\Cache")},
-             //   {"Steam Redist Packages", SteamLibraryDir}
-            };
+
     private readonly IDialogCoordinator dialogCoordinator;
     private readonly ICleanupService cleanupService;
     private bool isBusy;
@@ -70,13 +57,14 @@ public class CleanUpViewModel : BindableBase, IPlugin
     {
         this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
         this.dialogCoordinator = dialogCoordinator ?? throw new ArgumentNullException(nameof(dialogCoordinator));
-        this.Kind = "Jira";
         this.InitGroup();
         this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
         this.ItemsView.Filter = item => this.OnFilter(item);
+        this.SetUpCommands();
+    }
 
-
-
+    private void SetUpCommands()
+    {
         this.ScanCommand = new DelegateCommand(async () =>
         {
             await this.LoadDataAsync();
@@ -87,16 +75,15 @@ public class CleanUpViewModel : BindableBase, IPlugin
             await this.DeleteDataAsync();
 
         }, () => !this.IsBusy && this.Items is not null && this.Items.Any(ite => !ite.Deny));
-
-
     }
 
     private void InitGroup()
     {
         this.GroupCollection.Clear();
-        foreach (var item in this.PresetDirectorySources.Keys)
+        var dic = this.cleanupService.GetPresetDirectories();
+        foreach (var item in dic.Keys)
         {
-            this.GroupCollection.Add(new CleanUpGroupViewModel(item, this.PresetDirectorySources[item]));
+            this.GroupCollection.Add(new CleanUpGroupViewModel(item, dic[item]));
         }
     }
 
@@ -107,10 +94,9 @@ public class CleanUpViewModel : BindableBase, IPlugin
         {
             return File.Exists(cleanUpItemViewModel.CleanUpItem.Path);
         }
-        else
-        {
-            return true;
-        }
+
+        return true;
+
 
 
     }
@@ -122,13 +108,13 @@ public class CleanUpViewModel : BindableBase, IPlugin
         var controller = await this.dialogCoordinator.ShowProgressAsync(this, "[Ghislain-ToDo] Please wait...", "Progress message");
         controller.SetIndeterminate();
         this.Items.Clear();
-        foreach (var demoFolder in PresetDirectorySources.Keys.ToList())
+        foreach (var demoFolder in this.GroupCollection.Where(i => i.IsChecked && i.FullPath is not null))
         {
-            var filesToClean = await this.cleanupService.GetAllAsync(PresetDirectorySources[demoFolder], this.cancellationTokenSource.Token);
+            var filesToClean = await this.cleanupService.GetAllAsync(demoFolder.FullPath, this.cancellationTokenSource.Token);
 
             foreach (var item in filesToClean)
             {
-                this.Items.Add(new CleanUpItemViewModel(item, demoFolder));
+                this.Items.Add(new CleanUpItemViewModel(item, demoFolder.GroupName));
             }
         }
         await controller.CloseAsync();
@@ -201,13 +187,12 @@ public class CleanUpViewModel : BindableBase, IPlugin
         get => this.isSelected;
 
         set => this.SetProperty<bool>(ref this.isSelected, value);
-
     }
 
     /// <summary>
     /// Gets or sets the Kind.
     /// </summary>
-    public string Kind { get; set; }
+    public string Kind { get; set; } = "Clock";
 
     /// <summary>
     /// Gets or sets the Label.
@@ -231,7 +216,6 @@ public class CleanUpViewModel : BindableBase, IPlugin
     {
         get => this.items;
         set => this.SetProperty<ObservableCollection<CleanUpItemViewModel>>(ref this.items, value);
-
     }
 
     public ObservableCollection<CleanUpGroupViewModel> GroupCollection
