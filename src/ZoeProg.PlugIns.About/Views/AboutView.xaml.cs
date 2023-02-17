@@ -1,17 +1,17 @@
 ﻿namespace ZoeProg.PlugIns.Home.Views;
 
-    using System.Windows.Controls;
+using System.Windows.Controls;
 
+/// <summary>
+/// Interaction logic for HomeView.xaml
+/// </summary>
+public partial class AboutView : UserControl
+{
     /// <summary>
-    /// Interaction logic for HomeView.xaml
+    /// Initializes a new instance of the <see cref="HomeView"/> class.
     /// </summary>
-    public partial class AboutView : UserControl
-    {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="HomeView"/> class.
-        /// </summary>
 
-        public AboutView() =>
-            this.InitializeComponent();
-        
-    }
+    public AboutView() =>
+        this.InitializeComponent();
+
+}

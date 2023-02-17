@@ -25,7 +25,7 @@ public class AboutViewModel : BindableBase, IPlugin
         this.CommandParameter = this.GetType();
     }
 
-   
+
 
     /// <summary>
     /// Gets or sets the Command.
@@ -42,32 +42,32 @@ public class AboutViewModel : BindableBase, IPlugin
     /// </summary>
     public string Description => " I m About feature !";
 
-   
+
 
     /// <summary>
     /// Gets the Header.
     /// </summary>
-    public string Header { get; set; }= "About";
+    public string Header { get; set; } = "About";
 
- 
+
 
     /// <summary>
     /// Gets or sets a value indicating whether IsSelected.
     /// </summary>
-    public bool IsSelected { get  ; set  ; }
+    public bool IsSelected { get; set; }
 
     /// <summary>
     /// Gets or sets the Kind.
     /// </summary>
-    public string Kind => "About";     
+    public string Kind => "About";
 
     /// <summary>
     /// Gets or sets the NavigatePath.
     /// </summary>
-    public string NavigatePath { get ; set ; }
+    public string NavigatePath { get; set; }
 
-    
 
-  
- 
+
+
+
 }

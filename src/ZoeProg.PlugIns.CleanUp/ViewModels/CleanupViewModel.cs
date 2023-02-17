@@ -63,6 +63,7 @@ public class CleanUpViewModel : BindableBase, IPlugin
     private bool isBusy;
     private bool isSelected = false;
     private ObservableCollection<CleanUpItemViewModel> items = new();
+    private ObservableCollection<CleanUpGroupViewModel> groupCollection = new();
     private CancellationTokenSource cancellationTokenSource = new();
 
     public CleanUpViewModel(ICleanupService cleanupService, IDialogCoordinator dialogCoordinator)
@@ -70,19 +71,11 @@ public class CleanUpViewModel : BindableBase, IPlugin
         this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
         this.dialogCoordinator = dialogCoordinator ?? throw new ArgumentNullException(nameof(dialogCoordinator));
         this.Kind = "Jira";
+        this.InitGroup();
         this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
-        this.ItemsView.Filter = item =>
-        {
-            if (item is CleanUpItemViewModel cleanUpItemViewModel)
-            {
-                return File.Exists(cleanUpItemViewModel.CleanUpItem.Path);
-            }
-            else
-            {
-                return true;
-            }
+        this.ItemsView.Filter = item => this.OnFilter(item);
 
-        };
+
 
         this.ScanCommand = new DelegateCommand(async () =>
         {
@@ -98,7 +91,29 @@ public class CleanUpViewModel : BindableBase, IPlugin
 
     }
 
+    private void InitGroup()
+    {
+        this.GroupCollection.Clear();
+        foreach (var item in this.PresetDirectorySources.Keys)
+        {
+            this.GroupCollection.Add(new CleanUpGroupViewModel(item, this.PresetDirectorySources[item]));
+        }
+    }
 
+    private bool OnFilter(object item)
+    {
+
+        if (item is CleanUpItemViewModel cleanUpItemViewModel)
+        {
+            return File.Exists(cleanUpItemViewModel.CleanUpItem.Path);
+        }
+        else
+        {
+            return true;
+        }
+
+
+    }
 
     private async Task LoadDataAsync()
     {
@@ -138,7 +153,7 @@ public class CleanUpViewModel : BindableBase, IPlugin
         this.IsBusy = false;
 
     }
-    public ICommand? Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public ICommand? Command { get; set; }
 
     public Type? CommandParameter { get; set; }
 
@@ -218,6 +233,14 @@ public class CleanUpViewModel : BindableBase, IPlugin
         set => this.SetProperty<ObservableCollection<CleanUpItemViewModel>>(ref this.items, value);
 
     }
+
+    public ObservableCollection<CleanUpGroupViewModel> GroupCollection
+    {
+        get => this.groupCollection;
+        set => this.SetProperty(ref this.groupCollection, value);
+
+    }
+
     public ICollectionView ItemsView { get; }
 
 }

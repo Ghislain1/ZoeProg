@@ -13,11 +13,11 @@ references:
   commentId: T:ZoeProg.App
   fullName: ZoeProg.App
   nameWithType: App
-- uid: ZoeProg.App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+- uid: ZoeProg.App.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
   name: ConfigureRegionAdapterMappings(RegionAdapterMappings)
-  href: api/ZoeProg.App.html#ZoeProg_App_ConfigureRegionAdapterMappings_RegionAdapterMappings_
-  commentId: M:ZoeProg.App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
-  fullName: ZoeProg.App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
+  href: api/ZoeProg.App.html#ZoeProg_App_ConfigureRegionAdapterMappings_Prism_Regions_RegionAdapterMappings_
+  commentId: M:ZoeProg.App.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
+  fullName: ZoeProg.App.ConfigureRegionAdapterMappings(Prism.Regions.RegionAdapterMappings)
   nameWithType: App.ConfigureRegionAdapterMappings(RegionAdapterMappings)
 - uid: ZoeProg.App.ConfigureRegionAdapterMappings*
   name: ConfigureRegionAdapterMappings
@@ -52,11 +52,37 @@ references:
   isSpec: "True"
   fullName: ZoeProg.App.CreateShell
   nameWithType: App.CreateShell
-- uid: ZoeProg.App.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.App.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.App.html#ZoeProg_App_InitializeComponent
+  commentId: M:ZoeProg.App.InitializeComponent
+  fullName: ZoeProg.App.InitializeComponent()
+  nameWithType: App.InitializeComponent()
+- uid: ZoeProg.App.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.App.html#ZoeProg_App_InitializeComponent_
+  commentId: Overload:ZoeProg.App.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.App.InitializeComponent
+  nameWithType: App.InitializeComponent
+- uid: ZoeProg.App.Main
+  name: Main()
+  href: api/ZoeProg.App.html#ZoeProg_App_Main
+  commentId: M:ZoeProg.App.Main
+  fullName: ZoeProg.App.Main()
+  nameWithType: App.Main()
+- uid: ZoeProg.App.Main*
+  name: Main
+  href: api/ZoeProg.App.html#ZoeProg_App_Main_
+  commentId: Overload:ZoeProg.App.Main
+  isSpec: "True"
+  fullName: ZoeProg.App.Main
+  nameWithType: App.Main
+- uid: ZoeProg.App.RegisterTypes(Prism.Ioc.IContainerRegistry)
   name: RegisterTypes(IContainerRegistry)
-  href: api/ZoeProg.App.html#ZoeProg_App_RegisterTypes_IContainerRegistry_
-  commentId: M:ZoeProg.App.RegisterTypes(IContainerRegistry)
-  fullName: ZoeProg.App.RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.App.html#ZoeProg_App_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  commentId: M:ZoeProg.App.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  fullName: ZoeProg.App.RegisterTypes(Prism.Ioc.IContainerRegistry)
   nameWithType: App.RegisterTypes(IContainerRegistry)
 - uid: ZoeProg.App.RegisterTypes*
   name: RegisterTypes
@@ -1137,19 +1163,6 @@ references:
   commentId: T:ZoeProg.Core.IPlugin
   fullName: ZoeProg.Core.IPlugin
   nameWithType: IPlugin
-- uid: ZoeProg.Core.IPlugin.Code
-  name: Code
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Code
-  commentId: P:ZoeProg.Core.IPlugin.Code
-  fullName: ZoeProg.Core.IPlugin.Code
-  nameWithType: IPlugin.Code
-- uid: ZoeProg.Core.IPlugin.Code*
-  name: Code
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Code_
-  commentId: Overload:ZoeProg.Core.IPlugin.Code
-  isSpec: "True"
-  fullName: ZoeProg.Core.IPlugin.Code
-  nameWithType: IPlugin.Code
 - uid: ZoeProg.Core.IPlugin.Command
   name: Command
   href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Command
@@ -1189,32 +1202,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPlugin.Description
   nameWithType: IPlugin.Description
-- uid: ZoeProg.Core.IPlugin.Glyph
-  name: Glyph
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Glyph
-  commentId: P:ZoeProg.Core.IPlugin.Glyph
-  fullName: ZoeProg.Core.IPlugin.Glyph
-  nameWithType: IPlugin.Glyph
-- uid: ZoeProg.Core.IPlugin.Glyph*
-  name: Glyph
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Glyph_
-  commentId: Overload:ZoeProg.Core.IPlugin.Glyph
+- uid: ZoeProg.Core.IPlugin.Header
+  name: Header
+  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Header
+  commentId: P:ZoeProg.Core.IPlugin.Header
+  fullName: ZoeProg.Core.IPlugin.Header
+  nameWithType: IPlugin.Header
+- uid: ZoeProg.Core.IPlugin.Header*
+  name: Header
+  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Header_
+  commentId: Overload:ZoeProg.Core.IPlugin.Header
   isSpec: "True"
-  fullName: ZoeProg.Core.IPlugin.Glyph
-  nameWithType: IPlugin.Glyph
-- uid: ZoeProg.Core.IPlugin.Id
-  name: Id
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Id
-  commentId: P:ZoeProg.Core.IPlugin.Id
-  fullName: ZoeProg.Core.IPlugin.Id
-  nameWithType: IPlugin.Id
-- uid: ZoeProg.Core.IPlugin.Id*
-  name: Id
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Id_
-  commentId: Overload:ZoeProg.Core.IPlugin.Id
-  isSpec: "True"
-  fullName: ZoeProg.Core.IPlugin.Id
-  nameWithType: IPlugin.Id
+  fullName: ZoeProg.Core.IPlugin.Header
+  nameWithType: IPlugin.Header
 - uid: ZoeProg.Core.IPlugin.IsSelected
   name: IsSelected
   href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_IsSelected
@@ -1241,19 +1241,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPlugin.Kind
   nameWithType: IPlugin.Kind
-- uid: ZoeProg.Core.IPlugin.Label
-  name: Label
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Label
-  commentId: P:ZoeProg.Core.IPlugin.Label
-  fullName: ZoeProg.Core.IPlugin.Label
-  nameWithType: IPlugin.Label
-- uid: ZoeProg.Core.IPlugin.Label*
-  name: Label
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Label_
-  commentId: Overload:ZoeProg.Core.IPlugin.Label
-  isSpec: "True"
-  fullName: ZoeProg.Core.IPlugin.Label
-  nameWithType: IPlugin.Label
 - uid: ZoeProg.Core.IPlugin.NavigatePath
   name: NavigatePath
   href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_NavigatePath
@@ -1267,32 +1254,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Core.IPlugin.NavigatePath
   nameWithType: IPlugin.NavigatePath
-- uid: ZoeProg.Core.IPlugin.Tag
-  name: Tag
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Tag
-  commentId: P:ZoeProg.Core.IPlugin.Tag
-  fullName: ZoeProg.Core.IPlugin.Tag
-  nameWithType: IPlugin.Tag
-- uid: ZoeProg.Core.IPlugin.Tag*
-  name: Tag
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Tag_
-  commentId: Overload:ZoeProg.Core.IPlugin.Tag
-  isSpec: "True"
-  fullName: ZoeProg.Core.IPlugin.Tag
-  nameWithType: IPlugin.Tag
-- uid: ZoeProg.Core.IPlugin.Title
-  name: Title
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Title
-  commentId: P:ZoeProg.Core.IPlugin.Title
-  fullName: ZoeProg.Core.IPlugin.Title
-  nameWithType: IPlugin.Title
-- uid: ZoeProg.Core.IPlugin.Title*
-  name: Title
-  href: api/ZoeProg.Core.IPlugin.html#ZoeProg_Core_IPlugin_Title_
-  commentId: Overload:ZoeProg.Core.IPlugin.Title
-  isSpec: "True"
-  fullName: ZoeProg.Core.IPlugin.Title
-  nameWithType: IPlugin.Title
 - uid: ZoeProg.Core.IPluginHeader
   name: IPluginHeader
   href: api/ZoeProg.Core.IPluginHeader.html
@@ -1575,11 +1536,11 @@ references:
   commentId: T:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter
   fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter
   nameWithType: HamburgerMenuItemCollectionRegionAdapter
-- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
   name: HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory)
-  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter__ctor_IRegionBehaviorFactory_
-  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor(IRegionBehaviorFactory)
-  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter__ctor_Prism_Regions_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter(Prism.Regions.IRegionBehaviorFactory)
   nameWithType: HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter(IRegionBehaviorFactory)
 - uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.#ctor*
   name: HamburgerMenuItemCollectionRegionAdapter
@@ -1588,11 +1549,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter
   nameWithType: HamburgerMenuItemCollectionRegionAdapter.HamburgerMenuItemCollectionRegionAdapter
-- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion,HamburgerMenuItemCollection)
+- uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(Prism.Regions.IRegion,MahApps.Metro.Controls.HamburgerMenuItemCollection)
   name: Adapt(IRegion, HamburgerMenuItemCollection)
-  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter_Adapt_IRegion_HamburgerMenuItemCollection_
-  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion,HamburgerMenuItemCollection)
-  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion, HamburgerMenuItemCollection)
+  href: api/ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuItemCollectionRegionAdapter_Adapt_Prism_Regions_IRegion_MahApps_Metro_Controls_HamburgerMenuItemCollection_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(Prism.Regions.IRegion,MahApps.Metro.Controls.HamburgerMenuItemCollection)
+  fullName: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt(Prism.Regions.IRegion, MahApps.Metro.Controls.HamburgerMenuItemCollection)
   nameWithType: HamburgerMenuItemCollectionRegionAdapter.Adapt(IRegion, HamburgerMenuItemCollection)
 - uid: ZoeProg.Extensions.HamburgerMenuItemCollectionRegionAdapter.Adapt*
   name: Adapt
@@ -1620,11 +1581,11 @@ references:
   commentId: T:ZoeProg.Extensions.HamburgerMenuRegionAdapter
   fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter
   nameWithType: HamburgerMenuRegionAdapter
-- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
   name: HamburgerMenuRegionAdapter(IRegionBehaviorFactory)
-  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter__ctor_IRegionBehaviorFactory_
-  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor(IRegionBehaviorFactory)
-  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter__ctor_Prism_Regions_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter(Prism.Regions.IRegionBehaviorFactory)
   nameWithType: HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter(IRegionBehaviorFactory)
 - uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.#ctor*
   name: HamburgerMenuRegionAdapter
@@ -1633,11 +1594,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter
   nameWithType: HamburgerMenuRegionAdapter.HamburgerMenuRegionAdapter
-- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(IRegion,HamburgerMenu)
+- uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(Prism.Regions.IRegion,MahApps.Metro.Controls.HamburgerMenu)
   name: Adapt(IRegion, HamburgerMenu)
-  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter_Adapt_IRegion_HamburgerMenu_
-  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(IRegion,HamburgerMenu)
-  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(IRegion, HamburgerMenu)
+  href: api/ZoeProg.Extensions.HamburgerMenuRegionAdapter.html#ZoeProg_Extensions_HamburgerMenuRegionAdapter_Adapt_Prism_Regions_IRegion_MahApps_Metro_Controls_HamburgerMenu_
+  commentId: M:ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(Prism.Regions.IRegion,MahApps.Metro.Controls.HamburgerMenu)
+  fullName: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt(Prism.Regions.IRegion, MahApps.Metro.Controls.HamburgerMenu)
   nameWithType: HamburgerMenuRegionAdapter.Adapt(IRegion, HamburgerMenu)
 - uid: ZoeProg.Extensions.HamburgerMenuRegionAdapter.Adapt*
   name: Adapt
@@ -1665,11 +1626,11 @@ references:
   commentId: T:ZoeProg.Extensions.ListViewRegionAdapter
   fullName: ZoeProg.Extensions.ListViewRegionAdapter
   nameWithType: ListViewRegionAdapter
-- uid: ZoeProg.Extensions.ListViewRegionAdapter.#ctor(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
   name: ListViewRegionAdapter(IRegionBehaviorFactory)
-  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter__ctor_IRegionBehaviorFactory_
-  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.#ctor(IRegionBehaviorFactory)
-  fullName: ZoeProg.Extensions.ListViewRegionAdapter.ListViewRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter__ctor_Prism_Regions_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.ListViewRegionAdapter(Prism.Regions.IRegionBehaviorFactory)
   nameWithType: ListViewRegionAdapter.ListViewRegionAdapter(IRegionBehaviorFactory)
 - uid: ZoeProg.Extensions.ListViewRegionAdapter.#ctor*
   name: ListViewRegionAdapter
@@ -1678,11 +1639,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Extensions.ListViewRegionAdapter.ListViewRegionAdapter
   nameWithType: ListViewRegionAdapter.ListViewRegionAdapter
-- uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,System.Windows.Controls.ListView)
+- uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(Prism.Regions.IRegion,System.Windows.Controls.ListView)
   name: Adapt(IRegion, ListView)
-  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_Adapt_IRegion_System_Windows_Controls_ListView_
-  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion,System.Windows.Controls.ListView)
-  fullName: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(IRegion, System.Windows.Controls.ListView)
+  href: api/ZoeProg.Extensions.ListViewRegionAdapter.html#ZoeProg_Extensions_ListViewRegionAdapter_Adapt_Prism_Regions_IRegion_System_Windows_Controls_ListView_
+  commentId: M:ZoeProg.Extensions.ListViewRegionAdapter.Adapt(Prism.Regions.IRegion,System.Windows.Controls.ListView)
+  fullName: ZoeProg.Extensions.ListViewRegionAdapter.Adapt(Prism.Regions.IRegion, System.Windows.Controls.ListView)
   nameWithType: ListViewRegionAdapter.Adapt(IRegion, ListView)
 - uid: ZoeProg.Extensions.ListViewRegionAdapter.Adapt*
   name: Adapt
@@ -1710,11 +1671,11 @@ references:
   commentId: T:ZoeProg.Extensions.TabControlRegionAdapter
   fullName: ZoeProg.Extensions.TabControlRegionAdapter
   nameWithType: TabControlRegionAdapter
-- uid: ZoeProg.Extensions.TabControlRegionAdapter.#ctor(IRegionBehaviorFactory)
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
   name: TabControlRegionAdapter(IRegionBehaviorFactory)
-  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter__ctor_IRegionBehaviorFactory_
-  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.#ctor(IRegionBehaviorFactory)
-  fullName: ZoeProg.Extensions.TabControlRegionAdapter.TabControlRegionAdapter(IRegionBehaviorFactory)
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter__ctor_Prism_Regions_IRegionBehaviorFactory_
+  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.#ctor(Prism.Regions.IRegionBehaviorFactory)
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.TabControlRegionAdapter(Prism.Regions.IRegionBehaviorFactory)
   nameWithType: TabControlRegionAdapter.TabControlRegionAdapter(IRegionBehaviorFactory)
 - uid: ZoeProg.Extensions.TabControlRegionAdapter.#ctor*
   name: TabControlRegionAdapter
@@ -1723,11 +1684,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Extensions.TabControlRegionAdapter.TabControlRegionAdapter
   nameWithType: TabControlRegionAdapter.TabControlRegionAdapter
-- uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,System.Windows.Controls.TabControl)
+- uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(Prism.Regions.IRegion,System.Windows.Controls.TabControl)
   name: Adapt(IRegion, TabControl)
-  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_Adapt_IRegion_System_Windows_Controls_TabControl_
-  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion,System.Windows.Controls.TabControl)
-  fullName: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(IRegion, System.Windows.Controls.TabControl)
+  href: api/ZoeProg.Extensions.TabControlRegionAdapter.html#ZoeProg_Extensions_TabControlRegionAdapter_Adapt_Prism_Regions_IRegion_System_Windows_Controls_TabControl_
+  commentId: M:ZoeProg.Extensions.TabControlRegionAdapter.Adapt(Prism.Regions.IRegion,System.Windows.Controls.TabControl)
+  fullName: ZoeProg.Extensions.TabControlRegionAdapter.Adapt(Prism.Regions.IRegion, System.Windows.Controls.TabControl)
   nameWithType: TabControlRegionAdapter.Adapt(IRegion, TabControl)
 - uid: ZoeProg.Extensions.TabControlRegionAdapter.Adapt*
   name: Adapt
@@ -1840,6 +1801,44 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Persistence.IUnitOfWork.SaveChanges
   nameWithType: IUnitOfWork.SaveChanges
+- uid: ZoeProg.PlugIns.About
+  name: ZoeProg.PlugIns.About
+  href: api/ZoeProg.PlugIns.About.html
+  commentId: N:ZoeProg.PlugIns.About
+  fullName: ZoeProg.PlugIns.About
+  nameWithType: ZoeProg.PlugIns.About
+- uid: ZoeProg.PlugIns.About.AboutModule
+  name: AboutModule
+  href: api/ZoeProg.PlugIns.About.AboutModule.html
+  commentId: T:ZoeProg.PlugIns.About.AboutModule
+  fullName: ZoeProg.PlugIns.About.AboutModule
+  nameWithType: AboutModule
+- uid: ZoeProg.PlugIns.About.AboutModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  name: OnInitialized(IContainerProvider)
+  href: api/ZoeProg.PlugIns.About.AboutModule.html#ZoeProg_PlugIns_About_AboutModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  commentId: M:ZoeProg.PlugIns.About.AboutModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  fullName: ZoeProg.PlugIns.About.AboutModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  nameWithType: AboutModule.OnInitialized(IContainerProvider)
+- uid: ZoeProg.PlugIns.About.AboutModule.OnInitialized*
+  name: OnInitialized
+  href: api/ZoeProg.PlugIns.About.AboutModule.html#ZoeProg_PlugIns_About_AboutModule_OnInitialized_
+  commentId: Overload:ZoeProg.PlugIns.About.AboutModule.OnInitialized
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.About.AboutModule.OnInitialized
+  nameWithType: AboutModule.OnInitialized
+- uid: ZoeProg.PlugIns.About.AboutModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  name: RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.PlugIns.About.AboutModule.html#ZoeProg_PlugIns_About_AboutModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  commentId: M:ZoeProg.PlugIns.About.AboutModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  fullName: ZoeProg.PlugIns.About.AboutModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  nameWithType: AboutModule.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.PlugIns.About.AboutModule.RegisterTypes*
+  name: RegisterTypes
+  href: api/ZoeProg.PlugIns.About.AboutModule.html#ZoeProg_PlugIns_About_AboutModule_RegisterTypes_
+  commentId: Overload:ZoeProg.PlugIns.About.AboutModule.RegisterTypes
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.About.AboutModule.RegisterTypes
+  nameWithType: AboutModule.RegisterTypes
 - uid: ZoeProg.PlugIns.ApplicationList
   name: ZoeProg.PlugIns.ApplicationList
   href: api/ZoeProg.PlugIns.ApplicationList.html
@@ -1908,19 +1907,6 @@ references:
   commentId: T:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel
   fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel
   nameWithType: ApplicationListViewModel
-- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
-  name: Code
-  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Code
-  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
-  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
-  nameWithType: ApplicationListViewModel.Code
-- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code*
-  name: Code
-  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Code_
-  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Code
-  nameWithType: ApplicationListViewModel.Code
 - uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Command
   name: Command
   href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Command
@@ -2025,19 +2011,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Kind
   nameWithType: ApplicationListViewModel.Kind
-- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
-  name: Label
-  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Label
-  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
-  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
-  nameWithType: ApplicationListViewModel.Label
-- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label*
-  name: Label
-  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Label_
-  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Label
-  nameWithType: ApplicationListViewModel.Label
 - uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.NavigatePath
   name: NavigatePath
   href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_NavigatePath
@@ -2064,19 +2037,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Tag
   nameWithType: ApplicationListViewModel.Tag
-- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
-  name: Title
-  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Title
-  commentId: P:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
-  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
-  nameWithType: ApplicationListViewModel.Title
-- uid: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title*
-  name: Title
-  href: api/ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.html#ZoeProg_PlugIns_ApplicationList_ViewModels_ApplicationListViewModel_Title_
-  commentId: Overload:ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.ApplicationList.ViewModels.ApplicationListViewModel.Title
-  nameWithType: ApplicationListViewModel.Title
 - uid: ZoeProg.PlugIns.ApplicationList.Views
   name: ZoeProg.PlugIns.ApplicationList.Views
   href: api/ZoeProg.PlugIns.ApplicationList.Views.html
@@ -2774,19 +2734,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.CleanUpViewModel
   nameWithType: CleanUpViewModel.CleanUpViewModel
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
-  name: Code
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
-  nameWithType: CleanUpViewModel.Code
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code*
-  name: Code
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Code_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Code
-  nameWithType: CleanUpViewModel.Code
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Command
   name: Command
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Command
@@ -2839,19 +2786,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Description
   nameWithType: CleanUpViewModel.Description
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
-  name: Glyph
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
-  nameWithType: CleanUpViewModel.Glyph
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph*
-  name: Glyph
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Glyph_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.GroupCollection
+  name: GroupCollection
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_GroupCollection
+  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.GroupCollection
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.GroupCollection
+  nameWithType: CleanUpViewModel.GroupCollection
+- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.GroupCollection*
+  name: GroupCollection
+  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_GroupCollection_
+  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.GroupCollection
   isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Glyph
-  nameWithType: CleanUpViewModel.Glyph
+  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.GroupCollection
+  nameWithType: CleanUpViewModel.GroupCollection
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
   name: Header
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Header
@@ -2865,19 +2812,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Header
   nameWithType: CleanUpViewModel.Header
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
-  name: Id
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
-  nameWithType: CleanUpViewModel.Id
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id*
-  name: Id
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Id_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Id
-  nameWithType: CleanUpViewModel.Id
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.IsBusy
   name: IsBusy
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_IsBusy
@@ -2956,19 +2890,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Kind
   nameWithType: CleanUpViewModel.Kind
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
-  name: Label
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
-  nameWithType: CleanUpViewModel.Label
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label*
-  name: Label
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Label_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Label
-  nameWithType: CleanUpViewModel.Label
 - uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.NavigatePath
   name: NavigatePath
   href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_NavigatePath
@@ -2995,32 +2916,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.ScanCommand
   nameWithType: CleanUpViewModel.ScanCommand
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
-  name: Tag
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
-  nameWithType: CleanUpViewModel.Tag
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag*
-  name: Tag
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Tag_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Tag
-  nameWithType: CleanUpViewModel.Tag
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
-  name: Title
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title
-  commentId: P:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
-  nameWithType: CleanUpViewModel.Title
-- uid: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title*
-  name: Title
-  href: api/ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.html#ZoeProg_PlugIns_CleanUp_ViewModels_CleanUpViewModel_Title_
-  commentId: Overload:ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.CleanUp.ViewModels.CleanUpViewModel.Title
-  nameWithType: CleanUpViewModel.Title
 - uid: ZoeProg.PlugIns.CleanUp.Views
   name: ZoeProg.PlugIns.CleanUp.Views
   href: api/ZoeProg.PlugIns.CleanUp.Views.html
@@ -3103,6 +2998,116 @@ references:
   commentId: N:ZoeProg.PlugIns.Home.ViewModels
   fullName: ZoeProg.PlugIns.Home.ViewModels
   nameWithType: ZoeProg.PlugIns.Home.ViewModels
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel
+  name: AboutViewModel
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html
+  commentId: T:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel
+  nameWithType: AboutViewModel
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.#ctor
+  name: AboutViewModel()
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel__ctor
+  commentId: M:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.#ctor
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.AboutViewModel()
+  nameWithType: AboutViewModel.AboutViewModel()
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.#ctor*
+  name: AboutViewModel
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel__ctor_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.AboutViewModel
+  nameWithType: AboutViewModel.AboutViewModel
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Command
+  name: Command
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Command
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Command
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Command
+  nameWithType: AboutViewModel.Command
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Command*
+  name: Command
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Command_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Command
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Command
+  nameWithType: AboutViewModel.Command
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.CommandParameter
+  name: CommandParameter
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_CommandParameter
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.CommandParameter
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.CommandParameter
+  nameWithType: AboutViewModel.CommandParameter
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.CommandParameter*
+  name: CommandParameter
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_CommandParameter_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.CommandParameter
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.CommandParameter
+  nameWithType: AboutViewModel.CommandParameter
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Description
+  name: Description
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Description
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Description
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Description
+  nameWithType: AboutViewModel.Description
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Description*
+  name: Description
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Description_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Description
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Description
+  nameWithType: AboutViewModel.Description
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Header
+  name: Header
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Header
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Header
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Header
+  nameWithType: AboutViewModel.Header
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Header*
+  name: Header
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Header_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Header
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Header
+  nameWithType: AboutViewModel.Header
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.IsSelected
+  name: IsSelected
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_IsSelected
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.IsSelected
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.IsSelected
+  nameWithType: AboutViewModel.IsSelected
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.IsSelected*
+  name: IsSelected
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_IsSelected_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.IsSelected
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.IsSelected
+  nameWithType: AboutViewModel.IsSelected
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Kind
+  name: Kind
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Kind
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Kind
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Kind
+  nameWithType: AboutViewModel.Kind
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Kind*
+  name: Kind
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_Kind_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Kind
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.Kind
+  nameWithType: AboutViewModel.Kind
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.NavigatePath
+  name: NavigatePath
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_NavigatePath
+  commentId: P:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.NavigatePath
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.NavigatePath
+  nameWithType: AboutViewModel.NavigatePath
+- uid: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.NavigatePath*
+  name: NavigatePath
+  href: api/ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.html#ZoeProg_PlugIns_Home_ViewModels_AboutViewModel_NavigatePath_
+  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.NavigatePath
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.ViewModels.AboutViewModel.NavigatePath
+  nameWithType: AboutViewModel.NavigatePath
 - uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel
   name: HomeViewModel
   href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html
@@ -3122,19 +3127,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.HomeViewModel
   nameWithType: HomeViewModel.HomeViewModel
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Code
-  name: Code
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Code
-  commentId: P:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Code
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Code
-  nameWithType: HomeViewModel.Code
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Code*
-  name: Code
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Code_
-  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Code
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Code
-  nameWithType: HomeViewModel.Code
 - uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Command
   name: Command
   href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Command
@@ -3174,19 +3166,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Description
   nameWithType: HomeViewModel.Description
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Glyph
-  name: Glyph
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Glyph
-  commentId: P:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Glyph
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Glyph
-  nameWithType: HomeViewModel.Glyph
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Glyph*
-  name: Glyph
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Glyph_
-  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Glyph
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Glyph
-  nameWithType: HomeViewModel.Glyph
 - uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Header
   name: Header
   href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Header
@@ -3200,19 +3179,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Header
   nameWithType: HomeViewModel.Header
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Id
-  name: Id
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Id
-  commentId: P:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Id
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Id
-  nameWithType: HomeViewModel.Id
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Id*
-  name: Id
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Id_
-  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Id
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Id
-  nameWithType: HomeViewModel.Id
 - uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.IsSelected
   name: IsSelected
   href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_IsSelected
@@ -3239,19 +3205,6 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Kind
   nameWithType: HomeViewModel.Kind
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Label
-  name: Label
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Label
-  commentId: P:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Label
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Label
-  nameWithType: HomeViewModel.Label
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Label*
-  name: Label
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Label_
-  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Label
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Label
-  nameWithType: HomeViewModel.Label
 - uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.NavigatePath
   name: NavigatePath
   href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_NavigatePath
@@ -3265,38 +3218,44 @@ references:
   isSpec: "True"
   fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.NavigatePath
   nameWithType: HomeViewModel.NavigatePath
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Tag
-  name: Tag
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Tag
-  commentId: P:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Tag
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Tag
-  nameWithType: HomeViewModel.Tag
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Tag*
-  name: Tag
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Tag_
-  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Tag
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Tag
-  nameWithType: HomeViewModel.Tag
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Title
-  name: Title
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Title
-  commentId: P:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Title
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Title
-  nameWithType: HomeViewModel.Title
-- uid: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Title*
-  name: Title
-  href: api/ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.html#ZoeProg_PlugIns_Home_ViewModels_HomeViewModel_Title_
-  commentId: Overload:ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Title
-  isSpec: "True"
-  fullName: ZoeProg.PlugIns.Home.ViewModels.HomeViewModel.Title
-  nameWithType: HomeViewModel.Title
 - uid: ZoeProg.PlugIns.Home.Views
   name: ZoeProg.PlugIns.Home.Views
   href: api/ZoeProg.PlugIns.Home.Views.html
   commentId: N:ZoeProg.PlugIns.Home.Views
   fullName: ZoeProg.PlugIns.Home.Views
   nameWithType: ZoeProg.PlugIns.Home.Views
+- uid: ZoeProg.PlugIns.Home.Views.AboutView
+  name: AboutView
+  href: api/ZoeProg.PlugIns.Home.Views.AboutView.html
+  commentId: T:ZoeProg.PlugIns.Home.Views.AboutView
+  fullName: ZoeProg.PlugIns.Home.Views.AboutView
+  nameWithType: AboutView
+- uid: ZoeProg.PlugIns.Home.Views.AboutView.#ctor
+  name: AboutView()
+  href: api/ZoeProg.PlugIns.Home.Views.AboutView.html#ZoeProg_PlugIns_Home_Views_AboutView__ctor
+  commentId: M:ZoeProg.PlugIns.Home.Views.AboutView.#ctor
+  fullName: ZoeProg.PlugIns.Home.Views.AboutView.AboutView()
+  nameWithType: AboutView.AboutView()
+- uid: ZoeProg.PlugIns.Home.Views.AboutView.#ctor*
+  name: AboutView
+  href: api/ZoeProg.PlugIns.Home.Views.AboutView.html#ZoeProg_PlugIns_Home_Views_AboutView__ctor_
+  commentId: Overload:ZoeProg.PlugIns.Home.Views.AboutView.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.Views.AboutView.AboutView
+  nameWithType: AboutView.AboutView
+- uid: ZoeProg.PlugIns.Home.Views.AboutView.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.PlugIns.Home.Views.AboutView.html#ZoeProg_PlugIns_Home_Views_AboutView_InitializeComponent
+  commentId: M:ZoeProg.PlugIns.Home.Views.AboutView.InitializeComponent
+  fullName: ZoeProg.PlugIns.Home.Views.AboutView.InitializeComponent()
+  nameWithType: AboutView.InitializeComponent()
+- uid: ZoeProg.PlugIns.Home.Views.AboutView.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.PlugIns.Home.Views.AboutView.html#ZoeProg_PlugIns_Home_Views_AboutView_InitializeComponent_
+  commentId: Overload:ZoeProg.PlugIns.Home.Views.AboutView.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.Home.Views.AboutView.InitializeComponent
+  nameWithType: AboutView.InitializeComponent
 - uid: ZoeProg.PlugIns.Home.Views.HomeView
   name: HomeView
   href: api/ZoeProg.PlugIns.Home.Views.HomeView.html
@@ -3335,6 +3294,64 @@ references:
   commentId: N:ZoeProg.PlugIns.ViewModels
   fullName: ZoeProg.PlugIns.ViewModels
   nameWithType: ZoeProg.PlugIns.ViewModels
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel
+  name: CleanUpGroupViewModel
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html
+  commentId: T:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel
+  nameWithType: CleanUpGroupViewModel
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.#ctor(System.String,System.String)
+  name: CleanUpGroupViewModel(String, String)
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel__ctor_System_String_System_String_
+  commentId: M:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.#ctor(System.String,System.String)
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.CleanUpGroupViewModel(System.String, System.String)
+  nameWithType: CleanUpGroupViewModel.CleanUpGroupViewModel(String, String)
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.#ctor*
+  name: CleanUpGroupViewModel
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel__ctor_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.#ctor
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.CleanUpGroupViewModel
+  nameWithType: CleanUpGroupViewModel.CleanUpGroupViewModel
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Deny
+  name: Deny
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel_Deny
+  commentId: P:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Deny
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Deny
+  nameWithType: CleanUpGroupViewModel.Deny
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Deny*
+  name: Deny
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel_Deny_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Deny
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Deny
+  nameWithType: CleanUpGroupViewModel.Deny
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Group
+  name: Group
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel_Group
+  commentId: P:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Group
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Group
+  nameWithType: CleanUpGroupViewModel.Group
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Group*
+  name: Group
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel_Group_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Group
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Group
+  nameWithType: CleanUpGroupViewModel.Group
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Key
+  name: Key
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel_Key
+  commentId: P:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Key
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Key
+  nameWithType: CleanUpGroupViewModel.Key
+- uid: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Key*
+  name: Key
+  href: api/ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.html#ZoeProg_PlugIns_ViewModels_CleanUpGroupViewModel_Key_
+  commentId: Overload:ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Key
+  isSpec: "True"
+  fullName: ZoeProg.PlugIns.ViewModels.CleanUpGroupViewModel.Key
+  nameWithType: CleanUpGroupViewModel.Key
 - uid: ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel
   name: CleanUpItemViewModel
   href: api/ZoeProg.PlugIns.ViewModels.CleanUpItemViewModel.html
@@ -3405,11 +3422,11 @@ references:
   commentId: T:ZoeProg.Services.PackageRepository
   fullName: ZoeProg.Services.PackageRepository
   nameWithType: PackageRepository
-- uid: ZoeProg.Services.PackageRepository.#ctor(IPowershellService)
+- uid: ZoeProg.Services.PackageRepository.#ctor(Ghis.PowershellLib.IPowershellService)
   name: PackageRepository(IPowershellService)
-  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository__ctor_IPowershellService_
-  commentId: M:ZoeProg.Services.PackageRepository.#ctor(IPowershellService)
-  fullName: ZoeProg.Services.PackageRepository.PackageRepository(IPowershellService)
+  href: api/ZoeProg.Services.PackageRepository.html#ZoeProg_Services_PackageRepository__ctor_Ghis_PowershellLib_IPowershellService_
+  commentId: M:ZoeProg.Services.PackageRepository.#ctor(Ghis.PowershellLib.IPowershellService)
+  fullName: ZoeProg.Services.PackageRepository.PackageRepository(Ghis.PowershellLib.IPowershellService)
   nameWithType: PackageRepository.PackageRepository(IPowershellService)
 - uid: ZoeProg.Services.PackageRepository.#ctor*
   name: PackageRepository
@@ -3875,11 +3892,11 @@ references:
   commentId: T:ZoeProg.Settings.SettingsModule
   fullName: ZoeProg.Settings.SettingsModule
   nameWithType: SettingsModule
-- uid: ZoeProg.Settings.SettingsModule.OnInitialized(IContainerProvider)
+- uid: ZoeProg.Settings.SettingsModule.OnInitialized(Prism.Ioc.IContainerProvider)
   name: OnInitialized(IContainerProvider)
-  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_OnInitialized_IContainerProvider_
-  commentId: M:ZoeProg.Settings.SettingsModule.OnInitialized(IContainerProvider)
-  fullName: ZoeProg.Settings.SettingsModule.OnInitialized(IContainerProvider)
+  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_OnInitialized_Prism_Ioc_IContainerProvider_
+  commentId: M:ZoeProg.Settings.SettingsModule.OnInitialized(Prism.Ioc.IContainerProvider)
+  fullName: ZoeProg.Settings.SettingsModule.OnInitialized(Prism.Ioc.IContainerProvider)
   nameWithType: SettingsModule.OnInitialized(IContainerProvider)
 - uid: ZoeProg.Settings.SettingsModule.OnInitialized*
   name: OnInitialized
@@ -3888,11 +3905,11 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Settings.SettingsModule.OnInitialized
   nameWithType: SettingsModule.OnInitialized
-- uid: ZoeProg.Settings.SettingsModule.RegisterTypes(IContainerRegistry)
+- uid: ZoeProg.Settings.SettingsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   name: RegisterTypes(IContainerRegistry)
-  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_RegisterTypes_IContainerRegistry_
-  commentId: M:ZoeProg.Settings.SettingsModule.RegisterTypes(IContainerRegistry)
-  fullName: ZoeProg.Settings.SettingsModule.RegisterTypes(IContainerRegistry)
+  href: api/ZoeProg.Settings.SettingsModule.html#ZoeProg_Settings_SettingsModule_RegisterTypes_Prism_Ioc_IContainerRegistry_
+  commentId: M:ZoeProg.Settings.SettingsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
+  fullName: ZoeProg.Settings.SettingsModule.RegisterTypes(Prism.Ioc.IContainerRegistry)
   nameWithType: SettingsModule.RegisterTypes(IContainerRegistry)
 - uid: ZoeProg.Settings.SettingsModule.RegisterTypes*
   name: RegisterTypes
@@ -3951,6 +3968,19 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Settings.Views.SettingView.SettingView
   nameWithType: SettingView.SettingView
+- uid: ZoeProg.Settings.Views.SettingView.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.Settings.Views.SettingView.html#ZoeProg_Settings_Views_SettingView_InitializeComponent
+  commentId: M:ZoeProg.Settings.Views.SettingView.InitializeComponent
+  fullName: ZoeProg.Settings.Views.SettingView.InitializeComponent()
+  nameWithType: SettingView.InitializeComponent()
+- uid: ZoeProg.Settings.Views.SettingView.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.Settings.Views.SettingView.html#ZoeProg_Settings_Views_SettingView_InitializeComponent_
+  commentId: Overload:ZoeProg.Settings.Views.SettingView.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.Settings.Views.SettingView.InitializeComponent
+  nameWithType: SettingView.InitializeComponent
 - uid: ZoeProg.ViewModels
   name: ZoeProg.ViewModels
   href: api/ZoeProg.ViewModels.html
@@ -4303,3 +4333,16 @@ references:
   isSpec: "True"
   fullName: ZoeProg.Views.Shell.Shell
   nameWithType: Shell.Shell
+- uid: ZoeProg.Views.Shell.InitializeComponent
+  name: InitializeComponent()
+  href: api/ZoeProg.Views.Shell.html#ZoeProg_Views_Shell_InitializeComponent
+  commentId: M:ZoeProg.Views.Shell.InitializeComponent
+  fullName: ZoeProg.Views.Shell.InitializeComponent()
+  nameWithType: Shell.InitializeComponent()
+- uid: ZoeProg.Views.Shell.InitializeComponent*
+  name: InitializeComponent
+  href: api/ZoeProg.Views.Shell.html#ZoeProg_Views_Shell_InitializeComponent_
+  commentId: Overload:ZoeProg.Views.Shell.InitializeComponent
+  isSpec: "True"
+  fullName: ZoeProg.Views.Shell.InitializeComponent
+  nameWithType: Shell.InitializeComponent

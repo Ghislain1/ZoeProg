@@ -8,11 +8,11 @@ using ZoeProg.PlugIns.Audit.Models;
 
 namespace ZoeProg.PlugIns.Audit.Services
 {
-   public interface IProcessProvider
+    public interface IProcessProvider
     {
-      string  GetProcessList();
+        string GetProcessList();
         Task<List<ProcessItem>> GetProcessListAsync();
     }
 
- 
+
 }

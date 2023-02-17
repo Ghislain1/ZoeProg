@@ -25,7 +25,7 @@ public class HomeViewModel : BindableBase, IPlugin
         this.CommandParameter = this.GetType();
     }
 
-   
+
 
     /// <summary>
     /// Gets or sets the Command.
@@ -42,32 +42,32 @@ public class HomeViewModel : BindableBase, IPlugin
     /// </summary>
     public string Description => " I m Home feature !";
 
-   
+
 
     /// <summary>
     /// Gets the Header.
     /// </summary>
-    public string Header { get; set; }= "Home";
+    public string Header { get; set; } = "Home";
 
- 
+
 
     /// <summary>
     /// Gets or sets a value indicating whether IsSelected.
     /// </summary>
-    public bool IsSelected { get  ; set  ; }
+    public bool IsSelected { get; set; }
 
     /// <summary>
     /// Gets or sets the Kind.
     /// </summary>
-    public string Kind => "Home";     
+    public string Kind => "Home";
 
     /// <summary>
     /// Gets or sets the NavigatePath.
     /// </summary>
-    public string NavigatePath { get ; set ; }
+    public string NavigatePath { get; set; }
 
-    
 
-  
- 
+
+
+
 }

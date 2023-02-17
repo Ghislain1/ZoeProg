@@ -1,8 +1,8 @@
 ﻿{
     using System;
-using System.Threading;
-using System.Threading.Tasks;
-using ZoeProg.Core.Data;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using ZoeProg.Core.Data;
 
 public interface IPackageService
 {

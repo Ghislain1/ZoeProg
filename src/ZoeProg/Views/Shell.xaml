@@ -62,17 +62,17 @@
         <DataTemplate  x:Key="ContentTemplateKey" DataType="{x:Type metro:HamburgerMenuItem}">
             <DockPanel>
                 <Border
-                            MinHeight="30"
-                            Background="#FF444444"
-                            BorderBrush="SaddleBrown"
-                            BorderThickness="4"
+                            MinHeight="55"
+                            UseLayoutRounding="True"
+                            Background="#FF444444"                             
+                            BorderThickness="0"
                             DockPanel.Dock="Top">
                     <TextBlock
                                 x:Name="Header"
                                 Margin="20,0"
                                 HorizontalAlignment="Center"
                                 FontSize="30"
-                                Foreground="Green"
+                                Foreground="White"
                                 Text="{Binding Label}" />
                 </Border>
                 <!--  GhZe@TODO: Can you explain how this works  -->
@@ -93,12 +93,13 @@
     <metro:MetroWindow.TitleTemplate>
         <DataTemplate>
             <StackPanel Height="100" Orientation="Horizontal">
-                <TextBlock Margin="5,5" Text="{Binding}" />
+                <TextBlock Margin="5,5" Text="{Binding}" Foreground="White" />
                 <TextBlock
                     Margin="5,5"
+                   Foreground="White"
                     FontWeight="Bold"
                     Text="{Binding DataContext.ActivatedItem.Label, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}" />
-                <Rectangle Width="16" Height="16" Fill="Red">
+                <Rectangle Width="16" Height="16" Fill="Transparent">
                     <Rectangle.OpacityMask>
                         <VisualBrush Stretch="Uniform" Visual="{iconPacks:Material Kind=OpenInNew}" />
                     </Rectangle.OpacityMask>
@@ -112,6 +113,7 @@
             x:Name="HamburgerMenuControl"
             DisplayMode="CompactOverlay"
             ItemClick="HamburgerMenuControl_ItemClick"
+            OptionsItemClick="HamburgerMenuControl_ItemClick"
             IsPaneOpen="{Binding IsPaneOpen}"
             SelectedIndex="1"
             OptionsItemTemplate="{StaticResource OptionTemplateKey}"
