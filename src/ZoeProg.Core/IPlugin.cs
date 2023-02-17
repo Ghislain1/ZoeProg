@@ -18,57 +18,51 @@
  * ---license-end
  */
 
-namespace ZoeProg.Core
+namespace ZoeProg.Core;
+
+using System;
+using System.Windows.Input;
+
+/// <summary>
+/// Defines the <see cref="IPlugin"/>.
+/// </summary>
+public interface IPlugin
 {
-    using System;
-    using System.Windows.Input;
 
     /// <summary>
-    /// Defines the <see cref="IPlugin"/>.
+    /// Gets or sets the Command.
     /// </summary>
-    public interface IPlugin
-    {
+    ICommand Command { get; set; }
 
-        /// <summary>
-        /// Gets or sets the Command.
-        /// </summary>
-        ICommand Command { get; set; }
+    /// <summary>
+    /// Gets or sets the CommandParameter.
+    /// </summary>
+    Type CommandParameter { get; set; }
 
-        /// <summary>
-        /// Gets or sets the CommandParameter.
-        /// </summary>
-        Type CommandParameter { get; set; }
+    /// <summary>
+    /// Gets or sets the Description. for tooltip
+    /// </summary>
+    string Description { get; }
 
-        /// <summary>
-        /// Gets or sets the Description. for tooltip
-        /// </summary>
-        string Description { get; set; }
+    /// <summary>
+    /// Gets or sets a value indicating whether IsSelected.
+    /// </summary>
+    bool IsSelected { get; set; }
 
-        /// <summary>
-        /// Gets or sets a value indicating whether IsSelected.
-        /// </summary>
-        bool IsSelected { get; set; }
+    /// <summary>
+    /// Gets or sets the Kind To interact with Material Design PackIcon.
+    /// </summary>
+    string Kind { get; }
 
-        /// <summary>
-        /// Gets or sets the Kind To interact with Material Design PackIcon.
-        /// </summary>
-        string Kind { get; set; }
+    /// <summary>
+    /// Gets or sets the Label.
+    /// </summary>
+    string Header { get; }
 
-        /// <summary>
-        /// Gets or sets the Label.
-        /// </summary>
-        string Header { get; set; }
-
-        /// <summary>
-        /// Gets or sets the NavigatePath.
-        /// </summary>
-        string NavigatePath { get; set; }
-
-        /// <summary>
-        /// Gets or sets the Tag.
-        /// </summary>
-        string Tag { get; set; }
+    /// <summary>
+    /// Gets or sets the NavigatePath.
+    /// </summary>
+    string NavigatePath { get; set; }
 
 
-    }
 }

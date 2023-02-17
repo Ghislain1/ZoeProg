@@ -69,7 +69,7 @@ public class CleanUpViewModel : BindableBase, IPlugin
     {
         this.cleanupService = cleanupService ?? throw new ArgumentNullException(nameof(cleanupService));
         this.dialogCoordinator = dialogCoordinator ?? throw new ArgumentNullException(nameof(dialogCoordinator));
-        this.Kind = PackIConMaterialKind.Bell.ToString();
+        this.Kind = "Jira";
         this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
         this.ItemsView.Filter = item =>
         {
@@ -138,7 +138,7 @@ public class CleanUpViewModel : BindableBase, IPlugin
         this.IsBusy = false;
 
     }
-        public ICommand? Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    public ICommand? Command { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
     public Type? CommandParameter { get; set; }
 
@@ -146,16 +146,6 @@ public class CleanUpViewModel : BindableBase, IPlugin
 
 
     public string Description { get; set; } = "I , clean up feature!";
-
-
-
-
-    /// <summary>
-    /// Gets the Header.
-    /// </summary>
-    public string? Header { get; set; }
-
-
 
     /// <summary>
     /// Gets or sets a value indicating whether IsBusy.
@@ -195,8 +185,7 @@ public class CleanUpViewModel : BindableBase, IPlugin
     {
         get => this.isSelected;
 
-        set =>
-            this.SetProperty<bool>(ref this.isSelected, value);
+        set => this.SetProperty<bool>(ref this.isSelected, value);
 
     }
 
@@ -208,7 +197,7 @@ public class CleanUpViewModel : BindableBase, IPlugin
     /// <summary>
     /// Gets or sets the Label.
     /// </summary>
-    public string Label { get; set; } = "Clean Up";
+    public string Header { get; set; } = "Clean Up";
 
     /// <summary>
     /// Gets or sets the NavigatePath.
@@ -221,13 +210,6 @@ public class CleanUpViewModel : BindableBase, IPlugin
     public DelegateCommand ScanCommand { get; private set; }
 
     /// <summary>
-    /// Gets or sets the Tag.
-    /// </summary>
-    public string? Tag { get; set; }
-
-
-
-    /// <summary>
     /// Gets or sets the Todos.
     /// </summary>
     public ObservableCollection<CleanUpItemViewModel> Items
@@ -237,7 +219,5 @@ public class CleanUpViewModel : BindableBase, IPlugin
 
     }
     public ICollectionView ItemsView { get; }
-
-
 
 }
