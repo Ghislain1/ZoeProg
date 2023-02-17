@@ -18,12 +18,8 @@
     TextElement.FontWeight="Regular"
     TextOptions.TextFormattingMode="Ideal"
     TextOptions.TextRenderingMode="Auto">
-    <metro:MetroWindow.Resources>
-
-    <DataTemplate x:Key="Options"
-                  DataType="{x:Type viewModels:OptionViewModelBase}">
-      <TextBlock Text="{Binding Title}" Background="Red" />
-    </DataTemplate>
+    <metro:MetroWindow.Resources> 
+      
     <!---OPTION TEMPLATE-->
         <DataTemplate x:Key="OptionTemplateKey" DataType="{x:Type metro:HamburgerMenuGlyphItem}">
             <Grid Height="48">
@@ -31,15 +27,12 @@
                     <ColumnDefinition Width="48" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <TextBlock
-                            Grid.Column="0"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Center"
-                            FontFamily="Segoe MDL2 Assets"
-                            FontSize="16"
-                            Foreground="White"
-                            Text="{Binding Glyph}" />
-                <TextBlock
+        <materialDesign:PackIcon Kind="{Binding Glyph}"
+                                 Grid.Column="0"
+                                 Margin="12,10,0,0"
+                                 Height="24"
+                                 Width="24" />
+        <TextBlock
                             Grid.Column="1"
                             VerticalAlignment="Center"
                             FontSize="16"
@@ -56,7 +49,7 @@
                 </Grid.ColumnDefinitions>
         <materialDesign:PackIcon Kind="{Binding Glyph}"
                                  Grid.Column="0"
-                                 Margin="2,10,0,0"
+                                 Margin="12,10,0,0"
                                  Height="24"
                                  Width="24" />
         <TextBlock Grid.Column="1"
@@ -121,7 +114,7 @@
             ItemClick="HamburgerMenuControl_ItemClick"
             IsPaneOpen="{Binding IsPaneOpen}"
             SelectedIndex="1"
-            OptionsItemTemplate="{StaticResource Options}"
+            OptionsItemTemplate="{StaticResource OptionTemplateKey}"
             ContentTemplate="{StaticResource ContentTemplateKey}"
             ItemTemplate="{StaticResource ItemTemplateKey}">
             <!--  Ghis@TODO:This is the first property of HamburgerMenu Say something  -->

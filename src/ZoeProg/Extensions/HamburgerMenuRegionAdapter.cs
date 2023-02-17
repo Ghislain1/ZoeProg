@@ -65,6 +65,9 @@ namespace ZoeProg.Extensions
                             // tb.DataContext = iv; tb.Content = ((UserControl)e.NewItems[0]);
                             regionTarget.Items.Insert(regionTarget.Items.Count, tb);
                             regionTarget.SelectedIndex = regionTarget.Items.Count - 1;
+
+                            // Examples
+                            regionTarget.OptionsItems.Add(tb);
                         }
 
                         break;

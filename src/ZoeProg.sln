@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.Application
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg", "ZoeProg\ZoeProg.csproj", "{A24183F4-D6EF-48BB-8098-F666145D058D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.About", "ZoeProg.PlugIns.About\ZoeProg.PlugIns.About.csproj", "{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,14 @@ Global
 		{A24183F4-D6EF-48BB-8098-F666145D058D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A24183F4-D6EF-48BB-8098-F666145D058D}.Release|x86.ActiveCfg = Release|Any CPU
 		{A24183F4-D6EF-48BB-8098-F666145D058D}.Release|x86.Build.0 = Release|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Debug|x86.Build.0 = Debug|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +102,7 @@ Global
 		{4465A01E-03AC-403B-84A8-994C917B5EA4} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{444FD418-07D6-47FA-A72E-6276FCEC0798} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 		{C46EBA66-CE23-4A78-87F0-AF870FC44735} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
+		{86C22E63-6775-491A-B6B3-BBAC2D62E9A2} = {382BCB3F-EB66-418F-BEEB-DC24D47FB874}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {42D9B723-A5FD-453D-B056-9B2DFD43B30A}
