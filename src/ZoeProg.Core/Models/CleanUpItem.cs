@@ -29,7 +29,6 @@ namespace ZoeProg.Core.Models
         }
         public string Date { get; set; }
         public string Extension { get; set; }
-
         public string Path { get; set; }
         public string Size { get; set; }
         public bool IsLockedFile { get; set; }
