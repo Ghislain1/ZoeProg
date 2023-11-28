@@ -4,6 +4,7 @@
     using Prism.Modularity;
     using Prism.Regions;
     using ZoeProg.Core;
+    using ZoeProg.Core.Constants;
     using ZoeProg.PlugIns.Audit.Services;
     using ZoeProg.PlugIns.Audit.Views;
 

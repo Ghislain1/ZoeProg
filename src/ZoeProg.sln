@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Core", "ZoeProg.Cor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.Infrastructure", "ZoeProg.Infrastructure\ZoeProg.Infrastructure.csproj", "{6FA63C49-CF28-4A80-A8ED-E1DC682F93A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,14 @@ Global
 		{6FA63C49-CF28-4A80-A8ED-E1DC682F93A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FA63C49-CF28-4A80-A8ED-E1DC682F93A3}.Release|x86.ActiveCfg = Release|Any CPU
 		{6FA63C49-CF28-4A80-A8ED-E1DC682F93A3}.Release|x86.Build.0 = Release|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Debug|x86.Build.0 = Debug|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Release|x86.ActiveCfg = Release|Any CPU
+		{991E9FCD-AF19-499C-8234-1EDC0E1AEEC0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
