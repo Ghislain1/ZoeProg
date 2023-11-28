@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <PlatformTarget>any cpu</PlatformTarget>    
+    <PlatformTarget>anycpu</PlatformTarget>    
     <ApplicationIcon>images/ZoeProg-180.ico</ApplicationIcon>
   </PropertyGroup>
 
