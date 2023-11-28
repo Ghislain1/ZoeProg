@@ -9,6 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.CleanUp", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.Home", "ZoeProg.PlugIns.Home\ZoeProg.PlugIns.Home.csproj", "{6F3F2549-5E0B-42C7-ACB8-EC4E776E30E9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoeProg.PlugIns.About", "ZoeProg.PlugIns.About\ZoeProg.PlugIns.About.csproj", "{FF7833A0-0E63-420D-B3B1-D38B4981F95A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FBD24276-2970-4C2E-93E5-7ADC4DDB1E4D}"
+	ProjectSection(SolutionItems) = preProject
+		ZoeProg.Core\ZoeProg.Core.csproj = ZoeProg.Core\ZoeProg.Core.csproj
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +48,14 @@ Global
 		{6F3F2549-5E0B-42C7-ACB8-EC4E776E30E9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6F3F2549-5E0B-42C7-ACB8-EC4E776E30E9}.Release|x86.ActiveCfg = Release|Any CPU
 		{6F3F2549-5E0B-42C7-ACB8-EC4E776E30E9}.Release|x86.Build.0 = Release|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Debug|x86.Build.0 = Debug|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Release|x86.ActiveCfg = Release|Any CPU
+		{FF7833A0-0E63-420D-B3B1-D38B4981F95A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

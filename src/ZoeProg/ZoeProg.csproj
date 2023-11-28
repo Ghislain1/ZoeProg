@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <PlatformTarget>anycpu</PlatformTarget>    
+    <PlatformTarget>any cpu</PlatformTarget>    
     <ApplicationIcon>images/ZoeProg-180.ico</ApplicationIcon>
   </PropertyGroup>
 
