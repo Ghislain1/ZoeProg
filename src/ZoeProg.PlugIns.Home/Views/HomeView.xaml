@@ -5,7 +5,6 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-     xmlns:ffme="clr-namespace:Unosquare.FFME;assembly=ffme.win"
     d:DesignHeight="450"
     d:DesignWidth="800"
     prism:ViewModelLocator.AutoWireViewModel="True"
@@ -27,8 +26,5 @@
             <TextBlock Grid.Column="1" FontSize="100" Text="{Binding}" Focusable="True"  Foreground="White" />
         </Grid>
 
-        <!--<TextBlock   FontSize="200" Text="Coming soon !!!" Focusable="True" />-->
-
-    <ffme:MediaElement Name="Media" Background="Black" LoadedBehavior="Play" IsDesignPreviewEnabled="True" />
   </DockPanel>
 </UserControl>
