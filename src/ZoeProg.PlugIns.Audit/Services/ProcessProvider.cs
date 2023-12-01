@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using ZoeProg.Infrastructure;
-using ZoeProg.PlugIns.Audit.Models;
-
-namespace ZoeProg.PlugIns.Audit.Services
+﻿namespace ZoeProg.PlugIns.Audit.Services
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using ZoeProg.Infrastructure;
+    using ZoeProg.PlugIns.Audit.Models;
+
     public class ProcessProvider : IProcessProvider
     {
         private readonly IPowershellService powerShellService;
@@ -27,7 +27,7 @@ namespace ZoeProg.PlugIns.Audit.Services
             var command = "Get-Process | Select-Object -Property *  ";
             var command2 = "Get-Process | Select-Object -Property *  | ConvertTo-Json -Verbose";
 
-          await this.powerShellService.RunCommand(CancellationToken.None, command);
+            await this.powerShellService.RunCommand(CancellationToken.None, command);
 
             //foreach (var item in collection)
             //{

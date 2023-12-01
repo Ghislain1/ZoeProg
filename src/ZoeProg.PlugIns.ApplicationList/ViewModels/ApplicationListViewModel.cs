@@ -22,7 +22,7 @@ namespace ZoeProg.PlugIns.ApplicationList.ViewModels
         public ICommand? Command { get; set; }
         public Type? CommandParameter { get; set; }
         public string? Description { get; set; }
-       
+
         public bool IsSelected { get; set; }
         public string Kind { get; set; } = "Adjust";
 
