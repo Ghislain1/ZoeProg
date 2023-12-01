@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Ghis.PowershellLib;
+using ZoeProg.Infrastructure;
 using ZoeProg.PlugIns.Audit.Models;
 
 namespace ZoeProg.PlugIns.Audit.Services
@@ -27,22 +27,22 @@ namespace ZoeProg.PlugIns.Audit.Services
             var command = "Get-Process | Select-Object -Property *  ";
             var command2 = "Get-Process | Select-Object -Property *  | ConvertTo-Json -Verbose";
 
-            var collection = await this.powerShellService.RunCommand(CancellationToken.None, command);
+          await this.powerShellService.RunCommand(CancellationToken.None, command);
 
-            foreach (var item in collection)
-            {
-                try
-                {
-                    var process = new ProcessItem();
-                    //process.Name = item.Members["ProcessName"].Value.ToString();
-                    //process.Name = item.Members["ProcessName"].Value.ToString();
-                    list.Add(process);
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
-            }
+            //foreach (var item in collection)
+            //{
+            //    try
+            //    {
+            //        var process = new ProcessItem();
+            //        //process.Name = item.Members["ProcessName"].Value.ToString();
+            //        //process.Name = item.Members["ProcessName"].Value.ToString();
+            //        list.Add(process);
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        throw;
+            //    }
+            //}
 
             return list;
         }
