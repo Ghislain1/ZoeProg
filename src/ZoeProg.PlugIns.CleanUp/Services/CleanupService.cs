@@ -60,23 +60,15 @@ namespace ZoeProg.PlugIns.CleanUp.Services
             return await Task.Run(() =>
               {
                   var result = new List<CleanUpItem>();
-                  try
-                  {
+                 
                       var filees = Directory.EnumerateFiles(locationFolder, "*", SearchOption.AllDirectories);
                       foreach (var filePath in filees)
                       {
 
-                          result.Add(new CleanUpItem(filePath));
+                        yield return new CleanUpItem(filePath);
                       }
 
-                  }
-                  catch (FileNotFoundException)
-                  {
-                  }
-                  catch (UnauthorizedAccessException)
-                  {
-
-                  }
+               
 
 
                   return result;

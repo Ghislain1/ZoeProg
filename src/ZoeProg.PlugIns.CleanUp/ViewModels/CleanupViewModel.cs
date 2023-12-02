@@ -60,11 +60,8 @@ public class CleanUpViewModel : BindableBase, IPlugin
         this.InitGroup();
         this.ItemsView = CollectionViewSource.GetDefaultView(this.Items);
         this.ItemsView.Filter = item => this.OnFilter(item);
-        this.SetUpCommands();
-    }
 
-    private void SetUpCommands()
-    {
+        // Commands
         this.ScanCommand = new DelegateCommand(async () =>
         {
             await this.LoadDataAsync();
@@ -96,9 +93,6 @@ public class CleanUpViewModel : BindableBase, IPlugin
         }
 
         return true;
-
-
-
     }
 
     private async Task LoadDataAsync()

@@ -3,11 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-     <Nullable>enable</Nullable>
+      <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="FFME.Windows" Version="4.4.350" />
+  <ItemGroup> 
     <PackageReference Include="Prism.Unity" Version="8.1.97" />
   </ItemGroup>
 

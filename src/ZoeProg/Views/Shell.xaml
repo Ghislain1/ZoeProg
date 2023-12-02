@@ -1,87 +1,89 @@
 ﻿<metro:MetroWindow
     x:Class="ZoeProg.Views.Shell"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:ZoeProg.Core.Constants;assembly=ZoeProg.Core"
+    xmlns:dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
     xmlns:prism="http://prismlibrary.com/"
-    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:viewModels="clr-namespace:ZoeProg.ViewModels"
-    xmlns:core="clr-namespace:ZoeProg.Core.Constants;assembly=ZoeProg.Core"
-    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-    xmlns:dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"    
     Title="{Binding Title}"
     Width="1225"
     Height="550"
-    prism:ViewModelLocator.AutoWireViewModel="True"
     dialog:DialogParticipation.Register="{Binding}"
+    prism:ViewModelLocator.AutoWireViewModel="True"
     TextElement.FontSize="13"
     TextElement.FontWeight="Regular"
     TextOptions.TextFormattingMode="Ideal"
     TextOptions.TextRenderingMode="Auto">
-    <metro:MetroWindow.Resources> 
-      
-    <!---OPTION TEMPLATE-->
+    <metro:MetroWindow.Resources>
+
+        <!--  -OPTION TEMPLATE  -->
         <DataTemplate x:Key="OptionTemplateKey" DataType="{x:Type metro:HamburgerMenuGlyphItem}">
             <Grid Height="48">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="48" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-        <materialDesign:PackIcon Kind="{Binding Glyph}"
-                                 Grid.Column="0"
-                                 Margin="12,10,0,0"
-                                 Height="24"
-                                 Width="24" />
-        <TextBlock
-                            Grid.Column="1"
-                            VerticalAlignment="Center"
-                            FontSize="16"
-                            Foreground="White"
-                            Text="{Binding Label}" />
+                <materialDesign:PackIcon
+                    Grid.Column="0"
+                    Width="24"
+                    Height="24"
+                    Margin="12,10,0,0"
+                    Kind="{Binding Glyph}" />
+                <TextBlock
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    Foreground="White"
+                    Text="{Binding Label}" />
             </Grid>
         </DataTemplate>
-        <!---ITEM TEMPLATE-->
+        <!--  -ITEM TEMPLATE  -->
         <DataTemplate x:Key="ItemTemplateKey" DataType="{x:Type metro:HamburgerMenuGlyphItem}">
             <Grid Height="48">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="48" />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-        <materialDesign:PackIcon Kind="{Binding Glyph}"
-                                 Grid.Column="0"
-                                 Margin="12,10,0,0"
-                                 Height="24"
-                                 Width="24" />
-        <TextBlock Grid.Column="1"
-                    VerticalAlignment="Center"                    
+                <materialDesign:PackIcon
+                    Grid.Column="0"
+                    Width="24"
+                    Height="24"
+                    Margin="12,10,0,0"
+                    Kind="{Binding Glyph}" />
+                <TextBlock
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
                     Foreground="White"
                     Text="{Binding Label}" />
             </Grid>
         </DataTemplate>
-        <!---CONTENT TEMPLATE-->
-        <DataTemplate  x:Key="ContentTemplateKey" DataType="{x:Type metro:HamburgerMenuItem}">
+        <!--  -CONTENT TEMPLATE  -->
+        <DataTemplate x:Key="ContentTemplateKey" DataType="{x:Type metro:HamburgerMenuItem}">
             <DockPanel>
                 <Border
-                            MinHeight="55"
-                            UseLayoutRounding="True"
-                            Background="#FF444444"                             
-                            BorderThickness="0"
-                            DockPanel.Dock="Top">
+                    MinHeight="55"
+                    Background="#FF444444"
+                    BorderThickness="0"
+                    DockPanel.Dock="Top"
+                    UseLayoutRounding="True">
                     <TextBlock
-                                x:Name="Header"
-                                Margin="20,0"
-                                HorizontalAlignment="Center"
-                                FontSize="30"
-                                Foreground="White"
-                                Text="{Binding Label}" />
+                        x:Name="Header"
+                        Margin="20,0"
+                        HorizontalAlignment="Center"
+                        FontSize="30"
+                        Foreground="White"
+                        Text="{Binding Label}" />
                 </Border>
                 <!--  GhZe@TODO: Can you explain how this works  -->
                 <metro:TransitioningContentControl
-                            x:Name="ActiveItem"
-                            Content="{Binding Tag}"
-                            RestartTransitionOnContentChange="True"
-                            Transition="LeftReplace"
-                             />
+                    x:Name="ActiveItem"
+                    Content="{Binding Tag}"
+                    RestartTransitionOnContentChange="True"
+                    Transition="LeftReplace" />
             </DockPanel>
         </DataTemplate>
     </metro:MetroWindow.Resources>
@@ -89,17 +91,23 @@
     <metro:MetroWindow.WindowButtonCommands>
         <metro:WindowButtonCommands Template="{DynamicResource MahApps.Templates.WindowButtonCommands.Win10}" />
     </metro:MetroWindow.WindowButtonCommands>
-    
+
     <metro:MetroWindow.TitleTemplate>
         <DataTemplate>
             <StackPanel Height="100" Orientation="Horizontal">
-                <TextBlock Margin="5,5" Text="{Binding}" Foreground="White" />
                 <TextBlock
                     Margin="5,5"
-                   Foreground="White"
+                    Foreground="White"
+                    Text="{Binding}" />
+                <TextBlock
+                    Margin="5,5"
                     FontWeight="Bold"
+                    Foreground="White"
                     Text="{Binding DataContext.ActivatedItem.Label, RelativeSource={RelativeSource AncestorType={x:Type metro:MetroWindow}}}" />
-                <Rectangle Width="16" Height="16" Fill="Transparent">
+                <Rectangle
+                    Width="16"
+                    Height="16"
+                    Fill="Transparent">
                     <Rectangle.OpacityMask>
                         <VisualBrush Stretch="Uniform" Visual="{iconPacks:Material Kind=OpenInNew}" />
                     </Rectangle.OpacityMask>
@@ -111,23 +119,23 @@
     <metro:MetroContentControl>
         <metro:HamburgerMenu
             x:Name="HamburgerMenuControl"
-            DisplayMode="CompactOverlay"
-            ItemClick="HamburgerMenuControl_ItemClick"
-            OptionsItemClick="HamburgerMenuControl_ItemClick"
-            IsPaneOpen="{Binding IsPaneOpen}"
-            SelectedIndex="1"
-            OptionsItemTemplate="{StaticResource OptionTemplateKey}"
             ContentTemplate="{StaticResource ContentTemplateKey}"
-            ItemTemplate="{StaticResource ItemTemplateKey}">
+            DisplayMode="CompactOverlay"
+            IsPaneOpen="{Binding IsPaneOpen}"
+            ItemClick="HamburgerMenuControl_ItemClick"
+            ItemTemplate="{StaticResource ItemTemplateKey}"
+            OptionsItemClick="HamburgerMenuControl_ItemClick"
+            OptionsItemTemplate="{StaticResource OptionTemplateKey}"
+            SelectedIndex="1">
             <!--  Ghis@TODO:This is the first property of HamburgerMenu Say something  -->
             <metro:HamburgerMenu.ItemsSource>
                 <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.HamburgerMenuItemCollectionRegion}" />
             </metro:HamburgerMenu.ItemsSource>
-          
-          <!--Adding Options Functions using Prism-->
-         <metro:HamburgerMenu.OptionsItemsSource>
-        <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.OptionRegion}" />
-         </metro:HamburgerMenu.OptionsItemsSource>
-       </metro:HamburgerMenu>
+
+            <!--  Adding Options Functions using Prism  -->
+            <metro:HamburgerMenu.OptionsItemsSource>
+                <metro:HamburgerMenuItemCollection prism:RegionManager.RegionName="{x:Static core:RegionNames.OptionRegion}" />
+            </metro:HamburgerMenu.OptionsItemsSource>
+        </metro:HamburgerMenu>
     </metro:MetroContentControl>
 </metro:MetroWindow>
